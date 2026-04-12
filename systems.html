@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRYCENHQ — Systems Command Center</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#050508;
+  --card:#0a0b10;
+  --card-border:#141620;
+  --lime:#00ff88;
+  --lime-dim:#00ff8833;
+  --lime-glow:#00ff8818;
+  --amber:#ffaa00;
+  --amber-dim:#ffaa0033;
+  --gray:#3a3a4a;
+  --planned:#555568;
+  --text:#e8e8f0;
+  --text-dim:#8888a0;
+  --text-muted:#55556a;
+  --mono:'JetBrains Mono',monospace;
+  --sans:'Outfit',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+  scrollbar-width:thin;
+  scrollbar-color:var(--lime-dim) var(--bg);
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--sans);
+  min-height:100vh;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* Scanline overlay */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background:repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,255,136,0.008) 2px,
+    rgba(0,255,136,0.008) 4px
+  );
+  pointer-events:none;
+  z-index:9999;
+}
+
+/* Grid pattern */
+body::after{
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(0,255,136,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,136,0.02) 1px, transparent 1px);
+  background-size:60px 60px;
+  pointer-events:none;
+  z-index:1;
+}
+
+/* ─── TOP BAR ─── */
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(5,5,8,0.85);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--card-border);
+  padding:14px 32px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.topbar-left{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
+.logo{
+  font-family:var(--mono);
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:4px;
+  color:var(--lime);
+  text-shadow:0 0 20px var(--lime-dim),0 0 40px rgba(0,255,136,0.1);
+  position:relative;
+}
+
+.logo-dot{
+  display:inline-block;
+  width:8px;height:8px;
+  background:var(--lime);
+  border-radius:50%;
+  margin-left:6px;
+  animation:pulse 2s ease-in-out infinite;
+  box-shadow:0 0 8px var(--lime),0 0 16px var(--lime-dim);
+}
+
+.sync-label{
+  font-family:var(--mono);
+  font-size:10px;
+  color:var(--text-muted);
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.sync-time{
+  color:var(--lime);
+  opacity:0.7;
+}
+
+.stats-bar{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+
+.stat-badge{
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:500;
+  padding:6px 14px;
+  border:1px solid var(--card-border);
+  border-radius:2px;
+  background:rgba(0,255,136,0.03);
+  color:var(--text-dim);
+  letter-spacing:0.5px;
+  white-space:nowrap;
+}
+
+.stat-badge strong{
+  color:var(--lime);
+  font-weight:600;
+}
+
+/* ─── HERO SECTION ─── */
+.hero{
+  text-align:center;
+  padding:60px 32px 40px;
+  position:relative;
+}
+
+.hero h1{
+  font-family:var(--sans);
+  font-size:clamp(28px,4vw,48px);
+  font-weight:800;
+  letter-spacing:-1px;
+  color:var(--text);
+  line-height:1.1;
+  margin-bottom:12px;
+}
+
+.hero h1 span{
+  color:var(--lime);
+  text-shadow:0 0 30px var(--lime-dim);
+}
+
+.hero-sub{
+  font-family:var(--mono);
+  font-size:13px;
+  color:var(--text-muted);
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.hero-line{
+  width:120px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--lime),transparent);
+  margin:24px auto 0;
+}
+
+/* ─── GRID ─── */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  padding:0 32px 80px;
+  max-width:1400px;
+  margin:0 auto;
+  position:relative;
+  z-index:2;
+}
+
+/* ─── CARDS ─── */
+.card{
+  background:var(--card);
+  border:1px solid var(--card-border);
+  border-radius:4px;
+  padding:0;
+  overflow:hidden;
+  transition:border-color 0.4s,box-shadow 0.4s;
+  opacity:0;
+  transform:translateY(20px);
+  animation:cardIn 0.5s ease forwards;
+}
+
+.card:hover{
+  border-color:rgba(0,255,136,0.25);
+  box-shadow:0 0 30px rgba(0,255,136,0.05),inset 0 0 30px rgba(0,255,136,0.02);
+}
+
+.card-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 20px;
+  border-bottom:1px solid var(--card-border);
+  background:rgba(0,255,136,0.015);
+}
+
+.card-title{
+  font-family:var(--sans);
+  font-weight:700;
+  font-size:15px;
+  color:var(--text);
+  letter-spacing:0.3px;
+}
+
+.card-count{
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:600;
+  color:var(--lime);
+  padding:3px 10px;
+  border:1px solid var(--lime-dim);
+  border-radius:2px;
+  background:rgba(0,255,136,0.06);
+  letter-spacing:1px;
+}
+
+.card-body{
+  padding:12px 0;
+}
+
+.item{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  padding:7px 20px;
+  transition:background 0.2s;
+  cursor:default;
+}
+
+.item:hover{
+  background:rgba(0,255,136,0.025);
+}
+
+.item-num{
+  font-family:var(--mono);
+  font-size:10px;
+  color:var(--text-muted);
+  min-width:22px;
+  padding-top:3px;
+  text-align:right;
+}
+
+.status-dot{
+  width:7px;height:7px;
+  border-radius:50%;
+  margin-top:6px;
+  flex-shrink:0;
+}
+
+.status-dot.live{
+  background:var(--lime);
+  box-shadow:0 0 6px var(--lime),0 0 12px var(--lime-dim);
+  animation:pulse 3s ease-in-out infinite;
+}
+
+.status-dot.paused{
+  background:var(--amber);
+  box-shadow:0 0 6px var(--amber),0 0 12px var(--amber-dim);
+}
+
+.status-dot.planned{
+  background:var(--planned);
+}
+
+.item-text{
+  flex:1;
+  min-width:0;
+}
+
+.item-name{
+  font-family:var(--sans);
+  font-size:13px;
+  font-weight:600;
+  color:var(--text);
+  line-height:1.3;
+}
+
+.item-desc{
+  font-family:var(--mono);
+  font-size:10.5px;
+  color:var(--text-muted);
+  line-height:1.4;
+  margin-top:1px;
+}
+
+.item-status{
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  padding-top:4px;
+  flex-shrink:0;
+}
+
+.item-status.live{color:var(--lime);}
+.item-status.paused{color:var(--amber);}
+.item-status.planned{color:var(--planned);}
+
+/* ─── FOOTER ─── */
+.footer{
+  text-align:center;
+  padding:40px 32px 60px;
+  border-top:1px solid var(--card-border);
+}
+
+.footer p{
+  font-family:var(--mono);
+  font-size:11px;
+  color:var(--text-muted);
+  letter-spacing:2px;
+}
+
+.footer .lime{color:var(--lime);}
+
+/* ─── SCROLL CONTROLS ─── */
+.scroll-controls{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:200;
+  display:flex;
+  gap:8px;
+}
+
+.scroll-btn{
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  background:rgba(10,11,16,0.9);
+  color:var(--lime);
+  border:1px solid var(--lime-dim);
+  padding:8px 16px;
+  border-radius:2px;
+  cursor:pointer;
+  backdrop-filter:blur(10px);
+  transition:all 0.3s;
+}
+
+.scroll-btn:hover{
+  background:rgba(0,255,136,0.1);
+  box-shadow:0 0 15px rgba(0,255,136,0.15);
+}
+
+.scroll-btn.active{
+  background:var(--lime);
+  color:var(--bg);
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:0.5;transform:scale(0.85)}
+}
+
+@keyframes cardIn{
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* Stagger card animations */
+.card:nth-child(1){animation-delay:0.05s}
+.card:nth-child(2){animation-delay:0.1s}
+.card:nth-child(3){animation-delay:0.15s}
+.card:nth-child(4){animation-delay:0.2s}
+.card:nth-child(5){animation-delay:0.25s}
+.card:nth-child(6){animation-delay:0.3s}
+.card:nth-child(7){animation-delay:0.35s}
+.card:nth-child(8){animation-delay:0.4s}
+.card:nth-child(9){animation-delay:0.45s}
+.card:nth-child(10){animation-delay:0.5s}
+.card:nth-child(11){animation-delay:0.55s}
+.card:nth-child(12){animation-delay:0.6s}
+.card:nth-child(13){animation-delay:0.65s}
+
+/* ─── AMBIENT EFFECTS ─── */
+.glow-orb{
+  position:fixed;
+  width:600px;height:600px;
+  border-radius:50%;
+  filter:blur(150px);
+  opacity:0.04;
+  pointer-events:none;
+  z-index:0;
+}
+
+.glow-orb.one{
+  background:var(--lime);
+  top:-200px;left:-100px;
+}
+
+.glow-orb.two{
+  background:#0088ff;
+  bottom:-200px;right:-100px;
+}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr;padding:0 16px 60px}
+  .topbar{flex-direction:column;gap:12px;padding:12px 16px}
+  .stats-bar{justify-content:center}
+  .hero{padding:40px 16px 30px}
+}
+</style>
+</head>
+<body>
+
+<div class="glow-orb one"></div>
+<div class="glow-orb two"></div>
+
+<!-- ─── TOP BAR ─── -->
+<header class="topbar">
+  <div class="topbar-left">
+    <div class="logo">BRYCENHQ<span class="logo-dot"></span></div>
+    <div class="sync-label">Last sync: <span class="sync-time" id="syncTime"></span></div>
+  </div>
+  <div class="stats-bar">
+    <div class="stat-badge"><strong>104</strong>&nbsp;Systems</div>
+    <div class="stat-badge"><strong>10</strong>&nbsp;APIs</div>
+    <div class="stat-badge"><strong>24</strong>&nbsp;Cron Jobs</div>
+    <div class="stat-badge"><strong>75+</strong>&nbsp;Scripts</div>
+    <div class="stat-badge"><strong>0</strong>&nbsp;Lines Written</div>
+  </div>
+</header>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <h1>Every System I Built With <span>Claude Code</span></h1>
+  <p class="hero-sub">Zero coding experience &nbsp;·&nbsp; One AI tool &nbsp;·&nbsp; Real business results</p>
+  <div style="display:flex;gap:24px;justify-content:center;margin-top:20px">
+    <span style="display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--text-dim);letter-spacing:0.5px"><span style="width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 6px var(--lime);display:inline-block;animation:pulse 3s ease-in-out infinite"></span> Live &amp; Running</span>
+    <span style="display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--text-dim);letter-spacing:0.5px"><span style="width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 6px var(--amber);display:inline-block"></span> Built &amp; Paused</span>
+    <span style="display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--text-dim);letter-spacing:0.5px"><span style="width:8px;height:8px;border-radius:50%;background:var(--planned);display:inline-block"></span> Planned</span>
+  </div>
+  <div class="hero-line"></div>
+</section>
+
+<!-- ─── GRID ─── -->
+<main class="grid">
+
+  <!-- CRM & Sales -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">CRM & Sales Automation</span>
+      <span class="card-count">12</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">01</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">AI Lead Scorer</div><div class="item-desc">Grades every business A/B/C by industry + location</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">02</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">AI Email Writer</div><div class="item-desc">Visits their website, writes personalized cold email</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">03</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Automated Email Sender</div><div class="item-desc">Sends 15 cold emails per day on autopilot</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">04</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Reply Detector</div><div class="item-desc">Scans inbox, classifies interested vs not</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">05</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Bounce Tracker</div><div class="item-desc">Auto-skips dead email addresses from future sends</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">06</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Follow-Up Sequencer</div><div class="item-desc">Sends the right follow-up at the right time</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">07</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Pipeline State Machine</div><div class="item-desc">Manages 10-stage sales pipeline automatically</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">08</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Stage Sync</div><div class="item-desc">Detects CRM card drags, logs touchpoints</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">09</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Touchpoint Logger</div><div class="item-desc">Records every email, DM, and call automatically</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">10</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">QuickBooks Auto-Sync</div><div class="item-desc">Accounting talks to CRM automatically</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">11</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">CRM Migration Tool</div><div class="item-desc">Moved entire CRM in one conversation, saved $3,600/yr</div></div><span class="item-status paused">Done</span></div>
+      <div class="item"><span class="item-num">12</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Hot Lead Alerts</div><div class="item-desc">Flags high-score leads for manual follow-up</div></div><span class="item-status live">Live</span></div>
+    </div>
+  </div>
+
+  <!-- Content Creation -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Content Creation</span>
+      <span class="card-count">11</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">13</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">AI Clip Analyzer</div><div class="item-desc">Computer vision identifies vehicles + services in footage</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">14</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Reel Composer</div><div class="item-desc">AI creates edit decision lists from clip library</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">15</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Video Renderer</div><div class="item-desc">Assembles finished 1080×1920 Reels automatically</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">16</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Cover Image Generator</div><div class="item-desc">Branded thumbnails with category badges</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">17</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">AI Content Calendar</div><div class="item-desc">Weekly plans based on what's actually working</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">18</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Content Multiplier</div><div class="item-desc">One job's footage becomes 5 different posts</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">19</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">YouTube Cross-Post (Business)</div><div class="item-desc">IG Reels auto-publish to YouTube</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">20</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">YouTube Cross-Post (Personal)</div><div class="item-desc">Personal IG auto-publishes every 6 hours</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">21</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Filming Brief Generator</div><div class="item-desc">Tomorrow's shot list with golden hour times</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">22</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Competitor Scraper</div><div class="item-desc">Weekly intel on competitor content + engagement</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">23</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Post Performance Auditor</div><div class="item-desc">Finds patterns in what content works and why</div></div><span class="item-status live">Live</span></div>
+    </div>
+  </div>
+
+  <!-- Instagram DM Engine -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Instagram DM Engine</span>
+      <span class="card-count">8</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">24</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Auto Follower Detection</div><div class="item-desc">Knows the second someone follows</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">25</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Profile Scanner</div><div class="item-desc">Reads bio, stats, website, grid in 3 seconds</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">26</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Personalized Message Generator</div><div class="item-desc">Unique first DM for every single person</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">27</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Conversation Phase Tracker</div><div class="item-desc">5-phase relationship state machine</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">28</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">A/B Strategy Tester</div><div class="item-desc">Tests 5 DM strategies, feeds winners back in</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">29</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Pitch Keyword Blocker</div><div class="item-desc">Hard-blocks sales language before send</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">30</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Reactivation Scheduler</div><div class="item-desc">Re-engages cold conversations 3x per day</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">31</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Weekly DM Analyzer</div><div class="item-desc">Sunday performance review + strategy updates</div></div><span class="item-status paused">Paused</span></div>
+    </div>
+  </div>
+
+  <!-- Dashboard & Monitoring -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Dashboard & Monitoring</span>
+      <span class="card-count">6</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">32</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Full Business Dashboard</div><div class="item-desc">Pipeline, finances, tasks, habits, and alerts</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">33</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Phone Access Anywhere</div><div class="item-desc">Cloudflare tunnel from laptop to phone worldwide</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">34</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Morning Auto-Briefing</div><div class="item-desc">Daily priorities generated at 8 AM automatically</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">35</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">System Watchdog</div><div class="item-desc">Monitors all 24 automations every 15 minutes</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">36</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Instagram Webhook Receiver</div><div class="item-desc">Real-time events with cryptographic verification</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">37</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">File Sharing Server</div><div class="item-desc">Instant public URL for any file, anywhere</div></div><span class="item-status live">Live</span></div>
+    </div>
+  </div>
+
+  <!-- Website & SEO -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Website & SEO</span>
+      <span class="card-count">9</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">38</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Full Business Website</div><div class="item-desc">24 pages, editorial design, zero templates</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">39</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">AI-Readable Markdown Mirrors</div><div class="item-desc">24 clean pages ChatGPT and Claude can read</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">40</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">llms.txt</div><div class="item-desc">Tells AI crawlers exactly what your business does</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">41</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Schema Markup</div><div class="item-desc">Structured data on every page for rich results</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">42</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Search Console API</div><div class="item-desc">Live ranking data by keyword, pulled daily</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">43</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Image Geo-Tagging</div><div class="item-desc">GPS coordinates embedded in portfolio images</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">44</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Image Compression</div><div class="item-desc">Auto WebP conversion for faster page loads</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">45</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">AI SEO Playbook</div><div class="item-desc">20+ page PDF built entirely from code</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">46</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Lead Magnet Funnel</div><div class="item-desc">Form captures lead and auto-delivers PDF</div></div><span class="item-status live">Live</span></div>
+    </div>
+  </div>
+
+  <!-- Instagram Marketing -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Instagram Marketing</span>
+      <span class="card-count">5</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">47</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Manychat Auto-DM Funnel</div><div class="item-desc">45% click-through rate on automated DMs</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">48</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Meta Graph API Integration</div><div class="item-desc">Read and write posts, DMs, and insights via code</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">49</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Multi-Account Management</div><div class="item-desc">One codebase manages two IG accounts</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">50</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Ad Performance Tracker</div><div class="item-desc">CTR, cost per follow, campaign benchmarks</div></div><span class="item-status paused">Paused</span></div>
+      <div class="item"><span class="item-num">51</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Deep Engagement Analyzer</div><div class="item-desc">Finds patterns in what drives real engagement</div></div><span class="item-status live">Live</span></div>
+    </div>
+  </div>
+
+  <!-- Voice AI -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Voice AI</span>
+      <span class="card-count">2</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">52</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">AI Voice Clone</div><div class="item-desc">Cloned my voice for $5 a month</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">53</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Reel Voiceover Generator</div><div class="item-desc">Narrates my videos in my own cloned voice</div></div><span class="item-status live">Live</span></div>
+    </div>
+  </div>
+
+  <!-- Wrap Designer -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Wrap Designer</span>
+      <span class="card-count">7</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">54</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">AI Design Generator</div><div class="item-desc">Text description to full vehicle wrap design</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">55</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">JSON to Illustrator Pipeline</div><div class="item-desc">Code to print-ready .ai files automatically</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">56</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Component Library</div><div class="item-desc">AI-generated SVG design elements on demand</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">57</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Brand Identity Scraper</div><div class="item-desc">Reverse-engineers any company's visual brand</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">58</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Vehicle Template Analyzer</div><div class="item-desc">Deep pixel analysis of professional templates</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">59</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Batch Design Generator</div><div class="item-desc">Three custom wrap designs in one command</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">60</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Mockup Generator</div><div class="item-desc">Photorealistic vehicle wrap previews</div></div><span class="item-status paused">Paused</span></div>
+    </div>
+  </div>
+
+  <!-- Client Delivery -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Client Delivery</span>
+      <span class="card-count">5</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">61</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Website Audit Tool</div><div class="item-desc">20+ factor SEO analysis in 10 minutes</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">62</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Custom Blueprint Generator</div><div class="item-desc">Questionnaire answers to full build roadmap</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">63</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Prospect Ranker</div><div class="item-desc">Scores waitlist leads by conversion potential</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">64</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Waitlist Manager</div><div class="item-desc">Tracks growth, snapshots, and segments leads</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">65</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Demo Sites Delivered</div><div class="item-desc">5 custom websites built for prospects in hours</div></div><span class="item-status live">Live</span></div>
+    </div>
+  </div>
+
+  <!-- Business Operations -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Business Operations</span>
+      <span class="card-count">6</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">66</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Task Manager</div><div class="item-desc">Priorities, deadlines, and status tracking</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">67</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Habit Tracker</div><div class="item-desc">Daily habits with streak counting</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">68</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Goal Tracker</div><div class="item-desc">Quarterly and annual progress tracking</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">69</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Journal System</div><div class="item-desc">Structured daily journal entries</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">70</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Weekly Review</div><div class="item-desc">AI-guided reflection + next week planning</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">71</span><span class="status-dot paused"></span><div class="item-text"><div class="item-name">Hiring Pipeline</div><div class="item-desc">Job posting to candidate management</div></div><span class="item-status paused">Paused</span></div>
+    </div>
+  </div>
+
+  <!-- API Integrations -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">API Integrations</span>
+      <span class="card-count">8</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">72</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">GoHighLevel CRM</div><div class="item-desc">Contacts, pipelines, invoices, calendar</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">73</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Instagram Graph API</div><div class="item-desc">Posts, DMs, insights, webhooks for 2 accounts</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">74</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Gmail API</div><div class="item-desc">Send emails, scan replies, detect bounces</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">75</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Google Search Console</div><div class="item-desc">Live ranking data by keyword</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">76</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">YouTube Data API</div><div class="item-desc">Upload, analytics, playlists for 2 channels</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">77</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">QuickBooks Online</div><div class="item-desc">Invoices, customers, financial data sync</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">78</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">ElevenLabs Voice AI</div><div class="item-desc">Voice clone + text-to-speech generation</div></div><span class="item-status live">Live</span></div>
+      <div class="item"><span class="item-num">79</span><span class="status-dot live"></span><div class="item-text"><div class="item-name">Cloudflare</div><div class="item-desc">DNS, tunnels, security headers, edge caching</div></div><span class="item-status live">Live</span></div>
+    </div>
+  </div>
+
+  <!-- Coming Soon -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Coming Soon</span>
+      <span class="card-count">25+</span>
+    </div>
+    <div class="card-body">
+      <div class="item"><span class="item-num">80</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">AI Voice DM Responder</div><div class="item-desc">Replies to every DM in my cloned voice</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">81</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">AI Receptionist</div><div class="item-desc">Answers phone calls and books appointments</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">82</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Auto Client Onboarding</div><div class="item-desc">Payment triggers AI to start building</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">83</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">AI Content Repurposing</div><div class="item-desc">One video automatically becomes 5 platform clips</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">84</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Competitor Alert System</div><div class="item-desc">Notified instantly when competitors post</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">85</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Client Dashboard</div><div class="item-desc">Each client sees their build progress live</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">86</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Auto Weekly Reports</div><div class="item-desc">AI writes and sends client progress reports</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">87</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">AI Proposal Generator</div><div class="item-desc">Custom quotes and proposals from one conversation</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">88</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Smart Pricing Engine</div><div class="item-desc">Dynamic pricing based on job complexity and materials</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">89</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Referral Tracking System</div><div class="item-desc">Tracks who referred who and auto-rewards</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">90</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Review Response AI</div><div class="item-desc">Auto-responds to Google reviews in my voice</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">91</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Testimonial Collector</div><div class="item-desc">Auto-requests reviews after job completion</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">92</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">AI Meeting Notes</div><div class="item-desc">Records calls, transcribes, extracts action items</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">93</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Invoice Reminder Sequencer</div><div class="item-desc">Auto-chases overdue invoices with escalation</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">94</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Multi-Location Manager</div><div class="item-desc">Manages both shop locations from one dashboard</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">95</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Predictive Revenue Forecasting</div><div class="item-desc">AI projects next month's revenue from pipeline</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">96</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Automated Contract Generator</div><div class="item-desc">Custom contracts from job details in 30 seconds</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">97</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Customer Satisfaction Scorer</div><div class="item-desc">Post-job survey with AI sentiment analysis</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">98</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Material Cost Calculator</div><div class="item-desc">Auto-estimates wrap material from vehicle specs</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">99</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Fleet Deal Analyzer</div><div class="item-desc">Scores fleet opportunities by revenue potential</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">100</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Social Proof Aggregator</div><div class="item-desc">Pulls reviews from everywhere into one feed</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">101</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Appointment Reminder System</div><div class="item-desc">Text + email reminders with AI rescheduling</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">102</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Vendor Management Portal</div><div class="item-desc">Track material orders and supplier relationships</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">103</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">Employee Onboarding System</div><div class="item-desc">New hires get training schedule + docs automatically</div></div><span class="item-status planned">Planned</span></div>
+      <div class="item"><span class="item-num">104</span><span class="status-dot planned"></span><div class="item-text"><div class="item-name">AI Photo Editor</div><div class="item-desc">Auto-enhances portfolio photos with brand overlay</div></div><span class="item-status planned">Planned</span></div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;·&nbsp; ZERO CODING EXPERIENCE &nbsp;·&nbsp; BRYCENWOOD.COM</p>
+</footer>
+
+<!-- ─── SCROLL CONTROLS ─── -->
+<div class="scroll-controls">
+  <button class="scroll-btn" id="scrollBtn" onclick="toggleScroll()">▶ Auto-Scroll</button>
+  <button class="scroll-btn" onclick="scrollToTop()">↑ Top</button>
+</div>
+
+<script>
+// Sync time
+function updateSync(){
+  const now=new Date();
+  const h=now.getHours(),m=now.getMinutes(),s=now.getSeconds();
+  const ampm=h>=12?'PM':'AM';
+  const h12=h%12||12;
+  document.getElementById('syncTime').textContent=
+    `${h12}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')} ${ampm}`;
+}
+updateSync();
+setInterval(updateSync,1000);
+
+// Auto-scroll for screen recording
+let scrolling=false;
+let scrollInterval;
+
+function toggleScroll(){
+  const btn=document.getElementById('scrollBtn');
+  if(scrolling){
+    clearInterval(scrollInterval);
+    btn.textContent='▶ Auto-Scroll';
+    btn.classList.remove('active');
+    scrolling=false;
+  }else{
+    btn.textContent='■ Stop';
+    btn.classList.add('active');
+    scrolling=true;
+    scrollInterval=setInterval(()=>{
+      window.scrollBy(0,1);
+      if((window.innerHeight+window.scrollY)>=document.body.scrollHeight){
+        toggleScroll();
+      }
+    },25);
+  }
+}
+
+function scrollToTop(){
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown',e=>{
+  if(e.code==='Space'){
+    e.preventDefault();
+    toggleScroll();
+  }
+  if(e.code==='KeyT'){
+    scrollToTop();
+  }
+});
+</script>
+</body>
+</html>
