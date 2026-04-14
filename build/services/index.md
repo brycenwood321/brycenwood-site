@@ -1,6 +1,6 @@
 ---
-title: Custom Business Builds -- AI-Powered Operating Systems | Brycen Wood
-description: Custom AI-powered business operating systems. CRM, email, SEO, dashboards -- everything automated in 2 weeks. No developers needed. No new hires.
+title: Hire Someone to Automate Your Business -- Custom AI Builds | Brycen Wood
+description: Stop hiring developers and agencies. I build custom AI-powered business operating systems in 2 weeks. CRM, email, SEO, dashboards -- everything automated. Starting at $3,500.
 url: https://www.brycenwood.com/services/
 last_updated: 2026-04-14
 ---

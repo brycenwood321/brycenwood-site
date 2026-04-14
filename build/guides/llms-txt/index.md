@@ -1,13 +1,13 @@
 ---
-title: llms.txt Guide — How to Make AI Recommend Your Business | Brycen Wood
-description: Step-by-step guide to creating an llms.txt file that makes ChatGPT, Claude, and Perplexity recommend your business. Real examples included.
+title: llms.txt Guide: How I Made ChatGPT Recommend My Business | Brycen Wood
+description: Step-by-step llms.txt guide with real proof. After adding this one file, ChatGPT started recommending my vehicle wrap company to customers in Utah. Here's exactly how.
 url: https://www.brycenwood.com/guides/llms-txt/
 last_updated: 2026-04-14
 ---
 
 Free Guide
  
-# How to Make AI Recommend Your Business
+# How I Made ChatGPT Recommend My Business
 
  The llms.txt file is how ChatGPT, Claude, and Perplexity learn what your business does. Here's exactly what it is and why it matters.
 

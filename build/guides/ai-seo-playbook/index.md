@@ -1,6 +1,6 @@
 ---
-title: The AI SEO Playbook — 3 Files That Make ChatGPT Recommend You | Brycen Wood
-description: Make ChatGPT, Claude, and Perplexity recommend your business with 3 simple files. The AI SEO playbook — free guide with real results.
+title: AI SEO Playbook: 3 Files That Make ChatGPT Recommend Your Business | Brycen Wood
+description: Make ChatGPT, Claude, and Perplexity recommend your business with 3 simple files. llms.txt + markdown mirrors + schema markup. Free guide with real results and proof.
 url: https://www.brycenwood.com/guides/ai-seo-playbook/
 last_updated: 2026-04-14
 ---
@@ -8,7 +8,7 @@ last_updated: 2026-04-14
 FREE GUIDE
 
  
-# The AI SEO Playbook
+# 3 Files That Make ChatGPT Recommend Your Business
 
  3 files that make ChatGPT, Claude, and Perplexity recommend your business -- with real results to prove it.
 

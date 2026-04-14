@@ -1,6 +1,6 @@
 ---
-title: How I Built an AI Cold Email System That Actually Works | Brycen Wood
-description: Build an AI-powered cold email system that scores leads, drafts personalized emails, and sends automatically. Real system, real results, zero coding.
+title: How to Build an AI Cold Email System That Actually Works | Brycen Wood
+description: I built an AI cold email system that scored 5,500 leads and drafted 739 personalized emails in one night. No templates, no SaaS -- built with Claude Code. Here's the full system.
 url: https://www.brycenwood.com/guides/cold-email-ai/
 last_updated: 2026-04-14
 ---
@@ -8,7 +8,7 @@ last_updated: 2026-04-14
 FREE GUIDE
 
  
-# AI Cold Email That Actually Works
+# How to Build an AI Cold Email System That Actually Works
 
  739 personalized emails in one night. Each one references the lead's actual website. Zero templates, zero coding, zero guesswork.
 

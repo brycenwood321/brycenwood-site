@@ -26,9 +26,20 @@ About
 
  I didn't have $10K for an agency. I didn't have $8K/month for a developer. So I started talking to Claude Code -- describing what I needed in plain English -- and it built it.
 
- First it was a simple lead scoring script. Then an email drafter. Then a CRM integration. Then a content pipeline. Then an SEO system. Then a dashboard I could check from my phone. Then a DM engine. Then a voice AI receptionist. One system at a time, each one solving a real problem I was dealing with that week.
+ The first thing I built was a lead scoring script. I described what a good lead looked like for our business -- roofing companies, HVAC companies, plumbing companies in Utah County with fleets of trucks. Claude Code turned that into a system that scores thousands of leads in minutes and tells me exactly who to contact. That one system replaced weeks of manual research.
 
- Within a few months, our two-person shop was operating like a company with a marketing team, a sales team, and an IT department. Except it was still just me and Landon.
+ Then I built an email drafter. Not a template -- an AI that reads each lead's actual website and writes a personalized email referencing their specific business. 739 personalized emails in one night. Then a CRM integration that syncs our entire pipeline with QuickBooks automatically. Then a content pipeline that analyzes video clips and composes reels. Then a full business website with SEO that got us ranking on Google. Then a dashboard I could check from my phone in the gym parking lot. Then an Instagram DM engine. Then a voice AI receptionist.
+
+ One system at a time, each one solving a real problem I was dealing with that week. 80+ systems later, our two-person shop was operating like a company with a marketing team, a sales team, and an IT department. Revenue went from $52K to $300K. We're targeting $600-750K this year. Same two people. Zero new hires.
+
+ 
+## The Moment It Clicked
+
+ There was a morning -- maybe 3 months in -- where I woke up, checked my phone, and my morning briefing was already waiting. It showed me the top priorities for the day, pipeline status, overnight activity, calendar, and habit streaks. All generated automatically at 7 AM.
+
+ That was the moment I realized this wasn't just automation. This was a completely different way of running a business. I wasn't managing tasks anymore -- systems were managing tasks for me. I was free to focus on the work that actually matters: talking to customers, building relationships, making the business better.
+
+ Every small business owner I talk to has the same bottleneck: they're spending 60% of their time on things that should be automated, and they can't afford the people or software to fix it. AI eliminates that bottleneck entirely -- if you know how to use it.
 
  
 ## What I Learned
@@ -88,11 +99,13 @@ About
  
 ## Beyond Business
 
- I'm married to my wife Marissa. We live in Utah. I care about health, growth, and building things that matter. I'm not a tech guy who decided to do business -- I'm a business guy who discovered the most powerful tool ever built for people like me.
+ I'm married to my wife Marissa. We live in Utah. I care about health, growth, and building things that matter. I lift weights, I chase growth in every direction, and I believe the best version of yourself shows up when you commit fully to something -- not when you spread thin across everything.
 
- I lift weights, I chase growth in every direction, and I believe the best businesses are built by people who actually understand the problems they're solving -- not by people who learned to code first and went looking for problems second.
+ I'm not a tech guy who decided to do business. I'm a business guy who discovered the most powerful tool ever built for people like me. I've never taken a coding class. I don't know Python syntax. I couldn't write a for loop if you asked me to. But I understand business problems -- deeply -- and that turns out to be the only skill that matters when AI handles the technical execution.
 
- If you're a business owner who's been told you need to hire a developer, or pay an agency, or learn to code -- there's another way. I'm living proof.
+ I also run a [free community called Business On Autopilot](https://www.brycenwood.com/community/) where I share the exact prompts, templates, and walkthroughs behind everything I build. 1,700+ business owners are already on the waitlist. The philosophy is simple: the knowledge should be free, the implementation is where the value lives.
+
+ If you're a business owner who's been told you need to hire a developer, pay an agency, or learn to code -- there's another way. I'm living proof. And I want to help you build it too.
 
  
 ## Want to see what I can buildfor your business?

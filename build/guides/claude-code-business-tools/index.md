@@ -1,6 +1,6 @@
 ---
-title: 10 Things I Built with Claude Code That Run My Business | Brycen Wood
-description: 10 real business systems built with Claude Code by a non-technical founder. Lead scoring, AI email, dashboards, voice AI, and more. See what's possible.
+title: Claude Code for Business: 10 Systems I Built That Run My $300K Company | Brycen Wood
+description: 10 real business systems built with Claude Code by a non-technical founder. Lead scoring, AI email, dashboards, voice AI, and more. See what Claude Code can actually build for a business.
 url: https://www.brycenwood.com/guides/claude-code-business-tools/
 last_updated: 2026-04-14
 ---
@@ -8,7 +8,7 @@ last_updated: 2026-04-14
 FREE GUIDE
 
  
-# 10 Things I Built with Claude Code
+# Claude Code for Business: 10 Systems That Run My $300K Company
 
  Real systems running a real business. Built by someone who cannot write a line of code. Here is what is possible when you stop buying tools and start building them.
 

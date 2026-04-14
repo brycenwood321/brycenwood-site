@@ -1,6 +1,6 @@
 ---
-title: Custom Business Operating System Build — Brycen Wood
-description: Get a custom AI-powered operating system built for your business in 2 weeks. CRM, email, SEO, dashboards — everything automated. Starting at $3,500.
+title: Done-for-You Business Automation -- Custom AI Systems in 2 Weeks | Brycen Wood
+description: Done-for-you business automation powered by AI, not templates. I build your entire operating system in 2 weeks -- CRM, email, SEO, dashboards. Starting at $3,500. No developers needed.
 url: https://www.brycenwood.com/services/custom-build/
 last_updated: 2026-04-14
 ---

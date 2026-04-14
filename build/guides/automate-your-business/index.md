@@ -1,6 +1,6 @@
 ---
-title: How to Automate Your Small Business with AI in 2026 | Brycen Wood
-description: Complete guide to automating your small business with AI. Learn which systems to build first, how to prioritize, and how to do it without hiring anyone.
+title: How to Automate Your Small Business with AI (Complete 2026 Guide) | Brycen Wood
+description: Complete guide to automating your small business with AI. I automated a vehicle wrap company from $52K to $300K without hiring anyone. Here's the exact framework and build order.
 url: https://www.brycenwood.com/guides/automate-your-business/
 last_updated: 2026-04-14
 ---

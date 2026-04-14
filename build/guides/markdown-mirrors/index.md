@@ -1,13 +1,13 @@
 ---
-title: Markdown Mirrors — Make Your Website Readable by AI | Brycen Wood
-description: Markdown mirrors let ChatGPT, Claude, and Perplexity read your website content cleanly. Learn what they are and why every business needs them.
+title: Markdown Mirrors: The SEO Technique That Makes Your Website Readable by AI | Brycen Wood
+description: Markdown mirrors let ChatGPT, Claude, and Perplexity read your website cleanly. I built 27 mirrors for my business and got 28K views on the video about it. Here's the complete guide.
 url: https://www.brycenwood.com/guides/markdown-mirrors/
 last_updated: 2026-04-14
 ---
 
 Free Guide
  
-# Your Website Is Invisible to ChatGPT
+# Markdown Mirrors: Make Your Website Readable by AI
 
  AI can't read your fancy HTML. Markdown mirrors fix that. Here's what they are and why they matter.
 

@@ -1,6 +1,6 @@
 ---
-title: Vibe Coding for Business — Build Real Systems Without Writing Code | Brycen Wood
-description: Vibe coding isn't just for developers. Learn how non-technical business owners use AI to build real automation systems — CRM, email, dashboards — without writing code.
+title: Vibe Coding for Business: How I Built a $300K Operating System Without Writing Code | Brycen Wood
+description: Vibe coding isn't just for developers. I built 80+ business systems, grew revenue from $52K to $300K, and never wrote a line of code. Here's how vibe coding works for business owners.
 url: https://www.brycenwood.com/guides/vibe-coding-for-business/
 last_updated: 2026-04-14
 ---
@@ -8,7 +8,7 @@ last_updated: 2026-04-14
 FREE GUIDE
 
  
-# Vibe Coding for Business
+# Vibe Coding for Business: $300K in Revenue, Zero Code
 
  How non-technical business owners use AI to build real systems -- without writing a single line of code.
 
