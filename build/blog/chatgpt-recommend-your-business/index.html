@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GV8RG30MK"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2GV8RG30MK');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How I Made ChatGPT Recommend My Business (With Screenshots) | Brycen Wood</title>
+<meta name="description" content="ChatGPT is recommending my vehicle wrap company to real customers in Utah. Here's the exact 3-file setup I used, with proof screenshots.">
+<link rel="canonical" href="https://www.brycenwood.com/blog/chatgpt-recommend-your-business/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
+
+<!-- Open Graph -->
+<meta property="og:title" content="How I Made ChatGPT Recommend My Business (With Screenshots)">
+<meta property="og:description" content="ChatGPT is recommending my vehicle wrap company to real customers in Utah. Here's the exact 3-file setup I used, with proof screenshots.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.brycenwood.com/blog/chatgpt-recommend-your-business/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How I Made ChatGPT Recommend My Business (With Screenshots)">
+<meta name="twitter:description" content="ChatGPT is recommending my vehicle wrap company to real customers in Utah. Here's the exact 3-file setup I used, with proof screenshots.">
+
+<!-- Schema: Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "image": "https://www.brycenwood.com/assets/images/og-default.jpg",
+  "headline": "How I Made ChatGPT Recommend My Business (With Screenshots)",
+  "description": "ChatGPT is recommending my vehicle wrap company to real customers in Utah. Here's the exact 3-file setup I used, with proof screenshots.",
+  "url": "https://www.brycenwood.com/blog/chatgpt-recommend-your-business/",
+  "datePublished": "2026-04-14",
+  "dateModified": "2026-04-14",
+  "author": {
+    "@type": "Person",
+    "name": "Brycen Wood",
+    "url": "https://www.brycenwood.com/about/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Brycen Wood"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.brycenwood.com/blog/chatgpt-recommend-your-business/"
+  }
+}
+</script>
+
+<!-- Schema: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does ChatGPT actually recommend specific businesses to users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and it is happening right now. When someone asks ChatGPT for a recommendation -- 'best vehicle wrap shop in Utah,' 'plumber near Salt Lake City,' 'web designer in Denver' -- ChatGPT does not randomly guess. It pulls from content it has been trained on and content it can access through browsing. If your business has structured, machine-readable content on your website, you are exponentially more likely to appear in those recommendations. I have screenshots of ChatGPT recommending Summit Wraps by name, with our address, services, and even reasons why we are a good fit. This is not theoretical. It is happening to real customers searching for real services, and most businesses have no idea it is even a channel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to set up llms.txt and markdown mirrors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you are doing it manually, setting up an llms.txt file takes about 30 minutes. You write a structured summary of your business -- name, location, services, unique selling points -- and save it as a plain text file at your domain root (yoursite.com/llms.txt). Markdown mirrors take longer because you need one for each page on your site, but the process is straightforward: create a clean markdown version of each page's content and serve it alongside the HTML. For Summit Wraps, I built a Python script that generates all 27 markdown mirrors automatically in about 15 seconds. If you are using Claude Code, you can describe what you want and have the entire setup -- llms.txt, mirrors, and schema -- built in a single session. The deep-dive guides for each file walk through every step: llms.txt guide at /guides/llms-txt/ and markdown mirrors guide at /guides/markdown-mirrors/."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will this work for any type of business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with one caveat: your business needs a website with real content. The 3-file system works for service businesses, local shops, e-commerce stores, SaaS companies, consultants, freelancers -- any business that has a web presence and wants AI tools to understand and recommend it. The key is that your content must be substantive. A one-page site with nothing but a logo and a phone number will not generate AI recommendations regardless of what files you add. AI tools recommend businesses they can understand deeply, which means your site needs detailed service descriptions, location information, pricing context, and proof of quality (reviews, case studies, portfolio). The 3-file system makes that existing content machine-readable. It does not replace the need for good content -- it makes good content discoverable by AI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this the same as traditional SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and this distinction matters. Traditional SEO optimizes your website for Google's search crawler -- you are competing for position on a results page with ten blue links. AI optimization makes your content readable by large language models like ChatGPT, Claude, Perplexity, and Gemini. These AI tools do not show a list of results. They give a direct recommendation, often naming one or two businesses. That means the upside of being recommended by AI is dramatically higher than ranking on page one of Google -- there is no position two. The tactics are also different. Google cares about backlinks, page speed, and keyword density. AI tools care about structured content, clear descriptions, and machine-readable formats like llms.txt and markdown. The good news is that both strategies are complementary. Schema markup helps Google AND AI. Good content helps everywhere. But the 3-file system specifically targets AI recommendation engines in a way that traditional SEO does not."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brycenwood.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.brycenwood.com/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "How I Made ChatGPT Recommend My Business"}
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link">Guides</a>
+    <a href="/blog/" class="nav-link active">Blog</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+    <a href="/contact/" class="nav-cta">Book a Call</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span><a href="/blog/">Blog</a><span class="sep">/</span><span>ChatGPT Recommend Your Business</span>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-eyebrow">Blog</div>
+  <h1>How I Made ChatGPT <span class="accent">Recommend My Business</span></h1>
+  <p class="hero-sub">I asked ChatGPT for vehicle wrap shops in Utah. My company showed up. Here is exactly how.</p>
+  <div class="last-updated">Last updated: April 2026</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTENT -->
+<article class="content">
+
+<div style="display:flex;align-items:center;gap:14px;padding:16px 0 24px;border-bottom:1px solid var(--card-border);margin-bottom:32px">
+  <div style="width:44px;height:44px;border-radius:50%;background:var(--lime);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:16px;color:var(--bg);flex-shrink:0">BW</div>
+  <div>
+    <div style="font-weight:600;font-size:14px"><a href="/about/" style="color:var(--text);text-decoration:none">Brycen Wood</a></div>
+    <div style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">Business Automation Consultant -- Built 80+ systems with zero coding experience</div>
+  </div>
+</div>
+
+<blockquote>
+<p><strong>Key Takeaway:</strong> Three files -- llms.txt, markdown mirrors, and structured schema -- make your website readable by AI tools. I added them to my vehicle wrap company's site. ChatGPT now recommends us by name when customers ask for wrap shops in Utah. This is not SEO. This is a different channel entirely, and almost nobody is using it yet.</p>
+</blockquote>
+
+<h2>The Screenshot That Changed Everything</h2>
+
+<p>In late March 2026, I opened ChatGPT and typed a simple question: "What are the best vehicle wrap shops in Utah?"</p>
+
+<p>I was not expecting what came back.</p>
+
+<p>ChatGPT returned a list of five businesses. Summit Wraps and Graphics -- my company, the one I co-own with my partner Landon in Springville, Utah -- was on the list. It wasn't just mentioned in passing. ChatGPT described our services, mentioned our locations, and gave specific reasons why we were a good fit for different types of customers.</p>
+
+<p>This was not a paid ad. We did not submit an application. We did not pay a platform fee. ChatGPT recommended us because it could read our website and understand what we do. And the reason it could read our website is because I had deliberately set it up to be machine-readable using three specific files.</p>
+
+<p>That screenshot became the basis for a video that hit 1.5 million views across TikTok and Instagram. But the screenshot is not the point. The point is that ChatGPT, Claude, Perplexity, and every other AI assistant are becoming the new front door for customer discovery. And most businesses have no idea this is happening.</p>
+
+<h2>Why AI Tools Can't Read Most Websites</h2>
+
+<p>Here is the fundamental problem. Your website was built for humans and for Google. The HTML, the CSS, the JavaScript, the images, the animations -- all of it is designed to look good in a browser and rank well in search results. But when an AI tool tries to read your site, it hits a wall of markup.</p>
+
+<p>Think about what your homepage looks like under the hood. There are hundreds of lines of navigation code, footer code, stylesheet references, tracking scripts, cookie banners, and layout divs before the AI ever gets to a sentence about what you actually do. The content is buried inside a structure that was designed for visual rendering, not comprehension.</p>
+
+<p>Google figured this out decades ago with sitemaps and meta tags. Google's crawler knows how to parse HTML and extract meaning. But AI language models work differently. They perform best when content is delivered in clean, structured, plain-text formats. When you give ChatGPT a messy HTML page, it can extract some meaning, but it misses context, misinterprets structure, and often skips content that is hidden behind JavaScript rendering.</p>
+
+<p>This is why most businesses are invisible to AI. Their content exists, but it is locked inside a format that AI tools struggle to parse efficiently. The 3-file system solves this problem completely.</p>
+
+<h2>File 1: llms.txt -- Your Business Card for AI</h2>
+
+<p>The first file is called <code>llms.txt</code>. It lives at your domain root -- like <code>yoursite.com/llms.txt</code> -- and it serves as a structured introduction to your business specifically for AI tools.</p>
+
+<p>Think of it like a robots.txt file, but instead of telling search crawlers which pages to index, it tells AI tools who you are, what you do, where you are located, what makes you different, and how to learn more.</p>
+
+<p>The format is simple. Plain text. Clear headings. Structured information. No HTML, no styling, no JavaScript. Just the facts about your business laid out in a way that any language model can parse in milliseconds.</p>
+
+<p>For Summit Wraps, our llms.txt includes our business name, both locations (Springville and Lehi), the specific services we offer (full wraps, partial wraps, fleet branding, PPF, tint), our target market (commercial fleet operators, small businesses, individuals), what makes us different (in-house design, free consultations, dual-location coverage), and links to every important page on our site.</p>
+
+<p>When ChatGPT encounters this file, it gets a perfect summary of our business without having to crawl through 27 pages of HTML to piece it together. That efficiency translates directly into recommendation quality. The AI can confidently describe who we are and why we might be the right fit for a specific customer.</p>
+
+<p>The deep dive on llms.txt, including the exact format and a template you can copy, is in our <a href="/guides/llms-txt/">llms.txt guide</a>.</p>
+
+<h2>File 2: Markdown Mirrors -- Clean Content for Every Page</h2>
+
+<p>The second file type is what I call markdown mirrors. For every HTML page on your site, you create a corresponding <code>.md</code> file that contains the same content in clean, structured markdown format.</p>
+
+<p>So if you have a page at <code>yoursite.com/services/</code>, you also create <code>yoursite.com/services/index.md</code>. The HTML version is what humans see in their browser. The markdown version is what AI tools read when they want to understand that page's content.</p>
+
+<p>Why markdown specifically? Because it is the native language of AI comprehension. Large language models were trained on billions of pages of markdown documentation, README files, and structured text. When you give an AI tool markdown, it processes it with near-perfect accuracy. When you give it HTML, it has to do translation work -- stripping tags, inferring structure, guessing what is content versus what is layout -- and that translation introduces errors.</p>
+
+<p>For Summit Wraps, I built a Python script that generates markdown mirrors for all 27 pages automatically. Each mirror contains the page title, a meta description, and the full content of the page in clean markdown with proper headings, lists, and links. The script runs in about 15 seconds and the mirrors are deployed alongside the HTML pages.</p>
+
+<p>The result: when ChatGPT browses our fleet wraps page, it can read the markdown mirror and get perfect comprehension of our fleet branding services, pricing context, portfolio references, and contact information. No HTML wrestling. No missed content. No misinterpretation.</p>
+
+<p>I filmed a side-by-side comparison showing the same page in HTML versus markdown and the difference in AI comprehension quality was dramatic. That video hit 28,000 views in 20 hours. The full guide on setting up markdown mirrors is at <a href="/guides/markdown-mirrors/">our markdown mirrors guide</a>.</p>
+
+<h2>File 3: Structured Schema -- The Metadata Layer</h2>
+
+<p>The third component is structured schema markup. This is JSON-LD code embedded in your page headers that tells both search engines and AI tools exactly what type of content is on each page and how it relates to your business.</p>
+
+<p>Schema markup is not new -- Google has supported it for years. But most small businesses either don't have it at all or have a bare-minimum implementation that covers the basics (business name, address, phone number) without going deeper.</p>
+
+<p>The schema that makes AI recommendations work goes further. It includes <code>LocalBusiness</code> schema with your full service area, <code>Service</code> schema for each offering with descriptions and price ranges, <code>Review</code> schema that surfaces your best customer testimonials, <code>FAQPage</code> schema that answers common questions directly in the markup, and <code>Article</code> schema for your blog content that establishes topical authority.</p>
+
+<p>When all three files work together -- llms.txt providing the business overview, markdown mirrors providing page-level content, and schema providing structured metadata -- AI tools get a complete, multi-layered understanding of your business. That depth of understanding is what drives confident recommendations.</p>
+
+<h2>The Results: What Happened After Implementation</h2>
+
+<p>Let me share the real numbers, because this is where it gets interesting.</p>
+
+<p>Before adding the 3-file system, Summit Wraps was invisible to AI tools. I tested ChatGPT, Claude, Perplexity, and Gemini with various Utah vehicle wrap queries. We appeared in zero recommendations.</p>
+
+<p>Within two weeks of deploying llms.txt, markdown mirrors, and enhanced schema markup, Summit Wraps began appearing in ChatGPT recommendations for queries like "best vehicle wrap shop in Utah," "commercial fleet wraps Salt Lake City," and "vehicle branding near Provo." We now appear consistently across multiple AI platforms for service-relevant queries.</p>
+
+<p>The traffic impact was also measurable. Our website saw a 2,100% increase in organic traffic after the full SEO and AI optimization push. Not all of that is attributable to the 3-file system alone -- we also rewrote meta titles, added FAQ content, and improved site structure -- but the AI recommendation channel brought visitors who were significantly more qualified than typical organic search traffic. These were people who had already been told by a trusted AI assistant that we were a good fit. The conversion intent was higher from the first click.</p>
+
+<p>The videos documenting this process -- the llms.txt video and the markdown mirrors video -- generated over 1.5 million views combined and brought 8,000+ followers to my personal brand. That tells me something important: business owners are hungry for this information. They know AI is changing how customers find businesses, but nobody is showing them the specific tactical steps to prepare for it.</p>
+
+<h2>Why Almost Nobody Is Doing This Yet</h2>
+
+<p>The opportunity right now is enormous specifically because almost nobody has caught on. I ran an informal audit of 200 businesses in the home services space in Utah -- roofers, HVAC companies, plumbers, landscapers. Zero had llms.txt files. Zero had markdown mirrors. Fewer than 10% had schema markup beyond the bare minimum Google My Business data.</p>
+
+<p>This means the bar for standing out in AI recommendations is incredibly low. You don't need to be the best business in your market. You just need to be the most readable one. When a customer asks ChatGPT for a recommendation and only two businesses in your area have machine-readable content, those two businesses get the recommendation regardless of how many competitors exist.</p>
+
+<p>This will not last forever. As awareness grows, more businesses will implement these files and the competitive advantage will diminish. But right now, in April 2026, we are in the earliest days of AI-driven customer discovery. The businesses that move first will build an AI presence that compounds over time -- just like early SEO adopters built Google authority that new entrants still struggle to match decades later.</p>
+
+<h2>The Difference Between This and Traditional SEO</h2>
+
+<p>I want to be explicit about what this is and what it is not, because the distinction matters.</p>
+
+<p>Traditional SEO is about ranking on Google. You optimize for keywords, build backlinks, improve page speed, and compete for one of ten positions on a search results page. It works. It is still valuable. I do it for Summit Wraps and recommend it to every business owner.</p>
+
+<p>AI optimization is a different channel entirely. When someone uses ChatGPT or Claude to find a service provider, there is no results page. The AI gives a direct recommendation -- usually one to three businesses with explanations for why each is a good fit. There is no position four. You are either recommended or you are not.</p>
+
+<p>The economics are radically different. In Google SEO, ranking #3 still gets you traffic. In AI recommendations, being the single named recommendation is worth orders of magnitude more than being one of ten search results. The click-through rate on a personalized AI recommendation is functionally 100% -- the user was looking for a recommendation and received one. Compare that to a 3-8% click-through rate on a top-three Google result.</p>
+
+<p>Both channels matter. Both should be optimized. But AI optimization is where the asymmetric opportunity exists right now because competition is virtually nonexistent. You can build a dominant AI presence in your market this week with a few hours of work. Building a dominant Google presence takes months or years.</p>
+
+<h2>What You Need to Do Next</h2>
+
+<p>The 3-file system is deliberately simple. I am not a developer. I built all of this using Claude Code -- an AI assistant that writes code based on plain English descriptions. If you can describe your business, you can implement this.</p>
+
+<p>The two detailed guides cover each file type in depth:</p>
+
+<ul>
+<li><a href="/guides/llms-txt/">How to Create an llms.txt File</a> -- the complete walkthrough with templates, formatting rules, and examples from multiple industries.</li>
+<li><a href="/guides/markdown-mirrors/">How to Build Markdown Mirrors</a> -- the step-by-step process for creating markdown versions of your site pages, including the automated script approach I used.</li>
+</ul>
+
+<p>Both guides show you the WHAT and the WHY in full detail. For the exact prompts, templates, and build-along walkthroughs, those are inside the <a href="/community/">free community</a> where 1,700+ business owners are implementing these systems together.</p>
+
+<p>The window of opportunity is open right now. Every week that passes, more businesses will discover this channel and the first-mover advantage shrinks. The businesses that implement the 3-file system this month will have months of AI recommendation history building in their favor before the majority catches on.</p>
+
+<p>I know this because I watched it happen with Google SEO twenty years ago. The businesses that built authority early still dominate. The same pattern is starting right now with AI, and the cost of entry is three text files and a few hours of work.</p>
+
+<!-- MID-ARTICLE CTA -->
+<div class="card reveal" style="margin:48px 0;">
+  <div class="card-body" style="text-align:center;padding:40px 32px;">
+    <div class="card-tag">Inside the Community</div>
+    <div class="card-title" style="font-size:22px;margin-bottom:12px;">Get the Exact Prompts and Templates</div>
+    <p style="max-width:500px;margin:0 auto 24px;">The llms.txt template, the markdown mirror generator script, the schema snippets -- everything you need to make AI recommend your business. Free to join.</p>
+    <a href="/community/" class="btn-primary">Join the Free Community</a>
+  </div>
+</div>
+
+<h2>What Comes After the 3-File System</h2>
+
+<p>The 3-file system is the foundation. Once your business is readable by AI, there are several ways to extend your presence and increase the frequency and quality of recommendations.</p>
+
+<p>First, content depth matters. AI tools recommend businesses they understand deeply. The more substantive content you have on your site -- service pages, case studies, FAQs, educational blog posts -- the more context the AI has to draw from when making recommendations. A business with 5 pages and an llms.txt file will get recommended. A business with 30 pages of detailed content plus the 3-file system will get recommended more often and with more specific, compelling descriptions.</p>
+
+<p>Second, freshness signals matter. AI tools are increasingly able to detect when content was last updated. A site that was built three years ago and never touched sends a different signal than a site that publishes new content regularly. Blog posts, case study updates, and portfolio additions all contribute to a freshness signal that AI tools factor into recommendation confidence.</p>
+
+<p>Third, cross-platform presence amplifies AI recommendations. When your business shows up not only on your website but also in social media content, YouTube videos, directory listings, and review platforms -- all saying consistent things about who you are and what you do -- AI tools build higher confidence in their recommendation. The Summit Wraps system includes automated cross-posting to YouTube and structured social media content specifically to build this cross-platform consistency.</p>
+
+<p>Every one of these extensions is something I built for Summit Wraps using Claude Code. Every one of them is documented inside the community. And every one of them starts with the same foundation: making your business readable by AI through the 3-file system.</p>
+
+</article>
+
+<!-- FAQ SECTION -->
+<section class="section-dark" style="padding:80px 0;">
+  <div class="section-header">
+    <h2>Frequently Asked <span class="accent">Questions</span></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question">Does ChatGPT actually recommend specific businesses to users?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer">
+        <p>Yes, and it is happening right now. When someone asks ChatGPT for a recommendation -- "best vehicle wrap shop in Utah," "plumber near Salt Lake City," "web designer in Denver" -- ChatGPT does not randomly guess. It pulls from content it has been trained on and content it can access through browsing. If your business has structured, machine-readable content on your website, you are exponentially more likely to appear in those recommendations. I have screenshots of ChatGPT recommending Summit Wraps by name, with our address, services, and even reasons why we are a good fit. This is not theoretical. It is happening to real customers searching for real services, and most businesses have no idea it is even a channel.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How long does it take to set up llms.txt and markdown mirrors?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer">
+        <p>If you are doing it manually, setting up an llms.txt file takes about 30 minutes. You write a structured summary of your business -- name, location, services, unique selling points -- and save it as a plain text file at your domain root (yoursite.com/llms.txt). Markdown mirrors take longer because you need one for each page on your site, but the process is straightforward: create a clean markdown version of each page's content and serve it alongside the HTML. For Summit Wraps, I built a Python script that generates all 27 markdown mirrors automatically in about 15 seconds. If you are using Claude Code, you can describe what you want and have the entire setup -- llms.txt, mirrors, and schema -- built in a single session. The deep-dive guides for each file walk through every step: llms.txt guide at /guides/llms-txt/ and markdown mirrors guide at /guides/markdown-mirrors/.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Will this work for any type of business?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer">
+        <p>Yes, with one caveat: your business needs a website with real content. The 3-file system works for service businesses, local shops, e-commerce stores, SaaS companies, consultants, freelancers -- any business that has a web presence and wants AI tools to understand and recommend it. The key is that your content must be substantive. A one-page site with nothing but a logo and a phone number will not generate AI recommendations regardless of what files you add. AI tools recommend businesses they can understand deeply, which means your site needs detailed service descriptions, location information, pricing context, and proof of quality. The 3-file system makes that existing content machine-readable. It does not replace the need for good content -- it makes good content discoverable by AI.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Is this the same as traditional SEO?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer">
+        <p>No, and this distinction matters. Traditional SEO optimizes your website for Google's search crawler -- you are competing for position on a results page with ten blue links. AI optimization makes your content readable by large language models like ChatGPT, Claude, Perplexity, and Gemini. These AI tools do not show a list of results. They give a direct recommendation, often naming one or two businesses. That means the upside of being recommended by AI is dramatically higher than ranking on page one of Google -- there is no position two. The tactics are also different. Google cares about backlinks, page speed, and keyword density. AI tools care about structured content, clear descriptions, and machine-readable formats like llms.txt and markdown. The good news is that both strategies are complementary. But the 3-file system specifically targets AI recommendation engines in a way that traditional SEO does not.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section style="padding:80px 0;text-align:center;">
+  <div class="container-narrow">
+    <h2 class="reveal">Ready to Make AI <span class="accent">Recommend Your Business</span>?</h2>
+    <p class="reveal" style="max-width:550px;margin:16px auto 0;">Join 1,700+ business owners building AI-readable websites inside the free community. Or book a discovery call to get your entire operating system built in 2 weeks.</p>
+    <div class="btn-group reveal">
+      <a href="/community/" class="btn-primary">Join the Free Community</a>
+      <a href="/contact/" class="btn-secondary">Book a Discovery Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/community/" class="footer-link">Community</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <a href="/community/" class="sticky-bar-btn">Join Free Community</a>
+  <div class="sticky-bar-sub">Get the AI recommendation templates</div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+const stickyBar=document.getElementById('stickyBar');
+if(stickyBar){
+  const heroEl=document.querySelector('.page-hero');
+  const stickyObs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting){stickyBar.classList.add('visible')}
+      else{stickyBar.classList.remove('visible')}
+    });
+  },{threshold:0});
+  if(heroEl)stickyObs.observe(heroEl);
+}
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);}
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+document.querySelectorAll('.faq-question').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    const wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen)item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
