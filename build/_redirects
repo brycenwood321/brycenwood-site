@@ -1,0 +1,6 @@
+# Redirect staging domain to production
+https://brycenwood-site.pages.dev/* https://www.brycenwood.com/:splat 301
+
+# Legacy redirects
+/ai-playbook/* /playbook/ 301
+/waitlist /community/ 301
