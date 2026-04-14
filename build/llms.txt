@@ -1,0 +1,40 @@
+# Brycen Wood
+
+> Business automation consultant who builds custom operating systems for small
+> businesses using Claude Code. Non-technical founder. No coding experience.
+> Built 80+ automations for his own vehicle wrap company (Summit Wraps --
+> $52K to $300K revenue growth). Now offers the same build service to other
+> businesses. Fixed-scope: 60-min interview, custom plan in 72 hours,
+> 2-week build, full handoff.
+
+## Services
+- [Custom Business Build](https://www.brycenwood.com/services/custom-build/) - Full operating system build: CRM, email, SEO, dashboards, content pipelines. Starting at $3,500.
+- [Monthly AI Retainer](https://www.brycenwood.com/services/retainer/) - Ongoing support, new features, optimization. $2,000/month.
+- [How It Works](https://www.brycenwood.com/process/) - 60-min interview, 72-hour plan, 2-week build, full handoff.
+- [Pricing](https://www.brycenwood.com/pricing/) - Transparent pricing: $3,500 (founder), $7,500 (standard), $15,000+ (enterprise).
+
+## Case Studies
+- [Summit Wraps Transformation](https://www.brycenwood.com/case-studies/summit-wraps/) - 80+ automations, $52K to $300K revenue, zero code.
+- [Blackout Auto Tint Demo](https://www.brycenwood.com/case-studies/blackout-auto-tint/) - 7-page custom website built in 4 hours.
+
+## Guides
+- [llms.txt Guide](https://www.brycenwood.com/guides/llms-txt/) - How to make AI recommend your business.
+- [Markdown Mirrors](https://www.brycenwood.com/guides/markdown-mirrors/) - Make your website readable by ChatGPT, Claude, and Perplexity.
+- [AI Cold Email System](https://www.brycenwood.com/guides/cold-email-ai/) - Build an automated cold outreach system.
+- [Vibe Coding for Business](https://www.brycenwood.com/guides/vibe-coding-for-business/) - Build real business systems without writing code.
+- [How to Automate Your Business](https://www.brycenwood.com/guides/automate-your-business/) - Complete guide to small business automation with AI.
+- [AI SEO Playbook](https://www.brycenwood.com/guides/ai-seo-playbook/) - 3 files that make ChatGPT recommend you.
+- [Business Operating System](https://www.brycenwood.com/guides/business-operating-system/) - What a business OS is and why you need one.
+- [Claude Code Business Tools](https://www.brycenwood.com/guides/claude-code-business-tools/) - 10 things I built with Claude Code.
+
+## Resources
+- [Free Playbook](https://www.brycenwood.com/playbook/) - The Claude Code Business Playbook (free download).
+- [Community](https://www.brycenwood.com/community/) - Business On Autopilot (free Skool community).
+- [Tools I Use](https://www.brycenwood.com/tools/) - Full AI business stack.
+
+## Contact
+- Website: https://www.brycenwood.com
+- Instagram: https://www.instagram.com/brycenwood.ai/
+- TikTok: https://www.tiktok.com/@brycenwood1
+- YouTube: https://www.youtube.com/@brycenwood-ai
+- Book a Call: https://www.brycenwood.com/contact/

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 Things I Built with Claude Code That Run My Business | Brycen Wood</title>
+<meta name="description" content="10 real business systems built with Claude Code by a non-technical founder. Lead scoring, AI email, dashboards, voice AI, and more. See what's possible.">
+<link rel="canonical" href="https://www.brycenwood.com/guides/claude-code-business-tools/">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Open Graph -->
+<meta property="og:title" content="10 Things I Built with Claude Code That Run My Business | Brycen Wood">
+<meta property="og:description" content="10 real business systems built with Claude Code by a non-technical founder. Lead scoring, AI email, dashboards, voice AI, and more. See what's possible.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.brycenwood.com/guides/claude-code-business-tools/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="10 Things I Built with Claude Code That Run My Business | Brycen Wood">
+<meta name="twitter:description" content="10 real business systems built with Claude Code by a non-technical founder. Lead scoring, AI email, dashboards, voice AI, and more. See what's possible.">
+
+<!-- Schema: Article + FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "10 Things I Built with Claude Code That Run My Business",
+      "description": "10 real business systems built with Claude Code by a non-technical founder. Lead scoring, AI email, dashboards, voice AI, and more. See what's possible.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://www.brycenwood.com/#person",
+        "name": "Brycen Wood",
+        "url": "https://www.brycenwood.com/about/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Brycen Wood",
+        "url": "https://www.brycenwood.com/"
+      },
+      "datePublished": "2026-04-13",
+      "dateModified": "2026-04-13",
+      "mainEntityOfPage": "https://www.brycenwood.com/guides/claude-code-business-tools/",
+      "about": ["Claude Code", "Business Automation", "AI Tools", "Small Business", "No-Code"],
+      "url": "https://www.brycenwood.com/guides/claude-code-business-tools/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Claude Code free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Claude Code requires a Claude subscription. The Pro plan ($20/month) gives you access to Claude Code with usage limits. The Max plan ($100-200/month) gives you significantly higher limits for heavy building. Most business owners start on Pro and upgrade to Max when they hit the limits during an active build phase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build each system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simple systems (a lead scorer, a basic dashboard) take 1-3 hours of conversation. Medium systems (a CRM pipeline with automation, an email drafter) take 4-8 hours. Complex systems (a full DM engine with A/B testing, a video content pipeline) take 1-2 days of building and iteration. The total Summit Wraps operating system of 80+ systems was built over several months of part-time work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I build these systems for my industry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The systems described here were built for a vehicle wrap company, but the patterns are universal. Lead scoring works for any B2B business. CRM automation works for any service business. Dashboards, content pipelines, and financial syncing work for any business that uses those tools. The specific scoring criteria, email copy, and pipeline stages change by industry -- the architecture stays the same."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link active">Guides</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+    <a href="/contact/" class="nav-cta">Book a Call</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span>
+  <a href="/guides/">Guides</a><span class="sep">/</span>
+  <span>Claude Code Business Tools</span>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <p class="hero-eyebrow">FREE GUIDE</p>
+  <h1>10 Things I Built with <span class="accent">Claude Code</span></h1>
+  <p class="hero-sub">Real systems running a real business. Built by someone who cannot write a line of code. Here is what is possible when you stop buying tools and start building them.</p>
+  <p class="last-updated">Last updated: April 2026</p>
+</section>
+
+<!-- STAT ROW -->
+<div class="container-narrow">
+  <div class="stat-row">
+    <div class="stat">
+      <div class="stat-val">80+</div>
+      <div class="stat-label">Systems Built</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">10</div>
+      <div class="stat-label">APIs Connected</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">$52K&rarr;$300K</div>
+      <div class="stat-label">Revenue Growth</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">0</div>
+      <div class="stat-label">Lines Written by Hand</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <p>I have built 80+ systems for my business using Claude Code. Zero coding experience. I cannot write a for loop. I do not know what a class is. I describe what I need in plain English and Claude writes the code.</p>
+
+  <p>Here are 10 of the most impactful systems -- the ones that actually changed how my business runs and directly contributed to growing from $52K to $300K in revenue without hiring a single employee. These are not toy projects or demos. They run in production every day. Some of them run every 5 minutes.</p>
+
+  <p>For each system, I will tell you what it does, why it matters, and what changed after I built it. The exact prompts and build walkthroughs are in the <a href="/community/">free community</a>.</p>
+
+  <h2>1. AI Lead Scorer</h2>
+
+  <p><strong>What it does:</strong> Scores every lead in my database on industry fit, location, company size, fleet indicators, online presence, and email deliverability. Assigns a grade -- A, B, or C -- based on the composite score.</p>
+
+  <p><strong>Why it matters:</strong> Before this system, every lead was treated the same. A landscaping company with 15 trucks two miles from my shop got the same outreach as a solo consultant working from a basement in another state. That is insane. The lead scorer fixes that by telling me exactly who is worth my time and who is not.</p>
+
+  <p><strong>What changed:</strong> 5,500+ leads scored. 739 Grade A leads identified -- the ones most likely to need vehicle wraps and most likely to become paying customers. Instead of spraying effort across thousands of contacts, I focus on the 739 that actually matter. Everything downstream -- email drafts, follow-ups, pipeline attention -- is directed at the highest-probability leads first.</p>
+
+  <p><strong>Build time:</strong> About 2 hours of conversation with Claude Code.</p>
+
+  <h2>2. AI Cold Email Drafter</h2>
+
+  <p><strong>What it does:</strong> For each Grade A lead, reads their actual website -- services page, about page, fleet gallery, coverage area -- and writes a unique email based on what it finds. No templates. Every email is different.</p>
+
+  <p><strong>Why it matters:</strong> Traditional cold email uses one template with [COMPANY_NAME] mail merge fields. Everyone knows it is a mass send. AI-drafted email references specific details from the lead's website, making it look and feel hand-written. The difference in response rate is dramatic.</p>
+
+  <p><strong>What changed:</strong> 739 personalized emails drafted in one overnight run. Each one references the lead's actual services, location, and fleet. I review and approve before sending, but the AI does 95% of the work. What would have taken me weeks to write manually happened while I slept. Full breakdown in the <a href="/guides/cold-email-ai/">AI cold email guide</a>.</p>
+
+  <p><strong>Build time:</strong> About 4 hours, including the web research module.</p>
+
+  <h2>3. Morning Auto-Briefing</h2>
+
+  <p><strong>What it does:</strong> Every morning at 7 AM, generates a briefing that includes: top 3 priorities for the day, pipeline status, overnight activity (new leads, replies, system alerts), today's calendar, habit streaks, and any action items that need immediate attention.</p>
+
+  <p><strong>Why it matters:</strong> Before the briefing, my mornings started with scrolling through email, checking the CRM, opening spreadsheets, trying to remember what I was working on yesterday. Now I open my phone and get a structured summary of everything that matters. The first 30 minutes of my day went from scattered to focused.</p>
+
+  <p><strong>What changed:</strong> I start every day knowing exactly what happened overnight and what needs my attention. No scrolling, no context-switching, no forgetting. The briefing is the difference between a reactive day and an intentional one.</p>
+
+  <p><strong>Build time:</strong> About 3 hours. It pulls data from 6 different sources and formats it into a clean summary.</p>
+
+  <h2>4. Full Business Dashboard</h2>
+
+  <p><strong>What it does:</strong> A real-time web dashboard showing pipeline value, lead counts by stage, revenue tracking, task lists, habit streaks, system health, and key metrics -- all on one screen. Accessible from anywhere via a Cloudflare tunnel.</p>
+
+  <p><strong>Why it matters:</strong> I check my business from my phone in the gym parking lot. I check it from bed. I check it during lunch. Having every important number on one screen, accessible from anywhere, changes how you operate. You stop wondering "how are things going?" because you can see it in 10 seconds.</p>
+
+  <p><strong>What changed:</strong> Complete visibility into business health without logging into 5 different tools. The dashboard auto-refreshes every 5 minutes. When something needs attention, I see it immediately -- not when I happen to check the right app.</p>
+
+  <p><strong>Build time:</strong> About 6 hours for v1, iterated over several sessions to add features. It is still evolving.</p>
+
+  <h2>5. Instagram DM Engine</h2>
+
+  <p><strong>What it does:</strong> Automated Instagram prospecting with a conversation phase state machine. Tracks every conversation from initial connection through building rapport to qualifying interest. A/B tests five opening strategies (compliment, question, social proof, industry-specific, content share). Pitch keyword blocker prevents sales messages from ever going out as openers. Reactivation runs three times daily to re-engage cold conversations.</p>
+
+  <p><strong>Why it matters:</strong> Instagram DMs are the highest-converting outreach channel for local service businesses. But manual DM outreach is mind-numbing -- scrolling, typing the same messages, forgetting who you talked to, losing track of conversations. The DM engine handles all of it systematically.</p>
+
+  <p><strong>What changed:</strong> The compliment strategy hit a 25% reply rate -- meaning one in four people I reach out to responds. That is exceptional for outbound prospecting. The system processes conversations across Primary, General, and Requests tabs (most people only check Primary and miss half their messages). It learned over time which approaches work and automatically weights toward winning strategies.</p>
+
+  <p><strong>Build time:</strong> This was the most complex system. About 20 hours across 7 phases of development, from basic DM sending to the full A/B testing and learning engine.</p>
+
+  <h2>6. AI Voice Clone</h2>
+
+  <p><strong>What it does:</strong> Clones my voice using ElevenLabs and generates voiceovers for reels, content, and marketing materials. I record a few minutes of reference audio, and the AI can generate new voiceovers from any text in my voice.</p>
+
+  <p><strong>Why it matters:</strong> Content creation at scale requires a lot of voiceover work. Recording every single voiceover manually is a bottleneck. The voice clone lets me generate voiceovers from a script without sitting in front of a microphone every time. It is also useful for AI voice responses in customer-facing systems.</p>
+
+  <p><strong>What changed:</strong> Content production speed roughly doubled. I can script 10 pieces of content and generate voiceovers for all of them in minutes instead of hours. The voice is realistic enough that people cannot tell the difference.</p>
+
+  <p><strong>Build time:</strong> About 1 hour. ElevenLabs does the heavy lifting. The Claude Code part was building the integration that feeds scripts in and pulls audio out.</p>
+
+  <h2>7. QuickBooks Auto-Sync</h2>
+
+  <p><strong>What it does:</strong> Syncs customer records, invoices, and payment data between GoHighLevel (CRM) and QuickBooks Online. When a deal closes in the CRM, the customer and invoice data flow into QuickBooks automatically. Revenue shows up on the dashboard in real time.</p>
+
+  <p><strong>Why it matters:</strong> Before this sync, financial data lived in QuickBooks and sales data lived in the CRM and they never talked to each other. To know how much revenue a lead source generated, someone had to manually cross-reference two systems. Nobody ever did that, which meant business decisions were based on gut feeling instead of data.</p>
+
+  <p><strong>What changed:</strong> 122 customers and 134 invoices imported and synced. Revenue tracking is automatic. I can see which pipeline stages produce the most revenue, which lead sources have the highest close rates, and where money is actually coming from -- all without manual data entry.</p>
+
+  <p><strong>Build time:</strong> About 5 hours. OAuth token management was the tricky part.</p>
+
+  <h2>8. YouTube Cross-Post System</h2>
+
+  <p><strong>What it does:</strong> Automatically pulls new Instagram reels every 6 hours and publishes them to YouTube with algorithmically generated titles, descriptions, tags, and hashtags. After each upload, it posts a CTA comment on the video automatically.</p>
+
+  <p><strong>Why it matters:</strong> Being present on multiple platforms matters for discovery and SEO, but manually uploading the same content to 3 platforms is tedious enough that it never gets done consistently. The cross-post system makes YouTube presence completely passive -- I never touch it.</p>
+
+  <p><strong>What changed:</strong> 12 videos on YouTube with 4,963 total views -- all published automatically without a single manual upload. The YouTube channel grows itself. CTA comments on every video drive traffic back to the main funnel. Zero additional effort after the initial setup.</p>
+
+  <p><strong>Build time:</strong> About 4 hours, including YouTube Data API setup and the algorithmic metadata generator.</p>
+
+  <h2>9. Content Multiplier</h2>
+
+  <p><strong>What it does:</strong> Takes one piece of content -- a video script, a reel, a blog post -- and generates versions optimized for different platforms. Different hooks for TikTok vs Instagram. Different lengths. Different formats. Hashtag strategies tailored to each platform's algorithm.</p>
+
+  <p><strong>Why it matters:</strong> Creating content for one platform is manageable. Creating optimized versions for 3-4 platforms from scratch is a full-time job. The content multiplier means I film once and publish everywhere with platform-specific optimization. TikTok gets a different hook than Instagram. YouTube gets a different title than TikTok. Each version is tuned for where it will be seen.</p>
+
+  <p><strong>What changed:</strong> Content output roughly tripled without increasing filming time. My TikTok audience skews older (25-44, small business owners) while my Instagram audience skews younger (18-34, founders). The multiplier generates content that speaks to each audience differently from the same source material.</p>
+
+  <p><strong>Build time:</strong> About 3 hours. The hard part was understanding each platform's algorithm well enough to write the differentiation rules.</p>
+
+  <h2>10. System Watchdog (Guardian)</h2>
+
+  <p><strong>What it does:</strong> Monitors all running systems for errors, failures, and anomalies. Checks cron job health, API connection status, disk space, token expiration dates, and data integrity. Alerts me before problems become visible to customers or leads.</p>
+
+  <p><strong>Why it matters:</strong> When you have 80+ systems running, something will break. An API token expires. A cron job fails silently. A disk fills up. A webhook stops receiving. Without monitoring, you find out about these problems when a customer complains or a lead gets lost. The guardian catches problems proactively.</p>
+
+  <p><strong>What changed:</strong> I caught a disk space issue (92% full) before it crashed anything. I caught an Instagram API token approaching expiration before DM sending stopped. I caught a QuickBooks sync failure within minutes instead of discovering it weeks later during bookkeeping. The guardian is the system that watches the other systems. It is arguably the most important one I have built because it protects the value of everything else.</p>
+
+  <p><strong>Build time:</strong> About 4 hours for v1. It grows every time I add a new system -- each new system gets a health check added to the guardian.</p>
+
+</div>
+
+<!-- MID-ARTICLE CTA -->
+<section class="section-dark" style="padding:60px 0;">
+  <div class="container-narrow" style="text-align:center;">
+    <div class="card reveal" style="max-width:640px;margin:0 auto;">
+      <div class="card-body" style="text-align:center;padding:40px 32px;">
+        <div class="card-tag">Free Community</div>
+        <div class="card-title" style="font-size:clamp(20px,3vw,28px);">Get the Exact Prompts for Every System</div>
+        <div class="card-desc">This guide covers WHAT each system does and WHY it matters. Inside the free community, you get HOW -- the exact Claude Code prompts I used, step-by-step build walkthroughs, and templates you can adapt for your own business.</div>
+        <div class="btn-group" style="margin-top:24px;">
+          <a href="/community/" class="btn-primary">Join Free Community</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content">
+
+  <h2>What Comes Next</h2>
+
+  <p>The operating system keeps growing. Here are five systems currently in development or planned:</p>
+
+  <ul>
+    <li><strong>AI Audit Engine</strong> -- automated business analysis that generates a custom build plan for any business. Interview a business owner, scan their online presence, and produce a prioritized list of systems to build.</li>
+    <li><strong>Voice Memo DM System</strong> -- AI-generated voice messages sent via Instagram DM using the ElevenLabs voice clone. A personalized audio message from "me" sent automatically to qualified leads.</li>
+    <li><strong>Content Analytics Scraper</strong> -- daily automated pull of TikTok and Instagram post performance data. Track what is working across platforms without manually checking each app.</li>
+    <li><strong>Automated Design Pipeline</strong> -- from design intake form through proof rounds to client approval, fully automated with a designer portal and client-facing review pages.</li>
+    <li><strong>Financial Forecasting</strong> -- predictive revenue modeling based on pipeline data, close rates, and seasonal patterns. Know what next month's revenue will look like before it happens.</li>
+  </ul>
+
+  <p>Each new system compounds the value of every system that came before it. The lead scorer makes the email drafter better. The email drafter feeds the CRM pipeline. The CRM pipeline feeds the dashboard. The dashboard informs the morning briefing. The morning briefing drives better decisions. Better decisions drive more revenue. More revenue justifies more systems. The flywheel keeps spinning.</p>
+
+  <p>For the full story of how all of these systems work together, read the <a href="/case-studies/summit-wraps/">Summit Wraps case study</a>. For a guide on how to start building your own, read the <a href="/guides/vibe-coding-for-business/">vibe coding guide</a>. If you want me to build the whole thing for you, check out the <a href="/services/custom-build/">custom build service</a>.</p>
+
+</div>
+
+<div class="divider"></div>
+
+<!-- FAQ -->
+<div class="container-narrow" style="padding:60px 0;">
+  <h2 class="reveal" style="text-align:center;margin-bottom:40px;">Frequently Asked Questions</h2>
+
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <div class="faq-question">
+        Is Claude Code free?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Claude Code requires a Claude subscription. The Pro plan ($20/month) gives you access to Claude Code with usage limits. The Max plan ($100-200/month) gives you significantly higher limits for heavy building. Most business owners start on Pro and upgrade to Max when they hit the limits during an active build phase.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        How long does it take to build each system?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Simple systems (a lead scorer, a basic dashboard) take 1-3 hours of conversation. Medium systems (a CRM pipeline with automation, an email drafter) take 4-8 hours. Complex systems (a full DM engine with A/B testing, a video content pipeline) take 1-2 days of building and iteration. The total Summit Wraps operating system of 80+ systems was built over several months of part-time work.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Can I build these systems for my industry?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes. The systems described here were built for a vehicle wrap company, but the patterns are universal. Lead scoring works for any B2B business. CRM automation works for any service business. Dashboards, content pipelines, and financial syncing work for any business that uses those tools. The specific scoring criteria, email copy, and pipeline stages change by industry -- the architecture stays the same.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM CTA -->
+<section style="text-align:center;padding:100px 24px;position:relative;background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(0,255,136,0.03),transparent 70%)">
+  <div class="container-narrow">
+    <h2 class="reveal" style="font-size:clamp(28px,5vw,44px);letter-spacing:-1.5px;margin-bottom:20px">Ready to <span class="accent">Start Building</span>?</h2>
+    <p class="reveal" style="font-size:clamp(15px,2vw,18px);color:var(--text-dim);line-height:1.7;max-width:560px;margin:0 auto 36px">The community has exact prompts, build walkthroughs, and templates for every system on this page. Or book a call and I will build your operating system for you.</p>
+    <div class="btn-group reveal">
+      <a href="/community/" class="btn-primary">Join the Free Community</a>
+      <a href="/contact/" class="btn-secondary">Book a Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/community/" class="footer-link">Community</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <a href="/community/" class="sticky-bar-btn">Join Free Community</a>
+  <div class="sticky-bar-sub">Exact prompts and build walkthroughs inside</div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+// Mobile nav toggle
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+
+// Sticky bar -- show after scrolling past hero
+const stickyBar=document.getElementById('stickyBar');
+if(stickyBar){
+  const heroEl=document.querySelector('.page-hero');
+  const stickyObs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting){stickyBar.classList.add('visible')}
+      else{stickyBar.classList.remove('visible')}
+    });
+  },{threshold:0});
+  if(heroEl)stickyObs.observe(heroEl);
+}
+
+// Scroll reveal
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.closest('.faq-item');
+    const wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen)item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

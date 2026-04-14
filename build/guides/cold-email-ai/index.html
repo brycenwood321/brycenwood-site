@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How I Built an AI Cold Email System That Actually Works | Brycen Wood</title>
+<meta name="description" content="Build an AI-powered cold email system that scores leads, drafts personalized emails, and sends automatically. Real system, real results, zero coding.">
+<link rel="canonical" href="https://www.brycenwood.com/guides/cold-email-ai/">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Open Graph -->
+<meta property="og:title" content="How I Built an AI Cold Email System That Actually Works | Brycen Wood">
+<meta property="og:description" content="Build an AI-powered cold email system that scores leads, drafts personalized emails, and sends automatically. Real system, real results, zero coding.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.brycenwood.com/guides/cold-email-ai/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How I Built an AI Cold Email System That Actually Works | Brycen Wood">
+<meta name="twitter:description" content="Build an AI-powered cold email system that scores leads, drafts personalized emails, and sends automatically. Real system, real results, zero coding.">
+
+<!-- Schema: Article + FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How I Built an AI Cold Email System That Actually Works",
+      "description": "Build an AI-powered cold email system that scores leads, drafts personalized emails, and sends automatically. Real system, real results, zero coding.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://www.brycenwood.com/#person",
+        "name": "Brycen Wood",
+        "url": "https://www.brycenwood.com/about/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Brycen Wood",
+        "url": "https://www.brycenwood.com/"
+      },
+      "datePublished": "2026-04-13",
+      "dateModified": "2026-04-13",
+      "mainEntityOfPage": "https://www.brycenwood.com/guides/cold-email-ai/",
+      "about": ["Cold Email", "AI Automation", "Lead Generation", "Business Automation"],
+      "url": "https://www.brycenwood.com/guides/cold-email-ai/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is AI cold email legal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. CAN-SPAM (US) requires a real physical address, an unsubscribe mechanism, and no deceptive subject lines. AI-generated emails must follow the same rules as manually written ones. The content being AI-drafted does not change the legality -- the compliance requirements are about the sending practices, not the authorship."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I verify email deliverability before sending?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a verification service that checks whether an email address is deliverable, risky, or an accept-all catchall. Services like ZeroBounce, NeverBounce, or Fiverr verification gigs will categorize each address. Only send to addresses marked Deliverable. Accept-all addresses look valid but often go to black holes where no human will ever see your email."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many cold emails should I send per day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with 10-15 per day for the first 2 weeks to warm up your sending reputation. Increase gradually to 30-50 per day over weeks 3-4. Never blast hundreds from a cold domain -- you will get flagged as spam immediately. Warmup matters more than volume."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes AI cold email different from regular cold email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Traditional cold email uses one template sent to thousands of people with mail-merge fields like [COMPANY_NAME]. AI cold email reads each lead's actual website, understands their business, and writes a genuinely unique email referencing specific details. The recipient can tell the difference immediately -- and so can their spam filter."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link active">Guides</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+    <a href="/contact/" class="nav-cta">Book a Call</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span>
+  <a href="/guides/">Guides</a><span class="sep">/</span>
+  <span>AI Cold Email System</span>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <p class="hero-eyebrow">FREE GUIDE</p>
+  <h1>AI Cold Email That <span class="accent">Actually Works</span></h1>
+  <p class="hero-sub">739 personalized emails in one night. Each one references the lead's actual website. Zero templates, zero coding, zero guesswork.</p>
+  <p class="last-updated">Last updated: April 2026</p>
+</section>
+
+<!-- STAT ROW -->
+<div class="container-narrow">
+  <div class="stat-row">
+    <div class="stat">
+      <div class="stat-val">5,500+</div>
+      <div class="stat-label">Leads Scored</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">739</div>
+      <div class="stat-label">Grade A Leads</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">1 Night</div>
+      <div class="stat-label">739 Unique Emails</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">0</div>
+      <div class="stat-label">Templates Used</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <h2>Why Most Cold Email Fails</h2>
+
+  <p>Most cold email is spam. I know because I used to send it.</p>
+
+  <p>The standard playbook goes like this: buy a list of emails, write one template, insert [COMPANY_NAME] and [INDUSTRY] variables, blast it to 1,000 people, and pray for a 1-2% reply rate. Maybe you get creative with the subject line. Maybe you add a "I noticed you..." opener that references nothing specific. The recipient reads two sentences, smells the mass email, and hits delete.</p>
+
+  <p>Here is the uncomfortable truth about cold email: the people receiving your emails are smarter than the template. They know it is a mass send. They know you did not actually visit their website. They know the "personalization" is a mail merge field their CRM auto-populated. And they react accordingly -- by ignoring it.</p>
+
+  <p>Cold email fails for three specific, fixable reasons:</p>
+
+  <ul>
+    <li><strong>Bad lists.</strong> Sending to unverified addresses means half your emails never reach a human. They hit catchall inboxes, dead addresses, or spam traps -- and every bounce hurts your sending reputation for the emails that do reach real people.</li>
+    <li><strong>Fake personalization.</strong> "[FIRST_NAME], I noticed [COMPANY_NAME] is in the [INDUSTRY] space" is not personalization. It is a template wearing a costume. Real personalization means referencing something specific to that person's actual business.</li>
+    <li><strong>No scoring.</strong> Treating every lead the same is a waste of your best emails. A 5-person landscaping company 2 miles from your shop is a fundamentally different lead than a nationwide corporate chain. The email should reflect that.</li>
+  </ul>
+
+  <p>AI fixes all three.</p>
+
+  <h2>What Makes AI Cold Email Different</h2>
+
+  <p>Instead of one template sent to 1,000 people, AI cold email means: score every lead individually, research their business website in real time, and write a unique email based on what you actually find.</p>
+
+  <p>When I say unique, I mean it literally. Every email is different. Not "different template bucket" different -- actually, fundamentally different. One email to a plumbing company might reference their emergency service page and the fact that they cover three counties. The next email to a landscaping company might reference their commercial contracts page and their fleet of trucks visible in their gallery. The AI reads the website, understands what the business does, and writes an email that could only have been written for that specific company.</p>
+
+  <p>The result? 739 personalized emails drafted in a single overnight run. Each one referencing the lead's actual website content, their actual services, their actual location. Not one of them looks like the others.</p>
+
+  <p>This is the fundamental shift. Traditional cold email tries to scale quantity. AI cold email scales quality. You get volume AND personalization -- two things that used to be mutually exclusive.</p>
+
+  <h2>The System I Built</h2>
+
+  <p>Here is the exact system running in my business right now. I built it for <a href="/case-studies/summit-wraps/">Summit Wraps</a> -- my vehicle wrap company -- but the architecture works for any B2B service business. Every piece was built through conversation with Claude Code. No coding experience required.</p>
+
+  <h3>Step 1: Lead Scoring</h3>
+
+  <p>Before a single email is written, every lead gets scored. The AI evaluates each lead on multiple factors:</p>
+
+  <ul>
+    <li><strong>Industry fit</strong> -- how likely is this type of business to need my service? A fleet company with 20 trucks scores higher than a solo consultant working from home.</li>
+    <li><strong>Location</strong> -- proximity to my service area. Local leads score higher because they can actually become customers.</li>
+    <li><strong>Company size signals</strong> -- number of employees, number of locations, fleet indicators from their website.</li>
+    <li><strong>Email deliverability</strong> -- is this email address verified as deliverable, or is it a risky catchall that will bounce?</li>
+    <li><strong>Online presence</strong> -- do they have a real website? Active social media? This signals a business that invests in marketing and is more likely to invest in branding.</li>
+  </ul>
+
+  <p>Each lead gets a grade: A, B, or C. Out of 5,500+ leads in my database, 739 scored as Grade A. Those are the only ones that get contacted. Grade B leads get queued for a different, softer campaign later. Grade C leads get archived.</p>
+
+  <p>This is the part most people skip. They want to send emails immediately. But scoring first means every email you send has a higher probability of reaching someone who actually needs what you sell. Your reply rate goes up not because your copy is better, but because your targeting is better.</p>
+
+  <h3>Step 2: Web Research</h3>
+
+  <p>For each Grade A lead, the system reads their actual website. Not just the homepage -- it crawls their services pages, about page, fleet page, coverage area, whatever is relevant.</p>
+
+  <p>The AI extracts specific details: what services they offer, where they operate, what kind of vehicles they have, what their brand looks like, whether they seem like a small operation or a growing company. All of this becomes context for the email.</p>
+
+  <p>This is the step that makes AI cold email fundamentally different from template-based outreach. A human sales rep doing this manually could maybe research 10-15 companies per hour. The AI does 739 in one night.</p>
+
+  <h3>Step 3: Personalized Drafting</h3>
+
+  <p>With the scoring data and web research in hand, the AI writes each email individually. There is no master template. Each email is composed from scratch based on what the AI found about that specific business.</p>
+
+  <p>The emails are short -- 3-4 sentences. They open with something specific to the business ("I saw your fleet page -- looks like you run 12 trucks across the Wasatch Front"). They make the connection to the service natural, not forced. They close with a low-pressure ask, not a sales pitch.</p>
+
+  <p>I review every email before it sends. The AI drafts. I approve or edit. This keeps the quality high and prevents anything weird from going out. It takes me about 45 minutes to review a batch of 50 emails -- faster than writing even 5 from scratch.</p>
+
+  <h3>Step 4: Deliverability (The Lesson That Cost Me 111 Emails)</h3>
+
+  <p>This is where I made the most expensive mistake of the entire project.</p>
+
+  <p>My first 111 sends went out to email addresses that were technically "valid" but were actually accept-all catchall addresses. Accept-all means the mail server accepts every email sent to that domain regardless of whether the specific address exists. It looks like delivery. The email does not bounce. But no human being ever sees it.</p>
+
+  <p>111 perfectly personalized emails. Zero replies. Not because the copy was bad -- the copy never reached a person.</p>
+
+  <p>The fix was simple but critical: I switched to a verified lead source where every email address had been individually confirmed as deliverable. Not "valid" -- deliverable. There is a difference. Valid means the address exists. Deliverable means a real person checks that inbox.</p>
+
+  <p>After switching to verified-deliverable addresses only, the system started working. This single change -- list quality over list size -- is the difference between a cold email system that produces results and one that produces silence.</p>
+
+  <p>If you take one thing from this entire guide: <strong>verify deliverability before you write a single email.</strong> The best copy in the world is worthless if it lands in a catchall black hole.</p>
+
+  <h3>Step 5: Automated Sending and Follow-Up</h3>
+
+  <p>Emails go out in controlled warmup batches. 15 per day for the first two weeks, gradually increasing. The system tracks bounces in real time and immediately removes any address that bounces -- protecting the sending domain's reputation.</p>
+
+  <p>Reply detection runs automatically. When someone replies, the system flags it, logs the interaction, and moves that lead into the active sales pipeline. Follow-up sequences trigger automatically for non-responders -- but only after a waiting period, and only with a fresh message (not a "just bumping this to the top of your inbox" template).</p>
+
+  <p>The entire send-track-follow-up loop runs without manual intervention. I check the dashboard, review any replies that need a personal response, and let the system handle the rest.</p>
+
+  <h2>The Numbers</h2>
+
+  <div class="stat-row" style="margin:40px 0;">
+    <div class="stat">
+      <div class="stat-val">5,502</div>
+      <div class="stat-label">Total Leads Scored</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">739</div>
+      <div class="stat-label">Grade A</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">3,666</div>
+      <div class="stat-label">Grade B</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">1,097</div>
+      <div class="stat-label">Grade C</div>
+    </div>
+  </div>
+
+  <p>739 Grade A leads. 739 personalized emails drafted in one overnight session. Each email references the lead's actual website content -- their services, their location, their fleet, their brand. Zero template fallbacks. Every email is unique.</p>
+
+  <p>The system runs on about $20/month in API costs (Claude for drafting, email verification services) plus whatever you are already paying for your email provider. Compare that to the $3,000-10,000/month agencies charge for cold email campaigns that still use templates.</p>
+
+  <h2>The Critical Lesson</h2>
+
+  <p>I spent weeks building the scoring system, the web researcher, the AI drafter, the send automation. It was elegant. It was sophisticated. And it produced zero results -- because I sent to garbage addresses.</p>
+
+  <p>The lesson is not about AI or automation. The lesson is about fundamentals. <strong>List quality is the foundation.</strong> Everything else -- the scoring, the personalization, the follow-up sequences -- is built on top of that foundation. If the foundation is wrong, nothing above it matters.</p>
+
+  <p>I rebuilt the entire lead source from scratch. Switched to a verified list where every email had been confirmed deliverable. Re-scored all 5,500+ leads against the new data. Only then did I re-draft and re-send.</p>
+
+  <p>If you are building a cold email system, start with the list. Not the copy. Not the automation. The list.</p>
+
+</div>
+
+<!-- MID-ARTICLE CTA -->
+<section class="section-dark" style="padding:60px 0;">
+  <div class="container-narrow" style="text-align:center;">
+    <div class="card reveal" style="max-width:640px;margin:0 auto;">
+      <div class="card-body" style="text-align:center;padding:40px 32px;">
+        <div class="card-tag">Free Community</div>
+        <div class="card-title" style="font-size:clamp(20px,3vw,28px);">Get the Exact Prompts and Scoring Criteria</div>
+        <div class="card-desc">The guide above covers WHAT to build and WHY it works. Inside the free community, you get HOW -- the exact Claude Code prompts, scoring formulas, email templates, and step-by-step walkthroughs to build this system for your business.</div>
+        <div class="btn-group" style="margin-top:24px;">
+          <a href="/community/" class="btn-primary">Join Free Community</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content">
+
+  <h2>When NOT to Use Cold Email</h2>
+
+  <p>Cold email is not universal. It works in specific situations and fails in others. Before you build this system, make sure it fits your business.</p>
+
+  <p><strong>Cold email works when:</strong></p>
+  <ul>
+    <li>You sell B2B services (business to business)</li>
+    <li>Your average deal size justifies the effort ($1,000+ per customer)</li>
+    <li>Your target customers have websites you can research</li>
+    <li>You have a clear geographic or industry focus</li>
+    <li>You can articulate a specific problem you solve</li>
+  </ul>
+
+  <p><strong>Cold email does not work when:</strong></p>
+  <ul>
+    <li>You sell to individual consumers (B2C) -- use social media or ads instead</li>
+    <li>You have not set up proper email authentication (SPF, DKIM, DMARC) -- your emails will land in spam</li>
+    <li>Your emails sound like every other cold email -- the AI personalization is meaningless if the core message is generic</li>
+    <li>You cannot verify your lead list -- unverified sends destroy your domain reputation</li>
+    <li>Your deal size is under $500 -- the system cost and time investment will not pay off</li>
+  </ul>
+
+  <p>If cold email is right for your business, the system described in this guide will outperform any template-based approach. If it is not right for your business, no amount of AI personalization will fix a channel mismatch.</p>
+
+  <p>For the bigger picture on automating your business -- not just email, but your entire operation -- read the <a href="/guides/automate-your-business/">complete business automation guide</a>. For a real-world example of what a fully automated business looks like, check the <a href="/case-studies/summit-wraps/">Summit Wraps case study</a>.</p>
+
+</div>
+
+<div class="divider"></div>
+
+<!-- FAQ -->
+<div class="container-narrow" style="padding:60px 0;">
+  <h2 class="reveal" style="text-align:center;margin-bottom:40px;">Frequently Asked Questions</h2>
+
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <div class="faq-question">
+        Is AI cold email legal?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes. CAN-SPAM (US) requires a real physical address, an unsubscribe mechanism, and no deceptive subject lines. AI-generated emails must follow the same rules as manually written ones. The content being AI-drafted does not change the legality -- the compliance requirements are about the sending practices, not the authorship.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        How do I verify email deliverability before sending?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Use a verification service that checks whether an email address is deliverable, risky, or an accept-all catchall. Services like ZeroBounce, NeverBounce, or Fiverr verification gigs will categorize each address. Only send to addresses marked Deliverable. Accept-all addresses look valid but often go to black holes where no human will ever see your email.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        How many cold emails should I send per day?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Start with 10-15 per day for the first 2 weeks to warm up your sending reputation. Increase gradually to 30-50 per day over weeks 3-4. Never blast hundreds from a cold domain -- you will get flagged as spam immediately. Warmup matters more than volume.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        What makes AI cold email different from regular cold email?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Traditional cold email uses one template sent to thousands of people with mail-merge fields like [COMPANY_NAME]. AI cold email reads each lead's actual website, understands their business, and writes a genuinely unique email referencing specific details. The recipient can tell the difference immediately -- and so can their spam filter.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM CTA -->
+<section style="text-align:center;padding:100px 24px;position:relative;background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(0,255,136,0.03),transparent 70%)">
+  <div class="container-narrow">
+    <h2 class="reveal" style="font-size:clamp(28px,5vw,44px);letter-spacing:-1.5px;margin-bottom:20px">Ready to <span class="accent">Build This</span>?</h2>
+    <p class="reveal" style="font-size:clamp(15px,2vw,18px);color:var(--text-dim);line-height:1.7;max-width:560px;margin:0 auto 36px">The guide covers WHAT and WHY. The community gives you the exact prompts, templates, and walkthroughs to build the system yourself. Or book a call and I will build it for you.</p>
+    <div class="btn-group reveal">
+      <a href="/community/" class="btn-primary">Join the Free Community</a>
+      <a href="/contact/" class="btn-secondary">Book a Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/community/" class="footer-link">Community</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <a href="/community/" class="sticky-bar-btn">Join Free Community</a>
+  <div class="sticky-bar-sub">Exact prompts, scoring criteria, email templates inside</div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+// Mobile nav toggle
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+
+// Sticky bar -- show after scrolling past hero
+const stickyBar=document.getElementById('stickyBar');
+if(stickyBar){
+  const heroEl=document.querySelector('.page-hero');
+  const stickyObs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting){stickyBar.classList.add('visible')}
+      else{stickyBar.classList.remove('visible')}
+    });
+  },{threshold:0});
+  if(heroEl)stickyObs.observe(heroEl);
+}
+
+// Scroll reveal
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.closest('.faq-item');
+    const wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen)item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

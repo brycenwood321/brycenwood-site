@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /playbook/thanks/
+
+Sitemap: https://www.brycenwood.com/sitemap.xml

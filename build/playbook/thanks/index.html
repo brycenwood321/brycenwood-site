@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Playbook Is Downloading | Brycen Wood</title>
+<meta name="description" content="Your Claude Code Business Playbook is downloading. Join the free community for exact prompts, templates, and walkthroughs.">
+<meta name="robots" content="noindex">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link">Guides</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+    <a href="/contact/" class="nav-cta">Book a Call</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- CONTENT -->
+<section class="page-hero" style="min-height:60vh;display:flex;flex-direction:column;justify-content:center">
+  <p class="hero-eyebrow">Done</p>
+  <h1>Your playbook is <span class="accent">downloading.</span></h1>
+  <p class="hero-sub">Check your downloads folder. If it didn't start automatically, <a href="#" id="manualDownload" style="color:#00ff88;text-decoration:underline">click here</a>.</p>
+  <div class="divider" style="margin:32px auto"></div>
+  <h2 style="font-size:1.4rem;margin-bottom:12px;">Now get the implementation details.</h2>
+  <p class="hero-sub" style="margin-bottom:24px">The playbook gives you the systems. The community gives you the exact prompts, templates, and walkthroughs to build them.</p>
+  <div class="btn-group">
+    <a href="https://skool.com/business-on-autopilot-8404" class="btn-primary" target="_blank" rel="noopener">Join the Free Community</a>
+    <a href="/guides/" class="btn-secondary">Read the Guides</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/community/" class="footer-link">Community</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+// Auto-download PDF (wire up actual URL when ready)
+const PDF_URL = '/guides/the-claude-code-business-playbook.pdf';
+window.addEventListener('load',()=>{
+  const a=document.createElement('a');
+  a.href=PDF_URL;
+  a.download='';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
+document.getElementById('manualDownload').addEventListener('click',(e)=>{
+  e.preventDefault();
+  const a=document.createElement('a');
+  a.href=PDF_URL;
+  a.download='';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
+
+// Mobile nav toggle
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+</script>
+</body>
+</html>

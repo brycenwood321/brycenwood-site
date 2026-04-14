@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markdown Mirrors — Make Your Website Readable by AI | Brycen Wood</title>
+<meta name="description" content="Markdown mirrors let ChatGPT, Claude, and Perplexity read your website content cleanly. Learn what they are and why every business needs them.">
+<link rel="canonical" href="https://www.brycenwood.com/guides/markdown-mirrors/">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Markdown Mirrors — Make Your Website Readable by AI">
+<meta property="og:description" content="Markdown mirrors let ChatGPT, Claude, and Perplexity read your website content cleanly. Learn what they are and why every business needs them.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.brycenwood.com/guides/markdown-mirrors/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Markdown Mirrors — Make Your Website Readable by AI">
+<meta name="twitter:description" content="Markdown mirrors let ChatGPT, Claude, and Perplexity read your website content cleanly. Learn what they are and why every business needs them.">
+
+<!-- Schema: Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Markdown Mirrors — Make Your Website Readable by AI",
+  "description": "Markdown mirrors let ChatGPT, Claude, and Perplexity read your website content cleanly. Learn what they are and why every business needs them.",
+  "url": "https://www.brycenwood.com/guides/markdown-mirrors/",
+  "datePublished": "2026-04-13",
+  "dateModified": "2026-04-13",
+  "author": {
+    "@type": "Person",
+    "name": "Brycen Wood",
+    "url": "https://www.brycenwood.com/about/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Brycen Wood"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.brycenwood.com/guides/markdown-mirrors/"
+  }
+}
+</script>
+
+<!-- Schema: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need markdown mirrors if I already have llms.txt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — they serve different purposes. llms.txt is a site-level summary that tells AI what your business does at a high level. Markdown mirrors let AI read the full content of every individual page. Think of llms.txt as the table of contents and markdown mirrors as the actual chapters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I generate markdown mirrors automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I built a Python script that walks your entire website and generates .md files for every page automatically. The script and step-by-step walkthrough are available inside the free community."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will markdown mirrors hurt my regular SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The .md files are separate from your HTML pages. Google continues to index your HTML pages normally. Markdown mirrors are an addition to your site, not a replacement for anything. They give AI tools a clean reading path without affecting your existing search rankings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many markdown mirrors do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One for every content page on your site — services pages, about page, FAQ, location pages, blog posts. Skip pages that are purely functional (login, cart, checkout). For Summit Wraps, that was 27 mirrors across all pages."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link active">Guides</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+    <a href="/contact/" class="nav-cta">Book a Call</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span><a href="/guides/">Guides</a><span class="sep">/</span><span>Markdown Mirrors</span>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-eyebrow">Free Guide</div>
+  <h1>Your Website Is Invisible to <span class="accent">ChatGPT</span></h1>
+  <p class="hero-sub">AI can't read your fancy HTML. Markdown mirrors fix that. Here's what they are and why they matter.</p>
+  <div class="last-updated">Last updated: April 2026</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTENT -->
+<article class="content">
+
+<h2>The Problem: AI Can't Read Your Website</h2>
+
+<p>Your website looks great to humans. The colors are right, the fonts are clean, the navigation works, the images load. A person lands on your services page and knows exactly what you do within 5 seconds.</p>
+
+<p>AI tools don't see any of that.</p>
+
+<p>When ChatGPT, Claude, or Perplexity tries to read your website, it doesn't see a beautiful page. It sees raw HTML -- thousands of lines of code that include your navigation menu, footer links, cookie consent banner, analytics scripts, social media widgets, JavaScript bundles, CSS class names, and somewhere buried in the middle of all that noise, your actual content.</p>
+
+<p>The AI has to parse through all of it to find the signal. And most of the time, it fails. Not because it's dumb, but because your page was built for human eyes, not machine readers.</p>
+
+<p>I tested this with my own company. When I asked ChatGPT to read the Summit Wraps services page, it pulled in navigation links, footer text, cookie consent copy, and JavaScript function names -- all mixed in with our actual service descriptions. The AI couldn't tell what was important and what was scaffolding. The result was a garbled mess that barely resembled our actual offering.</p>
+
+<p>That's the problem. Your website is functionally invisible to the AI tools that are increasingly deciding which businesses to recommend.</p>
+
+<h2>What Are Markdown Mirrors?</h2>
+
+<p>A markdown mirror is a clean, plain-text version of each page on your website. For every <code>index.html</code> on your site, you create an <code>index.md</code> right next to it. The <code>.md</code> file contains just the content -- no navigation, no scripts, no styling, no cookie banners. Just the information that matters.</p>
+
+<p>Here's what that looks like in practice:</p>
+
+<pre><code>your-website.com/services/index.html  -- humans read this
+your-website.com/services/index.md    -- AI reads this
+
+your-website.com/about/index.html     -- humans read this
+your-website.com/about/index.md       -- AI reads this
+
+your-website.com/faq/index.html       -- humans read this
+your-website.com/faq/index.md         -- AI reads this</code></pre>
+
+<p>When an AI tool fetches your page, it can request the <code>.md</code> version instead of the <code>.html</code> version and get exactly the information it needs, cleanly formatted, with zero noise.</p>
+
+<p>The name "mirror" is the key concept. The markdown file mirrors the content of the HTML page. Same information, different format. Humans get the pretty version. Machines get the clean version. Everyone wins.</p>
+
+<h2>Why Markdown Specifically?</h2>
+
+<p>AI language models are trained on text. Massive amounts of text. And the format they understand best -- after raw plain text -- is markdown.</p>
+
+<p>Markdown gives you structure without bloat. Headings, lists, links, bold text, code blocks -- all the formatting you need to organize information, with zero overhead. No opening and closing tags. No class names. No nesting nightmares. Just clean, readable text with lightweight formatting.</p>
+
+<p>When you give an AI a clean markdown file instead of an HTML page, it can:</p>
+
+<ul>
+<li><strong>Understand your page hierarchy</strong> -- headings tell the AI what's a main topic vs. a subtopic</li>
+<li><strong>Quote your content accurately</strong> -- no risk of grabbing your footer text or nav menu</li>
+<li><strong>Recommend your services with the right details</strong> -- service descriptions come through clean</li>
+<li><strong>Compare you to competitors using real information</strong> -- structured content beats garbled HTML</li>
+<li><strong>Answer follow-up questions</strong> -- FAQ sections in markdown are trivially easy for AI to parse</li>
+</ul>
+
+<p>HTML was designed for browsers to render visually. Markdown was designed for machines and humans to read as text. For the job of communicating with AI, markdown is the better tool by a mile.</p>
+
+<h2>How Markdown Mirrors Work with llms.txt</h2>
+
+<p>If you've already read the <a href="/guides/llms-txt/">llms.txt guide</a>, you know that llms.txt is a site-level summary -- a single file that tells AI what your business does at a high level.</p>
+
+<p>Markdown mirrors go deeper. They give the AI full access to every page's content, not just a summary.</p>
+
+<p>Here's how to think about the relationship:</p>
+
+<ul>
+<li><strong>llms.txt</strong> = the executive summary. "Here's who we are, here's what we do, here are our pages."</li>
+<li><strong>Markdown mirrors</strong> = the full documentation. "Here's everything on each page, in detail."</li>
+<li><strong>Schema markup</strong> = the structured data layer. Machine-readable facts about your business entity.</li>
+</ul>
+
+<p>Together, these three layers form the AI Visibility Stack. llms.txt gets you in the door. Markdown mirrors give the AI the depth it needs to recommend you confidently and accurately. Schema markup provides the structured metadata that ties it all together.</p>
+
+<p>I built all three for <a href="/case-studies/summit-wraps/">Summit Wraps</a> and the compound effect was what made ChatGPT start recommending us to real customers. The full system is covered in the <a href="/guides/ai-seo-playbook/">AI SEO Playbook guide</a>.</p>
+
+<h2>What Goes in a Markdown Mirror</h2>
+
+<p>Each <code>.md</code> file should be a clean representation of its corresponding HTML page. Not a rewrite -- a mirror. Same content, stripped down to pure text and markdown formatting.</p>
+
+<p><strong>Include:</strong></p>
+
+<ul>
+<li>Page title as an H1 heading</li>
+<li>All section headings (H2, H3) that structure the page</li>
+<li>All paragraph content -- service descriptions, about text, any prose on the page</li>
+<li>Lists of services, features, benefits</li>
+<li>FAQ questions and answers</li>
+<li>Links to related pages on your site</li>
+<li>Contact information if it appears on the page</li>
+</ul>
+
+<p><strong>Do NOT include:</strong></p>
+
+<ul>
+<li>Navigation menus</li>
+<li>Footer content</li>
+<li>Cookie consent banners</li>
+<li>JavaScript or tracking code</li>
+<li>Social media widget embeds</li>
+<li>Image alt text (unless it contains important content)</li>
+<li>CSS class names or HTML attributes</li>
+<li>Call-to-action buttons (the AI doesn't need to know about your button styling)</li>
+</ul>
+
+<p>Here's an example of what a markdown mirror looks like for a services page:</p>
+
+<pre><code># Vehicle Wrap Services — Summit Wraps
+
+Summit Wraps offers full-service vehicle wrapping, fleet
+graphics, and commercial branding in Utah. We serve
+businesses across Salt Lake County, Utah County, and the
+Wasatch Front from our two locations in Springville and Lehi.
+
+## Full Vehicle Wraps
+Complete color-change wraps for cars, trucks, vans, and SUVs.
+Premium 3M and Avery vinyl with a 5-year warranty.
+Typical turnaround: 3-5 business days.
+
+## Commercial Fleet Graphics
+Custom branding for business fleets of any size. Consistent
+branding across all vehicles. Volume pricing available for
+fleets of 5+ vehicles.
+
+## Partial Wraps and Decals
+Logos, lettering, and partial coverage options for businesses
+that want visibility without a full wrap.
+
+## FAQ
+**How long does a full wrap last?**
+5-7 years with proper care. We use premium 3M and Avery
+materials with manufacturer warranties.
+
+**Do you offer design services?**
+Yes. Our in-house design team creates custom wrap designs
+from scratch. Design is included with every full wrap order.</code></pre>
+
+<p>Clean. Readable. No noise. The AI can consume this in one pass and know exactly what the page is about.</p>
+
+<!-- MID-ARTICLE CTA -->
+<div class="card reveal" style="margin:48px 0;">
+  <div class="card-body" style="text-align:center;padding:40px 32px;">
+    <div class="card-tag">Inside the Community</div>
+    <div class="card-title" style="font-size:22px;margin-bottom:12px;">Get the Auto-Generator Script</div>
+    <p style="max-width:500px;margin:0 auto 24px;">The Python script that automatically generates markdown mirrors for your entire website, plus the exact server config to serve them correctly. All inside the free community.</p>
+    <a href="/community/" class="btn-primary">Join the Free Community</a>
+  </div>
+</div>
+
+<h2>The Technical Setup</h2>
+
+<p>There are two things you need to get markdown mirrors working:</p>
+
+<h3>1. Create the Markdown Files</h3>
+
+<p>You need an <code>index.md</code> file next to every <code>index.html</code> on your site. You can create these manually for a small site, or use a script to generate them automatically for a larger one.</p>
+
+<p>For Summit Wraps, I built a Python script that walks every page on the site, strips out the HTML scaffolding, and generates clean markdown. 27 pages, 27 mirrors, done in about 10 seconds. The script is inside the community for anyone who wants it.</p>
+
+<p>If your site has fewer than 10 pages, you can honestly just write them by hand. Open each page in your browser, copy the content, paste it into a text file, add markdown formatting, save as <code>index.md</code>. 5-10 minutes per page.</p>
+
+<h3>2. Configure Your Server</h3>
+
+<p>This is the part most people miss. Your web server needs to serve <code>.md</code> files as plain text so browsers and AI tools render them inline instead of forcing a download.</p>
+
+<p>The configuration depends on your hosting platform:</p>
+
+<p><strong>Netlify / Cloudflare Pages</strong> -- add a <code>_headers</code> file to your build root:</p>
+
+<pre><code>/*.md
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+  X-Robots-Tag: index, follow</code></pre>
+
+<p><strong>Vercel</strong> -- add to your <code>vercel.json</code>:</p>
+
+<pre><code>{
+  "headers": [
+    {
+      "source": "/(.*).md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    }
+  ]
+}</code></pre>
+
+<p><strong>Apache</strong> -- add to your <code>.htaccess</code>:</p>
+
+<pre><code>AddType text/plain .md</code></pre>
+
+<p>The <code>X-Robots-Tag: index, follow</code> header is important. It tells search engines that these files are meant to be indexed and that their links should be followed. Without it, some crawlers might skip your markdown mirrors entirely.</p>
+
+<h2>How AI Tools Discover Your Mirrors</h2>
+
+<p>You might be wondering: "How does ChatGPT know to look for the <code>.md</code> version of my page?"</p>
+
+<p>Two ways:</p>
+
+<p><strong>Through llms.txt.</strong> Your llms.txt file links to all your pages. Smart AI crawlers will check for both the <code>.html</code> and <code>.md</code> versions of every URL they find. If they see a clean markdown version available, they'll use it.</p>
+
+<p><strong>Through direct discovery.</strong> AI tools are getting better at checking for alternative content formats. When they encounter a page that's hard to parse, they'll look for simpler versions -- including <code>.md</code> files in the same directory.</p>
+
+<p>You can also reference your mirrors directly in llms.txt. Instead of linking to <code>/services/</code>, link to <code>/services/index.md</code>. That guarantees the AI reads the clean version.</p>
+
+<h2>Real Results from Summit Wraps</h2>
+
+<div class="stat-row">
+  <div class="stat">
+    <div class="stat-val">27</div>
+    <div class="stat-label">Mirrors Created</div>
+  </div>
+  <div class="stat">
+    <div class="stat-val">28K</div>
+    <div class="stat-label">Video Views (20h)</div>
+  </div>
+  <div class="stat">
+    <div class="stat-val">14.5%</div>
+    <div class="stat-label">Comment Rate</div>
+  </div>
+</div>
+
+<p>After deploying 27 markdown mirrors across the entire Summit Wraps website:</p>
+
+<ul>
+<li>AI tools could read every page cleanly in a single fetch -- no more garbled HTML mixed with content</li>
+<li>Combined with llms.txt, this is what triggered ChatGPT to start recommending Summit Wraps to real customers asking about vehicle wraps in Utah</li>
+<li>The video explaining this concept hit 28K views in 20 hours with a 14.5% comment rate and a 10% save rate -- both in the top percentile for any business content on Instagram</li>
+<li>The concept resonated because it's something anyone can do, it takes minimal time, and the results are immediate</li>
+</ul>
+
+<p>The most important result isn't the video views. It's that our competitors still haven't done this. Their websites are still invisible to AI tools. Ours isn't. That gap compounds every single day.</p>
+
+<h2>Common Questions People Ask After Setting This Up</h2>
+
+<p><strong>"Should the markdown file be an exact copy of the HTML content?"</strong></p>
+
+<p>As close as possible. The content should match -- same headings, same descriptions, same facts. You're not rewriting anything, you're reformatting. The only things you strip out are the non-content elements: navigation, footer, scripts, widgets.</p>
+
+<p><strong>"What about blog posts? Do they need mirrors too?"</strong></p>
+
+<p>Yes, especially if your blog posts contain valuable information about your business. Blog posts are often the highest-word-count pages on your site, which means they give AI the most material to work with. Mirror them.</p>
+
+<p><strong>"Can I add extra information to the markdown that isn't on the HTML page?"</strong></p>
+
+<p>You can, but be careful. If the information on your <code>.md</code> version contradicts or significantly differs from your <code>.html</code> version, AI tools might flag the inconsistency and trust neither. Keep them in sync. If you want to add more detail, add it to both versions.</p>
+
+<p><strong>"What about dynamic content -- like product listings that change?"</strong></p>
+
+<p>For pages with frequently changing content, you have two choices: regenerate the mirrors on a schedule (daily, weekly) or only mirror your static pages and skip the dynamic ones. Most businesses have 10-30 static pages that matter for AI visibility. Focus on those first.</p>
+
+<h2>What Comes Next</h2>
+
+<p>Markdown mirrors are the second layer of the AI Visibility Stack. If you haven't set up <a href="/guides/llms-txt/">llms.txt</a> yet, start there -- it's faster and gives you immediate results.</p>
+
+<p>Once both are live, the <a href="/guides/ai-seo-playbook/">AI SEO Playbook</a> covers the third layer (schema markup) and how all three work together to create a compound effect that's hard for competitors to replicate.</p>
+
+<p>If you want to see the complete transformation -- from zero AI visibility to ChatGPT recommending the business -- the <a href="/case-studies/summit-wraps/">Summit Wraps case study</a> shows exactly how it played out.</p>
+
+</article>
+
+<!-- FAQ SECTION -->
+<section class="section-dark" style="padding:80px 0;">
+  <div class="section-header">
+    <h2>Frequently Asked <span class="accent">Questions</span></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question">Do I need markdown mirrors if I already have llms.txt?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer">
+        <p>Yes -- they serve different purposes. llms.txt is a site-level summary that tells AI what your business does at a high level. Markdown mirrors let AI read the full content of every individual page. Think of llms.txt as the table of contents and markdown mirrors as the actual chapters.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Can I generate these automatically?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer">
+        <p>Yes. I built a Python script that walks your entire website and generates .md files for every page. It strips out HTML scaffolding, preserves content, and outputs clean markdown. The script and step-by-step walkthrough are available inside the free community.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Will this hurt my regular SEO?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer">
+        <p>No. The .md files are separate from your HTML pages. Google continues to index your HTML pages normally. Markdown mirrors are an addition to your site, not a replacement for anything. They give AI tools a clean reading path without affecting your existing search rankings.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How many markdown mirrors do I need?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer">
+        <p>One for every content page on your site -- services pages, about page, FAQ, location pages, blog posts. Skip pages that are purely functional like login, cart, or checkout. For Summit Wraps, that was 27 mirrors across all pages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section style="padding:80px 0;text-align:center;">
+  <div class="container-narrow">
+    <h2 class="reveal">Make Your Website <span class="accent">Visible to AI</span></h2>
+    <p class="reveal" style="max-width:550px;margin:16px auto 0;">Get the auto-generator script, server configs, and step-by-step walkthroughs inside the free community. Or book a call and I'll build the whole AI visibility stack for your business.</p>
+    <div class="btn-group reveal">
+      <a href="/community/" class="btn-primary">Join the Free Community</a>
+      <a href="/contact/" class="btn-secondary">Book a Discovery Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/community/" class="footer-link">Community</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <a href="/community/" class="sticky-bar-btn">Join Free Community</a>
+  <div class="sticky-bar-sub">Get the auto-generator script and config</div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+// Mobile nav toggle
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+
+// Sticky bar — show after scrolling past hero
+const stickyBar=document.getElementById('stickyBar');
+if(stickyBar){
+  const heroEl=document.querySelector('.page-hero');
+  const stickyObs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting){stickyBar.classList.add('visible')}
+      else{stickyBar.classList.remove('visible')}
+    });
+  },{threshold:0});
+  if(heroEl)stickyObs.observe(heroEl);
+}
+
+// Scroll reveal
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    const wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen)item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

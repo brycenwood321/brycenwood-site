@@ -3,582 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Everything I Built — Brycen Wood</title>
-<meta name="description" content="80+ business automations built with Claude Code. Zero coding experience. See the full breakdown and join the free community.">
+<title>Brycen Wood — Build Your Business Operating System with AI</title>
+<meta name="description" content="1.5M+ views, 80+ automations, zero coding experience. Brycen Wood builds custom business operating systems using Claude Code. Book a free discovery call.">
+<link rel="canonical" href="https://www.brycenwood.com/">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Brycen Wood — Build Your Business Operating System with AI">
+<meta property="og:description" content="1.5M+ views, 80+ automations, zero coding experience. Custom business operating systems built with Claude Code.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.brycenwood.com/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brycen Wood — Build Your Business Operating System with AI">
+<meta name="twitter:description" content="1.5M+ views, 80+ automations, zero coding experience. Custom business operating systems built with Claude Code.">
+
+<!-- Schema: ProfessionalService + WebSite + Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.brycenwood.com/#website",
+      "url": "https://www.brycenwood.com/",
+      "name": "Brycen Wood",
+      "description": "Custom business operating systems built with Claude Code"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.brycenwood.com/#business",
+      "name": "Brycen Wood — Custom Business Builds",
+      "url": "https://www.brycenwood.com/",
+      "description": "Custom business operating system builds using AI. 60-minute interview, custom plan in 72 hours, 2-week build, full handoff.",
+      "founder": {"@id": "https://www.brycenwood.com/#person"},
+      "areaServed": "United States",
+      "sameAs": [
+        "https://www.instagram.com/brycenwood.ai/",
+        "https://www.tiktok.com/@brycenwood1",
+        "https://www.youtube.com/@brycenwood-ai"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.brycenwood.com/#person",
+      "name": "Brycen Wood",
+      "url": "https://www.brycenwood.com/about/",
+      "jobTitle": "Business Automation Consultant",
+      "knowsAbout": ["Business Automation", "Claude Code", "AI Systems", "CRM Automation", "SEO", "Content Marketing"],
+      "sameAs": [
+        "https://www.instagram.com/brycenwood.ai/",
+        "https://www.tiktok.com/@brycenwood1",
+        "https://www.youtube.com/@brycenwood-ai"
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+/* ─── HOMEPAGE-SPECIFIC ENHANCEMENTS ─── */
 
-*{margin:0;padding:0;box-sizing:border-box}
-
-:root{
-  --bg:#050508;
-  --card:#0a0b10;
-  --card-border:#141620;
-  --lime:#00ff88;
-  --lime-dim:#00ff8833;
-  --lime-deep:#00cc6a;
-  --amber:#ffaa00;
-  --text:#e8e8f0;
-  --text-dim:#8888a0;
-  --text-muted:#55556a;
-  --mono:'JetBrains Mono',monospace;
-  --sans:'Outfit',sans-serif;
+/* Hero grid background */
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(0,255,136,0.015) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(0,255,136,0.015) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 70% 50% at 50% 50%,black 20%,transparent 70%);
+  -webkit-mask-image:radial-gradient(ellipse 70% 50% at 50% 50%,black 20%,transparent 70%);
+  pointer-events:none;
 }
 
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:var(--sans);
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-}
-
-/* Scanline */
-body::before{
-  content:'';position:fixed;inset:0;
-  background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,136,0.006) 2px,rgba(0,255,136,0.006) 4px);
-  pointer-events:none;z-index:9999;
-}
-
-/* ─── AMBIENT ─── */
-.orb{position:fixed;border-radius:50%;filter:blur(160px);opacity:0.04;pointer-events:none;z-index:0}
-.orb-1{width:700px;height:700px;background:var(--lime);top:-300px;left:-200px}
-.orb-2{width:500px;height:500px;background:#0066ff;bottom:-200px;right:-150px}
-.orb-3{width:400px;height:400px;background:var(--lime);bottom:30%;left:50%;transform:translateX(-50%);opacity:0.02}
-
-/* ─── NAV ─── */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  padding:16px 24px;
-  background:rgba(5,5,8,0.8);
-  backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--card-border);
-  display:flex;align-items:center;justify-content:space-between;
-}
-.nav-logo{font-family:var(--mono);font-weight:700;font-size:14px;letter-spacing:3px;color:var(--lime);text-shadow:0 0 20px var(--lime-dim)}
-.nav-cta{
-  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;
-  color:var(--bg);background:var(--lime);
-  padding:8px 18px;border:none;border-radius:2px;cursor:pointer;text-decoration:none;
-  transition:all 0.3s;
-}
-.nav-cta:hover{background:#00ffaa;box-shadow:0 0 20px var(--lime-dim)}
-
-/* ─── HERO ─── */
-.hero{
-  min-height:100vh;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  text-align:center;
-  padding:120px 24px 80px;
-  position:relative;
-  background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(0,255,136,0.04),transparent 70%);
-}
-
-.hero-eyebrow{
-  font-family:var(--mono);font-size:11px;font-weight:500;
-  letter-spacing:4px;text-transform:uppercase;
-  color:var(--lime);opacity:0.8;
-  margin-bottom:24px;
-  animation:fadeUp 0.8s ease both;
-}
-
-.hero h1{
-  font-family:var(--sans);font-weight:900;
-  font-size:clamp(36px,7vw,72px);
-  line-height:1.05;letter-spacing:-2px;
-  max-width:800px;
-  animation:fadeUp 0.8s ease 0.1s both;
-}
-
-.hero h1 .accent{
-  color:var(--lime);
-  text-shadow:0 0 40px var(--lime-dim),0 0 80px rgba(0,255,136,0.08);
-}
-
-.hero-sub{
-  font-family:var(--sans);font-size:clamp(16px,2.5vw,22px);font-weight:400;
-  color:var(--text-dim);max-width:550px;
-  margin-top:24px;line-height:1.5;
-  animation:fadeUp 0.8s ease 0.2s both;
-}
-
-.hero-sub strong{color:var(--text);font-weight:600}
-
-.hero-line{
-  width:80px;height:2px;margin:40px auto 0;
+/* Animated gradient line under hero h1 */
+.hero-accent-line{
+  width:200px;height:2px;margin:28px auto 0;
   background:linear-gradient(90deg,transparent,var(--lime),transparent);
-  animation:fadeUp 0.8s ease 0.3s both;
-}
-
-.scroll-hint{
-  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
-  font-family:var(--mono);font-size:10px;color:var(--text-muted);
-  letter-spacing:2px;text-transform:uppercase;
-  animation:breathe 2.5s ease-in-out infinite;
-}
-
-/* ─── HERO CTA BUTTON ─── */
-.hero-cta{
-  display:inline-block;margin-top:36px;
-  font-family:var(--mono);font-size:13px;font-weight:700;
-  letter-spacing:1.5px;text-transform:uppercase;
-  color:var(--bg);background:var(--lime);
-  padding:14px 36px;border:none;border-radius:3px;
-  cursor:pointer;text-decoration:none;
-  transition:all 0.3s;
-  animation:fadeUp 0.8s ease 0.35s both;
-  box-shadow:0 0 20px var(--lime-dim),0 4px 15px rgba(0,0,0,0.3);
-}
-.hero-cta:hover{
-  background:#00ffaa;
-  box-shadow:0 0 40px var(--lime-dim),0 6px 25px rgba(0,0,0,0.4);
-  transform:translateY(-2px);
-}
-
-/* ─── MID-PAGE CTA ─── */
-.mid-cta{
-  text-align:center;padding:48px 24px;
-}
-.mid-cta-btn{
-  display:inline-block;
-  font-family:var(--mono);font-size:12px;font-weight:600;
-  letter-spacing:1px;text-transform:uppercase;
-  color:var(--lime);
-  padding:14px 32px;
-  border:2px solid var(--lime);border-radius:3px;
-  background:rgba(0,255,136,0.06);
-  cursor:pointer;text-decoration:none;
-  transition:all 0.3s;
-}
-.mid-cta-btn:hover{
-  background:var(--lime);color:var(--bg);
-  box-shadow:0 0 30px var(--lime-dim);
-}
-.mid-cta-sub{
-  font-family:var(--mono);font-size:10px;color:var(--text-muted);
-  margin-top:10px;letter-spacing:1px;
-}
-
-/* ─── URGENCY BADGE ─── */
-.urgency{
-  display:inline-flex;align-items:center;gap:8px;
-  font-family:var(--mono);font-size:11px;font-weight:600;
-  color:var(--amber);
-  padding:8px 18px;
-  border:1px solid var(--amber-dim);border-radius:2px;
-  background:rgba(255,170,0,0.06);
-  margin-bottom:20px;
-  letter-spacing:0.5px;
-}
-.urgency-dot{
-  width:6px;height:6px;border-radius:50%;
-  background:var(--amber);
-  animation:pulse 2s ease-in-out infinite;
-  box-shadow:0 0 6px var(--amber);
-}
-.amber-dim{color:rgba(255,170,0,0.33)}
-
-/* ─── STICKY MOBILE BAR ─── */
-.sticky-bar{
-  display:none;
-  position:fixed;bottom:0;left:0;right:0;z-index:200;
-  padding:12px 16px;
-  background:rgba(5,5,8,0.95);
-  backdrop-filter:blur(20px);
-  border-top:1px solid var(--card-border);
-  text-align:center;
-  transform:translateY(100%);
-  transition:transform 0.4s ease;
-}
-.sticky-bar.visible{transform:translateY(0)}
-.sticky-bar-btn{
-  display:block;width:100%;
-  font-family:var(--mono);font-size:13px;font-weight:700;
-  letter-spacing:1.5px;text-transform:uppercase;
-  color:var(--bg);background:var(--lime);
-  padding:14px 24px;border:none;border-radius:3px;
-  cursor:pointer;text-decoration:none;
-  box-shadow:0 0 20px var(--lime-dim);
-}
-.sticky-bar-sub{
-  font-family:var(--mono);font-size:9px;color:var(--text-muted);
-  margin-top:6px;letter-spacing:1px;
-}
-
-@media(max-width:768px){
-  .sticky-bar{display:block}
-  /* Add bottom padding so content isn't hidden behind sticky bar */
-  footer{padding-bottom:100px}
-}
-
-/* ─── NUMBERS ─── */
-.numbers{
-  padding:0 24px;
-  margin-bottom:64px;
-}
-
-.numbers-inner{
-  max-width:1000px;margin:0 auto;
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-  border:1px solid var(--card-border);
-  border-radius:2px;
-  background:var(--card);
-  overflow:hidden;
-}
-
-.num-cell{
-  text-align:center;padding:24px 12px;
-  border-right:1px solid var(--card-border);
-  transition:background 0.3s;
-}
-.num-cell:last-child{border-right:none}
-.num-cell:hover{background:rgba(0,255,136,0.03)}
-
-.num-val{
-  font-family:var(--mono);font-size:clamp(20px,3vw,32px);font-weight:700;
-  color:var(--lime);
-  text-shadow:0 0 15px var(--lime-dim);
-}
-
-.num-label{
-  font-family:var(--mono);font-size:9px;font-weight:500;
-  color:var(--text-muted);letter-spacing:1.5px;text-transform:uppercase;
-  margin-top:6px;
-}
-
-/* ─── SECTION HEADERS ─── */
-.section-header{
-  text-align:center;padding:80px 24px 48px;max-width:700px;margin:0 auto;
-}
-.section-header h2{
-  font-family:var(--sans);font-weight:800;font-size:clamp(24px,4vw,40px);
-  letter-spacing:-1px;line-height:1.15;
-}
-.section-header h2 .accent{color:var(--lime);text-shadow:0 0 30px var(--lime-dim)}
-.section-header p{
-  font-size:15px;color:var(--text-dim);margin-top:12px;line-height:1.6;
-}
-
-/* ─── CATEGORY GRID ─── */
-.categories{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
-  gap:12px;
-  max-width:1200px;
-  margin:0 auto;
-  padding:0 24px 40px;
-}
-
-.cat-card{
-  background:linear-gradient(165deg,rgba(14,15,22,0.9),rgba(8,9,14,0.95));
-  border:1px solid var(--card-border);
-  border-radius:3px;
-  overflow:hidden;
-  transition:border-color 0.4s,box-shadow 0.4s,transform 0.4s;
-  box-shadow:0 4px 20px rgba(0,0,0,0.3),0 0 0 0 var(--lime-dim);
-}
-.cat-card:hover{
-  border-color:rgba(0,255,136,0.25);
-  box-shadow:0 8px 40px rgba(0,0,0,0.4),0 0 30px rgba(0,255,136,0.06);
-  transform:translateY(-3px);
-}
-
-.cat-top{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:14px 16px;
-  border-bottom:1px solid var(--card-border);
-  background:rgba(0,255,136,0.012);
-}
-.cat-name{font-weight:700;font-size:14px;letter-spacing:0.2px}
-.cat-count{
-  font-family:var(--mono);font-size:10px;font-weight:600;
-  color:var(--lime);padding:3px 8px;
-  border:1px solid var(--lime-dim);border-radius:2px;
-  background:rgba(0,255,136,0.05);letter-spacing:0.5px;
-}
-
-.cat-items{padding:12px 16px;display:flex;flex-direction:column;gap:6px}
-
-.cat-item{
-  font-size:12.5px;color:var(--text-dim);
-  padding-left:14px;position:relative;
-  line-height:1.4;
-}
-.cat-item::before{
-  content:'';position:absolute;left:0;top:7px;
-  width:5px;height:5px;border-radius:50%;
-}
-.cat-item.live::before{background:var(--lime);box-shadow:0 0 4px var(--lime)}
-.cat-item.paused::before{background:var(--amber);box-shadow:0 0 4px var(--amber)}
-.cat-item.planned::before{background:var(--text-muted)}
-
-/* ─── TRANSITION / CTA BLOCK ─── */
-.transition{
-  text-align:center;
-  padding:100px 24px;
+  animation:fadeUp 0.8s ease 0.25s both;
   position:relative;
 }
+.hero-accent-line::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,transparent,var(--lime),transparent);
+  filter:blur(8px);opacity:0.6;
+}
 
+/* What I Build section */
+.offer-section{
+  padding:80px 0 60px;
+  position:relative;
+}
+.offer-section::before{
+  content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:600px;height:600px;
+  background:radial-gradient(circle,rgba(0,255,136,0.025),transparent 70%);
+  pointer-events:none;
+}
+
+/* Transition section */
+.transition{
+  text-align:center;padding:100px 24px;
+  position:relative;
+  background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(0,255,136,0.03),transparent 70%);
+}
 .transition::before{
   content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
   width:1px;height:60px;
   background:linear-gradient(180deg,transparent,var(--lime));
 }
-
 .transition h2{
   font-family:var(--sans);font-weight:900;
   font-size:clamp(28px,5vw,52px);
   letter-spacing:-1.5px;line-height:1.1;
   max-width:700px;margin:0 auto;
 }
-.transition h2 .accent{color:var(--lime);text-shadow:0 0 40px var(--lime-dim)}
-
 .transition p{
   font-size:clamp(15px,2vw,19px);
   color:var(--text-dim);margin-top:20px;
-  max-width:550px;margin-left:auto;margin-right:auto;
-  line-height:1.6;
+  max-width:550px;margin-left:auto;margin-right:auto;line-height:1.6;
 }
 
-/* ─── COMMUNITY SECTION ─── */
-.community{
-  max-width:700px;margin:0 auto;
-  padding:0 24px 40px;
-  text-align:center;
-}
-
-.community-badge{
-  display:inline-block;
-  font-family:var(--mono);font-size:10px;font-weight:600;
-  letter-spacing:3px;text-transform:uppercase;
-  color:var(--lime);
-  padding:6px 16px;
-  border:1px solid var(--lime-dim);border-radius:2px;
-  background:rgba(0,255,136,0.04);
-  margin-bottom:24px;
-}
-
-.community h2{
-  font-family:var(--sans);font-weight:800;
-  font-size:clamp(24px,4vw,36px);letter-spacing:-0.5px;
-  line-height:1.15;margin-bottom:16px;
-}
-
-.community p{
-  font-size:15px;color:var(--text-dim);line-height:1.7;margin-bottom:12px;
-}
-
-.perks{
-  display:grid;grid-template-columns:1fr 1fr;gap:10px;
-  margin:32px 0;text-align:left;
-}
-
-.perk{
-  display:flex;align-items:flex-start;gap:10px;
-  padding:14px;
-  background:var(--card);
-  border:1px solid var(--card-border);
-  border-radius:3px;
-}
-.perk-icon{
-  font-family:var(--mono);font-size:12px;font-weight:700;
-  color:var(--lime);flex-shrink:0;margin-top:2px;
-  opacity:0.6;
-}
-.perk-text{
-  font-size:13px;color:var(--text-dim);line-height:1.5;
-}
-.perk-text strong{color:var(--text);font-weight:600}
-
-/* ─── FORM SECTION ─── */
-.form-section{
-  max-width:600px;margin:0 auto;
-  padding:48px 24px 80px;
-  text-align:center;
-}
-
-.form-wrapper{
-  background:var(--card);
-  border:1px solid var(--card-border);
-  border-radius:4px;
-  padding:32px 24px;
-  position:relative;
-  overflow:hidden;
-}
-
-.form-wrapper::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,transparent,var(--lime),transparent);
-}
-
-.form-title{
-  font-family:var(--sans);font-weight:700;font-size:18px;
-  margin-bottom:8px;
-}
-
-.form-sub{
-  font-size:13px;color:var(--text-muted);margin-bottom:24px;
-}
-
-#ghl-form{
-  min-height:200px;
-  display:flex;align-items:center;justify-content:center;
-}
-
-#ghl-form .placeholder{
-  font-family:var(--mono);font-size:11px;color:var(--text-muted);
-  letter-spacing:1px;
-}
-
-/* ─── FOOTER ─── */
-footer{
-  text-align:center;
-  padding:40px 24px;
-  border-top:1px solid var(--card-border);
-}
-footer p{
-  font-family:var(--mono);font-size:10px;
-  color:var(--text-muted);letter-spacing:2px;
-}
-footer .lime{color:var(--lime)}
-.social-row{
-  display:flex;gap:16px;justify-content:center;margin-top:12px;
-}
-.social-link{
-  font-family:var(--mono);font-size:10px;
-  color:var(--text-muted);text-decoration:none;
-  letter-spacing:1px;transition:color 0.3s;
-}
-.social-link:hover{color:var(--lime)}
-
-/* ─── ANIMATIONS ─── */
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(24px)}
-  to{opacity:1;transform:translateY(0)}
-}
-@keyframes breathe{
-  0%,100%{opacity:0.3;transform:translateX(-50%) translateY(0)}
-  50%{opacity:0.7;transform:translateX(-50%) translateY(-4px)}
-}
-
-/* Scroll reveal */
-.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-
-/* ─── ANIMATED COUNTER ─── */
-.num-val{transition:color 0.3s}
-.num-cell:hover .num-val{text-shadow:0 0 25px var(--lime),0 0 50px var(--lime-dim)}
-
-/* ─── CATEGORY CARD STAGGER ─── */
-.cat-card:nth-child(1).visible{transition-delay:0s}
-.cat-card:nth-child(2).visible{transition-delay:0.05s}
-.cat-card:nth-child(3).visible{transition-delay:0.1s}
-.cat-card:nth-child(4).visible{transition-delay:0.15s}
-.cat-card:nth-child(5).visible{transition-delay:0.2s}
-.cat-card:nth-child(6).visible{transition-delay:0.25s}
-.cat-card:nth-child(7).visible{transition-delay:0.3s}
-.cat-card:nth-child(8).visible{transition-delay:0.35s}
-.cat-card:nth-child(9).visible{transition-delay:0.4s}
-.cat-card:nth-child(10).visible{transition-delay:0.45s}
-.cat-card:nth-child(11).visible{transition-delay:0.5s}
-.cat-card:nth-child(12).visible{transition-delay:0.55s}
-
-/* ─── TOTAL COUNTER BAR ─── */
-.total-bar{
-  text-align:center;padding:32px 24px 0;
-}
-.total-count{
-  display:inline-block;
-  font-family:var(--mono);font-size:13px;font-weight:600;
-  color:var(--lime);letter-spacing:2px;
-  padding:10px 28px;
-  border:1px solid var(--lime-dim);border-radius:2px;
-  background:rgba(0,255,136,0.04);
-}
-
-/* ─── SCROLLING PROOF STRIP ─── */
-.proof{
-  overflow:hidden;
-  padding:40px 0;
-  border-top:1px solid var(--card-border);
-  border-bottom:1px solid var(--card-border);
-  background:rgba(0,255,136,0.015);
-  position:relative;
-}
-.proof::before,.proof::after{
-  content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none;
-}
-.proof::before{left:0;background:linear-gradient(90deg,var(--bg),transparent)}
-.proof::after{right:0;background:linear-gradient(270deg,var(--bg),transparent)}
-
-.proof-track{
-  display:flex;gap:48px;
-  animation:marquee 25s linear infinite;
-  width:max-content;
-}
-
-.proof-item{
-  font-family:var(--mono);font-size:12px;color:var(--text-muted);
-  letter-spacing:0.5px;white-space:nowrap;
-  display:flex;align-items:center;gap:8px;
-}
-.proof-item strong{color:var(--lime);font-weight:700;font-size:14px}
-.proof-sep{color:var(--card-border);font-size:16px}
-
-@keyframes marquee{
-  0%{transform:translateX(0)}
-  100%{transform:translateX(-50%)}
-}
-
-/* ─── DIVIDER ─── */
-.divider{
-  width:1px;height:60px;margin:0 auto;
-  background:linear-gradient(180deg,transparent,var(--lime-dim),transparent);
-}
-
-/* ─── DEPTH SECTIONS ─── */
-.section-dark{
-  background:linear-gradient(180deg,rgba(8,9,14,1) 0%,rgba(5,5,8,1) 100%);
-  position:relative;
-}
-
-.section-raised{
-  background:linear-gradient(180deg,rgba(12,13,20,1) 0%,rgba(8,9,14,1) 100%);
-  position:relative;
-}
-
-.angled-top{
-  position:relative;
-}
-.angled-top::before{
-  content:'';position:absolute;top:-40px;left:0;right:0;height:40px;
-  background:inherit;
-  clip-path:polygon(0 100%,100% 0,100% 100%);
-  z-index:1;
-}
-
-.angled-bottom::after{
-  content:'';position:absolute;bottom:-40px;left:0;right:0;height:40px;
-  background:inherit;
-  clip-path:polygon(0 0,100% 0,0 100%);
-  z-index:1;
-}
-
-/* ─── ENHANCED NUMBERS ─── */
-.numbers-section{
-  background:linear-gradient(180deg,rgba(5,5,8,1),rgba(10,11,18,1),rgba(5,5,8,1));
-  padding:64px 0;
-  position:relative;
-}
-
-/* ─── ENHANCED TRANSITION ─── */
-.transition{
-  background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(0,255,136,0.03),transparent 70%);
-}
-
-/* ─── ENHANCED COMMUNITY ─── */
+/* Community section */
 .community-section{
   background:linear-gradient(180deg,rgba(8,9,14,1),rgba(12,13,20,1));
   padding:80px 0 40px;
@@ -590,66 +146,63 @@ footer .lime{color:var(--lime)}
   background:radial-gradient(circle,rgba(0,255,136,0.04),transparent 70%);
   pointer-events:none;
 }
+.community{
+  max-width:700px;margin:0 auto;padding:0 24px 40px;text-align:center;
+}
+.community-badge{
+  display:inline-block;
+  font-family:var(--mono);font-size:10px;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;
+  color:var(--lime);padding:6px 16px;
+  border:1px solid var(--lime-dim);border-radius:2px;
+  background:rgba(0,255,136,0.04);margin-bottom:24px;
+}
+.community h2{
+  font-family:var(--sans);font-weight:800;
+  font-size:clamp(24px,4vw,36px);letter-spacing:-0.5px;
+  line-height:1.15;margin-bottom:16px;
+}
+.community p{font-size:15px;color:var(--text-dim);line-height:1.7;margin-bottom:12px}
 
-/* ─── FORM SECTION ENHANCED ─── */
+/* Form section */
 .form-section-wrap{
   background:linear-gradient(180deg,rgba(12,13,20,1),rgba(8,9,14,1));
   padding:0 0 80px;
 }
-
-.form-wrapper{
-  background:linear-gradient(165deg,rgba(14,15,22,0.95),rgba(8,9,14,0.98));
-  box-shadow:0 8px 40px rgba(0,0,0,0.4),0 0 60px rgba(0,255,136,0.03);
+.form-section{
+  max-width:600px;margin:0 auto;padding:48px 24px 0;text-align:center;
 }
 
-/* ─── PERK CARDS DEPTH ─── */
-.perk{
-  background:linear-gradient(165deg,rgba(14,15,22,0.9),rgba(8,9,14,0.95));
-  box-shadow:0 2px 12px rgba(0,0,0,0.3);
-  transition:transform 0.3s,box-shadow 0.3s,border-color 0.3s;
+/* Legend icons */
+.legend{
+  display:flex;gap:20px;justify-content:center;margin-bottom:24px;
 }
-.perk:hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 24px rgba(0,0,0,0.4);
-  border-color:rgba(0,255,136,0.15);
+.legend-item{
+  display:flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:11px;color:var(--text-dim);letter-spacing:0.5px;
+}
+.legend-dot{
+  width:8px;height:8px;border-radius:50%;display:inline-block;
+}
+.legend-dot.live{background:var(--lime);box-shadow:0 0 6px var(--lime)}
+.legend-dot.paused{background:var(--amber);box-shadow:0 0 6px var(--amber)}
+.legend-dot.planned{background:var(--text-muted)}
+
+/* Mid-page CTA */
+.mid-cta{text-align:center;padding:48px 24px}
+.mid-cta-sub{
+  font-family:var(--mono);font-size:10px;color:var(--text-muted);
+  margin-top:10px;letter-spacing:1px;
 }
 
-/* ─── RESPONSIVE ─── */
 @media(max-width:768px){
-  .numbers-inner{grid-template-columns:repeat(3,1fr)}
-  .num-cell:nth-child(3){border-right:none}
-  .num-cell:nth-child(4),.num-cell:nth-child(5),.num-cell:nth-child(6){border-top:1px solid var(--card-border)}
-  .categories{grid-template-columns:1fr;gap:10px;padding:0 16px 40px}
-  .perks{grid-template-columns:1fr}
-  .hero{min-height:auto;padding:120px 20px 60px}
-  .hero h1{font-size:32px;letter-spacing:-1px}
-  .hero-sub{font-size:15px;margin-top:16px}
-  .hero-cta{font-size:12px;padding:12px 28px;margin-top:28px}
-  .section-header{padding:60px 20px 36px}
-  .section-header h2{font-size:24px}
   .transition{padding:80px 20px}
   .transition h2{font-size:28px}
   .community{padding:0 20px 40px}
-  .form-section{padding:32px 16px 60px}
+  .form-section{padding:32px 16px 0}
   .form-wrapper{padding:24px 16px}
   .mid-cta{padding:32px 16px}
-  .mid-cta-btn{font-size:11px;padding:12px 24px}
-  .nav-cta{display:none} /* hide nav CTA on mobile — sticky bar handles it */
-  .scroll-hint{display:none} /* hide scroll hint on mobile */
-  .proof{padding:28px 0}
-  .total-bar .total-count{font-size:10px;padding:8px 16px}
-}
-
-@media(max-width:480px){
-  .numbers-inner{grid-template-columns:repeat(2,1fr)}
-  .num-cell:nth-child(2n){border-right:none}
-  .num-cell:nth-child(n+3){border-top:1px solid var(--card-border)}
-  .num-cell{padding:18px 8px}
-  .num-val{font-size:22px}
-  nav{padding:12px 16px}
-  .hero{padding:100px 16px 50px}
-  .hero h1{font-size:28px}
-  .urgency{font-size:10px;padding:6px 12px}
+  .legend{flex-wrap:wrap;gap:12px}
 }
 </style>
 </head>
@@ -659,68 +212,117 @@ footer .lime{color:var(--lime)}
 <div class="orb orb-2"></div>
 <div class="orb orb-3"></div>
 
-<!-- NAV -->
+<!-- ═══ NAV ═══ -->
 <nav>
-  <span class="nav-logo">BRYCEN WOOD</span>
-  <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link">Guides</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+    <a href="/contact/" class="nav-cta">Book a Call</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<!-- ─── HERO ─── -->
+<!-- ═══ HERO ═══ -->
 <section class="hero">
   <p class="hero-eyebrow">Built by one person with one tool</p>
-  <h1>80+ Automations.<br><span class="accent">Zero Code.</span></h1>
-  <p class="hero-sub">Here's everything I built for my business with <strong>Claude Code</strong> — no coding experience, no developers, no agencies.</p>
-  <div class="hero-line"></div>
-  <a href="#waitlist" class="hero-cta">Join the Free Waitlist</a>
+  <h1>1.5M Views.<br><span class="accent">Zero Code.</span></h1>
+  <p class="hero-sub">I build custom business operating systems using <strong>Claude Code</strong> — no developers, no agencies, no new hires. I 6x'd my company's revenue without adding a single employee. Now I build these systems for other businesses.</p>
+  <div class="hero-accent-line"></div>
+  <div class="btn-group" style="animation:fadeUp 0.8s ease 0.35s both">
+    <a href="/community/" class="btn-primary">Join the Free Community</a>
+    <a href="/contact/" class="btn-secondary">Book a Discovery Call</a>
+  </div>
   <div class="scroll-hint">Scroll to explore</div>
 </section>
 
-<!-- ─── NUMBERS ─── -->
-<section class="numbers-section">
-<section class="numbers reveal">
-  <div class="numbers-inner">
-    <div class="num-cell"><div class="num-val">79</div><div class="num-label">Live Systems</div></div>
-    <div class="num-cell"><div class="num-val">25+</div><div class="num-label">Planned</div></div>
-    <div class="num-cell"><div class="num-val">10</div><div class="num-label">APIs</div></div>
-    <div class="num-cell"><div class="num-val">24</div><div class="num-label">Cron Jobs</div></div>
-    <div class="num-cell"><div class="num-val">75+</div><div class="num-label">Scripts</div></div>
-    <div class="num-cell"><div class="num-val">0</div><div class="num-label">Lines Written</div></div>
-  </div>
-</section>
-
-<!-- close numbers-section -->
-</section>
-
-<!-- ─── SCROLLING PROOF ─── -->
+<!-- ═══ PROOF STRIP ═══ -->
 <div class="proof">
   <div class="proof-track">
-    <div class="proof-item"><strong>1.1M+</strong> video views</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>6,300+</strong> followers in 3 weeks</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>1,100+</strong> waitlist signups</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>$3,600/yr</strong> saved on CRM alone</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>45%</strong> DM click-through rate</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>739</strong> personalized emails in one night</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>24</strong> automations running 24/7</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>5</strong> client sites delivered</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>1.5M+</strong> video views</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>8,000+</strong> followers</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>1,700+</strong> waitlist signups</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>$300K+</strong> revenue (no new hires)</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>80+</strong> automations built</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>0</strong> lines of code</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>10</strong> APIs connected</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>24/7</strong> cron jobs running</div><span class="proof-sep">/</span>
     <!-- duplicate for seamless loop -->
-    <div class="proof-item"><strong>1.1M+</strong> video views</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>6,300+</strong> followers in 3 weeks</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>1,100+</strong> waitlist signups</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>$3,600/yr</strong> saved on CRM alone</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>45%</strong> DM click-through rate</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>739</strong> personalized emails in one night</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>24</strong> automations running 24/7</div><span class="proof-sep">/</span>
-    <div class="proof-item"><strong>5</strong> client sites delivered</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>1.5M+</strong> video views</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>8,000+</strong> followers</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>1,700+</strong> waitlist signups</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>$300K+</strong> revenue (no new hires)</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>80+</strong> automations built</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>0</strong> lines of code</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>10</strong> APIs connected</div><span class="proof-sep">/</span>
+    <div class="proof-item"><strong>24/7</strong> cron jobs running</div><span class="proof-sep">/</span>
   </div>
 </div>
 
-<!-- ─── SYSTEMS SECTION ─── -->
-<div class="section-raised">
+<!-- ═══ NUMBERS ═══ -->
+<section class="numbers-section">
+<section class="numbers reveal">
+  <div class="numbers-inner">
+    <div class="num-cell"><div class="num-val" data-target="80" data-suffix="+">0+</div><div class="num-label">Live Systems</div></div>
+    <div class="num-cell"><div class="num-val" data-target="25" data-suffix="+">0+</div><div class="num-label">Planned</div></div>
+    <div class="num-cell"><div class="num-val" data-target="10" data-suffix="">0</div><div class="num-label">APIs</div></div>
+    <div class="num-cell"><div class="num-val" data-target="24" data-suffix="">0</div><div class="num-label">Cron Jobs</div></div>
+    <div class="num-cell"><div class="num-val" data-target="75" data-suffix="+">0+</div><div class="num-label">Scripts</div></div>
+    <div class="num-cell"><div class="num-val" data-target="0" data-suffix="">0</div><div class="num-label">Lines Written</div></div>
+  </div>
+</section>
+</section>
+
+<!-- ═══ WHAT I BUILD ═══ -->
+<div class="offer-section section-dark">
+  <div class="section-header reveal">
+    <h2>What I <span class="accent">Build</span></h2>
+    <p>Custom operating systems for real businesses. Not templates. Not tutorials. Built from scratch, tailored to your business, delivered in two weeks.</p>
+  </div>
+
+  <div class="card-grid">
+    <a href="/services/custom-build/" class="card reveal" style="text-decoration:none">
+      <div class="card-body">
+        <div class="card-tag">Service</div>
+        <div class="card-title">Custom Business Operating System</div>
+        <div class="card-desc">60-min interview, custom plan in 72 hours, 2-week build, full handoff. Your entire business — automated.</div>
+        <div class="card-link">Learn more</div>
+      </div>
+    </a>
+    <a href="/case-studies/summit-wraps/" class="card reveal" style="text-decoration:none">
+      <div class="card-body">
+        <div class="card-tag">Case Study</div>
+        <div class="card-title">The Summit Wraps Story</div>
+        <div class="card-desc">$52K to $300K revenue — without hiring a single employee. 80+ AI systems replaced the need for developers, agencies, and extra staff.</div>
+        <div class="card-link">Read the story</div>
+      </div>
+    </a>
+    <a href="/guides/" class="card reveal" style="text-decoration:none">
+      <div class="card-body">
+        <div class="card-tag">Free Resources</div>
+        <div class="card-title">Free Guides &amp; Playbook</div>
+        <div class="card-desc">Everything I've learned about building business systems with AI — llms.txt, markdown mirrors, cold email, and more.</div>
+        <div class="card-link">Browse guides</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══ FULL SYSTEMS BREAKDOWN ═══ -->
+<div class="section-raised" id="systems">
 <div class="section-header reveal">
-  <div style="display:flex;gap:20px;justify-content:center;margin-bottom:24px">
-    <span style="display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--text-dim);letter-spacing:0.5px"><span style="width:8px;height:8px;border-radius:50%;background:#00ff88;box-shadow:0 0 6px #00ff88;display:inline-block"></span> Live &amp; Running</span>
-    <span style="display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--text-dim);letter-spacing:0.5px"><span style="width:8px;height:8px;border-radius:50%;background:#ffaa00;box-shadow:0 0 6px #ffaa00;display:inline-block"></span> Built &amp; Paused</span>
-    <span style="display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--text-dim);letter-spacing:0.5px"><span style="width:8px;height:8px;border-radius:50%;background:#555568;display:inline-block"></span> Planned</span>
+  <div class="legend">
+    <span class="legend-item"><span class="legend-dot live"></span> Live &amp; Running</span>
+    <span class="legend-item"><span class="legend-dot paused"></span> Built &amp; Paused</span>
+    <span class="legend-item"><span class="legend-dot planned"></span> Planned</span>
   </div>
 </div>
 <div class="section-header reveal" style="padding-top:0">
@@ -728,11 +330,10 @@ footer .lime{color:var(--lime)}
   <p>Every system organized by category. This is what one person can build when they stop waiting for permission and start talking to AI.</p>
 </div>
 
-<!-- ─── CATEGORIES ─── -->
 <section class="categories">
 
   <div class="cat-card reveal">
-    <div class="cat-top"><span class="cat-name">CRM & Sales</span><span class="cat-count">12</span></div>
+    <div class="cat-top"><span class="cat-name">CRM &amp; Sales</span><span class="cat-count">12</span></div>
     <div class="cat-items">
       <div class="cat-item live">AI Lead Scorer</div>
       <div class="cat-item live">AI Email Writer</div>
@@ -781,7 +382,7 @@ footer .lime{color:var(--lime)}
   </div>
 
   <div class="cat-card reveal">
-    <div class="cat-top"><span class="cat-name">Dashboard & Monitoring</span><span class="cat-count">6</span></div>
+    <div class="cat-top"><span class="cat-name">Dashboard &amp; Monitoring</span><span class="cat-count">6</span></div>
     <div class="cat-items">
       <div class="cat-item live">Full Business Dashboard</div>
       <div class="cat-item live">Phone Access Anywhere</div>
@@ -793,7 +394,7 @@ footer .lime{color:var(--lime)}
   </div>
 
   <div class="cat-card reveal">
-    <div class="cat-top"><span class="cat-name">Website & SEO</span><span class="cat-count">9</span></div>
+    <div class="cat-top"><span class="cat-name">Website &amp; SEO</span><span class="cat-count">9</span></div>
     <div class="cat-items">
       <div class="cat-item live">Full Business Website</div>
       <div class="cat-item live">AI-Readable Markdown Mirrors</div>
@@ -809,8 +410,8 @@ footer .lime{color:var(--lime)}
 
   <!-- MID-PAGE CTA -->
   <div class="mid-cta reveal" style="grid-column:1/-1">
-    <a href="#waitlist" class="mid-cta-btn">I Want to Learn How to Build This</a>
-    <p class="mid-cta-sub">200 founding spots — free to join — and there's more below</p>
+    <a href="/playbook/" class="btn-secondary">I Want to Learn How to Build This</a>
+    <p class="mid-cta-sub">Get the free playbook — and there's more below</p>
   </div>
 
   <div class="cat-card reveal">
@@ -906,24 +507,24 @@ footer .lime{color:var(--lime)}
 
 </section>
 
-<!-- ─── TOTAL ─── -->
+<!-- Total -->
 <div class="total-bar reveal">
   <span class="total-count">104 TOTAL SYSTEMS &mdash; 79 LIVE &middot; 25+ PLANNED</span>
 </div>
 <div style="height:48px"></div>
-</div><!-- close section-raised -->
+</div>
 
 <div class="divider"></div>
 
-<!-- ─── TRANSITION ─── -->
+<!-- ═══ TRANSITION ═══ -->
 <section class="transition reveal">
   <h2>I'm giving away <span class="accent">the entire playbook.</span></h2>
   <p>Every prompt. Every tool. Every mistake I made along the way. And exactly how to replicate each system for your business — even if you've never written a line of code.</p>
 </section>
 
-<!-- ─── COMMUNITY ─── -->
+<!-- ═══ COMMUNITY ═══ -->
 <div class="community-section">
-<section class="community reveal" id="waitlist">
+<section class="community reveal" id="community">
   <div class="community-badge">Free Community</div>
   <h2>Stop watching tutorials.<br>Start building your business.</h2>
   <p>Most people see what AI can do and think "that's cool" — then go back to doing everything manually. This community is for the ones who actually want to build.</p>
@@ -950,15 +551,13 @@ footer .lime{color:var(--lime)}
 
   <p style="font-size:13px;color:var(--text-muted);margin-top:24px;font-style:italic">"But I'm not technical." — Neither am I. Everything on this page was built through conversation. If you can describe what your business needs, you can build it.</p>
 </section>
-
-<!-- close community-section -->
 </div>
 
-<!-- ─── FORM ─── -->
+<!-- ═══ FORM ═══ -->
 <div class="form-section-wrap">
 <section class="form-section">
   <div class="form-wrapper">
-    <div class="urgency"><span class="urgency-dot"></span>Only 200 founding member spots</div>
+    <div class="urgency"><span class="urgency-dot"></span>First 200 founding member spots</div>
     <div class="form-title">Get on the waitlist</div>
     <div class="form-sub">Free to join. First 200 members get founding access + direct input on what gets built next.</div>
     <div id="ghl-form">
@@ -983,27 +582,68 @@ footer .lime{color:var(--lime)}
     </div>
   </div>
 </section>
-
-<!-- close form-section-wrap -->
 </div>
 
-<!-- ─── FOOTER ─── -->
+<!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM</p>
-  <div class="social-row">
-    <a href="https://www.instagram.com/brycenwood.ai/" class="social-link" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@brycenwood1" class="social-link" target="_blank">TikTok</a>
-    <a href="https://www.youtube.com/@brycenwood-ai" class="social-link" target="_blank">YouTube</a>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/community/" class="footer-link">Community</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
   </div>
 </footer>
 
-<!-- ─── STICKY MOBILE BAR ─── -->
+<!-- ═══ STICKY MOBILE BAR ═══ -->
 <div class="sticky-bar" id="stickyBar">
-  <a href="#waitlist" class="sticky-bar-btn">Join the Free Waitlist</a>
-  <div class="sticky-bar-sub">Only 200 founding spots — free to join</div>
+  <a href="/contact/" class="sticky-bar-btn">Book a Free Call</a>
+  <div class="sticky-bar-sub">30-min discovery call — no obligation</div>
 </div>
 
+<!-- ═══ JAVASCRIPT ═══ -->
 <script>
+// Mobile nav toggle
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+
 // Sticky bar — show after scrolling past hero
 const stickyBar=document.getElementById('stickyBar');
 if(stickyBar){
@@ -1018,22 +658,19 @@ if(stickyBar){
 }
 
 // Scroll reveal
-const obs=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
 },{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
 
 // Animated number counting
-const targets=[
-  {val:79,suffix:''},
-  {val:25,suffix:'+'},
-  {val:10,suffix:''},
-  {val:24,suffix:''},
-  {val:75,suffix:'+'},
-  {val:0,suffix:''}
-];
-
 function animateCount(el,target,suffix){
+  if(target===0){el.textContent='0'+suffix;return}
   let current=0;
   const duration=1200;
   const steps=40;
@@ -1050,16 +687,13 @@ function animateCount(el,target,suffix){
 const numSection=document.querySelector('.numbers');
 if(numSection){
   const vals=numSection.querySelectorAll('.num-val');
-  // Set to 0 initially
-  vals.forEach((v,i)=>{v.textContent='0'+(targets[i]?targets[i].suffix:'')});
-
   const numObs=new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
       if(e.isIntersecting){
-        vals.forEach((v,i)=>{
-          if(targets[i]&&targets[i].val>0){
-            animateCount(v,targets[i].val,targets[i].suffix);
-          }
+        vals.forEach(v=>{
+          const target=parseInt(v.dataset.target)||0;
+          const suffix=v.dataset.suffix||'';
+          animateCount(v,target,suffix);
         });
         numObs.unobserve(e.target);
       }
@@ -1067,6 +701,18 @@ if(numSection){
   },{threshold:0.3});
   numObs.observe(numSection);
 }
+
+// FAQ accordion (reusable across pages)
+document.querySelectorAll('.faq-question').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.closest('.faq-item');
+    const wasOpen=item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+    // Open clicked (if it wasn't already open)
+    if(!wasOpen)item.classList.add('open');
+  });
+});
 </script>
 </body>
 </html>
