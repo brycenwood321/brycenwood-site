@@ -93,7 +93,7 @@ Transparent Pricing
  +
  
  
- Everything. CRM setup, email automation, website with SEO, dashboards, lead generation systems, content pipelines, documentation, and a live training session. The founder rate is a limited offer for my first 5 clients.
+ Everything your business needs to run as an automated system. CRM setup with pipeline automation and lead scoring, email sequences with AI-drafted personalization, a full website with SEO optimization and AI-readable files (llms.txt + markdown mirrors), real-time dashboards accessible from your phone, lead generation systems, content pipelines, complete documentation, and a live training session walking you through every system. The founder rate is a limited offer for my first 5 clients -- the same build at agency rates would run $15,000-$50,000 based on industry pricing for the equivalent scope. After the first 5 clients, the price goes to $7,500 at the standard rate.
 
  
  
@@ -103,7 +103,7 @@ Transparent Pricing
  +
  
  
- Because I use AI to build at 10x the speed with 10x less overhead. No team of designers, developers, and project managers billing hours. Just me and Claude Code, building exactly what your business needs.
+ Because I use AI to build at 10x the speed with 10x less overhead. There is no team of designers, developers, project managers, and account executives all billing hours against your project. It is just me and Claude Code, building exactly what your business needs through conversation. The Summit Wraps operating system -- 80+ automations, 10 API integrations, 75+ scripts, a 32-page website -- was built entirely this way. An agency quoting the same scope would estimate $50,000-$100,000 and 3-6 months of delivery time. I deliver in 2 weeks because AI eliminates the traditional bottlenecks of software development: requirements translation, developer ramp-up, project management overhead, and multi-team coordination.
 
  
  
@@ -113,7 +113,7 @@ Transparent Pricing
  +
  
  
- Yes. 100%. No subscriptions to me, no proprietary lock-in. Every system, every line of code, every document -- it's all yours.
+ Yes. 100% ownership. No subscriptions to me, no proprietary lock-in, no vendor dependency. Every system, every line of code, every configuration file, every piece of documentation -- it is all yours. You can modify it, extend it, or hand it off to another developer at any time. The systems run on your own infrastructure (your GitHub, your hosting, your CRM account). I do not insert myself as a dependency. If we part ways after the build, everything keeps running exactly as it was. That is a fundamental difference from agencies that host your site on their servers or use proprietary tools that lock you into a monthly relationship.
 
  
  
@@ -123,7 +123,7 @@ Transparent Pricing
  +
  
  
- The first 30 days of support are included. After that, the $2K/month retainer covers maintenance, new features, and optimization. Or you can manage it yourself -- everything is documented.
+ The first 30 days of post-launch support are included with every build at no extra cost. During that period, I fix anything that needs adjusting as you start using the systems in real production. After 30 days, you have three options: manage it yourself using the comprehensive documentation I provide (most clients choose this), join the free community where I share build tutorials and answer questions, or sign up for the $2,000/month retainer that covers ongoing maintenance, new feature builds, performance optimization, and priority support. The systems are built to run independently -- 24 cron jobs and automated processes handle daily operations without anyone touching them.
 
  
  

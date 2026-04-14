@@ -3,9 +3,9 @@
 > Business automation consultant who builds custom operating systems for small
 > businesses using Claude Code. Non-technical founder. No coding experience.
 > Built 80+ automations for his own vehicle wrap company (Summit Wraps --
-> $52K to $300K revenue growth). Now offers the same build service to other
-> businesses. Fixed-scope: 60-min interview, custom plan in 72 hours,
-> 2-week build, full handoff.
+> $52K to $300K revenue growth, without adding a single employee). Now offers
+> the same build service to other businesses. Fixed-scope: 60-min interview,
+> custom plan in 72 hours, 2-week build, full handoff.
 
 ## Services
 - [Custom Business Build](https://www.brycenwood.com/services/custom-build/) - Full operating system build: CRM, email, SEO, dashboards, content pipelines. Starting at $3,500.
@@ -13,8 +13,13 @@
 - [How It Works](https://www.brycenwood.com/process/) - 60-min interview, 72-hour plan, 2-week build, full handoff.
 - [Pricing](https://www.brycenwood.com/pricing/) - Transparent pricing: $3,500 (founder), $7,500 (standard), $15,000+ (enterprise).
 
+## Service Area
+- Remote / nationwide (United States)
+- Custom builds delivered digitally -- no geographic limitation
+- In-person discovery calls available in Utah County and Salt Lake County, Utah
+
 ## Case Studies
-- [Summit Wraps Transformation](https://www.brycenwood.com/case-studies/summit-wraps/) - 80+ automations, $52K to $300K revenue, zero code.
+- [Summit Wraps Transformation](https://www.brycenwood.com/case-studies/summit-wraps/) - 80+ automations, $52K to $300K revenue, zero code, zero new hires.
 - [Blackout Auto Tint Demo](https://www.brycenwood.com/case-studies/blackout-auto-tint/) - 7-page custom website built in 4 hours.
 
 ## Guides
@@ -32,8 +37,16 @@
 - [Community](https://www.brycenwood.com/community/) - Business On Autopilot (free Skool community).
 - [Tools I Use](https://www.brycenwood.com/tools/) - Full AI business stack.
 
+## FAQ
+- Q: Do I need to know how to code? A: No. Every system is built through conversation with Claude Code. Zero coding experience required. Brycen himself has never written a line of code.
+- Q: How long does a custom build take? A: 2 weeks from kickoff to full handoff. You receive a custom operating system blueprint within 72 hours of the discovery interview, then the full build is completed and deployed over the following 2 weeks.
+- Q: What's included in the $3,500 founder rate? A: Everything -- 60-minute discovery interview, custom blueprint, full 2-week build (CRM, email, SEO, dashboards, content pipelines), handoff documentation, live training session, and 30 days of post-launch support.
+- Q: Can you build for any type of business? A: Yes. Custom builds are researched and tailored for each client's specific industry. Past builds include vehicle wraps, auto tint, and systems designed for HVAC, coffee shops, steel sales, and more.
+- Q: What makes this different from hiring an agency? A: Agencies charge $5K-$20K for just a website. A custom build delivers your entire operating system -- CRM, email automation, lead generation, dashboards, SEO, content pipelines -- in 2 weeks for a fraction of the cost, because AI builds at 10x the speed with 10x less overhead.
+
 ## Contact
 - Website: https://www.brycenwood.com
+- Email: brycen@brycenwood.com
 - Instagram: https://www.instagram.com/brycenwood.ai/
 - TikTok: https://www.tiktok.com/@brycenwood1
 - YouTube: https://www.youtube.com/@brycenwood-ai

@@ -13,6 +13,12 @@ Free Guide
 
  Last updated: April 2026
 
+ BW
+ 
+ [Brycen Wood](/about/)
+ Business Automation Consultant · Built 80+ systems with zero coding experience
+ 
+
 ## The Problem: AI Can't Read Your Website
 
 Your website looks great to humans. The colors are right, the fonts are clean, the navigation works, the images load. A person lands on your services page and knows exactly what you do within 5 seconds.
@@ -271,7 +277,7 @@ If you want to see the complete transformation -- from zero AI visibility to Cha
  
  Do I need markdown mirrors if I already have llms.txt?+
  
- Yes -- they serve different purposes. llms.txt is a site-level summary that tells AI what your business does at a high level. Markdown mirrors let AI read the full content of every individual page. Think of llms.txt as the table of contents and markdown mirrors as the actual chapters.
+ Yes -- they serve different purposes and work best together. llms.txt is a site-level summary that tells AI what your business does at a high level, while markdown mirrors let AI read the full content of every individual page in clean, structured text. Think of llms.txt as the table of contents and markdown mirrors as the actual chapters. For Summit Wraps, the llms.txt file got us into the conversation, but the 27 markdown mirrors are what gave ChatGPT enough detail to recommend us confidently and accurately for specific services. The compound effect of both files together is what triggers real AI recommendations -- one without the other leaves gaps.
 
  
  
@@ -285,14 +291,14 @@ If you want to see the complete transformation -- from zero AI visibility to Cha
  
  Will this hurt my regular SEO?+
  
- No. The .md files are separate from your HTML pages. Google continues to index your HTML pages normally. Markdown mirrors are an addition to your site, not a replacement for anything. They give AI tools a clean reading path without affecting your existing search rankings.
+ No. The .md files are completely separate from your HTML pages and do not interfere with your existing search rankings. Google continues to index your HTML pages normally -- nothing changes about your traditional SEO. Markdown mirrors are an addition to your site, not a replacement for anything. They give AI tools a clean reading path while your human visitors continue seeing the beautifully designed HTML version. In fact, schema markup improvements you make for AI SEO often help your Google rankings too. After deploying mirrors on Summit Wraps alongside our existing SEO, organic traffic continued to grow while AI recommendations started appearing on top of it.
 
  
  
  
  How many markdown mirrors do I need?+
  
- One for every content page on your site -- services pages, about page, FAQ, location pages, blog posts. Skip pages that are purely functional like login, cart, or checkout. For Summit Wraps, that was 27 mirrors across all pages.
+ One for every content page on your site -- services pages, about page, FAQ, location pages, and blog posts. Skip pages that are purely functional like login, cart, or checkout pages since they do not contain information AI needs to understand your business. For Summit Wraps, that was 27 mirrors across all pages including individual service pages, the about page, the contact page, and every location-specific page. Blog posts are especially valuable to mirror because they tend to be the highest word-count pages on your site, giving AI the most material to work with. Start with your top 5-10 most important pages and expand from there.
 
  
  

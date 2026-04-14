@@ -231,7 +231,7 @@ Custom Business Build
  +
  
  
- None. Everything is built through conversation with AI. If you can describe what your business needs, I can build it.
+ None whatsoever. Everything is built through conversation with AI. I have zero coding experience myself -- every system I have built, including 80+ automations for my own vehicle wrap company, was created by describing what I needed in plain English to Claude Code. You do not need to know Python, JavaScript, APIs, or databases. If you can describe how your business works and what you need it to do, I can build it. During the 60-minute discovery call, I ask the questions that surface exactly what your business needs. You bring the business knowledge; the AI and I handle the technical execution.
 
  
  
@@ -241,7 +241,7 @@ Custom Business Build
  +
  
  
- Great -- I'll audit it, optimize it, and integrate it with your new operating system. If it needs a rebuild, that's included.
+ Great -- I will audit your existing site for SEO performance, page speed, schema markup, and AI readability, then optimize it and integrate it with your new operating system. If the site needs a full rebuild to support the automation stack, that is included in the build price at no extra cost. For example, the Summit Wraps website was rebuilt from scratch as a 32-page SEO-optimized site that went from roughly 7 visits/day to 100-150 real humans/day. I also add llms.txt and markdown mirrors so AI tools like ChatGPT can read and recommend your business. Whether we optimize your existing site or build a new one depends on what makes the most sense for your goals.
 
  
  
@@ -251,7 +251,7 @@ Custom Business Build
  +
  
  
- Agencies charge $5K-$20K for just a website. I build your entire operating system -- CRM, email, SEO, dashboards, content pipelines -- in 2 weeks for a fraction of the cost.
+ Agencies charge $5,000-$20,000 for just a website and then bill you monthly for maintenance. A full-time developer costs $8,000-$15,000 per month. I build your entire operating system -- CRM automation, email sequences, website with full SEO, real-time dashboards, content pipelines, lead generation, financial tracking -- in 2 weeks for a fraction of the cost. The Summit Wraps operating system replaced the equivalent of $13,500-$24,000/month in agency, developer, and virtual assistant costs, and it runs 24/7 with zero ongoing fees. You also own everything outright -- no proprietary lock-in, no monthly subscription to me, no vendor dependency.
 
  
  
@@ -261,7 +261,7 @@ Custom Business Build
  +
  
  
- You own everything. It's fully documented and I walk you through every system. If you want ongoing support, the $2K/month retainer covers maintenance, new features, and optimization.
+ You own everything -- 100%. Every system, every script, every configuration is fully documented and handed off to you in a live training session where I walk you through how everything works. The first 30 days of support are included at no extra cost, so if anything needs tweaking as you start using the systems in production, I am there to fix it. After 30 days, you can manage it yourself (everything is documented), join the free community where I share build tutorials, or opt for the $2,000/month retainer that covers ongoing maintenance, new feature builds, and optimization. Most clients find the documentation sufficient to manage day-to-day operations on their own.
 
  
  
@@ -271,7 +271,7 @@ Custom Business Build
  +
  
  
- Yes. I've built systems for vehicle wrap shops, auto tint businesses, and am building for HVAC, coffee shops, steel sales, and more. Every build is custom-researched for your industry.
+ Yes. I have built systems for vehicle wrap shops and auto tint businesses, and I am currently building for HVAC companies, artisanal coffee shops, steel sales operations, web designers, and authors. Every build is custom-researched for your specific industry and workflow -- no templates, no copy-paste from previous clients. The 60-minute discovery call is where I learn the nuances of your business: your sales process, your customer journey, your bottlenecks, your competitive landscape. The architecture patterns (lead scoring, CRM automation, content pipelines) are universal, but the specific implementation -- scoring criteria, email tone, pipeline stages, dashboard metrics -- is tailored to exactly how your business operates.
 
  
  

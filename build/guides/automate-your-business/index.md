@@ -14,6 +14,12 @@ FREE GUIDE
 
  Last updated: April 2026
 
+ BW
+ 
+ [Brycen Wood](/about/)
+ Business Automation Consultant · Built 80+ systems with zero coding experience
+ 
+
  
 ## The Automation Mindset
 
@@ -243,14 +249,14 @@ FREE GUIDE
  
  Will AI automation replace my employees?+
  
- No -- it replaces the tasks that shouldn't require a human in the first place. Data entry, follow-up emails, lead sorting, report generation, content scheduling. Your people get to focus on the work that actually requires human judgment, creativity, and relationships. Automation makes your team more effective, not smaller.
+ No -- it replaces the tasks that should not require a human in the first place. Data entry, follow-up emails, lead sorting, report generation, content scheduling, invoice tracking, and repetitive outreach. Your people get to focus on the work that actually requires human judgment, creativity, and relationships. Summit Wraps went from $52K to $300K in revenue with 80+ automations and zero additional hires -- not because we eliminated jobs, but because the two of us could now operate like a company with a full marketing department, sales team, and IT staff. Automation makes your existing team dramatically more effective by removing the busywork that eats their best hours.
 
  
  
  
  How long does it take to see results from business automation?+
  
- Most businesses see measurable results within the first week. Automated lead follow-up alone typically increases response rates by 30-50% because speed matters more than anything else in sales. The full compound effect -- where multiple systems work together -- usually becomes obvious within 30-60 days.
+ Most businesses see measurable results within the first week. Automated lead follow-up alone typically increases response rates by 30-50% because speed matters more than anything else in sales. Within 30 days, you should have enough data to see clear patterns -- which lead sources convert best, which follow-up sequences get replies, where deals stall in your pipeline. The full compound effect -- where multiple systems work together and feed each other data -- usually becomes obvious within 30-60 days. For Summit Wraps, the compound effect of 8 interconnected systems is what drove the $52K to $300K growth. No single system did that alone, but each one amplified the others.
 
  
  

@@ -10,6 +10,8 @@
 <!-- Preconnect -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
 
 <!-- Open Graph -->
 <meta property="og:title" content="How I Built an AI Cold Email System That Actually Works | Brycen Wood">
@@ -32,6 +34,7 @@
   "@graph": [
     {
       "@type": "Article",
+      "image": "https://www.brycenwood.com/assets/images/og-default.jpg",
       "headline": "How I Built an AI Cold Email System That Actually Works",
       "description": "Build an AI-powered cold email system that scores leads, drafts personalized emails, and sends automatically. Real system, real results, zero coding.",
       "author": {
@@ -59,7 +62,7 @@
           "name": "Is AI cold email legal?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. CAN-SPAM (US) requires a real physical address, an unsubscribe mechanism, and no deceptive subject lines. AI-generated emails must follow the same rules as manually written ones. The content being AI-drafted does not change the legality -- the compliance requirements are about the sending practices, not the authorship."
+            "text": "Yes. CAN-SPAM (US) requires a real physical address, an unsubscribe mechanism, and no deceptive subject lines. AI-generated emails must follow the same rules as manually written ones -- the content being AI-drafted does not change the legality. The compliance requirements are about sending practices, not authorship. My system includes an unsubscribe link in every email, uses our real business address, and sends from an authenticated domain with proper SPF, DKIM, and DMARC records. The key legal risk with cold email is not the AI drafting -- it is sending to people who have opted out or using deceptive subject lines. Follow the same rules you would for manually written cold email and you are fully compliant."
           }
         },
         {
@@ -67,7 +70,7 @@
           "name": "How do I verify email deliverability before sending?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Use a verification service that checks whether an email address is deliverable, risky, or an accept-all catchall. Services like ZeroBounce, NeverBounce, or Fiverr verification gigs will categorize each address. Only send to addresses marked Deliverable. Accept-all addresses look valid but often go to black holes where no human will ever see your email."
+            "text": "Use a verification service that checks whether an email address is deliverable, risky, or an accept-all catchall. Services like ZeroBounce, NeverBounce, or Fiverr verification gigs will categorize each address. Only send to addresses marked "Deliverable" -- not "Valid" or "Accept-all." I learned this lesson the hard way: my first 111 sends all went to accept-all catchall addresses that looked valid but were black holes where no human ever saw the email. Zero replies from 111 perfectly personalized emails. After switching to verified-deliverable addresses only, the system started working. This single change -- verifying deliverability before writing a single email -- is the difference between a system that produces results and one that produces silence."
           }
         },
         {
@@ -75,7 +78,7 @@
           "name": "How many cold emails should I send per day?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Start with 10-15 per day for the first 2 weeks to warm up your sending reputation. Increase gradually to 30-50 per day over weeks 3-4. Never blast hundreds from a cold domain -- you will get flagged as spam immediately. Warmup matters more than volume."
+            "text": "Start with 10-15 per day for the first 2 weeks to warm up your sending domain reputation. Increase gradually to 30-50 per day over weeks 3-4 as inbox placement stays healthy. Never blast hundreds of emails from a cold domain -- you will get flagged as spam immediately and damage your domain reputation, which can take months to recover. My system uses controlled warmup batches with real-time bounce tracking. Any address that bounces gets removed immediately to protect the sending domain. Sign up for Google Postmaster Tools to monitor your reputation score. Warmup matters more than volume -- 15 emails that land in the primary inbox are worth more than 500 that land in spam."
           }
         },
         {
@@ -83,11 +86,22 @@
           "name": "What makes AI cold email different from regular cold email?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Traditional cold email uses one template sent to thousands of people with mail-merge fields like [COMPANY_NAME]. AI cold email reads each lead's actual website, understands their business, and writes a genuinely unique email referencing specific details. The recipient can tell the difference immediately -- and so can their spam filter."
+            "text": "Traditional cold email uses one template sent to thousands of people with mail-merge fields like [COMPANY_NAME] and [INDUSTRY]. AI cold email reads each lead's actual website -- their services page, about page, fleet gallery, coverage area -- and writes a genuinely unique email referencing specific details about that business. My system scored 5,500+ leads, identified 739 Grade A prospects, and drafted 739 completely unique emails in a single overnight run. Each email referenced the lead's actual services, location, and fleet details. The recipient can tell the difference immediately -- it reads like a hand-written note, not a mass blast. Spam filters can tell the difference too, because every email has unique content rather than a repeated template."
           }
         }
       ]
     }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brycenwood.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.brycenwood.com/guides/"},
+    {"@type": "ListItem", "position": 3, "name": "AI Cold Email System"}
   ]
 }
 </script>
@@ -159,6 +173,14 @@
 
 <!-- CONTENT -->
 <div class="content">
+
+<div style="display:flex;align-items:center;gap:14px;padding:16px 0 24px;border-bottom:1px solid var(--card-border);margin-bottom:32px">
+  <div style="width:44px;height:44px;border-radius:50%;background:var(--lime);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:16px;color:var(--bg);flex-shrink:0">BW</div>
+  <div>
+    <div style="font-weight:600;font-size:14px"><a href="/about/" style="color:var(--text);text-decoration:none">Brycen Wood</a></div>
+    <div style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">Business Automation Consultant · Built 80+ systems with zero coding experience</div>
+  </div>
+</div>
 
   <h2>Why Most Cold Email Fails</h2>
 
@@ -342,7 +364,7 @@
         <span class="faq-toggle">+</span>
       </div>
       <div class="faq-answer">
-        <p>Yes. CAN-SPAM (US) requires a real physical address, an unsubscribe mechanism, and no deceptive subject lines. AI-generated emails must follow the same rules as manually written ones. The content being AI-drafted does not change the legality -- the compliance requirements are about the sending practices, not the authorship.</p>
+        <p>Yes. CAN-SPAM (US) requires a real physical address, an unsubscribe mechanism, and no deceptive subject lines. AI-generated emails must follow the same rules as manually written ones -- the content being AI-drafted does not change the legality. The compliance requirements are about sending practices, not authorship. My system includes an unsubscribe link in every email, uses our real business address, and sends from an authenticated domain with proper SPF, DKIM, and DMARC records. The key legal risk with cold email is not the AI drafting -- it is sending to people who have opted out or using deceptive subject lines. Follow the same rules you would for manually written cold email and you are fully compliant.</p>
       </div>
     </div>
     <div class="faq-item">
@@ -351,7 +373,7 @@
         <span class="faq-toggle">+</span>
       </div>
       <div class="faq-answer">
-        <p>Use a verification service that checks whether an email address is deliverable, risky, or an accept-all catchall. Services like ZeroBounce, NeverBounce, or Fiverr verification gigs will categorize each address. Only send to addresses marked Deliverable. Accept-all addresses look valid but often go to black holes where no human will ever see your email.</p>
+        <p>Use a verification service that checks whether an email address is deliverable, risky, or an accept-all catchall. Services like ZeroBounce, NeverBounce, or Fiverr verification gigs will categorize each address. Only send to addresses marked "Deliverable" -- not "Valid" or "Accept-all." I learned this lesson the hard way: my first 111 sends all went to accept-all catchall addresses that looked valid but were black holes where no human ever saw the email. Zero replies from 111 perfectly personalized emails. After switching to verified-deliverable addresses only, the system started working. This single change -- verifying deliverability before writing a single email -- is the difference between a system that produces results and one that produces silence.</p>
       </div>
     </div>
     <div class="faq-item">
@@ -360,7 +382,7 @@
         <span class="faq-toggle">+</span>
       </div>
       <div class="faq-answer">
-        <p>Start with 10-15 per day for the first 2 weeks to warm up your sending reputation. Increase gradually to 30-50 per day over weeks 3-4. Never blast hundreds from a cold domain -- you will get flagged as spam immediately. Warmup matters more than volume.</p>
+        <p>Start with 10-15 per day for the first 2 weeks to warm up your sending domain reputation. Increase gradually to 30-50 per day over weeks 3-4 as inbox placement stays healthy. Never blast hundreds of emails from a cold domain -- you will get flagged as spam immediately and damage your domain reputation, which can take months to recover. My system uses controlled warmup batches with real-time bounce tracking. Any address that bounces gets removed immediately to protect the sending domain. Sign up for Google Postmaster Tools to monitor your reputation score. Warmup matters more than volume -- 15 emails that land in the primary inbox are worth more than 500 that land in spam.</p>
       </div>
     </div>
     <div class="faq-item">
@@ -369,7 +391,7 @@
         <span class="faq-toggle">+</span>
       </div>
       <div class="faq-answer">
-        <p>Traditional cold email uses one template sent to thousands of people with mail-merge fields like [COMPANY_NAME]. AI cold email reads each lead's actual website, understands their business, and writes a genuinely unique email referencing specific details. The recipient can tell the difference immediately -- and so can their spam filter.</p>
+        <p>Traditional cold email uses one template sent to thousands of people with mail-merge fields like [COMPANY_NAME] and [INDUSTRY]. AI cold email reads each lead's actual website -- their services page, about page, fleet gallery, coverage area -- and writes a genuinely unique email referencing specific details about that business. My system scored 5,500+ leads, identified 739 Grade A prospects, and drafted 739 completely unique emails in a single overnight run. Each email referenced the lead's actual services, location, and fleet details. The recipient can tell the difference immediately -- it reads like a hand-written note, not a mass blast. Spam filters can tell the difference too, because every email has unique content rather than a repeated template.</p>
       </div>
     </div>
   </div>

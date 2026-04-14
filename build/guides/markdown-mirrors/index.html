@@ -10,6 +10,8 @@
 <!-- Preconnect -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Markdown Mirrors — Make Your Website Readable by AI">
@@ -30,6 +32,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
+  "image": "https://www.brycenwood.com/assets/images/og-default.jpg",
   "headline": "Markdown Mirrors — Make Your Website Readable by AI",
   "description": "Markdown mirrors let ChatGPT, Claude, and Perplexity read your website content cleanly. Learn what they are and why every business needs them.",
   "url": "https://www.brycenwood.com/guides/markdown-mirrors/",
@@ -62,7 +65,7 @@
       "name": "Do I need markdown mirrors if I already have llms.txt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — they serve different purposes. llms.txt is a site-level summary that tells AI what your business does at a high level. Markdown mirrors let AI read the full content of every individual page. Think of llms.txt as the table of contents and markdown mirrors as the actual chapters."
+        "text": "Yes -- they serve different purposes and work best together. llms.txt is a site-level summary that tells AI what your business does at a high level, while markdown mirrors let AI read the full content of every individual page in clean, structured text. Think of llms.txt as the table of contents and markdown mirrors as the actual chapters. For Summit Wraps, the llms.txt file got us into the conversation, but the 27 markdown mirrors are what gave ChatGPT enough detail to recommend us confidently and accurately for specific services. The compound effect of both files together is what triggers real AI recommendations -- one without the other leaves gaps."
       }
     },
     {
@@ -70,7 +73,7 @@
       "name": "Can I generate markdown mirrors automatically?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. I built a Python script that walks your entire website and generates .md files for every page automatically. The script and step-by-step walkthrough are available inside the free community."
+        "text": "Yes. I built a Python script that walks your entire website, strips out HTML scaffolding, and generates clean .md files for every page automatically. For Summit Wraps, it generated 27 markdown mirrors in under a minute. The script preserves your content hierarchy -- headings, lists, links, descriptions -- while removing navigation, footers, scripts, and cookie banners. Once set up, regenerating mirrors after a content update takes seconds. The script and full step-by-step walkthrough are available inside the free community. If your site has fewer than 10 pages, you can also create them manually in about 5-10 minutes per page."
       }
     },
     {
@@ -78,7 +81,7 @@
       "name": "Will markdown mirrors hurt my regular SEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The .md files are separate from your HTML pages. Google continues to index your HTML pages normally. Markdown mirrors are an addition to your site, not a replacement for anything. They give AI tools a clean reading path without affecting your existing search rankings."
+        "text": "No. The .md files are completely separate from your HTML pages and do not interfere with your existing search rankings. Google continues to index your HTML pages normally -- nothing changes about your traditional SEO. Markdown mirrors are an addition to your site, not a replacement for anything. They give AI tools a clean reading path while your human visitors continue seeing the beautifully designed HTML version. In fact, schema markup improvements you make for AI SEO often help your Google rankings too. After deploying mirrors on Summit Wraps alongside our existing SEO, organic traffic continued to grow while AI recommendations started appearing on top of it."
       }
     },
     {
@@ -86,9 +89,20 @@
       "name": "How many markdown mirrors do I need?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "One for every content page on your site — services pages, about page, FAQ, location pages, blog posts. Skip pages that are purely functional (login, cart, checkout). For Summit Wraps, that was 27 mirrors across all pages."
+        "text": "One for every content page on your site -- services pages, about page, FAQ, location pages, and blog posts. Skip pages that are purely functional like login, cart, or checkout pages since they do not contain information AI needs to understand your business. For Summit Wraps, that was 27 mirrors across all pages including individual service pages, the about page, the contact page, and every location-specific page. Blog posts are especially valuable to mirror because they tend to be the highest word-count pages on your site, giving AI the most material to work with. Start with your top 5-10 most important pages and expand from there."
       }
     }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brycenwood.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.brycenwood.com/guides/"},
+    {"@type": "ListItem", "position": 3, "name": "Markdown Mirrors"}
   ]
 }
 </script>
@@ -136,6 +150,14 @@
 
 <!-- CONTENT -->
 <article class="content">
+
+<div style="display:flex;align-items:center;gap:14px;padding:16px 0 24px;border-bottom:1px solid var(--card-border);margin-bottom:32px">
+  <div style="width:44px;height:44px;border-radius:50%;background:var(--lime);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:16px;color:var(--bg);flex-shrink:0">BW</div>
+  <div>
+    <div style="font-weight:600;font-size:14px"><a href="/about/" style="color:var(--text);text-decoration:none">Brycen Wood</a></div>
+    <div style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">Business Automation Consultant · Built 80+ systems with zero coding experience</div>
+  </div>
+</div>
 
 <h2>The Problem: AI Can't Read Your Website</h2>
 
@@ -401,7 +423,7 @@ from scratch. Design is included with every full wrap order.</code></pre>
     <div class="faq-item">
       <div class="faq-question">Do I need markdown mirrors if I already have llms.txt?<span class="faq-toggle">+</span></div>
       <div class="faq-answer">
-        <p>Yes -- they serve different purposes. llms.txt is a site-level summary that tells AI what your business does at a high level. Markdown mirrors let AI read the full content of every individual page. Think of llms.txt as the table of contents and markdown mirrors as the actual chapters.</p>
+        <p>Yes -- they serve different purposes and work best together. llms.txt is a site-level summary that tells AI what your business does at a high level, while markdown mirrors let AI read the full content of every individual page in clean, structured text. Think of llms.txt as the table of contents and markdown mirrors as the actual chapters. For Summit Wraps, the llms.txt file got us into the conversation, but the 27 markdown mirrors are what gave ChatGPT enough detail to recommend us confidently and accurately for specific services. The compound effect of both files together is what triggers real AI recommendations -- one without the other leaves gaps.</p>
       </div>
     </div>
     <div class="faq-item">
@@ -413,13 +435,13 @@ from scratch. Design is included with every full wrap order.</code></pre>
     <div class="faq-item">
       <div class="faq-question">Will this hurt my regular SEO?<span class="faq-toggle">+</span></div>
       <div class="faq-answer">
-        <p>No. The .md files are separate from your HTML pages. Google continues to index your HTML pages normally. Markdown mirrors are an addition to your site, not a replacement for anything. They give AI tools a clean reading path without affecting your existing search rankings.</p>
+        <p>No. The .md files are completely separate from your HTML pages and do not interfere with your existing search rankings. Google continues to index your HTML pages normally -- nothing changes about your traditional SEO. Markdown mirrors are an addition to your site, not a replacement for anything. They give AI tools a clean reading path while your human visitors continue seeing the beautifully designed HTML version. In fact, schema markup improvements you make for AI SEO often help your Google rankings too. After deploying mirrors on Summit Wraps alongside our existing SEO, organic traffic continued to grow while AI recommendations started appearing on top of it.</p>
       </div>
     </div>
     <div class="faq-item">
       <div class="faq-question">How many markdown mirrors do I need?<span class="faq-toggle">+</span></div>
       <div class="faq-answer">
-        <p>One for every content page on your site -- services pages, about page, FAQ, location pages, blog posts. Skip pages that are purely functional like login, cart, or checkout. For Summit Wraps, that was 27 mirrors across all pages.</p>
+        <p>One for every content page on your site -- services pages, about page, FAQ, location pages, and blog posts. Skip pages that are purely functional like login, cart, or checkout pages since they do not contain information AI needs to understand your business. For Summit Wraps, that was 27 mirrors across all pages including individual service pages, the about page, the contact page, and every location-specific page. Blog posts are especially valuable to mirror because they tend to be the highest word-count pages on your site, giving AI the most material to work with. Start with your top 5-10 most important pages and expand from there.</p>
       </div>
     </div>
   </div>

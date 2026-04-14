@@ -33,6 +33,12 @@ FREE GUIDE
  
  
 
+ BW
+ 
+ [Brycen Wood](/about/)
+ Business Automation Consultant · Built 80+ systems with zero coding experience
+ 
+
  I have built 80+ systems for my business using Claude Code. Zero coding experience. I cannot write a for loop. I do not know what a class is. I describe what I need in plain English and Claude writes the code.
 
  Here are 10 of the most impactful systems -- the ones that actually changed how my business runs and directly contributed to growing from $52K to $300K in revenue without hiring a single employee. These are not toy projects or demos. They run in production every day. Some of them run every 5 minutes.
@@ -189,7 +195,7 @@ FREE GUIDE
  +
  
  
- Claude Code requires a Claude subscription. The Pro plan ($20/month) gives you access to Claude Code with usage limits. The Max plan ($100-200/month) gives you significantly higher limits for heavy building. Most business owners start on Pro and upgrade to Max when they hit the limits during an active build phase.
+ Claude Code requires a Claude subscription. The Pro plan at $20/month gives you access to Claude Code with usage limits that are sufficient for building 1-2 systems per week. The Max plan at $100-200/month gives you significantly higher limits for heavy building sessions where you are constructing multiple systems in a single day. Most business owners start on Pro and upgrade to Max when they hit the limits during an active build phase, then drop back to Pro for maintenance. Compare that to hiring a developer at $100-200/hour or an agency at $5,000-$20,000 per project. Even the Max plan is less than a single hour of most developers' time, and it gives you unlimited building capability for the entire month.
 
  
  
@@ -199,7 +205,7 @@ FREE GUIDE
  +
  
  
- Simple systems (a lead scorer, a basic dashboard) take 1-3 hours of conversation. Medium systems (a CRM pipeline with automation, an email drafter) take 4-8 hours. Complex systems (a full DM engine with A/B testing, a video content pipeline) take 1-2 days of building and iteration. The total Summit Wraps operating system of 80+ systems was built over several months of part-time work.
+ Simple systems like a lead scorer or basic dashboard take 1-3 hours of conversation. Medium systems like a CRM pipeline with automation or an AI email drafter take 4-8 hours. Complex systems like a full DM engine with A/B testing and conversation tracking take 1-2 days of building and iteration. For reference, the lead scorer that graded 5,500+ businesses took about 2 hours. The email drafter that wrote 739 personalized emails took about 4 hours including the web research module. The Instagram DM engine took about 20 hours across 7 development phases. The total Summit Wraps operating system of 80+ systems was built over several months of part-time work, with each system compounding the value of every system before it.
 
  
  
@@ -209,7 +215,7 @@ FREE GUIDE
  +
  
  
- Yes. The systems described here were built for a vehicle wrap company, but the patterns are universal. Lead scoring works for any B2B business. CRM automation works for any service business. Dashboards, content pipelines, and financial syncing work for any business that uses those tools. The specific scoring criteria, email copy, and pipeline stages change by industry -- the architecture stays the same.
+ Yes. The systems described here were built for a vehicle wrap company, but the patterns are universal. Lead scoring works for any B2B business -- you just change the scoring criteria to match your ideal customer. CRM automation works for any service business with a sales pipeline. Dashboards, content pipelines, and financial syncing work for any business that uses those tools. I have already built a 7-page custom website for an auto tint shop in 4 hours as a proof of concept, and I am building systems for HVAC companies, coffee shops, steel sales, web designers, and authors. The specific scoring criteria, email copy, and pipeline stages change by industry, but the architecture and approach stay exactly the same.
 
  
  

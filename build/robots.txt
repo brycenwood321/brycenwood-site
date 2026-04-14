@@ -1,3 +1,20 @@
+# AI Search Crawlers (explicitly allowed)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# All other crawlers
 User-agent: *
 Allow: /
 Disallow: /playbook/thanks/

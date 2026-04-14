@@ -14,6 +14,12 @@ FREE GUIDE
 
  Last updated: April 2026
 
+ BW
+ 
+ [Brycen Wood](/about/)
+ Business Automation Consultant · Built 80+ systems with zero coding experience
+ 
+
  
 ## The New SEO: AI Recommendations
 
@@ -246,21 +252,21 @@ Utah County, Salt Lake County, and surrounding areas.
  
  Does AI SEO replace traditional Google SEO?+
  
- No -- they work together. Schema markup helps both Google and AI understand your content. Clean content ranks on Google AND gets quoted by ChatGPT. The 3 files in this playbook are additions to your existing SEO strategy, not replacements. Businesses that do both will have a massive advantage over those doing only one.
+ No -- they work together and actually reinforce each other. Schema markup helps both Google and AI understand your content. Clean, well-structured content ranks higher on Google AND gets quoted accurately by ChatGPT. The 3 files in this playbook (llms.txt, markdown mirrors, schema markup) are additions to your existing SEO strategy, not replacements. At Summit Wraps, traditional SEO drove our organic traffic from 7 visits/day to 100-150 real humans/day, while AI SEO got ChatGPT recommending us to people asking about vehicle wraps in Utah. Both channels feed each other -- when Google ranks you highly, AI models treat that as a trust signal, and when AI recommends you, users visit your site, which improves Google rankings. Businesses doing both will dominate.
 
  
  
  
  How long does it take to implement the 3-file AI SEO system?+
  
- Schema markup improvements take 1-2 hours if you already have some in place. Creating an llms.txt file takes 15-30 minutes. Markdown mirrors can be automated with a script -- I built one that generates mirrors for all 27 pages in under a minute. Total implementation time: one afternoon for most businesses.
+ Schema markup improvements take 1-2 hours if you already have some in place, or 3-4 hours if you are starting from scratch. Creating an llms.txt file takes 15-30 minutes -- the format is simple and there is a template inside the free community. Markdown mirrors can be automated with a Python script I built that generates mirrors for all 27 Summit Wraps pages in under a minute. Total implementation time for most businesses: one afternoon. The video explaining this system got over 1.5 million views across platforms, largely because viewers realized they could implement the entire system in a few hours. Start with llms.txt (fastest win), then schema, then mirrors. You will see AI crawlers visiting your new files within days.
 
  
  
  
  Can I see real results from AI SEO?+
  
- Yes. After implementing all three files, ChatGPT started actively recommending Summit Wraps when users asked for vehicle wrap companies in Utah. The video explaining this system got over 1.5 million views across platforms. AI crawlers are now regularly visiting the site and reading the optimized content. The results are measurable and real.
+ Yes. After implementing all three files on the Summit Wraps website, ChatGPT started actively recommending us when users asked for vehicle wrap companies in Utah -- without any paid placement. We can see AI crawlers from OpenAI, Anthropic, and other companies regularly visiting our llms.txt and markdown mirrors in the server logs. The video explaining this system generated over 1.5 million views across TikTok and Instagram because the results resonated with business owners who realized they were invisible to AI. Organic traffic increased from roughly 7 visits per day on the old site to 100-150 real humans per day. The results are measurable, reproducible, and the competitive window is still wide open for most industries.
 
  
  

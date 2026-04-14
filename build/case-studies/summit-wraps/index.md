@@ -33,6 +33,12 @@ Case Study
  
  
 
+ BW
+ 
+ [Brycen Wood](/about/)
+ Business Automation Consultant · Built 80+ systems with zero coding experience
+ 
+
  
 ## The Problem
 

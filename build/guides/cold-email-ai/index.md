@@ -33,6 +33,12 @@ FREE GUIDE
  
  
 
+ BW
+ 
+ [Brycen Wood](/about/)
+ Business Automation Consultant · Built 80+ systems with zero coding experience
+ 
+
  
 ## Why Most Cold Email Fails
 
@@ -216,7 +222,7 @@ FREE GUIDE
  +
  
  
- Yes. CAN-SPAM (US) requires a real physical address, an unsubscribe mechanism, and no deceptive subject lines. AI-generated emails must follow the same rules as manually written ones. The content being AI-drafted does not change the legality -- the compliance requirements are about the sending practices, not the authorship.
+ Yes. CAN-SPAM (US) requires a real physical address, an unsubscribe mechanism, and no deceptive subject lines. AI-generated emails must follow the same rules as manually written ones -- the content being AI-drafted does not change the legality. The compliance requirements are about sending practices, not authorship. My system includes an unsubscribe link in every email, uses our real business address, and sends from an authenticated domain with proper SPF, DKIM, and DMARC records. The key legal risk with cold email is not the AI drafting -- it is sending to people who have opted out or using deceptive subject lines. Follow the same rules you would for manually written cold email and you are fully compliant.
 
  
  
@@ -226,7 +232,7 @@ FREE GUIDE
  +
  
  
- Use a verification service that checks whether an email address is deliverable, risky, or an accept-all catchall. Services like ZeroBounce, NeverBounce, or Fiverr verification gigs will categorize each address. Only send to addresses marked Deliverable. Accept-all addresses look valid but often go to black holes where no human will ever see your email.
+ Use a verification service that checks whether an email address is deliverable, risky, or an accept-all catchall. Services like ZeroBounce, NeverBounce, or Fiverr verification gigs will categorize each address. Only send to addresses marked "Deliverable" -- not "Valid" or "Accept-all." I learned this lesson the hard way: my first 111 sends all went to accept-all catchall addresses that looked valid but were black holes where no human ever saw the email. Zero replies from 111 perfectly personalized emails. After switching to verified-deliverable addresses only, the system started working. This single change -- verifying deliverability before writing a single email -- is the difference between a system that produces results and one that produces silence.
 
  
  
@@ -236,7 +242,7 @@ FREE GUIDE
  +
  
  
- Start with 10-15 per day for the first 2 weeks to warm up your sending reputation. Increase gradually to 30-50 per day over weeks 3-4. Never blast hundreds from a cold domain -- you will get flagged as spam immediately. Warmup matters more than volume.
+ Start with 10-15 per day for the first 2 weeks to warm up your sending domain reputation. Increase gradually to 30-50 per day over weeks 3-4 as inbox placement stays healthy. Never blast hundreds of emails from a cold domain -- you will get flagged as spam immediately and damage your domain reputation, which can take months to recover. My system uses controlled warmup batches with real-time bounce tracking. Any address that bounces gets removed immediately to protect the sending domain. Sign up for Google Postmaster Tools to monitor your reputation score. Warmup matters more than volume -- 15 emails that land in the primary inbox are worth more than 500 that land in spam.
 
  
  
@@ -246,7 +252,7 @@ FREE GUIDE
  +
  
  
- Traditional cold email uses one template sent to thousands of people with mail-merge fields like [COMPANY_NAME]. AI cold email reads each lead's actual website, understands their business, and writes a genuinely unique email referencing specific details. The recipient can tell the difference immediately -- and so can their spam filter.
+ Traditional cold email uses one template sent to thousands of people with mail-merge fields like [COMPANY_NAME] and [INDUSTRY]. AI cold email reads each lead's actual website -- their services page, about page, fleet gallery, coverage area -- and writes a genuinely unique email referencing specific details about that business. My system scored 5,500+ leads, identified 739 Grade A prospects, and drafted 739 completely unique emails in a single overnight run. Each email referenced the lead's actual services, location, and fleet details. The recipient can tell the difference immediately -- it reads like a hand-written note, not a mass blast. Spam filters can tell the difference too, because every email has unique content rather than a repeated template.
 
  
  

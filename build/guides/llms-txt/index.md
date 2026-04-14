@@ -13,6 +13,12 @@ Free Guide
 
  Last updated: April 2026
 
+ BW
+ 
+ [Brycen Wood](/about/)
+ Business Automation Consultant · Built 80+ systems with zero coding experience
+ 
+
 ## What Is llms.txt?
 
 llms.txt is a plain text file you put at the root of your website -- like `yoursite.com/llms.txt` -- that tells AI language models what your business does.
@@ -202,28 +208,28 @@ If you want to see the full transformation -- llms.txt, markdown mirrors, automa
  
  Does llms.txt actually work?+
  
- Yes. ChatGPT is already recommending Summit Wraps to people asking about vehicle wraps in Utah. The file has been live since early 2026 and continues to drive AI-referred traffic without any ongoing maintenance or ad spend.
+ Yes. ChatGPT is already recommending Summit Wraps to people asking about vehicle wraps in Utah, and it has been doing so consistently since early 2026. The recommendation happens without any paid placement or advertising -- the AI simply reads the structured llms.txt file and understands the business well enough to cite it. The video explaining this concept generated over 1.5 million views across platforms because business owners could see the results were real and reproducible. If you set up the file correctly, AI tools will start reading it within days of deployment.
 
  
  
  
  How long does it take to set up?+
  
- The file itself takes 15-30 minutes to write once you understand the structure. The concept takes 5 minutes to understand. Inside the free community, there's a fill-in-the-blank template and a Claude prompt that generates the whole file for your business in about 30 seconds.
+ The file itself takes 15-30 minutes to write once you understand the structure, and the concept takes about 5 minutes to grasp. Inside the free community, there is a fill-in-the-blank template and a Claude Code prompt that generates the entire file for your specific business in about 30 seconds. I built the Summit Wraps llms.txt in roughly 20 minutes and the ROI on that time has been significant -- ChatGPT started recommending us without any ongoing maintenance or ad spend. Even for a complete beginner, you can have a working file live on your site within an hour of starting.
 
  
  
  
  Do I need to update it?+
  
- Only when your services, locations, or core offering changes. It's not something you need to maintain weekly or even monthly. If you add a major new service or open a new location, update the file. Otherwise, let it work.
+ Only when your services, locations, or core offering changes. It is not something you need to maintain weekly or even monthly. The Summit Wraps llms.txt file has been live since early 2026 and has only been updated twice -- once when we added a new service and once when we opened our Lehi location. Think of it like your Google Business Profile: set it up accurately, then only touch it when real business details change. If you add a major new service line or expand to a new area, update the file. Otherwise, let it work in the background.
 
  
  
  
  Will this work for any business?+
  
- Any business with a website. Service businesses, e-commerce stores, SaaS companies, local shops, restaurants, consultants -- if people might ask an AI assistant about what you do, llms.txt helps the AI give a better answer. The most immediate impact is for local service businesses where people are already asking AI for recommendations.
+ Any business with a website can benefit from llms.txt. Service businesses, e-commerce stores, SaaS companies, local shops, restaurants, consultants -- if people might ask an AI assistant about what you do, llms.txt helps the AI give a better answer. The most immediate impact is for local service businesses where people are already asking AI for specific recommendations, like plumbers, roofers, HVAC companies, and auto shops. I have seen results across multiple industries from vehicle wraps to auto tinting to meal prep. The key factor is whether your potential customers might use AI to find businesses in your category -- and increasingly, they do.
 
  
  
