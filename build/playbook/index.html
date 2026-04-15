@@ -180,15 +180,33 @@
       <div style="font-size:32px;font-weight:800;margin-bottom:12px;color:var(--text)">Your playbook is <span class="accent">ready.</span></div>
       <p style="color:var(--text-dim);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">If the download didn't start automatically, click the button below.</p>
       <a href="/guides/the-claude-code-business-playbook.pdf" download class="btn-primary" id="manualDownload" style="display:inline-block;margin-bottom:16px">Download the Playbook (PDF)</a>
-      <p style="font-size:13px;color:var(--text-muted);margin-top:24px">Now scroll down -- the community is where you actually build this stuff.</p>
+      <div style="margin-top:40px;">
+        <p style="font-size:15px;color:var(--lime);font-weight:600;margin-bottom:8px;letter-spacing:0.5px">Now get the tools to actually build it</p>
+        <a href="#community-bridge" id="scrollArrow" style="display:inline-block;cursor:pointer;text-decoration:none;">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style="animation:bounceDown 1.5s ease infinite;">
+            <path d="M12 16L20 24L28 16" stroke="#00ff88" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <br>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style="animation:bounceDown 1.5s ease 0.2s infinite;opacity:0.5;margin-top:-20px;">
+            <path d="M12 16L20 24L28 16" stroke="#00ff88" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
+<style>
+@keyframes bounceDown{
+  0%,100%{transform:translateY(0);opacity:1}
+  50%{transform:translateY(8px);opacity:0.6}
+}
+</style>
+
 <div class="divider"></div>
 
 <!-- COMMUNITY BRIDGE -->
-<section style="padding:80px 0;">
+<section id="community-bridge" style="padding:80px 0;">
   <div class="container-narrow">
     <div class="section-header reveal">
       <h2>The Playbook Shows You What. <br>The Community Shows You <span class="accent">How.</span></h2>
@@ -301,6 +319,15 @@ const revealObs=new IntersectionObserver((entries)=>{
   });
 },{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+// Smooth scroll for arrow
+const scrollArrow=document.getElementById('scrollArrow');
+if(scrollArrow){
+  scrollArrow.addEventListener('click',function(e){
+    e.preventDefault();
+    document.getElementById('community-bridge').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+}
 
 // GHL form submission detection + PDF auto-download
 const PDF_URL='/guides/the-claude-code-business-playbook.pdf';
