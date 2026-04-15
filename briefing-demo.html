@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRYCENHQ — Morning Briefing</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+--bg:#050508;
+--surface:#0a0b10;
+--border:#141620;
+--border-hi:#1c1e2e;
+--lime:#00ff88;
+--lime-dim:rgba(0,255,136,0.25);
+--lime-glow:rgba(0,255,136,0.08);
+--red:#ff4466;
+--amber:#ffaa00;
+--gray:#555568;
+--text:#e8e8f0;
+--text-dim:#8888a0;
+--text-muted:#55556a;
+--mono:'JetBrains Mono',monospace;
+--sans:'Outfit',sans-serif;
+}
+
+html{scroll-behavior:smooth}
+body{
+background:var(--bg);
+color:var(--text);
+font-family:var(--sans);
+min-height:100vh;
+overflow-x:hidden;
+-webkit-font-smoothing:antialiased;
+}
+
+body::before{
+content:'';position:fixed;inset:0;
+background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,136,0.005) 2px,rgba(0,255,136,0.005) 4px);
+pointer-events:none;z-index:9999;
+}
+
+/* ─── AMBIENT ─── */
+.orb{position:fixed;border-radius:50%;filter:blur(180px);pointer-events:none;z-index:0}
+.orb-1{width:600px;height:600px;background:var(--lime);top:-250px;left:-150px;opacity:0.03}
+.orb-2{width:400px;height:400px;background:#0055ff;bottom:-150px;right:-100px;opacity:0.025}
+
+/* ─── TOP BAR ─── */
+.topbar{
+position:sticky;top:0;z-index:100;
+display:flex;align-items:center;justify-content:space-between;
+padding:14px 32px;
+background:rgba(5,5,8,0.88);
+backdrop-filter:blur(24px);
+border-bottom:1px solid var(--border);
+}
+
+.topbar-logo{
+font-family:var(--mono);font-weight:700;font-size:15px;
+letter-spacing:4px;color:var(--lime);
+text-shadow:0 0 20px var(--lime-dim);
+}
+
+.topbar-center{
+display:flex;align-items:center;gap:10px;
+font-family:var(--mono);font-size:12px;color:var(--text-dim);
+letter-spacing:1px;
+}
+
+.topbar-center .dot{
+width:7px;height:7px;border-radius:50%;
+background:var(--lime);
+box-shadow:0 0 6px var(--lime),0 0 12px var(--lime-dim);
+}
+
+.topbar-right{
+font-family:var(--mono);font-size:11px;color:var(--text-muted);
+letter-spacing:0.5px;
+}
+
+/* ─── GENERATING STATUS ─── */
+.gen-status{
+text-align:center;padding:48px 32px 32px;
+}
+
+.gen-line{
+font-family:var(--mono);font-size:13px;color:var(--lime);
+letter-spacing:1px;opacity:0;
+transition:opacity 0.4s;
+display:flex;align-items:center;justify-content:center;gap:10px;
+}
+.gen-line.visible{opacity:1}
+.gen-line.done{color:var(--text-muted);opacity:0.5}
+
+.gen-spinner{
+display:inline-block;width:14px;height:14px;
+border:2px solid var(--lime-dim);
+border-top-color:var(--lime);
+border-radius:50%;
+animation:spin 0.8s linear infinite;
+}
+.gen-spinner.hidden{display:none}
+
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.gen-progress{
+width:300px;height:2px;
+background:var(--border);
+border-radius:1px;
+margin:12px auto 0;
+overflow:hidden;
+opacity:0;transition:opacity 0.4s;
+}
+.gen-progress.visible{opacity:1}
+.gen-progress-bar{
+height:100%;width:0;
+background:linear-gradient(90deg,var(--lime),#00ffaa);
+border-radius:1px;
+transition:width 0.3s ease;
+}
+
+/* ─── MAIN CONTENT ─── */
+.main{
+max-width:1100px;
+margin:0 auto;
+padding:0 32px 80px;
+}
+
+/* ─── SECTIONS ─── */
+.section{
+opacity:0;
+transform:translateY(16px);
+transition:opacity 0.6s ease,transform 0.6s ease;
+margin-bottom:24px;
+}
+.section.visible{opacity:1;transform:translateY(0)}
+
+.section-label{
+font-family:var(--mono);font-size:10px;font-weight:600;
+letter-spacing:3px;text-transform:uppercase;
+color:var(--text-muted);
+margin-bottom:12px;
+display:flex;align-items:center;gap:8px;
+}
+.section-label .sys-dot{
+width:5px;height:5px;border-radius:50%;
+background:var(--lime);opacity:0;
+transition:opacity 0.4s,box-shadow 0.4s;
+}
+.section-label .sys-dot.on{
+opacity:1;
+box-shadow:0 0 4px var(--lime),0 0 8px var(--lime-dim);
+animation:pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot{
+0%,100%{opacity:1}
+50%{opacity:0.4}
+}
+
+/* ─── GREETING ─── */
+.greeting{
+font-family:var(--sans);font-weight:800;
+font-size:clamp(28px,4vw,42px);
+letter-spacing:-1px;
+line-height:1.15;
+margin-bottom:6px;
+}
+.greeting .accent{color:var(--lime);text-shadow:0 0 30px var(--lime-dim)}
+
+.sprint-info{
+font-family:var(--mono);font-size:12px;color:var(--text-dim);
+display:flex;gap:16px;align-items:center;
+margin-top:8px;
+}
+.sprint-badge{
+padding:3px 10px;
+border:1px solid var(--lime-dim);border-radius:2px;
+background:rgba(0,255,136,0.04);
+color:var(--lime);font-weight:600;
+}
+
+/* ─── PRIORITY LIST ─── */
+.priority-item{
+display:flex;align-items:flex-start;gap:12px;
+padding:10px 16px;
+background:var(--surface);
+border:1px solid var(--border);
+border-radius:3px;
+margin-bottom:6px;
+opacity:0;transform:translateX(-10px);
+transition:opacity 0.4s ease,transform 0.4s ease;
+}
+.priority-item.visible{opacity:1;transform:translateX(0)}
+
+.priority-num{
+font-family:var(--mono);font-size:11px;font-weight:700;
+color:var(--text-muted);min-width:18px;padding-top:2px;
+}
+
+.priority-dot{
+width:8px;height:8px;border-radius:50%;
+margin-top:5px;flex-shrink:0;
+}
+.priority-dot.high{background:var(--red);box-shadow:0 0 6px var(--red)}
+.priority-dot.med{background:var(--amber);box-shadow:0 0 6px var(--amber)}
+.priority-dot.low{background:var(--gray)}
+
+.priority-text{flex:1}
+.priority-title{font-size:13.5px;font-weight:600;line-height:1.35}
+.priority-tag{
+display:inline-block;
+font-family:var(--mono);font-size:9px;font-weight:600;
+letter-spacing:1px;text-transform:uppercase;
+padding:2px 6px;border-radius:2px;margin-left:6px;
+vertical-align:middle;
+}
+.priority-tag.high{color:var(--red);background:rgba(255,68,102,0.1);border:1px solid rgba(255,68,102,0.2)}
+.priority-tag.med{color:var(--amber);background:rgba(255,170,0,0.1);border:1px solid rgba(255,170,0,0.2)}
+.priority-tag.low{color:var(--gray);background:rgba(85,85,104,0.15);border:1px solid rgba(85,85,104,0.25)}
+
+/* ─── STAT CARDS ─── */
+.stats-row{
+display:grid;grid-template-columns:repeat(5,1fr);gap:8px;
+}
+.stat-card{
+background:var(--surface);
+border:1px solid var(--border);
+border-radius:3px;
+padding:16px 14px;
+text-align:center;
+opacity:0;transform:scale(0.95);
+transition:opacity 0.4s ease,transform 0.4s ease,border-color 0.3s;
+}
+.stat-card.visible{opacity:1;transform:scale(1)}
+.stat-card:hover{border-color:rgba(0,255,136,0.2)}
+
+.stat-val{
+font-family:var(--mono);font-size:clamp(20px,2.5vw,28px);font-weight:700;
+color:var(--lime);
+text-shadow:0 0 12px var(--lime-dim);
+}
+.stat-label{
+font-family:var(--mono);font-size:9px;font-weight:500;
+color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;
+margin-top:4px;
+}
+
+/* ─── OVERNIGHT LOG ─── */
+.log-item{
+display:flex;align-items:flex-start;gap:10px;
+padding:7px 0;
+font-size:13px;color:var(--text-dim);
+opacity:0;
+transition:opacity 0.35s ease;
+}
+.log-item.visible{opacity:1}
+
+.log-check{
+color:var(--lime);font-weight:700;font-size:14px;
+flex-shrink:0;margin-top:1px;
+}
+
+.log-text{line-height:1.4}
+.log-text strong{color:var(--text);font-weight:600}
+
+/* ─── CALENDAR ─── */
+.cal-item{
+display:flex;align-items:center;gap:14px;
+padding:10px 16px;
+background:var(--surface);
+border:1px solid var(--border);
+border-left:3px solid var(--lime);
+border-radius:0 3px 3px 0;
+margin-bottom:6px;
+opacity:0;transform:translateX(-10px);
+transition:opacity 0.4s ease,transform 0.4s ease;
+}
+.cal-item.visible{opacity:1;transform:translateX(0)}
+
+.cal-time{
+font-family:var(--mono);font-size:12px;font-weight:600;
+color:var(--lime);min-width:72px;
+}
+.cal-event{font-size:13.5px;color:var(--text-dim)}
+.cal-event strong{color:var(--text);font-weight:600}
+.cal-meta{
+font-family:var(--mono);font-size:10px;color:var(--text-muted);
+margin-left:auto;flex-shrink:0;
+}
+
+/* ─── HABITS ─── */
+.habits-grid{
+display:grid;grid-template-columns:1fr 1fr;gap:6px;
+}
+.habit-item{
+display:flex;align-items:center;gap:10px;
+padding:8px 14px;
+background:var(--surface);
+border:1px solid var(--border);
+border-radius:3px;
+font-size:13px;
+opacity:0;transform:translateY(6px);
+transition:opacity 0.35s ease,transform 0.35s ease;
+}
+.habit-item.visible{opacity:1;transform:translateY(0)}
+
+.habit-check{
+width:16px;height:16px;border-radius:3px;
+border:2px solid var(--border-hi);
+display:flex;align-items:center;justify-content:center;
+flex-shrink:0;
+font-size:10px;color:var(--lime);
+}
+
+.habit-name{color:var(--text-dim);flex:1}
+.habit-streak{
+font-family:var(--mono);font-size:10px;
+color:var(--amber);font-weight:600;
+white-space:nowrap;
+}
+
+/* ─── FOOTER STATUS ─── */
+.footer-status{
+text-align:center;padding:32px;
+font-family:var(--mono);font-size:10px;
+color:var(--text-muted);letter-spacing:2px;
+opacity:0;transition:opacity 0.6s;
+}
+.footer-status.visible{opacity:1}
+.footer-status .lime{color:var(--lime)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:768px){
+.stats-row{grid-template-columns:repeat(3,1fr)}
+.habits-grid{grid-template-columns:1fr}
+.topbar{padding:12px 16px}
+.main{padding:0 16px 60px}
+}
+
+/* ─── RESTART HINT ─── */
+.restart-hint{
+position:fixed;bottom:16px;right:16px;
+font-family:var(--mono);font-size:10px;color:var(--text-muted);
+letter-spacing:1px;opacity:0;
+transition:opacity 0.5s;
+background:rgba(5,5,8,0.9);
+padding:6px 12px;border-radius:2px;
+border:1px solid var(--border);
+}
+.restart-hint.visible{opacity:0.6}
+</style>
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-logo">BRYCENHQ</div>
+  <div class="topbar-center">
+    <span class="dot" id="statusDot"></span>
+    <span id="statusText">Morning Briefing</span>
+  </div>
+  <div class="topbar-right">April 13, 2026 &middot; 8:00 AM</div>
+</header>
+
+<!-- GENERATING STATUS -->
+<div class="gen-status">
+  <div class="gen-line" id="genLine">
+    <span class="gen-spinner" id="genSpinner"></span>
+    <span id="genText">Connecting to systems...</span>
+  </div>
+  <div class="gen-progress" id="genProgress">
+    <div class="gen-progress-bar" id="genBar"></div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- GREETING -->
+  <div class="section" id="sec-greeting">
+    <div class="greeting">Good morning, <span class="accent">Brycen.</span></div>
+    <div class="sprint-info">
+      <span class="sprint-badge">Sprint 2</span>
+      <span>56 days left</span>
+      <span style="color:var(--text-muted)">&middot;</span>
+      <span>Scale to $20K/month revenue</span>
+    </div>
+  </div>
+
+  <!-- TOP PRIORITIES -->
+  <div class="section" id="sec-priorities">
+    <div class="section-label"><span class="sys-dot" id="dot-priorities"></span>TOP PRIORITIES</div>
+    <div class="priority-item" data-reveal="p">
+      <span class="priority-num">01</span>
+      <span class="priority-dot high"></span>
+      <div class="priority-text">
+        <div class="priority-title">Reply to @recollectedself<span class="priority-tag high">High</span></div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:2px">Verified account — wants to hire you for a custom build</div>
+      </div>
+    </div>
+    <div class="priority-item" data-reveal="p">
+      <span class="priority-num">02</span>
+      <span class="priority-dot high"></span>
+      <div class="priority-text">
+        <div class="priority-title">Follow up with WSJ Construction<span class="priority-tag high">High</span></div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:2px">Fleet deal — 5 trucks, $17K+ potential revenue</div>
+      </div>
+    </div>
+    <div class="priority-item" data-reveal="p">
+      <span class="priority-num">03</span>
+      <span class="priority-dot med"></span>
+      <div class="priority-text">
+        <div class="priority-title">Review 3 new Skool waitlist signups<span class="priority-tag med">Med</span></div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:2px">Check business type + qualifier answers for founding member fit</div>
+      </div>
+    </div>
+    <div class="priority-item" data-reveal="p">
+      <span class="priority-num">04</span>
+      <span class="priority-dot med"></span>
+      <div class="priority-text">
+        <div class="priority-title">Film morning briefing video<span class="priority-tag med">Med</span></div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:2px">Script approved, assets ready, post by noon</div>
+      </div>
+    </div>
+    <div class="priority-item" data-reveal="p">
+      <span class="priority-num">05</span>
+      <span class="priority-dot low"></span>
+      <div class="priority-text">
+        <div class="priority-title">Check Meta app review status<span class="priority-tag low">Low</span></div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:2px">Submitted yesterday — expect 4-7 business days</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIPELINE STATUS -->
+  <div class="section" id="sec-pipeline">
+    <div class="section-label"><span class="sys-dot" id="dot-pipeline"></span>PIPELINE STATUS</div>
+    <div class="stats-row">
+      <div class="stat-card" data-reveal="s"><div class="stat-val">47</div><div class="stat-label">Active Leads</div></div>
+      <div class="stat-card" data-reveal="s"><div class="stat-val">8</div><div class="stat-label">Need Follow-Up</div></div>
+      <div class="stat-card" data-reveal="s"><div class="stat-val">3</div><div class="stat-label">Replies Overnight</div></div>
+      <div class="stat-card" data-reveal="s"><div class="stat-val">$21.3K</div><div class="stat-label">Revenue MTD</div></div>
+      <div class="stat-card" data-reveal="s"><div class="stat-val">564</div><div class="stat-label">Emails Queued</div></div>
+    </div>
+  </div>
+
+  <!-- OVERNIGHT ACTIVITY -->
+  <div class="section" id="sec-overnight">
+    <div class="section-label"><span class="sys-dot" id="dot-overnight"></span>OVERNIGHT ACTIVITY</div>
+    <div class="log-item" data-reveal="l"><span class="log-check">✓</span><div class="log-text">Sent <strong>15 cold emails</strong> — batch 12 of 38, all personalized from website scrape</div></div>
+    <div class="log-item" data-reveal="l"><span class="log-check">✓</span><div class="log-text">Detected <strong>3 inbox replies</strong> — classified: 2 interested, 1 out-of-office</div></div>
+    <div class="log-item" data-reveal="l"><span class="log-check">✓</span><div class="log-text">Updated CRM pipeline — moved <strong>2 leads</strong> to "Replied" stage automatically</div></div>
+    <div class="log-item" data-reveal="l"><span class="log-check">✓</span><div class="log-text">YouTube cross-posted <strong>2 Reels</strong> to both channels with SEO metadata</div></div>
+    <div class="log-item" data-reveal="l"><span class="log-check">✓</span><div class="log-text">Guardian watchdog: <strong>all 17 systems healthy</strong>, no alerts triggered</div></div>
+    <div class="log-item" data-reveal="l"><span class="log-check">✓</span><div class="log-text">Competitor scrape completed — <strong>3 new posts</strong> from Vinyl Labs detected</div></div>
+  </div>
+
+  <!-- TODAY'S CALENDAR -->
+  <div class="section" id="sec-calendar">
+    <div class="section-label"><span class="sys-dot" id="dot-calendar"></span>TODAY'S CALENDAR</div>
+    <div class="cal-item" data-reveal="c">
+      <span class="cal-time">10:00 AM</span>
+      <span class="cal-event"><strong>Discovery call</strong> — fleet prospect, 5 vehicles</span>
+      <span class="cal-meta">Zoom</span>
+    </div>
+    <div class="cal-item" data-reveal="c">
+      <span class="cal-time">1:00 PM</span>
+      <span class="cal-event"><strong>Design review</strong> with Landon</span>
+      <span class="cal-meta">Shop</span>
+    </div>
+    <div class="cal-item" data-reveal="c">
+      <span class="cal-time">3:00 PM</span>
+      <span class="cal-event"><strong>Film content</strong> — golden hour at 6:45 PM</span>
+      <span class="cal-meta">On-site</span>
+    </div>
+  </div>
+
+  <!-- HABITS -->
+  <div class="section" id="sec-habits">
+    <div class="section-label"><span class="sys-dot" id="dot-habits"></span>HABITS</div>
+    <div class="habits-grid">
+      <div class="habit-item" data-reveal="h"><span class="habit-check"></span><span class="habit-name">Weightlifting</span><span class="habit-streak">3d 🔥</span></div>
+      <div class="habit-item" data-reveal="h"><span class="habit-check"></span><span class="habit-name">Daily Movement</span><span class="habit-streak">7d 🔥</span></div>
+      <div class="habit-item" data-reveal="h"><span class="habit-check"></span><span class="habit-name">Sleep 7-8 Hours</span><span class="habit-streak">2d</span></div>
+      <div class="habit-item" data-reveal="h"><span class="habit-check"></span><span class="habit-name">Journaling</span><span class="habit-streak">5d 🔥</span></div>
+      <div class="habit-item" data-reveal="h"><span class="habit-check"></span><span class="habit-name">Reading</span><span class="habit-streak">1d</span></div>
+      <div class="habit-item" data-reveal="h"><span class="habit-check"></span><span class="habit-name">Time with Marissa</span><span class="habit-streak">12d 🔥</span></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-status" id="sec-footer">
+    <span class="lime">■</span> ALL SYSTEMS OPERATIONAL &nbsp;&middot;&nbsp; 17 AUTOMATIONS RUNNING &nbsp;&middot;&nbsp; NEXT SYNC IN 5 MIN
+  </div>
+
+</div>
+
+<div class="restart-hint" id="restartHint">SPACE to restart</div>
+
+<script>
+// ─── ANIMATION SEQUENCE ───
+const timeline=[
+  // Phase 0: Boot sequence
+  {t:0,    fn:()=>showGen('Connecting to systems...',true)},
+  {t:800,  fn:()=>{showProgress();setProgress(15)}},
+  {t:1000, fn:()=>showGen('Pulling CRM data...',true)},
+  {t:1400, fn:()=>setProgress(30)},
+  {t:1600, fn:()=>showGen('Scanning inbox...',true)},
+  {t:2000, fn:()=>setProgress(50)},
+  {t:2200, fn:()=>showGen('Checking pipeline...',true)},
+  {t:2600, fn:()=>setProgress(70)},
+  {t:2800, fn:()=>showGen('Ranking priorities...',true)},
+  {t:3200, fn:()=>setProgress(90)},
+  {t:3600, fn:()=>showGen('Building your briefing...',true)},
+  {t:4000, fn:()=>{setProgress(100);showGen('Briefing ready.',false)}},
+
+  // Phase 1: Greeting
+  {t:4600, fn:()=>{hideGen();showSection('sec-greeting')}},
+
+  // Phase 2: Priorities
+  {t:5200, fn:()=>{showSection('sec-priorities');lightDot('dot-priorities')}},
+  {t:5500, fn:()=>revealItems('p',120)},
+
+  // Phase 3: Pipeline
+  {t:7000, fn:()=>{showSection('sec-pipeline');lightDot('dot-pipeline')}},
+  {t:7200, fn:()=>revealItems('s',100)},
+
+  // Phase 4: Overnight
+  {t:8200, fn:()=>{showSection('sec-overnight');lightDot('dot-overnight')}},
+  {t:8400, fn:()=>revealItems('l',180)},
+
+  // Phase 5: Calendar
+  {t:10000,fn:()=>{showSection('sec-calendar');lightDot('dot-calendar')}},
+  {t:10200,fn:()=>revealItems('c',150)},
+
+  // Phase 6: Habits
+  {t:11200,fn:()=>{showSection('sec-habits');lightDot('dot-habits')}},
+  {t:11400,fn:()=>revealItems('h',100)},
+
+  // Phase 7: Footer
+  {t:12600,fn:()=>document.getElementById('sec-footer').classList.add('visible')},
+  {t:13000,fn:()=>document.getElementById('restartHint').classList.add('visible')},
+];
+
+let timers=[];
+
+function runSequence(){
+  // Reset everything
+  timers.forEach(t=>clearTimeout(t));
+  timers=[];
+  document.getElementById('restartHint').classList.remove('visible');
+
+  // Reset gen
+  const gl=document.getElementById('genLine');
+  gl.classList.remove('visible','done');
+  document.getElementById('genProgress').classList.remove('visible');
+  document.getElementById('genBar').style.width='0';
+  document.getElementById('genSpinner').classList.remove('hidden');
+
+  // Reset sections
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('visible'));
+  document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.remove('visible'));
+  document.querySelectorAll('.sys-dot').forEach(d=>d.classList.remove('on'));
+  document.getElementById('sec-footer').classList.remove('visible');
+
+  // Reset status
+  document.getElementById('statusText').textContent='Morning Briefing';
+
+  // Scroll to top
+  window.scrollTo({top:0,behavior:'instant'});
+
+  // Run
+  timeline.forEach(step=>{
+    timers.push(setTimeout(step.fn,step.t));
+  });
+}
+
+function showGen(text,spinning){
+  const gl=document.getElementById('genLine');
+  const sp=document.getElementById('genSpinner');
+  const gt=document.getElementById('genText');
+  gl.classList.add('visible');
+  gl.classList.toggle('done',!spinning);
+  sp.classList.toggle('hidden',!spinning);
+  gt.textContent=text;
+  document.getElementById('statusText').textContent=spinning?text:'Morning Briefing';
+}
+
+function showProgress(){
+  document.getElementById('genProgress').classList.add('visible');
+}
+
+function setProgress(pct){
+  document.getElementById('genBar').style.width=pct+'%';
+}
+
+function hideGen(){
+  const gl=document.getElementById('genLine');
+  gl.classList.remove('visible');
+  document.getElementById('genProgress').classList.remove('visible');
+  document.getElementById('statusText').textContent='Briefing Ready';
+}
+
+function showSection(id){
+  document.getElementById(id).classList.add('visible');
+}
+
+function lightDot(id){
+  const d=document.getElementById(id);
+  if(d)d.classList.add('on');
+}
+
+function revealItems(type,stagger){
+  const items=document.querySelectorAll(`[data-reveal="${type}"]`);
+  items.forEach((el,i)=>{
+    timers.push(setTimeout(()=>el.classList.add('visible'),i*stagger));
+  });
+}
+
+// Keyboard: SPACE to restart
+document.addEventListener('keydown',e=>{
+  if(e.code==='Space'){
+    e.preventDefault();
+    runSequence();
+  }
+});
+
+// Auto-start
+runSequence();
+</script>
+</body>
+</html>

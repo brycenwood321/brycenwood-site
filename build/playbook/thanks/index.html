@@ -23,6 +23,191 @@
 
 <link rel="stylesheet" href="/assets/css/global.css">
 <link rel="stylesheet" href="/assets/css/components.css">
+
+<style>
+/* ─── THANK YOU PAGE SPECIFIC ─── */
+.thanks-hero{
+  padding:140px 24px 48px;
+  text-align:center;
+  position:relative;
+  background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(0,255,136,0.03),transparent 70%);
+}
+.thanks-hero h1{
+  font-size:clamp(28px,5vw,48px);
+  max-width:700px;margin:0 auto;
+  animation:fadeUp 0.8s ease 0.1s both;
+}
+.thanks-hero .hero-sub{
+  max-width:600px;margin:16px auto 0;
+  animation:fadeUp 0.8s ease 0.2s both;
+}
+
+/* ─── STEPS SECTION ─── */
+.next-steps{
+  max-width:900px;margin:0 auto;
+  padding:0 24px 64px;
+}
+.next-steps-header{
+  text-align:center;margin-bottom:48px;
+}
+.next-steps-header h2{
+  font-size:clamp(22px,3.5vw,32px);
+  margin-bottom:8px;
+}
+.next-steps-header p{
+  font-size:14px;color:var(--text-muted);
+}
+
+.step-cards{
+  display:flex;flex-direction:column;gap:0;
+  position:relative;
+}
+
+/* Vertical connector line */
+.step-cards::before{
+  content:'';
+  position:absolute;
+  left:31px;top:48px;bottom:48px;
+  width:1px;
+  background:linear-gradient(180deg,var(--lime-dim),var(--card-border),var(--lime-dim));
+}
+
+.step-card{
+  display:flex;gap:24px;
+  padding:32px 0;
+  position:relative;
+}
+.step-card + .step-card{
+  border-top:1px solid var(--card-border);
+}
+
+.step-badge{
+  flex-shrink:0;
+  width:64px;height:64px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:22px;font-weight:700;
+  color:var(--lime);
+  border:2px solid var(--lime-dim);
+  border-radius:50%;
+  background:rgba(0,255,136,0.04);
+  position:relative;
+  z-index:1;
+}
+
+.step-card-body h3{
+  font-size:18px;margin-bottom:8px;
+  display:flex;align-items:center;gap:10px;
+}
+.step-card-body h3 .step-label{
+  font-family:var(--mono);font-size:10px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--lime);opacity:0.7;
+}
+.step-card-body p{
+  font-size:14px;line-height:1.7;color:var(--text-dim);
+  max-width:600px;
+}
+
+/* ─── COMMUNITY CTA BLOCK ─── */
+.community-cta{
+  text-align:center;
+  padding:64px 24px 72px;
+  position:relative;
+  border-top:1px solid var(--card-border);
+  border-bottom:1px solid var(--card-border);
+  background:linear-gradient(180deg,rgba(0,255,136,0.02),transparent 40%,transparent 60%,rgba(0,255,136,0.02));
+}
+.community-cta::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--lime),transparent);
+}
+.community-cta h2{
+  font-size:clamp(22px,3.5vw,32px);
+  max-width:600px;margin:0 auto 16px;
+}
+.community-cta .cta-tagline{
+  font-family:var(--mono);font-size:14px;font-weight:400;
+  color:var(--text-dim);line-height:1.7;
+  max-width:520px;margin:0 auto 32px;
+}
+
+.community-perks{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  max-width:560px;margin:0 auto 36px;text-align:left;
+}
+.community-perk{
+  display:flex;align-items:flex-start;gap:10px;padding:14px;
+  background:linear-gradient(165deg,rgba(14,15,22,0.9),rgba(8,9,14,0.95));
+  border:1px solid var(--card-border);border-radius:3px;
+  transition:border-color 0.3s;
+}
+.community-perk:hover{border-color:rgba(0,255,136,0.15)}
+.community-perk .perk-icon{
+  font-family:var(--mono);font-size:12px;font-weight:700;
+  color:var(--lime);flex-shrink:0;margin-top:2px;opacity:0.6;
+}
+.community-perk .perk-text{font-size:13px;color:var(--text-dim);line-height:1.5}
+.community-perk .perk-text strong{color:var(--text);font-weight:600}
+
+/* ─── GUIDES ROW ─── */
+.guides-row{
+  max-width:900px;margin:0 auto;
+  padding:56px 24px 72px;
+  text-align:center;
+}
+.guides-row h3{
+  font-size:18px;margin-bottom:6px;
+}
+.guides-row .guides-sub{
+  font-size:14px;color:var(--text-muted);margin-bottom:28px;
+}
+.guides-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.guide-card{
+  background:linear-gradient(165deg,rgba(14,15,22,0.9),rgba(8,9,14,0.95));
+  border:1px solid var(--card-border);border-radius:3px;
+  padding:20px 16px;
+  text-decoration:none;
+  transition:border-color 0.4s,box-shadow 0.4s,transform 0.4s;
+}
+.guide-card:hover{
+  border-color:rgba(0,255,136,0.25);
+  box-shadow:0 8px 40px rgba(0,0,0,0.4),0 0 30px rgba(0,255,136,0.06);
+  transform:translateY(-3px);
+}
+.guide-card .guide-tag{
+  font-family:var(--mono);font-size:10px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--lime);margin-bottom:8px;
+}
+.guide-card .guide-title{
+  font-weight:700;font-size:15px;color:var(--text);margin-bottom:6px;
+}
+.guide-card .guide-desc{
+  font-size:12px;color:var(--text-muted);line-height:1.5;
+}
+.guide-card .guide-arrow{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:11px;font-weight:600;
+  color:var(--lime);letter-spacing:0.5px;
+  margin-top:12px;transition:gap 0.3s;
+}
+.guide-card:hover .guide-arrow{gap:10px}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:768px){
+  .thanks-hero{padding:120px 20px 36px}
+  .thanks-hero h1{font-size:28px}
+  .step-cards::before{left:23px}
+  .step-badge{width:48px;height:48px;font-size:18px}
+  .step-card{gap:16px;padding:24px 0}
+  .step-card-body h3{font-size:16px}
+  .community-perks{grid-template-columns:1fr}
+  .guides-grid{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
 
@@ -47,17 +232,110 @@
   </button>
 </nav>
 
-<!-- CONTENT -->
-<section class="page-hero" style="min-height:60vh;display:flex;flex-direction:column;justify-content:center">
+<!-- HERO -->
+<section class="thanks-hero">
   <p class="hero-eyebrow">Done</p>
   <h1>Your playbook is <span class="accent">downloading.</span></h1>
-  <p class="hero-sub">Check your downloads folder. If it didn't start automatically, <a href="#" id="manualDownload" style="color:#00ff88;text-decoration:underline">click here</a>.</p>
-  <div class="divider" style="margin:32px auto"></div>
-  <h2 style="font-size:1.4rem;margin-bottom:12px;">Now get the implementation details.</h2>
-  <p class="hero-sub" style="margin-bottom:24px">The playbook gives you the systems. The community gives you the exact prompts, templates, and walkthroughs to build them.</p>
-  <div class="btn-group">
-    <a href="https://skool.com/business-on-autopilot-8404" class="btn-primary" target="_blank" rel="noopener">Join the Free Community</a>
-    <a href="/guides/" class="btn-secondary">Read the Guides</a>
+  <p class="hero-sub">Check your downloads folder. If it didn't start automatically, <a href="#" id="manualDownload" style="color:var(--lime);text-decoration:underline">click here</a>.</p>
+</section>
+
+<!-- WHAT HAPPENS NEXT -->
+<section class="next-steps">
+  <div class="next-steps-header reveal">
+    <p class="hero-eyebrow" style="margin-bottom:12px">What happens next</p>
+    <h2>Three paths forward.</h2>
+    <p>Pick the one that fits where you are right now.</p>
+  </div>
+
+  <div class="step-cards">
+
+    <!-- STEP 1 -->
+    <div class="step-card reveal">
+      <div class="step-badge">1</div>
+      <div class="step-card-body">
+        <h3>Read the Playbook</h3>
+        <p>You now have the 3 systems. Read through llms.txt, markdown mirrors, and the cold email engine. Pick one to start with. Each one works standalone, and most people can ship the first system in under an hour.</p>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step-card reveal">
+      <div class="step-badge">2</div>
+      <div class="step-card-body">
+        <h3>Join the Community</h3>
+        <p>The playbook gives you the blueprint. The community gives you the tools to build it: auto-generator scripts, live walkthroughs, direct feedback on your implementation, and a group of business owners doing it alongside you. It's free. No trial, no upsell, no credit card.</p>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step-card reveal">
+      <div class="step-badge">3</div>
+      <div class="step-card-body">
+        <h3>Or Let Me Build It for You</h3>
+        <p>If you'd rather skip the DIY and have me build the whole system for your business, book a discovery call. I'll interview your business and build a custom operating system tailored to exactly where you are. Same tools, same stack, done in 2 weeks.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMMUNITY CTA -->
+<section class="community-cta">
+  <div class="reveal">
+    <h2>The community is <span class="accent">free.</span></h2>
+    <p class="cta-tagline">The prompts are inside. The scripts are inside. The walkthroughs are inside. Just show up and build.</p>
+  </div>
+
+  <div class="community-perks reveal">
+    <div class="community-perk">
+      <span class="perk-icon">+</span>
+      <span class="perk-text"><strong>Exact prompts</strong> from every video, ready to paste</span>
+    </div>
+    <div class="community-perk">
+      <span class="perk-icon">+</span>
+      <span class="perk-text"><strong>Auto-generator scripts</strong> for llms.txt and markdown mirrors</span>
+    </div>
+    <div class="community-perk">
+      <span class="perk-icon">+</span>
+      <span class="perk-text"><strong>Live walkthroughs</strong> showing the full build process</span>
+    </div>
+    <div class="community-perk">
+      <span class="perk-icon">+</span>
+      <span class="perk-text"><strong>Direct feedback</strong> on your implementation from me and the group</span>
+    </div>
+  </div>
+
+  <div class="btn-group reveal">
+    <a href="https://skool.com/business-on-autopilot-8404" class="btn-primary" target="_blank" rel="noopener">Join Free on Skool</a>
+    <a href="/contact/" class="btn-secondary">Book a Discovery Call</a>
+  </div>
+</section>
+
+<!-- EXPLORE THE GUIDES -->
+<section class="guides-row">
+  <div class="reveal">
+    <h3>Explore the Guides</h3>
+    <p class="guides-sub">Want to go deeper on a specific system? Read the full breakdowns.</p>
+  </div>
+  <div class="guides-grid">
+    <a href="/guides/llms-txt/" class="guide-card reveal">
+      <div class="guide-tag">System 1</div>
+      <div class="guide-title">llms.txt</div>
+      <div class="guide-desc">Tell AI tools what your business does in a format they actually read.</div>
+      <span class="guide-arrow">Read guide &#8594;</span>
+    </a>
+    <a href="/guides/markdown-mirrors/" class="guide-card reveal">
+      <div class="guide-tag">System 2</div>
+      <div class="guide-title">Markdown Mirrors</div>
+      <div class="guide-desc">Give every page on your site a clean version AI can parse in one fetch.</div>
+      <span class="guide-arrow">Read guide &#8594;</span>
+    </a>
+    <a href="/guides/ai-seo-playbook/" class="guide-card reveal">
+      <div class="guide-tag">System 3</div>
+      <div class="guide-title">AI SEO Playbook</div>
+      <div class="guide-desc">The full stack: schema, structured data, and the cold email engine.</div>
+      <span class="guide-arrow">Read guide &#8594;</span>
+    </a>
   </div>
 </section>
 
@@ -134,6 +412,17 @@ if(navToggle&&navLinks){
     }
   });
 }
+
+// Reveal on scroll
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script>
 </body>
 </html>
