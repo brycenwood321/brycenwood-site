@@ -14,7 +14,7 @@ Built by one person with one tool
 
  
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)
  
  Scroll to explore
@@ -275,7 +275,7 @@ Built by one person with one tool
 
  Every prompt. Every tool. Every mistake I made along the way. And exactly how to replicate each system for your business — even if you've never written a line of code.
 
- Free Community
+ Community
  
 ## Stop watching tutorials.Start building your business.
 

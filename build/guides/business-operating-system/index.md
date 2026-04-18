@@ -145,11 +145,11 @@ FREE GUIDE
  
  
  
- Free Community
+ Community
  Get the Build Walkthroughs
- This guide covers WHAT a business OS is and WHY you need one. Inside the free community, you get HOW -- layer-by-layer build tutorials, the exact Claude Code prompts, and templates for every system described above.
+ This guide covers WHAT a business OS is and WHY you need one. Inside the community, you get HOW -- layer-by-layer build tutorials, the exact Claude Code prompts, and templates for every system described above.
  
- [Join Free Community](/community/)
+ [Join Community](/community/)
  
  
  
@@ -168,7 +168,7 @@ FREE GUIDE
 
  The advantage of done-for-you is speed and quality. You get a complete system in 2 weeks without the learning curve. The disadvantage is cost -- though at $3,500-15,000, it is a fraction of what agencies and developers charge for less.
 
- Many business owners do both. They hire me to build the foundation, then learn to extend it themselves through the [free community](/community/). That is the best of both worlds -- fast start, full ownership.
+ Many business owners do both. They hire me to build the foundation, then learn to extend it themselves through the [community](/community/). That is the best of both worlds -- fast start, full ownership.
 
  For a framework on what to automate first, read the [complete business automation guide](/guides/automate-your-business/). It covers prioritization -- which systems to build first for maximum impact with minimum effort.
 
@@ -212,7 +212,7 @@ FREE GUIDE
  +
  
  
- Both paths work. Building yourself with AI (vibe coding) gives you full control and deep understanding of every system -- plus it costs only $20/month for Claude Code. Hiring someone like a custom build service gets you a complete operating system in 2 weeks without any learning curve, starting at $3,500 for the founder rate. Many business owners start with a done-for-you build to get up and running fast, then join the free community to learn how to extend and customize their systems over time. That is the best of both worlds -- fast deployment with long-term self-sufficiency. The custom build approach also means every system is tailored to your specific industry and workflow, not a generic template.
+ Both paths work. Building yourself with AI (vibe coding) gives you full control and deep understanding of every system -- plus it costs only $20/month for Claude Code. Hiring someone like a custom build service gets you a complete operating system in 2 weeks without any learning curve, starting at $3,500 for the founder rate. Many business owners start with a done-for-you build to get up and running fast, then join the community to learn how to extend and customize their systems over time. That is the best of both worlds -- fast deployment with long-term self-sufficiency. The custom build approach also means every system is tailored to your specific industry and workflow, not a generic template.
 
  
  
@@ -225,5 +225,5 @@ FREE GUIDE
  The community has layer-by-layer build tutorials, exact prompts, and templates. Or book a call and I will build the whole thing for you in 2 weeks.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Call](/contact/)

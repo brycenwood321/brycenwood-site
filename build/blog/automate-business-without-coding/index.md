@@ -140,7 +140,7 @@ Let me walk through how this framework played out for three specific systems, fr
  Get the Framework Templates and Prompt Library
  The exact prompts, description templates, and build-along walkthroughs for the five-step framework. Free to join, built for non-coders.
 
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  
 
 ## The Most Common Mistakes
@@ -183,7 +183,7 @@ After automation, the business runs whether you are there or not. Leads get capt
 
 That shift -- from being the bottleneck to being the strategist -- is worth more than any individual system. It is the difference between running a business and being run by one.
 
-The detailed guides for each system type are at [the vibe coding guide](/guides/vibe-coding-for-business/) and [the automation guide](/guides/automate-your-business/). Both walk through the WHAT and WHY in detail. The HOW -- the exact prompts, templates, and build-along walkthroughs -- lives inside the [free community](/community/).
+The detailed guides for each system type are at [the vibe coding guide](/guides/vibe-coding-for-business/) and [the automation guide](/guides/automate-your-business/). Both walk through the WHAT and WHY in detail. The HOW -- the exact prompts, templates, and build-along walkthroughs -- lives inside the [community](/community/).
 
  
  
@@ -225,8 +225,8 @@ The detailed guides for each system type are at [the vibe coding guide](/guides/
  
 ## Ready to Automate Your Business?
 
- Join 1,700+ business owners building automation systems without code inside the free community. Or book a discovery call to get your custom operating system built in 2 weeks.
+ Join 1,700+ business owners building automation systems without code inside the community. Or book a discovery call to get your custom operating system built in 2 weeks.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)

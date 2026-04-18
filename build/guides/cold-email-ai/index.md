@@ -173,11 +173,11 @@ FREE GUIDE
  
  
  
- Free Community
+ Community
  Get the Exact Prompts and Scoring Criteria
- The guide above covers WHAT to build and WHY it works. Inside the free community, you get HOW -- the exact Claude Code prompts, scoring formulas, email templates, and step-by-step walkthroughs to build this system for your business.
+ The guide above covers WHAT to build and WHY it works. Inside the community, you get HOW -- the exact Claude Code prompts, scoring formulas, email templates, and step-by-step walkthroughs to build this system for your business.
  
- [Join Free Community](/community/)
+ [Join Community](/community/)
  
  
  
@@ -265,5 +265,5 @@ FREE GUIDE
  The guide covers WHAT and WHY. The community gives you the exact prompts, templates, and walkthroughs to build the system yourself. Or book a call and I will build it for you.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Call](/contact/)

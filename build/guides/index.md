@@ -94,4 +94,4 @@ Free Guides
  Exact prompts, templates, step-by-step walkthroughs, and screen recordings. Everything you need to actually build these systems for your business.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)

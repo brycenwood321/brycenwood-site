@@ -136,7 +136,7 @@ The full Summit Wraps case study is at [summitwrapsandgraphics.com case study](/
  See the Exact Systems Behind These Numbers
  The prompts, the templates, the walkthroughs -- everything I use to build business operating systems with Claude Code. Free to join, no upsell inside.
 
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  
 
 ## How to Evaluate What You Actually Need
@@ -185,7 +185,7 @@ Get the systems right first. The aesthetic layer is easier and cheaper to add on
  
  What about ongoing support and maintenance?+
  
- With an agency, you typically pay a monthly retainer of $2,000-$10,000 for ongoing support. With an AI custom build, the system is designed to run autonomously from day one. Most of the 80+ systems I built for Summit Wraps require zero daily intervention -- they run on cron jobs and automated triggers. When changes are needed, the optional $2,000/month retainer covers ongoing development and optimization, but the core system works without it. The free community also gives you access to troubleshooting guides and direct support from other builders. The fundamental difference is that agency support keeps the lights on, while AI build support adds new capabilities.
+ With an agency, you typically pay a monthly retainer of $2,000-$10,000 for ongoing support. With an AI custom build, the system is designed to run autonomously from day one. Most of the 80+ systems I built for Summit Wraps require zero daily intervention -- they run on cron jobs and automated triggers. When changes are needed, the optional $2,000/month retainer covers ongoing development and optimization, but the core system works without it. The community also gives you access to troubleshooting guides and direct support from other builders. The fundamental difference is that agency support keeps the lights on, while AI build support adds new capabilities.
 
  
  
@@ -209,8 +209,8 @@ Get the systems right first. The aesthetic layer is easier and cheaper to add on
  
 ## Ready to Build Your Operating System?
 
- Join 1,700+ business owners learning to build with AI inside the free community. Or book a discovery call to see what a custom build looks like for your business.
+ Join 1,700+ business owners learning to build with AI inside the community. Or book a discovery call to see what a custom build looks like for your business.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)

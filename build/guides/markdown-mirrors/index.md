@@ -150,9 +150,9 @@ Clean. Readable. No noise. The AI can consume this in one pass and know exactly 
  
  Inside the Community
  Get the Auto-Generator Script
- The Python script that automatically generates markdown mirrors for your entire website, plus the exact server config to serve them correctly. All inside the free community.
+ The Python script that automatically generates markdown mirrors for your entire website, plus the exact server config to serve them correctly. All inside the community.
 
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  
 
 ## The Technical Setup
@@ -284,7 +284,7 @@ If you want to see the complete transformation -- from zero AI visibility to Cha
  
  Can I generate these automatically?+
  
- Yes. I built a Python script that walks your entire website and generates .md files for every page. It strips out HTML scaffolding, preserves content, and outputs clean markdown. The script and step-by-step walkthrough are available inside the free community.
+ Yes. I built a Python script that walks your entire website and generates .md files for every page. It strips out HTML scaffolding, preserves content, and outputs clean markdown. The script and step-by-step walkthrough are available inside the community.
 
  
  
@@ -308,8 +308,8 @@ If you want to see the complete transformation -- from zero AI visibility to Cha
  
 ## Make Your Website Visible to AI
 
- Get the auto-generator script, server configs, and step-by-step walkthroughs inside the free community. Or book a call and I'll build the whole AI visibility stack for your business.
+ Get the auto-generator script, server configs, and step-by-step walkthroughs inside the community. Or book a call and I'll build the whole AI visibility stack for your business.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)

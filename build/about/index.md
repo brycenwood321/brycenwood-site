@@ -103,7 +103,7 @@ About
 
  I'm not a tech guy who decided to do business. I'm a business guy who discovered the most powerful tool ever built for people like me. I've never taken a coding class. I don't know Python syntax. I couldn't write a for loop if you asked me to. But I understand business problems -- deeply -- and that turns out to be the only skill that matters when AI handles the technical execution.
 
- I also run a [free community called Business On Autopilot](https://www.brycenwood.com/community/) where I share the exact prompts, templates, and walkthroughs behind everything I build. 1,700+ business owners are already on the waitlist. The philosophy is simple: the knowledge should be free, the implementation is where the value lives.
+ I also run a [community called Business On Autopilot](https://www.brycenwood.com/community/) where I share the exact prompts, templates, and walkthroughs behind everything I build. 1,700+ business owners are already on the waitlist. The philosophy is simple: the knowledge should be free, the implementation is where the value lives.
 
  If you're a business owner who's been told you need to hire a developer, pay an agency, or learn to code -- there's another way. I'm living proof. And I want to help you build it too.
 

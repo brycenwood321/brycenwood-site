@@ -261,7 +261,7 @@ Custom Business Build
  +
  
  
- You own everything -- 100%. Every system, every script, every configuration is fully documented and handed off to you in a live training session where I walk you through how everything works. The first 30 days of support are included at no extra cost, so if anything needs tweaking as you start using the systems in production, I am there to fix it. After 30 days, you can manage it yourself (everything is documented), join the free community where I share build tutorials, or opt for the $2,000/month retainer that covers ongoing maintenance, new feature builds, and optimization. Most clients find the documentation sufficient to manage day-to-day operations on their own.
+ You own everything -- 100%. Every system, every script, every configuration is fully documented and handed off to you in a live training session where I walk you through how everything works. The first 30 days of support are included at no extra cost, so if anything needs tweaking as you start using the systems in production, I am there to fix it. After 30 days, you can manage it yourself (everything is documented), join the community where I share build tutorials, or opt for the $2,000/month retainer that covers ongoing maintenance, new feature builds, and optimization. Most clients find the documentation sufficient to manage day-to-day operations on their own.
 
  
  

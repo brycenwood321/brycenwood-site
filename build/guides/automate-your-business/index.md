@@ -159,8 +159,8 @@ FREE GUIDE
  
  FREE COMMUNITY
  Want the full 30-day automation challenge?
- Inside the free community, I walk through the exact build order week by week -- with daily prompts, conversation transcripts, and the templates I used. No theory. Just build.
- [Join the Free Community](/community/)
+ Inside the community, I walk through the exact build order week by week -- with daily prompts, conversation transcripts, and the templates I used. No theory. Just build.
+ [Join the Community -- $97/mo](/community/)
  
  
 
@@ -212,7 +212,7 @@ FREE GUIDE
 
  Look at the data. How many leads were contacted? How fast? What was the response rate? What broke? What needs to be adjusted? Use the numbers to improve the system, then start planning your second build.
 
- The full challenge with daily prompts, specific build instructions, and conversation transcripts is inside the free community.
+ The full challenge with daily prompts, specific build instructions, and conversation transcripts is inside the community.
 
  
 ## Where to Go From Here
@@ -265,8 +265,8 @@ FREE GUIDE
  
 ## Ready to automate your business?
 
- Join the free community for the 30-day challenge, build prompts, and real-time support. Or book a call and I'll build it for you.
+ Join the community for the 30-day challenge, build prompts, and real-time support. Or book a call and I'll build it for you.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Call](/contact/)

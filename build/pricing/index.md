@@ -123,7 +123,7 @@ Transparent Pricing
  +
  
  
- The first 30 days of post-launch support are included with every build at no extra cost. During that period, I fix anything that needs adjusting as you start using the systems in real production. After 30 days, you have three options: manage it yourself using the comprehensive documentation I provide (most clients choose this), join the free community where I share build tutorials and answer questions, or sign up for the $2,000/month retainer that covers ongoing maintenance, new feature builds, performance optimization, and priority support. The systems are built to run independently -- 24 cron jobs and automated processes handle daily operations without anyone touching them.
+ The first 30 days of post-launch support are included with every build at no extra cost. During that period, I fix anything that needs adjusting as you start using the systems in real production. After 30 days, you have three options: manage it yourself using the comprehensive documentation I provide (most clients choose this), join the community where I share build tutorials and answer questions, or sign up for the $2,000/month retainer that covers ongoing maintenance, new feature builds, performance optimization, and priority support. The systems are built to run independently -- 24 cron jobs and automated processes handle daily operations without anyone touching them.
 
  
  

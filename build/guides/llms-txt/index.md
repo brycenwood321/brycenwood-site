@@ -135,9 +135,9 @@ I cover the complete system in the [AI SEO Playbook guide](/guides/ai-seo-playbo
  
  Inside the Community
  Get the Exact Prompts and Template
- The fill-in-the-blank llms.txt template, the Claude prompt that generates it for your business in 30 seconds, and the step-by-step walkthrough. All inside the free community.
+ The fill-in-the-blank llms.txt template, the Claude prompt that generates it for your business in 30 seconds, and the step-by-step walkthrough. All inside the community.
 
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  
 
 ## Where to Put the File
@@ -215,7 +215,7 @@ If you want to see the full transformation -- llms.txt, markdown mirrors, automa
  
  How long does it take to set up?+
  
- The file itself takes 15-30 minutes to write once you understand the structure, and the concept takes about 5 minutes to grasp. Inside the free community, there is a fill-in-the-blank template and a Claude Code prompt that generates the entire file for your specific business in about 30 seconds. I built the Summit Wraps llms.txt in roughly 20 minutes and the ROI on that time has been significant -- ChatGPT started recommending us without any ongoing maintenance or ad spend. Even for a complete beginner, you can have a working file live on your site within an hour of starting.
+ The file itself takes 15-30 minutes to write once you understand the structure, and the concept takes about 5 minutes to grasp. Inside the community, there is a fill-in-the-blank template and a Claude Code prompt that generates the entire file for your specific business in about 30 seconds. I built the Summit Wraps llms.txt in roughly 20 minutes and the ROI on that time has been significant -- ChatGPT started recommending us without any ongoing maintenance or ad spend. Even for a complete beginner, you can have a working file live on your site within an hour of starting.
 
  
  
@@ -239,8 +239,8 @@ If you want to see the full transformation -- llms.txt, markdown mirrors, automa
  
 ## Ready to Make AI Work for You?
 
- Get the llms.txt template, the exact prompts, and step-by-step walkthroughs inside the free community. Or book a call and I'll build the whole AI visibility stack for your business.
+ Get the llms.txt template, the exact prompts, and step-by-step walkthroughs inside the community. Or book a call and I'll build the whole AI visibility stack for your business.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)

@@ -178,8 +178,8 @@ Utah County, Salt Lake County, and surrounding areas.
  
  FREE COMMUNITY
  Want the exact files and scripts I used?
- Inside the free community, I share the llms.txt template, the markdown mirror generator script, and the schema markup examples -- ready to copy and customize for your business.
- [Join the Free Community](/community/)
+ Inside the community, I share the llms.txt template, the markdown mirror generator script, and the schema markup examples -- ready to copy and customize for your business.
+ [Join the Community -- $97/mo](/community/)
  
  
 
@@ -259,7 +259,7 @@ Utah County, Salt Lake County, and surrounding areas.
  
  How long does it take to implement the 3-file AI SEO system?+
  
- Schema markup improvements take 1-2 hours if you already have some in place, or 3-4 hours if you are starting from scratch. Creating an llms.txt file takes 15-30 minutes -- the format is simple and there is a template inside the free community. Markdown mirrors can be automated with a Python script I built that generates mirrors for all 27 Summit Wraps pages in under a minute. Total implementation time for most businesses: one afternoon. The video explaining this system got over 1.5 million views across platforms, largely because viewers realized they could implement the entire system in a few hours. Start with llms.txt (fastest win), then schema, then mirrors. You will see AI crawlers visiting your new files within days.
+ Schema markup improvements take 1-2 hours if you already have some in place, or 3-4 hours if you are starting from scratch. Creating an llms.txt file takes 15-30 minutes -- the format is simple and there is a template inside the community. Markdown mirrors can be automated with a Python script I built that generates mirrors for all 27 Summit Wraps pages in under a minute. Total implementation time for most businesses: one afternoon. The video explaining this system got over 1.5 million views across platforms, largely because viewers realized they could implement the entire system in a few hours. Start with llms.txt (fastest win), then schema, then mirrors. You will see AI crawlers visiting your new files within days.
 
  
  
@@ -275,8 +275,8 @@ Utah County, Salt Lake County, and surrounding areas.
  
 ## Ready to get recommended by AI?
 
- Join the free community for the templates, scripts, and step-by-step walkthroughs. Or book a call and I'll implement it for you.
+ Join the community for the templates, scripts, and step-by-step walkthroughs. Or book a call and I'll implement it for you.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Call](/contact/)

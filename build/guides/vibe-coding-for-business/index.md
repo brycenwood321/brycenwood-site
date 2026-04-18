@@ -144,8 +144,8 @@ FREE GUIDE
  
  FREE COMMUNITY
  Want the exact prompts I used to build my first system?
- Inside the free community, I share the full conversation transcripts, the prompts that worked, and the mistakes that didn't. No paywalls. No upsells. Just the playbook.
- [Join the Free Community](/community/)
+ Inside the community, I share the full conversation transcripts, the prompts that worked, and the mistakes that didn't. No paywalls. No upsells. Just the playbook.
+ [Join the Community -- $97/mo](/community/)
  
  
 
@@ -229,8 +229,8 @@ FREE GUIDE
  
 ## Ready to start building?
 
- Join the free community for the exact prompts, conversation transcripts, and walkthroughs. Or book a call and I'll build it for you.
+ Join the community for the exact prompts, conversation transcripts, and walkthroughs. Or book a call and I'll build it for you.
 
  
- [Join the Free Community](/community/)
+ [Join the Community -- $97/mo](/community/)
  [Book a Call](/contact/)

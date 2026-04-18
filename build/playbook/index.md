@@ -37,4 +37,4 @@ Enter your email at [brycenwood.com/playbook/](https://www.brycenwood.com/playbo
 - **Live Build Sessions** -- Watch me build these systems for real businesses in real time. Ask questions as I go.
 - **Weekly Updates** -- Every time I discover a new technique or AI changes how it reads websites, you hear about it first.
 
-[Join the Free Community](https://skool.com/business-on-autopilot-8404) | [Book a Discovery Call](/contact/)
+[Join the Community -- $97/mo](https://skool.com/business-on-autopilot-8404) | [Book a Discovery Call](/contact/)
