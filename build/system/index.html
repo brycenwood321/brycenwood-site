@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GV8RG30MK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2GV8RG30MK');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free AI Business Starter System | Brycen Wood</title>
+<meta name="description" content="Answer 12 questions about your business. Get a personalized AI system blueprint in minutes. Not a template. Built from your answers.">
+<link rel="canonical" href="https://www.brycenwood.com/system/">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Free AI Business Starter System | Brycen Wood">
+<meta property="og:description" content="Answer 12 questions about your business. Get a personalized AI system blueprint in minutes. Not a template. Built from your answers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.brycenwood.com/system/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free AI Business Starter System | Brycen Wood">
+<meta name="twitter:description" content="Answer 12 questions about your business. Get a personalized AI system blueprint in minutes. Not a template. Built from your answers.">
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Free AI Business Starter System",
+  "description": "Answer 12 questions about your business. Get a personalized AI system blueprint in minutes. Not a template. Built from your answers.",
+  "url": "https://www.brycenwood.com/system/",
+  "author": {
+    "@type": "Person",
+    "name": "Brycen Wood",
+    "url": "https://www.brycenwood.com/about/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brycenwood.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Starter System"}
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+
+<style>
+/* Form Styles */
+.system-form{display:flex;flex-direction:column;gap:24px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{
+  font-family:var(--mono);font-size:11px;font-weight:600;
+  letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);
+}
+.form-group label .required{color:var(--lime);margin-left:2px}
+.form-group label .optional{color:var(--text-muted);font-weight:400;text-transform:none;letter-spacing:0;font-size:10px;margin-left:4px}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="url"],
+.form-group textarea,
+.form-group select{
+  font-family:var(--sans);font-size:15px;color:var(--text);
+  background:rgba(5,5,8,0.8);border:1px solid var(--card-border);
+  border-radius:3px;padding:14px 16px;
+  transition:border-color 0.3s,box-shadow 0.3s;outline:none;
+  -webkit-appearance:none;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+  border-color:var(--lime-dim);box-shadow:0 0 20px rgba(0,255,136,0.06);
+}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-group select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2388889f' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:40px;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder{color:var(--text-muted);font-size:14px}
+
+.checkbox-group{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.checkbox-label{
+  display:flex;align-items:center;gap:8px;font-size:14px;color:var(--text-dim);
+  cursor:pointer;padding:8px 14px;border:1px solid var(--card-border);
+  border-radius:3px;background:rgba(5,5,8,0.6);
+  transition:border-color 0.3s,background 0.3s,color 0.3s;user-select:none;
+}
+.checkbox-label:hover{border-color:var(--lime-dim);color:var(--text)}
+.checkbox-label input{display:none}
+.checkbox-label input:checked + .check-box{background:var(--lime);border-color:var(--lime)}
+.checkbox-label input:checked + .check-box::after{
+  content:'';display:block;width:5px;height:9px;
+  border:solid var(--bg);border-width:0 2px 2px 0;
+  transform:rotate(45deg);margin:0 auto;margin-top:-1px;
+}
+.checkbox-label input:checked ~ span{color:var(--text)}
+.check-box{
+  width:18px;height:18px;flex-shrink:0;border:1px solid var(--card-border);
+  border-radius:2px;background:rgba(5,5,8,0.8);
+  transition:background 0.2s,border-color 0.2s;
+  display:flex;align-items:center;justify-content:center;
+}
+
+.submit-btn{
+  display:inline-block;width:100%;
+  font-family:var(--mono);font-size:14px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--bg);background:var(--lime);
+  padding:18px 36px;border:none;border-radius:3px;cursor:pointer;
+  transition:all 0.3s;
+  box-shadow:0 0 20px var(--lime-dim),0 4px 15px rgba(0,0,0,0.3);margin-top:8px;
+}
+.submit-btn:hover{
+  background:#00ffaa;
+  box-shadow:0 0 40px var(--lime-dim),0 6px 25px rgba(0,0,0,0.4);
+  transform:translateY(-2px);
+}
+.submit-btn:disabled{opacity:0.5;cursor:not-allowed;transform:none;box-shadow:none}
+.submit-btn.loading{pointer-events:none;background:var(--lime-deep)}
+
+.form-footnote{
+  font-family:var(--mono);font-size:11px;color:var(--text-muted);
+  text-align:center;letter-spacing:0.3px;line-height:1.5;margin-top:4px;
+}
+
+.form-progress{
+  font-family:var(--mono);font-size:11px;color:var(--text-muted);
+  letter-spacing:1px;text-align:right;margin-bottom:8px;
+}
+.form-progress .filled{color:var(--lime)}
+
+.hp-field{position:absolute;left:-9999px;opacity:0;height:0;width:0;overflow:hidden}
+
+.success-panel{text-align:center;padding:60px 24px}
+.success-icon{
+  width:64px;height:64px;margin:0 auto 24px;
+  border:2px solid var(--lime);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  animation:fadeUp 0.6s ease both;box-shadow:0 0 30px var(--lime-dim);
+}
+.success-icon svg{width:28px;height:28px}
+.success-title{font-size:28px;font-weight:800;margin-bottom:12px;animation:fadeUp 0.6s ease 0.1s both}
+.success-sub{
+  font-size:15px;color:var(--text-dim);max-width:480px;
+  margin:0 auto 32px;line-height:1.6;animation:fadeUp 0.6s ease 0.2s both;
+}
+.success-detail{
+  font-family:var(--mono);font-size:12px;color:var(--text-muted);
+  letter-spacing:0.5px;animation:fadeUp 0.6s ease 0.3s both;
+}
+
+.form-error{
+  font-family:var(--mono);font-size:12px;color:#ff4444;text-align:center;
+  padding:12px;margin-top:8px;border:1px solid rgba(255,68,68,0.2);
+  border-radius:3px;background:rgba(255,68,68,0.06);display:none;
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea,
+.form-group.invalid select{border-color:rgba(255,68,68,0.4)}
+.form-group .field-error{
+  font-family:var(--mono);font-size:10px;color:#ff4444;
+  letter-spacing:0.3px;display:none;margin-top:2px;
+}
+.form-group.invalid .field-error{display:block}
+
+.deliverables{display:grid;grid-template-columns:1fr;gap:12px;margin-top:24px}
+.deliverable{
+  display:flex;align-items:flex-start;gap:14px;padding:20px;
+  background:linear-gradient(165deg,rgba(14,15,22,0.9),rgba(8,9,14,0.95));
+  border:1px solid var(--card-border);border-radius:3px;
+  transition:border-color 0.3s,transform 0.3s;
+}
+.deliverable:hover{border-color:rgba(0,255,136,0.15);transform:translateY(-2px)}
+.deliverable-icon{
+  font-family:var(--mono);font-size:12px;font-weight:700;
+  color:var(--lime);flex-shrink:0;margin-top:2px;opacity:0.6;
+}
+.deliverable-text{font-size:14px;color:var(--text-dim);line-height:1.6}
+.deliverable-text strong{color:var(--text);font-weight:600}
+
+@media(max-width:768px){
+  .checkbox-group{gap:8px}
+  .checkbox-label{padding:6px 10px;font-size:13px}
+  .submit-btn{font-size:12px;padding:16px 24px}
+}
+</style>
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link">Guides</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+    <a href="/contact/" class="nav-cta">Book a Call</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span>
+  <span>Starter System</span>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <p class="hero-eyebrow">Free Tool</p>
+  <h1>Get Your Custom AI <span class="accent">Business Starter System</span></h1>
+  <p class="hero-sub">Answer 12 questions about your business. Get a personalized system blueprint built by AI in minutes. Not a template. Built from YOUR answers.</p>
+  <p style="font-size:13px;color:var(--text-muted);max-width:500px;margin:16px auto 0;line-height:1.5;animation:fadeUp 0.8s ease 0.3s both">Built by the same system behind 1.9M+ views on Instagram</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- FORM SECTION -->
+<section class="section-raised" style="padding:80px 0;">
+  <div class="container-narrow">
+    <!-- PRE-SUBMIT: Form -->
+    <div class="form-wrapper reveal" id="formPanel">
+      <div class="form-title">Tell us about your business</div>
+      <div class="form-sub">Every answer shapes your starter system. The more specific you are, the more useful the output.</div>
+      <div class="form-progress" id="formProgress"><span class="filled">0</span> / 12 answered</div>
+
+      <form id="systemForm" class="system-form" novalidate>
+        <!-- Honeypot -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="company_website">Company Website</label>
+          <input type="text" name="company_website" id="company_website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <!-- 1. Business name -->
+        <div class="form-group" data-field="business_name">
+          <label>Business Name <span class="required">*</span></label>
+          <input type="text" name="business_name" required placeholder="e.g., Summit Wraps and Graphics">
+          <span class="field-error">Business name is required</span>
+        </div>
+
+        <!-- 2. What does your business do -->
+        <div class="form-group" data-field="business_description">
+          <label>What does your business do? <span class="required">*</span></label>
+          <textarea name="business_description" required placeholder="e.g., We install garage doors for homeowners and builders in Utah"></textarea>
+          <span class="field-error">Tell us what your business does</span>
+        </div>
+
+        <!-- 3. Location -->
+        <div class="form-group" data-field="location">
+          <label>Business Location -- City and State <span class="required">*</span></label>
+          <input type="text" name="location" required placeholder="e.g., Springville, Utah">
+          <span class="field-error">Location is required</span>
+        </div>
+
+        <!-- 4. Website URL -->
+        <div class="form-group" data-field="website_url">
+          <label>Website URL <span class="optional">(optional)</span></label>
+          <input type="url" name="website_url" placeholder="https://yourbusiness.com">
+        </div>
+
+        <!-- 5. How do you currently get customers -->
+        <div class="form-group" data-field="customer_channels">
+          <label>How do you currently get customers? <span class="required">*</span></label>
+          <div class="checkbox-group" id="channelsGroup">
+            <label class="checkbox-label"><input type="checkbox" name="customer_channels" value="Referrals"><span class="check-box"></span><span>Referrals</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="customer_channels" value="Google/SEO"><span class="check-box"></span><span>Google/SEO</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="customer_channels" value="Social media"><span class="check-box"></span><span>Social media</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="customer_channels" value="Paid ads"><span class="check-box"></span><span>Paid ads</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="customer_channels" value="Cold outreach"><span class="check-box"></span><span>Cold outreach</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="customer_channels" value="Word of mouth"><span class="check-box"></span><span>Word of mouth</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="customer_channels" value="Other"><span class="check-box"></span><span>Other</span></label>
+          </div>
+          <span class="field-error">Select at least one channel</span>
+        </div>
+
+        <!-- 6. Biggest bottleneck -->
+        <div class="form-group" data-field="bottleneck">
+          <label>What's your biggest bottleneck right now? <span class="required">*</span></label>
+          <textarea name="bottleneck" required placeholder="Be specific. The more detail, the better your starter system will be."></textarea>
+          <span class="field-error">This field is required</span>
+        </div>
+
+        <!-- 7. Monthly revenue range -->
+        <div class="form-group" data-field="revenue_range">
+          <label>Monthly Revenue Range <span class="required">*</span></label>
+          <select name="revenue_range" required>
+            <option value="" disabled selected>Select a range</option>
+            <option value="Pre-revenue">Pre-revenue</option>
+            <option value="Under $5K">Under $5K</option>
+            <option value="$5K-$15K">$5K-$15K</option>
+            <option value="$15K-$30K">$15K-$30K</option>
+            <option value="$30K-$50K">$30K-$50K</option>
+            <option value="$50K-$100K">$50K-$100K</option>
+            <option value="$100K+">$100K+</option>
+          </select>
+          <span class="field-error">Select your revenue range</span>
+        </div>
+
+        <!-- 8. 12-month revenue goal -->
+        <div class="form-group" data-field="revenue_goal">
+          <label>12-Month Revenue Goal <span class="required">*</span></label>
+          <input type="text" name="revenue_goal" required placeholder="e.g., $50K/month">
+          <span class="field-error">Revenue goal is required</span>
+        </div>
+
+        <!-- 9. Current tools -->
+        <div class="form-group" data-field="current_tools">
+          <label>What tools/software do you currently pay for? <span class="optional">(optional)</span></label>
+          <textarea name="current_tools" placeholder="e.g., QuickBooks, Mailchimp, Squarespace, HubSpot"></textarea>
+        </div>
+
+        <!-- 10. What to automate -->
+        <div class="form-group" data-field="automate_first">
+          <label>What's the ONE thing you'd automate first? <span class="required">*</span></label>
+          <textarea name="automate_first" required placeholder="e.g., Following up with leads who fill out my contact form"></textarea>
+          <span class="field-error">This field is required</span>
+        </div>
+
+        <!-- 11. Social media platforms -->
+        <div class="form-group" data-field="social_platforms">
+          <label>Do you use social media for business? Which platforms? <span class="required">*</span></label>
+          <div class="checkbox-group" id="socialGroup">
+            <label class="checkbox-label"><input type="checkbox" name="social_platforms" value="Instagram"><span class="check-box"></span><span>Instagram</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="social_platforms" value="TikTok"><span class="check-box"></span><span>TikTok</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="social_platforms" value="Facebook"><span class="check-box"></span><span>Facebook</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="social_platforms" value="LinkedIn"><span class="check-box"></span><span>LinkedIn</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="social_platforms" value="YouTube"><span class="check-box"></span><span>YouTube</span></label>
+            <label class="checkbox-label"><input type="checkbox" name="social_platforms" value="None"><span class="check-box"></span><span>None</span></label>
+          </div>
+          <span class="field-error">Select at least one option</span>
+        </div>
+
+        <!-- 12. Email -->
+        <div class="form-group" data-field="email">
+          <label>Email Address <span class="required">*</span></label>
+          <input type="email" name="email" required placeholder="you@yourbusiness.com">
+          <span class="field-error">Valid email is required</span>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">Build My Starter System</button>
+        <div class="form-error" id="formError"></div>
+        <p class="form-footnote">Takes 3-5 minutes. Only real businesses qualify for generation.</p>
+      </form>
+    </div>
+
+    <!-- POST-SUBMIT: Success -->
+    <div class="success-panel" id="successPanel" style="display:none;">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#00ff88" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="success-title">Your starter system is <span class="accent">being built.</span></div>
+      <p class="success-sub">Check your email in the next 30 minutes. You'll receive a personalized CLAUDE.md file, a website scan (if you provided a URL), and a prioritized action plan.</p>
+      <p class="success-detail">Built by AI. Reviewed by a human. Tailored to your business.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHAT YOU'LL GET -->
+<section style="padding:64px 0;">
+  <div class="container-narrow">
+    <div class="section-header reveal">
+      <h2>What You'll <span class="accent">Get</span></h2>
+      <p>Three deliverables, personalized to your business. Not a generic template.</p>
+    </div>
+    <div class="deliverables reveal">
+      <div class="deliverable">
+        <div class="deliverable-icon">01</div>
+        <div class="deliverable-text"><strong>A personalized CLAUDE.md starter file for YOUR business</strong> -- A ready-to-use AI context file that teaches Claude Code exactly who you are, what your business does, and how to help you. Copy it into your project and start building immediately.</div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-icon">02</div>
+        <div class="deliverable-text"><strong>A quick scan of your website with specific fixes</strong> -- If you provide a URL, we'll analyze it and give you concrete action items: SEO gaps, missing AI-readability files, content improvements, and what to fix first.</div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-icon">03</div>
+        <div class="deliverable-text"><strong>A prioritized action plan based on your biggest bottleneck</strong> -- Not a generic checklist. A sequenced plan that addresses the specific bottleneck you described, using the tools and budget you already have.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/community/" class="footer-link">Community</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <a href="#formPanel" class="sticky-bar-btn">Build My Starter System</a>
+  <div class="sticky-bar-sub">12 questions -- personalized AI blueprint</div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+// Mobile nav toggle
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+
+// Sticky bar
+const stickyBar=document.getElementById('stickyBar');
+if(stickyBar){
+  const heroEl=document.querySelector('.page-hero');
+  const stickyObs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting){stickyBar.classList.add('visible')}
+      else{stickyBar.classList.remove('visible')}
+    });
+  },{threshold:0});
+  if(heroEl)stickyObs.observe(heroEl);
+}
+
+// Scroll reveal
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+// Form progress counter
+const form=document.getElementById('systemForm');
+const progressEl=document.getElementById('formProgress');
+function updateProgress(){
+  let filled=0;
+  form.querySelectorAll('input[type="text"],input[type="email"],input[type="url"]').forEach(el=>{
+    if(el.name!=='company_website'&&el.value.trim())filled++;
+  });
+  form.querySelectorAll('textarea').forEach(el=>{if(el.value.trim())filled++});
+  const sel=form.querySelector('select[required]');
+  if(sel&&sel.value)filled++;
+  if(form.querySelectorAll('input[name="customer_channels"]:checked').length>0)filled++;
+  if(form.querySelectorAll('input[name="social_platforms"]:checked').length>0)filled++;
+  if(progressEl)progressEl.innerHTML='<span class="filled">'+filled+'</span> / 12 answered';
+}
+form.addEventListener('input',updateProgress);
+form.addEventListener('change',updateProgress);
+
+// Validation
+function validateForm(){
+  let valid=true;
+  form.querySelectorAll('.form-group[data-field]').forEach(g=>g.classList.remove('invalid'));
+
+  form.querySelectorAll('input[required],textarea[required]').forEach(el=>{
+    if(!el.value.trim()){el.closest('.form-group').classList.add('invalid');valid=false}
+  });
+
+  const emailInput=form.querySelector('input[type="email"]');
+  if(emailInput&&emailInput.value.trim()){
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim())){
+      emailInput.closest('.form-group').classList.add('invalid');valid=false;
+    }
+  }
+
+  const urlInput=form.querySelector('input[type="url"]');
+  if(urlInput&&urlInput.value.trim()){
+    try{new URL(urlInput.value.trim())}catch(e){
+      urlInput.closest('.form-group').classList.add('invalid');valid=false;
+    }
+  }
+
+  const sel=form.querySelector('select[required]');
+  if(sel&&!sel.value){sel.closest('.form-group').classList.add('invalid');valid=false}
+
+  if(form.querySelectorAll('input[name="customer_channels"]:checked').length===0){
+    document.querySelector('[data-field="customer_channels"]').classList.add('invalid');valid=false;
+  }
+  if(form.querySelectorAll('input[name="social_platforms"]:checked').length===0){
+    document.querySelector('[data-field="social_platforms"]').classList.add('invalid');valid=false;
+  }
+  return valid;
+}
+
+// Submit
+form.addEventListener('submit',async function(e){
+  e.preventDefault();
+  const hp=document.getElementById('company_website');
+  if(hp&&hp.value)return;
+
+  if(!validateForm()){
+    const fi=form.querySelector('.form-group.invalid');
+    if(fi)fi.scrollIntoView({behavior:'smooth',block:'center'});
+    return;
+  }
+
+  const submitBtn=document.getElementById('submitBtn');
+  const formError=document.getElementById('formError');
+  formError.style.display='none';
+  submitBtn.disabled=true;
+  submitBtn.classList.add('loading');
+  submitBtn.textContent='Building your system...';
+
+  const data={
+    business_name:form.business_name.value.trim(),
+    business_description:form.business_description.value.trim(),
+    location:form.location.value.trim(),
+    website_url:form.website_url.value.trim()||null,
+    customer_channels:Array.from(form.querySelectorAll('input[name="customer_channels"]:checked')).map(c=>c.value),
+    bottleneck:form.bottleneck.value.trim(),
+    revenue_range:form.revenue_range.value,
+    revenue_goal:form.revenue_goal.value.trim(),
+    current_tools:form.current_tools.value.trim()||null,
+    automate_first:form.automate_first.value.trim(),
+    social_platforms:Array.from(form.querySelectorAll('input[name="social_platforms"]:checked')).map(c=>c.value),
+    email:form.email.value.trim(),
+    submitted_at:new Date().toISOString(),
+    source:'brycenwood.com/system'
+  };
+
+  try{
+    const resp=await fetch('https://hq.summitwrapsandgraphics.com/api/starter-system',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(data)
+    });
+    if(!resp.ok){const errBody=await resp.text();throw new Error(errBody||'Server error. Please try again.')}
+
+    document.getElementById('formPanel').style.display='none';
+    const sp=document.getElementById('successPanel');
+    sp.style.display='block';
+    sp.scrollIntoView({behavior:'smooth',block:'center'});
+    if(stickyBar)stickyBar.style.display='none';
+    if(typeof gtag==='function'){
+      gtag('event','starter_system_submit',{
+        event_category:'conversion',event_label:data.business_name,revenue_range:data.revenue_range
+      });
+    }
+  }catch(err){
+    formError.textContent=err.message||'Something went wrong. Please try again.';
+    formError.style.display='block';
+    submitBtn.disabled=false;
+    submitBtn.classList.remove('loading');
+    submitBtn.textContent='Build My Starter System';
+  }
+});
+</script>
+</body>
+</html>
