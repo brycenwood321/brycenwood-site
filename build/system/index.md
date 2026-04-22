@@ -48,7 +48,7 @@ Not a generic checklist. A sequenced plan that addresses the specific bottleneck
 
 This tool is built and maintained by [Brycen Wood](https://www.brycenwood.com/about/), who builds custom business operating systems using Claude Code. The same systems that run his own businesses -- from lead generation to content to operations -- are what power this starter system generator.
 
-- [Join the Community](https://www.brycenwood.com/community/) -- $97/mo
+- [Join the Free Community](https://www.brycenwood.com/community/)
 - [Book a Discovery Call](https://www.brycenwood.com/contact/)
 - [Download the Free Playbook](https://www.brycenwood.com/playbook/)
 

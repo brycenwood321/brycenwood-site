@@ -225,5 +225,5 @@ FREE GUIDE
  The community has layer-by-layer build tutorials, exact prompts, and templates. Or book a call and I will build the whole thing for you in 2 weeks.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Call](/contact/)

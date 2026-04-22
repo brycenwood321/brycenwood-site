@@ -241,7 +241,7 @@ Every path has costs that don't show up in the initial quote. Here's what the sa
  Learn to Build Your Own Systems for Free
  1,700+ business owners learning to automate with Claude Code. Prompts, templates, walkthroughs, and direct support. No upsell, no gated content.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## How to Decide What's Right for Your Budget

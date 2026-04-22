@@ -133,7 +133,7 @@ I know this because I watched it happen with Google SEO twenty years ago. The bu
  Get the Exact Prompts and Templates
  The llms.txt template, the markdown mirror generator script, the schema snippets -- everything you need to make AI recommend your business. Free to join.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## What Comes After the 3-File System
@@ -191,5 +191,5 @@ Every one of these extensions is something I built for Summit Wraps using Claude
  Join 1,700+ business owners building AI-readable websites inside the community. Or book a discovery call to get your entire operating system built in 2 weeks.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

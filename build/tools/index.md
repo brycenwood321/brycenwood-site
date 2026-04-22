@@ -99,5 +99,5 @@ My Stack
  Join the community for walkthroughs, or book a call if you want me to build it for you.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Call](/contact/)

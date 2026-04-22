@@ -10,10 +10,12 @@
   },
   "2": {
     "name": "You vs My AI",
-    "container_id": "18078872951213871",
+    "container_id": "18080089580213871",
     "scheduled_date": "2026-04-16",
-    "published": false,
-    "slides": 8
+    "published": true,
+    "slides": 8,
+    "media_id": "17928354609086354",
+    "published_at": "2026-04-18 12:29"
   },
   "4": {
     "name": "5 AI Tools That Run My Business",

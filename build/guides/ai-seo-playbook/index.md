@@ -179,7 +179,7 @@ Utah County, Salt Lake County, and surrounding areas.
  FREE COMMUNITY
  Want the exact files and scripts I used?
  Inside the community, I share the llms.txt template, the markdown mirror generator script, and the schema markup examples -- ready to copy and customize for your business.
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
  
 
@@ -278,5 +278,5 @@ Utah County, Salt Lake County, and surrounding areas.
  Join the community for the templates, scripts, and step-by-step walkthroughs. Or book a call and I'll implement it for you.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Call](/contact/)

@@ -165,7 +165,7 @@ But if you're a small or mid-size business owner who needs both a web presence a
  See What Other Owners Are Building
  Join the community to see real before-and-after builds, ask questions about your specific business, and get the templates and prompts I use for every client project.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## Ownership: The Hidden Cost of Agencies
@@ -241,5 +241,5 @@ I know which side I'm building on. I've seen the numbers.
  See what other business owners are building inside the community. Or book a discovery call and I'll map out exactly what your custom build would include.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

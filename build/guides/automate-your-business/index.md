@@ -160,7 +160,7 @@ FREE GUIDE
  FREE COMMUNITY
  Want the full 30-day automation challenge?
  Inside the community, I walk through the exact build order week by week -- with daily prompts, conversation transcripts, and the templates I used. No theory. Just build.
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
  
 
@@ -268,5 +268,5 @@ FREE GUIDE
  Join the community for the 30-day challenge, build prompts, and real-time support. Or book a call and I'll build it for you.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Call](/contact/)

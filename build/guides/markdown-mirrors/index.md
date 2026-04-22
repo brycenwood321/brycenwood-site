@@ -152,7 +152,7 @@ Clean. Readable. No noise. The AI can consume this in one pass and know exactly 
  Get the Auto-Generator Script
  The Python script that automatically generates markdown mirrors for your entire website, plus the exact server config to serve them correctly. All inside the community.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## The Technical Setup
@@ -311,5 +311,5 @@ If you want to see the complete transformation -- from zero AI visibility to Cha
  Get the auto-generator script, server configs, and step-by-step walkthroughs inside the community. Or book a call and I'll build the whole AI visibility stack for your business.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

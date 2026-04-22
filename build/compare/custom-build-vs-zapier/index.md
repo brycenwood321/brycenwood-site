@@ -139,7 +139,7 @@ A custom AI build: $3,500. Once. No task limits. No per-event pricing. No surpri
  See Real Automation Systems in Action
  Join the community to see the actual systems I built for Summit Wraps, get the templates and prompts, and learn which automations deliver the highest ROI for your specific business.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## The API Problem Nobody Talks About
@@ -221,5 +221,5 @@ I have nothing against Zapier. I still recommend it for simple use cases. But fo
  See what real business automation looks like inside the community. Or book a discovery call and I'll show you exactly which systems would have the biggest impact on your business.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

@@ -151,7 +151,7 @@ That business intelligence gets translated into systems through Claude Code. The
  See the Systems Running Summit Wraps
  Join the community to see real system walkthroughs, get the automation templates, and learn which systems deliver the highest ROI for businesses like yours. No coding required.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## What Happened to Summit Wraps
@@ -243,5 +243,5 @@ The math speaks for itself.
  See what 80+ automated systems look like inside the community. Or book a discovery call and I'll map out the exact operating system your business needs -- delivered in 2 weeks for $3,500.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

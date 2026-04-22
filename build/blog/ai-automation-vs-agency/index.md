@@ -136,7 +136,7 @@ The full Summit Wraps case study is at [summitwrapsandgraphics.com case study](/
  See the Exact Systems Behind These Numbers
  The prompts, the templates, the walkthroughs -- everything I use to build business operating systems with Claude Code. Free to join, no upsell inside.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## How to Evaluate What You Actually Need
@@ -212,5 +212,5 @@ Get the systems right first. The aesthetic layer is easier and cheaper to add on
  Join 1,700+ business owners learning to build with AI inside the community. Or book a discovery call to see what a custom build looks like for your business.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

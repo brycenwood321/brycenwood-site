@@ -14,7 +14,7 @@ Built by one person with one tool
 
  
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)
  
  Scroll to explore
@@ -305,6 +305,6 @@ Built by one person with one tool
  "But I'm not technical." — Neither am I. Everything on this page was built through conversation. If you can describe what your business needs, you can build it.
 
  
- First 200 founding member spots
- Get on the waitlist
- Free to join. First 200 members get founding access + direct input on what gets built next.
+ Join the free community
+ Get started
+ Free to join. Learn to build AI-powered business systems alongside other business owners.

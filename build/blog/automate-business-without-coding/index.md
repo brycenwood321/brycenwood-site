@@ -140,7 +140,7 @@ Let me walk through how this framework played out for three specific systems, fr
  Get the Framework Templates and Prompt Library
  The exact prompts, description templates, and build-along walkthroughs for the five-step framework. Free to join, built for non-coders.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## The Most Common Mistakes
@@ -228,5 +228,5 @@ The detailed guides for each system type are at [the vibe coding guide](/guides/
  Join 1,700+ business owners building automation systems without code inside the community. Or book a discovery call to get your custom operating system built in 2 weeks.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

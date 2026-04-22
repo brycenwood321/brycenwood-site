@@ -118,7 +118,7 @@ The honest framework: if your business IS a software company, hire developers. I
  Learn to Build Business Systems Without Code
  The exact prompts, walkthroughs, and build patterns I use to create production systems with Claude Code. Free to join, no dev experience needed.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## The Summit Wraps Proof
@@ -186,5 +186,5 @@ The tools exist right now to turn your business knowledge into production system
  Join 1,700+ business owners building their own systems with AI inside the community. Or book a discovery call to get your entire operating system built in 2 weeks.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

@@ -169,7 +169,7 @@ I have zero financial relationship with any company listed here. No affiliate li
  See How These Tools Work Together
  Setup walkthroughs, integration patterns, and the exact prompts for building systems with this stack. Free to join, no upsell.
 
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## The Total Monthly Cost Breakdown
@@ -278,5 +278,5 @@ The full quick reference for every tool in the stack, including setup links and 
  Join 1,700+ business owners building AI-powered systems inside the community. Or book a discovery call to get your custom stack built in 2 weeks.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

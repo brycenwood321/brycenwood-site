@@ -94,4 +94,4 @@ Blog
  Join the community for early access to new articles, plus the exact prompts, templates, and walkthroughs behind every system I build.
 
  
- [Join the Community -- $97/mo](/community/)
+ [Join the Free Community](/community/)
