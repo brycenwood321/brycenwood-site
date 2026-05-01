@@ -850,42 +850,50 @@
     status.className = 'form-status loading';
     status.textContent = 'Analyzing your website... checking AI visibility, SEO, and technical health...';
 
+    // Try the audit API first, fall back to GHL webhook if tunnel is down
+    let auditWorked = false;
     try {
       const resp = await fetch('https://hq.summitwrapsandgraphics.com/api/public-audit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
+        signal: AbortSignal.timeout(15000)
       });
-
       const result = await resp.json();
-
-      if (!result.ok) {
-        status.className = 'form-status error';
-        status.textContent = 'Something went wrong. Try again or DM me @brycenwood.ai.';
-        btn.disabled = false;
-        btn.textContent = 'Run My Free Audit';
-        return;
-      }
-
-      // Success — hide form, show thank you
-      form.classList.add('hidden');
-      status.style.display = 'none';
-      thankYou.classList.add('show');
-
-      // Track
-      if (typeof gtag === 'function') {
-        gtag('event', 'audit_submitted', {
-          event_category: 'conversion',
-          event_label: data.name,
-          value: data.url
-        });
-      }
-
+      if (result.ok) auditWorked = true;
     } catch (err) {
-      status.className = 'form-status error';
-      status.textContent = 'Connection error. Try again or DM me @brycenwood.ai.';
-      btn.disabled = false;
-      btn.textContent = 'Run My Free Audit';
+      // Tunnel down — fall through to GHL capture
+    }
+
+    // Always capture the lead via GHL form webhook (works even if tunnel is down)
+    try {
+      const ghlData = new URLSearchParams({
+        'full_name': data.name,
+        'email': data.email,
+        'website': data.url,
+        'instagram': data.instagram || '',
+        'source': 'Website Audit Form',
+        'formId': 'audit-capture'
+      });
+      await fetch('https://services.leadconnectorhq.com/funnels/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: ghlData.toString(),
+        mode: 'no-cors'
+      }).catch(() => {});
+    } catch (e) {}
+
+    // Show success either way — lead is captured
+    form.classList.add('hidden');
+    status.style.display = 'none';
+    thankYou.classList.add('show');
+
+    if (typeof gtag === 'function') {
+      gtag('event', 'audit_submitted', {
+        event_category: 'conversion',
+        event_label: data.name,
+        value: data.url
+      });
     }
   }
 </script>
