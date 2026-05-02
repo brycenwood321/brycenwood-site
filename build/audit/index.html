@@ -765,45 +765,26 @@
   <h2 class="section-title">Get your free audit.</h2>
   <p class="section-sub">Drop your website below. Your personalized PDF report will be ready in under 60 seconds.</p>
 
-  <form class="audit-form" id="auditForm" onsubmit="submitAudit(event)">
-    <div class="form-group">
-      <label for="biz_name">Business name</label>
-      <input type="text" id="biz_name" name="biz_name" placeholder="John's Plumbing" required>
-    </div>
-    <div class="form-group">
-      <label for="website">Website URL</label>
-      <input type="text" id="website" name="website" placeholder="https://example.com" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="you@business.com" required>
-    </div>
-    <div class="form-group">
-      <label for="industry">What industry are you in?</label>
-      <input type="text" id="industry" name="industry" placeholder="Plumbing, Roofing, Marketing, etc." required>
-    </div>
-    <div class="form-group">
-      <label for="location">Where are you located?</label>
-      <input type="text" id="location" name="location" placeholder="Salt Lake City, Utah" required>
-      <div class="hint">Used to find and compare your local competitors</div>
-    </div>
-    <div class="form-group">
-      <label for="instagram">Instagram handle <span style="color:var(--text-muted)">(optional)</span></label>
-      <input type="text" id="instagram" name="instagram" placeholder="@yourbusiness">
-      <div class="hint">So I can send your report directly</div>
-    </div>
-    <button type="submit" class="form-submit" id="submitBtn">Run My Free Audit</button>
-    <div class="form-status" id="formStatus"></div>
+  <div class="audit-form" id="auditFormWrapper">
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/Ayr4EUJabn9oZjKKugFj"
+      style="width:100%;height:100%;border:none;border-radius:8px;min-height:697px;"
+      id="inline-Ayr4EUJabn9oZjKKugFj"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Website Analysis"
+      data-height="697"
+      data-layout-iframe-id="inline-Ayr4EUJabn9oZjKKugFj"
+      data-form-id="Ayr4EUJabn9oZjKKugFj"
+      title="Website Analysis"
+    ></iframe>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     <p class="form-fine">No spam. No credit card. Just your audit.</p>
-  </form>
-
-  <div class="thank-you" id="thankYou">
-    <div class="ty-icon">&#10003;</div>
-    <h3>Your audit is running.</h3>
-    <p>I'm generating your personalized report right now. I'll DM you on Instagram with your full PDF and your score.</p>
-    <a href="https://instagram.com/brycenwood.ai" target="_blank" class="ty-ig">
-      Follow @brycenwood.ai for your report
-    </a>
   </div>
 </section>
 
@@ -831,82 +812,9 @@
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // Form submission
-  async function submitAudit(e) {
-    e.preventDefault();
-
-    const btn = document.getElementById('submitBtn');
-    const status = document.getElementById('formStatus');
-    const form = document.getElementById('auditForm');
-    const thankYou = document.getElementById('thankYou');
-
-    const data = {
-      name: document.getElementById('biz_name').value.trim(),
-      url: document.getElementById('website').value.trim(),
-      email: document.getElementById('email').value.trim(),
-      industry: document.getElementById('industry').value.trim(),
-      location: document.getElementById('location').value.trim(),
-      instagram: document.getElementById('instagram').value.trim()
-    };
-
-    if (!data.url || !data.name || !data.email || !data.industry || !data.location) return;
-
-    // Ensure URL has protocol
-    if (!data.url.startsWith('http')) {
-      data.url = 'https://' + data.url;
-    }
-
-    btn.disabled = true;
-    btn.textContent = 'Running audit...';
-    status.className = 'form-status loading';
-    status.textContent = 'Analyzing your website... checking AI visibility, SEO, and technical health...';
-
-    // Try the audit API first, fall back to GHL webhook if tunnel is down
-    let auditWorked = false;
-    try {
-      const resp = await fetch('https://hq.summitwrapsandgraphics.com/api/public-audit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-        signal: AbortSignal.timeout(15000)
-      });
-      const result = await resp.json();
-      if (result.ok) auditWorked = true;
-    } catch (err) {
-      // Tunnel down — fall through to GHL capture
-    }
-
-    // Always capture the lead via GHL form webhook (works even if tunnel is down)
-    try {
-      const ghlData = new URLSearchParams({
-        'full_name': data.name,
-        'email': data.email,
-        'website': data.url,
-        'instagram': data.instagram || '',
-        'source': 'Website Audit Form',
-        'formId': 'audit-capture'
-      });
-      await fetch('https://services.leadconnectorhq.com/funnels/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: ghlData.toString(),
-        mode: 'no-cors'
-      }).catch(() => {});
-    } catch (e) {}
-
-    // Show success either way — lead is captured
-    form.classList.add('hidden');
-    status.style.display = 'none';
-    thankYou.classList.add('show');
-
-    if (typeof gtag === 'function') {
-      gtag('event', 'audit_submitted', {
-        event_category: 'conversion',
-        event_label: data.name,
-        value: data.url
-      });
-    }
-  }
+  // GHL form handles submission directly via iframe -- no custom JS needed.
+  // The catch-up cron (audit_catchup.py) checks GHL for new audit-request
+  // tagged contacts and runs their audits when the laptop is online.
 </script>
 
 </body>
