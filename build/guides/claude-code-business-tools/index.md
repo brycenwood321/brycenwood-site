@@ -228,5 +228,5 @@ FREE GUIDE
  The community has exact prompts, build walkthroughs, and templates for every system on this page. Or book a call and I will build your operating system for you.
 
  
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  [Book a Call](/contact/)

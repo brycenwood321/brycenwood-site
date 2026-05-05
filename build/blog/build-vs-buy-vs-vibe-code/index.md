@@ -202,10 +202,10 @@ The target for the rest of 2025 is $600K-$750K in revenue. Same two people. Same
 You can see the full breakdown at [the Summit Wraps case study](/case-studies/summit-wraps/).
 
  
- FREE COMMUNITY
+ FOUNDING ACCESS
  Want to see exactly how I vibe coded each system?
  The prompts, walkthroughs, and templates are inside the community. See the actual conversations that built these systems -- not theory, not screenshots, the real thing.
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  
 
 ## How to Get Started with Vibe Coding
@@ -286,5 +286,5 @@ For the full deep-dive on vibe coding, read [the Vibe Coding for Business guide]
  Join the community for the exact prompts, conversation transcripts, and walkthroughs. Or book a call and I'll build your operating system for you.
 
  
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)

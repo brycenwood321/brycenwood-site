@@ -237,11 +237,11 @@ Every path has costs that don't show up in the initial quote. Here's what the sa
 - **Edge cases.** AI-built systems handle 95% of scenarios perfectly. The last 5% -- unusual integrations, legacy system compatibility, platform-specific quirks -- sometimes requires creative problem-solving that takes longer than expected.
 
  
- Inside the Community
- Learn to Build Your Own Systems for Free
- 1,700+ business owners learning to automate with Claude Code. Prompts, templates, walkthroughs, and direct support. No upsell, no gated content.
+ FOUNDING ACCESS
+ Learn to Build Your Own Systems
+ A community of local service business owners learning to automate with Claude Code. Prompts, templates, walkthroughs, and direct support. $97/mo, lifetime locked for the first 250 founding members.
 
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  
 
 ## How to Decide What's Right for Your Budget
@@ -250,7 +250,7 @@ After working with dozens of business owners across different revenue stages, I'
 
 **Under $100K revenue: DIY with community guidance.**
 
-At this stage, you need automation but you can't afford to outsource it. The move is to join the [community](/community/), learn the basics of vibe coding with Claude Code, and build your own systems incrementally. Start with the highest-impact automation (usually lead follow-up or CRM organization), get it working, then build the next one. Your investment is time, not money. Most business owners at this stage can build their first 5-10 automations within a month of joining the community.
+At this stage, you need automation but you can't afford to outsource it. The move is to join the [community](/community/) ($97/mo, lifetime locked for the first 250 founding members), learn the basics of vibe coding with Claude Code, and build your own systems incrementally. Start with the highest-impact automation (usually lead follow-up or CRM organization), get it working, then build the next one. The community fee is a fraction of what you'd pay an agency, and most business owners at this stage can build their first 5-10 automations within a month of joining.
 
 **$100K-$500K revenue: Custom Build ($3,500-$7,500, one-time).**
 
@@ -296,7 +296,7 @@ The common thread across all stages: start with the systems that save you the mo
  
  Can I start small and scale up?+
  
- Absolutely, and for most businesses under $100,000 in revenue that is exactly what I recommend. Start with the community where you learn to build basic automations yourself using Claude Code. Graduate to a custom build when you hit a complexity ceiling or want to accelerate. Add the retainer when you are ready to continuously expand your system. The pricing tiers are designed to match your business stage: under $100K revenue, learn to vibe code in the community for free. Between $100K-$500K, invest in a one-time custom build to create your operating system foundation. Above $500K, the retainer makes sense because the ROI on each new automation scales with your revenue. There is no pressure to start at the top tier. Every successful client I have worked with started with a single focused build and expanded from there.
+ Absolutely, and for most businesses under $100,000 in revenue that is exactly what I recommend. Start with the community where you learn to build basic automations yourself using Claude Code. Graduate to a custom build when you hit a complexity ceiling or want to accelerate. Add the retainer when you are ready to continuously expand your system. The pricing tiers are designed to match your business stage: under $100K revenue, learn to vibe code inside the community ($97/mo, lifetime locked for the first 250 founding members). Between $100K-$500K, invest in a one-time custom build to create your operating system foundation. Above $500K, the retainer makes sense because the ROI on each new automation scales with your revenue. There is no pressure to start at the top tier. Every successful client I have worked with started with a single focused build and expanded from there.
 
  
  

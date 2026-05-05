@@ -14,7 +14,7 @@ Built by one person with one tool
 
  
  
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)
  
  Scroll to explore
@@ -22,7 +22,7 @@ Built by one person with one tool
  
  **1.5M+** video views/
  **8,000+** followers/
- **1,700+** waitlist signups/
+ **3,000+** waitlist signups/
  **$300K+** revenue (no new hires)/
  **80+** automations built/
  **0** lines of code/
@@ -31,7 +31,7 @@ Built by one person with one tool
  
  **1.5M+** video views/
  **8,000+** followers/
- **1,700+** waitlist signups/
+ **3,000+** waitlist signups/
  **$300K+** revenue (no new hires)/
  **80+** automations built/
  **0** lines of code/
@@ -305,6 +305,6 @@ Built by one person with one tool
  "But I'm not technical." — Neither am I. Everything on this page was built through conversation. If you can describe what your business needs, you can build it.
 
  
- Join the free community
- Get started
- Free to join. Learn to build AI-powered business systems alongside other business owners.
+ $97/mo founding -- 250 spots, lifetime locked
+ Join the Founding Cohort
+ $97/mo for the first 250 founding members. Learn to build AI-powered business systems with Claude Code. Lifetime price lock -- after the first 250, $147/mo.

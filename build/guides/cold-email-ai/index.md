@@ -265,5 +265,5 @@ FREE GUIDE
  The guide covers WHAT and WHY. The community gives you the exact prompts, templates, and walkthroughs to build the system yourself. Or book a call and I will build it for you.
 
  
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  [Book a Call](/contact/)

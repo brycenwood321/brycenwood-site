@@ -114,7 +114,7 @@ These 10 systems are a representative sample. The full count is over 80 intercon
  Watch These Systems Get Built Live
  Build-along walkthroughs for every system type listed above. See the exact prompts, the iteration process, and the final output. Free to join.
 
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  
 
 ## The 70+ Systems I Didn't List
@@ -179,8 +179,8 @@ If you want to explore what that would look like for your business, the [discove
  
 ## Ready to See What Claude Code Can Build for You?
 
- Join 1,700+ business owners building with AI inside the community. Or book a discovery call to map out your custom operating system.
+ Get founding access alongside local service business owners building with AI. Or book a discovery call to map out your custom operating system.
 
  
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)

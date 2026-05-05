@@ -176,10 +176,10 @@ Utah County, Salt Lake County, and surrounding areas.
  
  
  
- FREE COMMUNITY
+ FOUNDING ACCESS
  Want the exact files and scripts I used?
  Inside the community, I share the llms.txt template, the markdown mirror generator script, and the schema markup examples -- ready to copy and customize for your business.
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  
  
 
@@ -232,7 +232,7 @@ Utah County, Salt Lake County, and surrounding areas.
  - **Markdown mirrors deep dive** -- read the [complete markdown mirrors guide](/guides/markdown-mirrors/) for the technical walkthrough and automation script
  - **Learn to build these systems yourself** -- read [Vibe Coding for Business](/guides/vibe-coding-for-business/) to understand how to use Claude Code to implement everything
  - **See the full automation picture** -- read [How to Automate Your Business](/guides/automate-your-business/) to understand where AI SEO fits in the broader system
- - **Get the templates** -- join the [free Skool community](/community/) for the llms.txt template, mirror generator script, and schema examples
+ - **Get the templates** -- get founding access to the [community](/community/) for the llms.txt template, mirror generator script, and schema examples ($97/mo, lifetime locked for the first 250)
  
  Every guide on this site gives you the full what and why. The community gives you the how -- the exact files, the prompts, the scripts. No paywalls. No upsells. Just the playbook that's already working.
 
@@ -278,5 +278,5 @@ Utah County, Salt Lake County, and surrounding areas.
  Join the community for the templates, scripts, and step-by-step walkthroughs. Or book a call and I'll implement it for you.
 
  
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  [Book a Call](/contact/)

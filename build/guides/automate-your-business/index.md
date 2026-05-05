@@ -157,10 +157,10 @@ FREE GUIDE
  
  
  
- FREE COMMUNITY
+ FOUNDING ACCESS
  Want the full 30-day automation challenge?
  Inside the community, I walk through the exact build order week by week -- with daily prompts, conversation transcripts, and the templates I used. No theory. Just build.
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  
  
 
@@ -223,7 +223,7 @@ FREE GUIDE
  - **Learn the tool** -- read [Vibe Coding for Business](/guides/vibe-coding-for-business/) to understand how to build systems yourself with Claude Code
  - **Get AI-visible** -- read [The AI SEO Playbook](/guides/ai-seo-playbook/) to make ChatGPT and Claude recommend your business to potential customers
  - **See the proof** -- read the [Summit Wraps case study](/case-studies/summit-wraps/) to see every system I built and the results they produced
- - **Join the community** -- get the prompts, walkthroughs, and real-time help inside the [free Skool community](/community/)
+ - **Join the community** -- get the prompts, walkthroughs, and real-time help inside the [founding member community](/community/) ($97/mo, lifetime locked for the first 250)
  
 
  
@@ -268,5 +268,5 @@ FREE GUIDE
  Join the community for the 30-day challenge, build prompts, and real-time support. Or book a call and I'll build it for you.
 
  
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  [Book a Call](/contact/)

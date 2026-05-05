@@ -122,7 +122,7 @@ The two detailed guides cover each file type in depth:
 - [How to Create an llms.txt File](/guides/llms-txt/) -- the complete walkthrough with templates, formatting rules, and examples from multiple industries.
 - [How to Build Markdown Mirrors](/guides/markdown-mirrors/) -- the step-by-step process for creating markdown versions of your site pages, including the automated script approach I used.
 
-Both guides show you the WHAT and the WHY in full detail. For the exact prompts, templates, and build-along walkthroughs, those are inside the [community](/community/) where 1,700+ business owners are implementing these systems together.
+Both guides show you the WHAT and the WHY in full detail. For the exact prompts, templates, and build-along walkthroughs, those are inside the [founding member community](/community/) where local service business owners are implementing these systems together.
 
 The window of opportunity is open right now. Every week that passes, more businesses will discover this channel and the first-mover advantage shrinks. The businesses that implement the 3-file system this month will have months of AI recommendation history building in their favor before the majority catches on.
 
@@ -133,7 +133,7 @@ I know this because I watched it happen with Google SEO twenty years ago. The bu
  Get the Exact Prompts and Templates
  The llms.txt template, the markdown mirror generator script, the schema snippets -- everything you need to make AI recommend your business. Free to join.
 
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  
 
 ## What Comes After the 3-File System
@@ -188,8 +188,8 @@ Every one of these extensions is something I built for Summit Wraps using Claude
  
 ## Ready to Make AI Recommend Your Business?
 
- Join 1,700+ business owners building AI-readable websites inside the community. Or book a discovery call to get your entire operating system built in 2 weeks.
+ Get founding access alongside local service business owners building AI-readable websites. Or book a discovery call to get your entire operating system built in 2 weeks.
 
  
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)

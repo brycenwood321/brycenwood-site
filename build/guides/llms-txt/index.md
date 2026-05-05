@@ -137,7 +137,7 @@ I cover the complete system in the [AI SEO Playbook guide](/guides/ai-seo-playbo
  Get the Exact Prompts and Template
  The fill-in-the-blank llms.txt template, the Claude prompt that generates it for your business in 30 seconds, and the step-by-step walkthrough. All inside the community.
 
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  
 
 ## Where to Put the File
@@ -242,5 +242,5 @@ If you want to see the full transformation -- llms.txt, markdown mirrors, automa
  Get the llms.txt template, the exact prompts, and step-by-step walkthroughs inside the community. Or book a call and I'll build the whole AI visibility stack for your business.
 
  
- [Join the Free Community](/community/)
+ [Get Founding Access -- $97/mo](/community/)
  [Book a Discovery Call](/contact/)
