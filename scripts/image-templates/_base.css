@@ -1,0 +1,132 @@
+/* Shared brand styles for all image templates */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #050508;
+  --bg-2: #08090e;
+  --text: #e8e8f0;
+  --text-dim: #8888a0;
+  --text-muted: #55556a;
+  --lime: #00ff88;
+  --lime-dim: rgba(0,255,136,0.4);
+  --blue: #0066ff;
+  --border: #141620;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Outfit', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  font-family: var(--sans);
+  overflow: hidden;
+  position: relative;
+  color: var(--text);
+}
+
+/* Grid background */
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,255,136,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,136,0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+
+/* Orb glows */
+.orb-1, .orb-2, .orb-3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.orb-1 {
+  width: 600px; height: 600px;
+  background: var(--lime);
+  filter: blur(160px);
+  opacity: 0.07;
+  top: -250px; left: -150px;
+}
+.orb-2 {
+  width: 500px; height: 500px;
+  background: var(--blue);
+  filter: blur(160px);
+  opacity: 0.05;
+  bottom: -200px; right: -150px;
+}
+.orb-3 {
+  width: 300px; height: 300px;
+  background: var(--lime);
+  filter: blur(120px);
+  opacity: 0.04;
+  top: 30%; right: -100px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+
+.brand {
+  position: absolute;
+  bottom: 36px;
+  right: 56px;
+  font-family: var(--mono);
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--lime);
+  opacity: 0.55;
+  z-index: 2;
+}
+
+.brand-mark {
+  position: absolute;
+  top: 36px;
+  left: 56px;
+  font-family: var(--mono);
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--text);
+  opacity: 0.5;
+  z-index: 2;
+  font-size: 13px;
+}
+
+.accent { color: var(--lime); text-shadow: 0 0 50px rgba(0,255,136,0.35); }
+
+.accent-line {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--lime), transparent);
+  margin: 24px 0;
+}
+
+.chip {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--lime);
+  padding: 6px 14px;
+  border: 1px solid var(--lime-dim);
+  border-radius: 2px;
+  background: rgba(0,255,136,0.04);
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
