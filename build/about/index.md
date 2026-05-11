@@ -77,12 +77,12 @@ About
  Systems
  
  
- 1.5M+
- Views
+ 10
+ APIs Connected
  
  
- 8,000+
- Followers
+ 24/7
+ Systems Running
  
  
  3,000+

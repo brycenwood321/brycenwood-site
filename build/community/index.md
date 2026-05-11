@@ -1,13 +1,13 @@
 ---
 title: Business On Autopilot -- Founding Member Access | Brycen Wood
-description: A community for local service business owners using Claude Code to build their own lead engine, website, and AI automations. $97/mo for the first 250 founding members -- lifetime price lock.
+description: Stop using AI to rewrite emails. Use it to run your business. A community for service businesses, ecommerce stores, and agencies building lead engines, websites, and automations with Claude Code. $97/mo founding rate -- lifetime price lock.
 url: https://www.brycenwood.com/community/
-last_updated: 2026-04-14
+last_updated: 2026-05-10
 ---
 
-# Run Your Small Business on AI.
+# Stop rewriting emails. Run your business with AI.
 
- A community for local service business owners using Claude Code to build their own lead engine, website, and automations. The same systems I'm using to scale my Utah wrap shop from $300K in 2025 to a projected $750K-$1M this year -- without hiring a single new person.
+ A community for service businesses, ecommerce stores, and agencies using Claude Code to build their own lead engine, website, and automations. The same systems I'm using to scale my Utah wrap shop from $300K in 2025 to a projected $750K-$1M this year -- without hiring a single new person.
 
  
  [Get Founding Access -- $97/mo](https://skool.com/business-on-autopilot-8404)

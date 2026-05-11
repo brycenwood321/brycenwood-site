@@ -37,7 +37,7 @@ This isn't theoretical. I'm not writing about something I read in a blog post.
 
 I built an llms.txt file for my vehicle wrap company, [Summit Wraps](/case-studies/summit-wraps/), and within weeks, ChatGPT started recommending us to people searching for wraps in Utah. Not because we paid for it. Not because of some SEO trick. Because we made it easy for the AI to understand what we do and who we serve.
 
-The video I made about this got over 1.5 million views across platforms. That's not because I'm some marketing genius. It's because the concept hit a nerve -- every business owner watching realized they hadn't done this yet, and they could feel the window closing.
+The video I made explaining this hit a nerve -- not because I'm a marketing genius, but because every business owner watching realized they hadn't done this yet, and they could feel the window closing.
 
 Here's the thing that should scare you a little: when I made that video, almost nobody had an llms.txt file. Most businesses still don't. But the ones that do are getting recommended by AI assistants while their competitors are invisible. That gap is only going to widen.
 
@@ -158,8 +158,8 @@ The most common mistake is putting it in a subfolder like `yoursite.com/files/ll
 Here's what happened after I added llms.txt to Summit Wraps:
 
  
- 1.5M+
- Video Views
+ 20×
+ Organic Traffic Lift
  
  
  27
@@ -208,7 +208,7 @@ If you want to see the full transformation -- llms.txt, markdown mirrors, automa
  
  Does llms.txt actually work?+
  
- Yes. ChatGPT is already recommending Summit Wraps to people asking about vehicle wraps in Utah, and it has been doing so consistently since early 2026. The recommendation happens without any paid placement or advertising -- the AI simply reads the structured llms.txt file and understands the business well enough to cite it. The video explaining this concept generated over 1.5 million views across platforms because business owners could see the results were real and reproducible. If you set up the file correctly, AI tools will start reading it within days of deployment.
+ Yes. ChatGPT is already recommending Summit Wraps to people asking about vehicle wraps in Utah, and it has been doing so consistently since early 2026. The recommendation happens without any paid placement or advertising -- the AI simply reads the structured llms.txt file and understands the business well enough to cite it. The explainer video for this concept resonated because business owners could see the results were real and reproducible. If you set up the file correctly, AI tools will start reading it within days of deployment.
 
  
  

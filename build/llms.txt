@@ -22,6 +22,13 @@
 - [Summit Wraps Transformation](https://www.brycenwood.com/case-studies/summit-wraps/) - 80+ automations, $52K to $300K revenue, zero code, zero new hires.
 - [Blackout Auto Tint Demo](https://www.brycenwood.com/case-studies/blackout-auto-tint/) - 7-page custom website built in 4 hours.
 
+## Industries
+- [Service Business Automation](https://www.brycenwood.com/industries/service-business-automation/) - Universal pattern for any field service business: lead capture, follow-up, scheduling, review generation, marketing on autopilot.
+- [HVAC Automation](https://www.brycenwood.com/industries/hvac-automation/) - Lead capture, maintenance follow-ups, dispatch, review collection for HVAC companies.
+- [Roofing Automation](https://www.brycenwood.com/industries/roofing-automation/) - Storm response, insurance claim follow-up, estimate sequences, review generation for roofing contractors.
+- [Plumbing Automation](https://www.brycenwood.com/industries/plumbing-automation/) - Emergency lead routing, maintenance reminders, dispatch automation for plumbing companies.
+- [Ecommerce Automation](https://www.brycenwood.com/industries/ecommerce-automation/) - Cart recovery, email flows, inventory alerts, review collection, post-purchase journeys for Shopify / WooCommerce / DTC brands.
+
 ## Guides
 - [llms.txt Guide](https://www.brycenwood.com/guides/llms-txt/) - How to make AI recommend your business.
 - [Markdown Mirrors](https://www.brycenwood.com/guides/markdown-mirrors/) - Make your website readable by ChatGPT, Claude, and Perplexity.

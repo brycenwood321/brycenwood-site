@@ -1,16 +1,16 @@
 ---
-title: Brycen Wood — Build Your Business Operating System with AI
-description: 1.5M+ views, 80+ automations, zero coding experience. Brycen Wood builds custom business operating systems using Claude Code. Book a free discovery call.
+title: Brycen Wood — Run Your Business with AI, Not Just Rewrite Emails
+description: Most business owners use AI to rewrite emails. I use it to run an entire business. Custom operating systems built with Claude Code — 6x'd one shop's revenue with zero new hires. Book a free discovery call.
 url: https://www.brycenwood.com/
-last_updated: 2026-04-14
+last_updated: 2026-05-10
 ---
 
-Built by one person with one tool
+Most owners use AI to rewrite emails
 
  
-# 1.5M Views.Zero Code.
+# Run your business with AI. Not just rewrite emails.
 
- I build custom business operating systems using **Claude Code** — no developers, no agencies, no new hires. I 6x'd my company's revenue without adding a single employee. Now I build these systems for other businesses.
+ I build custom business operating systems using **Claude Code** — no developers, no agencies, no new hires. I 6x'd my company's revenue without adding a single employee. Now I build these systems for service businesses, ecommerce stores, and agencies.
 
  
  
@@ -20,23 +20,14 @@ Built by one person with one tool
  Scroll to explore
 
  
- **1.5M+** video views/
- **8,000+** followers/
- **3,000+** waitlist signups/
- **$300K+** revenue (no new hires)/
- **80+** automations built/
- **0** lines of code/
+ **$52K → $300K** revenue (one shop)/
+ **6×** revenue, 0 new hires/
+ **80+** automations live/
+ **0** lines of code written/
  **10** APIs connected/
- **24/7** cron jobs running/
- 
- **1.5M+** video views/
- **8,000+** followers/
- **3,000+** waitlist signups/
- **$300K+** revenue (no new hires)/
- **80+** automations built/
- **0** lines of code/
- **10** APIs connected/
- **24/7** cron jobs running/
+ **24/7** systems running/
+ **3,000+** on the waitlist/
+ **2-week** builds, full handoff/
  
 
  

@@ -31,7 +31,7 @@ ChatGPT returned a list of five businesses. Summit Wraps and Graphics -- my comp
 
 This was not a paid ad. We did not submit an application. We did not pay a platform fee. ChatGPT recommended us because it could read our website and understand what we do. And the reason it could read our website is because I had deliberately set it up to be machine-readable using three specific files.
 
-That screenshot became the basis for a video that hit 1.5 million views across TikTok and Instagram. But the screenshot is not the point. The point is that ChatGPT, Claude, Perplexity, and every other AI assistant are becoming the new front door for customer discovery. And most businesses have no idea this is happening.
+That screenshot became the basis for a video that resonated hard with business owners. But the screenshot is not the point. The point is that ChatGPT, Claude, Perplexity, and every other AI assistant are becoming the new front door for customer discovery. And most businesses have no idea this is happening.
 
 ## Why AI Tools Can't Read Most Websites
 
@@ -91,7 +91,7 @@ Within two weeks of deploying llms.txt, markdown mirrors, and enhanced schema ma
 
 The traffic impact was also measurable. Our website saw a 2,100% increase in organic traffic after the full SEO and AI optimization push. Not all of that is attributable to the 3-file system alone -- we also rewrote meta titles, added FAQ content, and improved site structure -- but the AI recommendation channel brought visitors who were significantly more qualified than typical organic search traffic. These were people who had already been told by a trusted AI assistant that we were a good fit. The conversion intent was higher from the first click.
 
-The videos documenting this process -- the llms.txt video and the markdown mirrors video -- generated over 1.5 million views combined and brought 8,000+ followers to my personal brand. That tells me something important: business owners are hungry for this information. They know AI is changing how customers find businesses, but nobody is showing them the specific tactical steps to prepare for it.
+The videos documenting this process -- the llms.txt video and the markdown mirrors video -- generated thousands of comments from business owners asking how to implement it. That tells me something important: business owners are hungry for this information. They know AI is changing how customers find businesses, but nobody is showing them the specific tactical steps to prepare for it.
 
 ## Why Almost Nobody Is Doing This Yet
 
