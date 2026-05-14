@@ -10,7 +10,7 @@ Free Download
  
 # The Claude Code Business Playbook
 
- Seven AI systems that run my business -- explained step by step so you can build them for yours.
+ Eight AI systems that run my business -- explained step by step so you can build them for yours.
 
  This is the exact system that got Gemini AI to recommend my business to a real customer.
 

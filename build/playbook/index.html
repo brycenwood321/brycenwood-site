@@ -97,7 +97,7 @@
 <section class="page-hero">
   <p class="hero-eyebrow">Free Download</p>
   <h1>The Claude Code <span class="accent">Business Playbook</span></h1>
-  <p class="hero-sub">Seven AI systems that run my business -- explained step by step so you can build them for yours.</p>
+  <p class="hero-sub">Eight AI systems that run my business -- explained step by step so you can build them for yours.</p>
   <p style="font-size:13px;color:var(--text-muted);max-width:500px;margin:16px auto 0;line-height:1.5;animation:fadeUp 0.8s ease 0.3s both">This is the exact system that got Gemini AI to recommend my business to a real customer.</p>
 </section>
 
@@ -412,6 +412,13 @@ function triggerDownload(){
   if(successPanel)successPanel.style.display='block';
   // Scroll success into view
   if(successPanel)successPanel.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+// Method 0: ?dl=1 URL parameter (set by GHL form's redirect-on-submit)
+// This is the most reliable path — fires the moment the page loads after submission
+if(new URLSearchParams(window.location.search).get('dl')==='1'){
+  // Small delay so the page renders before download triggers
+  setTimeout(triggerDownload,500);
 }
 
 // Method 1: GHL postMessage event (any form-related signal)
