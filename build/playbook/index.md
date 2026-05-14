@@ -128,6 +128,8 @@ Free Download
  
  
  
+ Already submitted and didn't get the download? [Click here to download the playbook.](#)
+
  
  
  

@@ -238,6 +238,7 @@
         ></iframe>
         <script src="https://link.msgsndr.com/js/form_embed.js"></script>
       </div>
+      <p style="text-align:center;margin-top:20px;font-size:14px;color:var(--text-dim)">Already submitted and didn't get the download? <a href="#" id="manualTriggerLink" style="color:var(--lime);text-decoration:underline;font-weight:600">Click here to download the playbook.</a></p>
     </div>
     <!-- POST-SUBMIT: Download + Community -->
     <div id="successPanel" style="display:none;text-align:center;padding:48px 24px;">
@@ -413,13 +414,26 @@ function triggerDownload(){
   if(successPanel)successPanel.scrollIntoView({behavior:'smooth',block:'center'});
 }
 
-// Method 1: GHL postMessage event
+// Method 1: GHL postMessage event (any form-related signal)
 window.addEventListener('message',function(e){
   try{
-    if(typeof e.data==='string'&&e.data.includes('formSubmitted'))triggerDownload();
-    if(typeof e.data==='object'&&e.data.type&&e.data.type.includes('form'))triggerDownload();
+    var d=e.data;
+    if(typeof d==='string'&&(d.includes('formSubmitted')||d.includes('form_submitted')||d.includes('lcWidget')))triggerDownload();
+    if(typeof d==='object'&&d){
+      var json=JSON.stringify(d).toLowerCase();
+      if(json.includes('formsubmitted')||json.includes('form_submitted')||json.includes('lcwidget')||json.includes('appreciate')||json.includes('thank you'))triggerDownload();
+    }
   }catch(err){}
 });
+
+// Method 3: Manual fallback link
+const manualLink=document.getElementById('manualTriggerLink');
+if(manualLink){
+  manualLink.addEventListener('click',function(e){
+    e.preventDefault();
+    triggerDownload();
+  });
+}
 
 // Method 2: Poll iframe for "appreciate" text (fallback for cross-origin)
 // GHL form_embed.js resizes the iframe after submission, watch for height changes
