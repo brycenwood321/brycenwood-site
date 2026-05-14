@@ -1,6 +1,6 @@
 ---
 title: The Claude Code Business Playbook — Free Download | Brycen Wood
-description: Free playbook: 5 AI systems that make ChatGPT recommend your business, build your website, and run your marketing. Download now.
+description: Free playbook: 7 AI systems that get your business found by AI, ranked on Google, and run your CRM in plain English. Download now.
 url: https://www.brycenwood.com/playbook/
 last_updated: 2026-04-14
 ---
@@ -10,7 +10,7 @@ Free Download
  
 # The Claude Code Business Playbook
 
- Five AI systems that run my business -- explained step by step so you can build them for yours.
+ Seven AI systems that run my business -- explained step by step so you can build them for yours.
 
  This is the exact system that got Gemini AI to recommend my business to a real customer.
 
@@ -55,6 +55,68 @@ Free Download
  **Full Website Builder Prompt** -- The exact prompt I used to build a 40-page website in one afternoon. Swap in your business info, paste it into Claude Code, and get a complete site with SEO, schema, and AI visibility built in.
  
  
+ 
+
+ 
+ 
+ New System
+
+ 
+## The AI Executive Team
+
+ 5 AI executives + 13 specialists. Each one has a charter. Each one runs a part of my business. I ask one question. They all go to work in parallel.
+
+ 
+
+ 
+ 
+ CSA
+ **Chief of Staff** -- Holds my strategic priorities across 3 businesses. Decides what I work on right now. The router for every other agent.
+ 
+ 
+ CMO
+ **Chief Marketing Officer** -- Runs brand, content, ads, and partnerships across all my businesses. Owns the audience thesis.
+ 
+ 
+ CRO
+ **Chief Revenue Officer** -- Watches every lead and every pipeline. Tells me which deals are dying. Owns conversion rate and sales cycle time.
+ 
+ 
+ COO
+ **Chief Operating Officer** -- Keeps operations from slipping. Calendar integrity. Vendor uptime. SOPs. The "everything happens on time" agent.
+ 
+ 
+ CFO
+ **Chief Financial Officer** -- Tracks every dollar across all 3 businesses. Flags AR. Owns capital allocation and pricing strategy.
+ 
+ 
+
+ 
+ + 13 Specialists Under Them
+
+ A closer agent for hot inbound. A bookkeeper that reconciles QBO daily. An SEO agent. A deliverability agent that gates every campaign before it sends. An HR agent for my team. A vendor agent tracking every subscription. Each one has a scope. Each one knows when to escalate.
+
+ 
+
+ 
+ 
+ 
+ ~$1/mo
+ Cost to run them
+ 
+ 
+ 0 lines
+ Of code I wrote
+ 
+ 
+ 1 prompt
+ To dispatch the team
+ 
+ 
+ 
+
+ Built with Claude Code. Zero coding experience required. The exact charters, dispatch patterns, and setup are inside the playbook below.
+
  
 
  

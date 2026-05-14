@@ -15,6 +15,9 @@ Case Study
  Last updated: April 2026
 
  
+ THE DASHBOARD THAT RUNS THE COMPANY
+
+ 
  
  $52K → $300K
  Revenue Growth

@@ -12,6 +12,11 @@ About
 
  80+ automations. $300K+ in revenue. Zero lines of code written. Here's how.
 
+ A typical morning
+
+ 
+ No code. No bootcamp. Just a conversation about what the business needs -- and Claude Code builds it.
+
  
 ## The Short Version
 

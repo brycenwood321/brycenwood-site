@@ -2,13 +2,13 @@
 title: Brycen Wood — Run Your Business with AI, Not Just Rewrite Emails
 description: Most business owners use AI to rewrite emails. I use it to run an entire business. Custom operating systems built with Claude Code — 6x'd one shop's revenue with zero new hires. Book a free discovery call.
 url: https://www.brycenwood.com/
-last_updated: 2026-05-10
+last_updated: 2026-04-14
 ---
 
 Most owners use AI to rewrite emails
 
  
-# Run your business with AI. Not just rewrite emails.
+# Run your business with AI.Not just rewrite emails.
 
  I build custom business operating systems using **Claude Code** — no developers, no agencies, no new hires. I 6x'd my company's revenue without adding a single employee. Now I build these systems for service businesses, ecommerce stores, and agencies.
 
@@ -28,6 +28,23 @@ Most owners use AI to rewrite emails
  **24/7** systems running/
  **3,000+** on the waitlist/
  **2-week** builds, full handoff/
+ 
+ **$52K → $300K** revenue (one shop)/
+ **6×** revenue, 0 new hires/
+ **80+** automations live/
+ **0** lines of code written/
+ **10** APIs connected/
+ **24/7** systems running/
+ **3,000+** on the waitlist/
+ **2-week** builds, full handoff/
+ 
+
+ 
+ Live Business OS
+
+ A real-time dashboard showing everything your business is doing right now -- accessible from your phone, no logins to remember.
+
+ 
  
 
  
@@ -50,28 +67,13 @@ Most owners use AI to rewrite emails
  
  [
  
- Service
- Custom Business Operating System
- 60-min interview, custom plan in 72 hours, 2-week build, full handoff. Your entire business — automated.
- Learn more
- 
  ](/services/custom-build/)
  [
- 
- Case Study
- The Summit Wraps Story
- $52K to $300K revenue — without hiring a single employee. 80+ AI systems replaced the need for developers, agencies, and extra staff.
- Read the story
  
  ](/case-studies/summit-wraps/)
  [
  
- Free Resources
- Free Guides & Playbook
- Everything I've learned about building business systems with AI — llms.txt, markdown mirrors, cold email, and more.
- Browse guides
- 
- ](/guides/)
+ ](/community/)
  
 
  

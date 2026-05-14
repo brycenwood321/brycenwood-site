@@ -2,7 +2,7 @@
 title: Business On Autopilot -- Founding Member Access | Brycen Wood
 description: Stop using AI to rewrite emails. Use it to run your business. A community for service businesses, ecommerce stores, and agencies building lead engines, websites, and automations with Claude Code. $97/mo founding rate -- lifetime price lock.
 url: https://www.brycenwood.com/community/
-last_updated: 2026-05-10
+last_updated: 2026-04-14
 ---
 
 # Stop rewriting emails. Run your business with AI.

@@ -13,6 +13,9 @@ The Process
  No learning curve. No coding. Just a conversation about your business, then I build everything.
 
  
+ THIS IS WHAT GETS BUILT
+
+ 
  
  01
  
