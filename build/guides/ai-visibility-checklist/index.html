@@ -2,140 +2,449 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>The AI Visibility Checklist | Brycen Wood</title>
+<title>The AI Visibility Playbook | Brycen Wood</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap">
 <style>
   @page { size: Letter; margin: 0; }
   * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   :root {
-    --green:#4ade80; --purple:#6b5ce7; --bg:#0f0f17; --panel:#1a1a2e;
-    --panel2:#1f1f2e; --line:#2a2a4a; --text:#e0e0e0; --muted:#9a9ab0;
+    --green:#4ade80; --green2:#22c55e; --purple:#6b5ce7; --purple2:#8674ff;
+    --bg:#0f0f17; --panel:#1a1a2e; --panel2:#1f1f2e; --line:#2a2a4a;
+    --text:#e6e6ef; --muted:#9a9ab0; --dim:#7a7a92;
   }
   html,body { margin:0; padding:0; background:var(--bg); color:var(--text);
-    font-family:'Outfit',-apple-system,sans-serif; font-size:14px; line-height:1.55; }
-  .page { width:8.5in; height:11in; overflow:hidden; padding:0.5in 0.7in; background:var(--bg);
+    font-family:'Outfit',-apple-system,sans-serif; font-size:13.5px; line-height:1.55; }
+  .page { width:8.5in; height:11in; overflow:hidden; padding:0.5in 0.66in; background:var(--bg);
     page-break-after:always; position:relative; }
   .page:last-child { page-break-after:auto; }
   code,.mono { font-family:'JetBrains Mono',monospace; }
+  .accent { color:var(--green); }
+  .pacc { color:var(--purple2); }
+
+  /* shared headings */
+  .kicker { font-family:'JetBrains Mono',monospace; color:var(--green); font-weight:700;
+    letter-spacing:3px; text-transform:uppercase; font-size:10.5px; }
+  h2.sec { font-family:'Outfit'; font-weight:800; font-size:25px; margin:2px 0 2px; letter-spacing:-0.3px;
+    display:flex; align-items:center; gap:12px; }
+  .pillnum { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:12px;
+    color:#06140b; background:var(--green); border-radius:7px; padding:4px 10px; }
+  .pillnum.p { background:var(--purple); color:#fff; }
+  .lead { color:var(--muted); font-size:13.5px; margin:0 0 14px; }
+  p { margin:9px 0; }
+  .body p { font-size:13px; color:var(--text); }
+  .section { margin-top:18px; }
+  hr.divider { height:1px; background:var(--line); margin:18px 0; border:0; }
+
+  /* checklist */
+  .check { display:flex; gap:10px; align-items:flex-start; margin:7px 0; }
+  .box { flex:0 0 auto; width:16px; height:16px; border:2px solid var(--green);
+    border-radius:4px; margin-top:2px; }
+  .box.p { border-color:var(--purple2); }
+  .check .t { font-size:13px; }
+  .check .t b { color:#fff; }
+  .codeword { background:var(--panel2); border:1px solid var(--line); border-radius:4px;
+    padding:1px 5px; font-size:11.5px; color:var(--green); font-family:'JetBrains Mono',monospace; }
+
+  /* code block */
+  .code { background:#0b0b12; border:1px solid var(--line); border-left:3px solid var(--purple);
+    border-radius:8px; padding:13px 15px; font-family:'JetBrains Mono',monospace; font-size:11px;
+    color:#cfcfe0; line-height:1.7; white-space:pre-wrap; margin:12px 0; }
+  .code .c { color:var(--green); }
+  .code .k { color:var(--purple2); }
+  .code .m { color:var(--dim); }
+
+  /* callout */
+  .callout { border:1px solid var(--line); border-left:3px solid var(--green); background:var(--panel);
+    border-radius:10px; padding:14px 17px; margin:14px 0; }
+  .callout .lbl { font-family:'JetBrains Mono',monospace; color:var(--green); font-weight:700;
+    text-transform:uppercase; letter-spacing:1px; font-size:9.5px; margin-bottom:5px; }
+  .callout p { margin:4px 0 0; font-size:12.5px; }
 
   /* COVER */
-  .kicker { font-family:'JetBrains Mono',monospace; color:var(--green); font-weight:700;
-    letter-spacing:3px; text-transform:uppercase; font-size:11px; }
-  h1 { font-family:'Outfit'; font-weight:900; font-size:42px; line-height:1.02;
-    margin:12px 0 8px; letter-spacing:-1px; }
-  h1 .hl { color:var(--green); }
-  .sub { color:var(--muted); font-size:16px; max-width:6.2in; }
-  .byline { margin-top:26px; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted); }
+  .cv-title { font-family:'Outfit'; font-weight:900; font-size:52px; line-height:0.98;
+    margin:14px 0 10px; letter-spacing:-1.5px; }
+  .cv-sub { color:var(--muted); font-size:16px; max-width:6in; }
+  .byline { margin-top:22px; font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--muted); }
   .byline b { color:var(--text); }
+  .herostat { margin-top:26px; display:flex; gap:0; border:1px solid var(--line); border-radius:12px;
+    overflow:hidden; }
+  .herostat .big { background:linear-gradient(160deg,#15281b,#101a14); padding:20px 24px; flex:0 0 auto;
+    border-right:1px solid var(--line); text-align:center; }
+  .herostat .big .n { font-family:'Outfit'; font-weight:900; font-size:42px; color:var(--green); line-height:1; }
+  .herostat .big .l { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted);
+    text-transform:uppercase; letter-spacing:1.5px; margin-top:6px; }
+  .herostat .txt { padding:18px 22px; font-size:13px; color:var(--text); display:flex; align-items:center; }
+  .toc { margin-top:26px; }
+  .toc .tt { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--dim);
+    text-transform:uppercase; letter-spacing:2px; margin-bottom:12px; }
+  .toc-row { display:flex; align-items:center; gap:12px; padding:7px 0; border-bottom:1px solid #20202f; font-size:13px; }
+  .toc-row .i { font-family:'JetBrains Mono',monospace; color:var(--green); font-weight:700; width:26px; font-size:12px; }
+  .toc-row b { color:var(--text); font-weight:600; }
+  .toc-row .d { color:var(--dim); font-size:11.5px; }
 
-  .receipt { margin-top:20px; border:1px solid var(--line); border-left:3px solid var(--green);
-    background:var(--panel); border-radius:10px; padding:15px 18px; }
-  .receipt .big { font-family:'Outfit'; font-weight:900; font-size:30px; color:var(--green); line-height:1; }
-  .receipt p { margin:8px 0 0; color:var(--text); font-size:14px; }
+  /* search evolution timeline */
+  .evo { display:flex; align-items:stretch; gap:0; margin:18px 0; }
+  .evo .node { flex:1; text-align:center; padding:16px 10px; border:1px solid var(--line);
+    border-radius:10px; background:var(--panel); position:relative; }
+  .evo .node.now { border-color:var(--green); background:linear-gradient(160deg,#15281b,#11181e); }
+  .evo .node .era { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--dim);
+    text-transform:uppercase; letter-spacing:1px; }
+  .evo .node .nm { font-family:'Outfit'; font-weight:800; font-size:16px; margin-top:4px; }
+  .evo .node.now .nm { color:var(--green); }
+  .evo .node .sm { font-size:10.5px; color:var(--muted); margin-top:4px; line-height:1.4; }
+  .evo .arrow { display:flex; align-items:center; padding:0 8px; color:var(--dim); font-size:20px; }
 
-  /* SECTIONS */
-  h2 { font-family:'Outfit'; font-weight:800; font-size:23px; margin:0 0 4px;
-    display:flex; align-items:center; gap:12px; }
-  .pillnum { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px;
-    color:#0a0a0a; background:var(--green); border-radius:6px; padding:3px 9px; }
-  .pillnum.p { background:var(--purple); color:#fff; }
-  .why { color:var(--muted); font-size:13px; margin:0 0 14px; padding-left:2px; }
+  /* engine pills */
+  .engines { display:flex; flex-wrap:wrap; gap:9px; margin:14px 0; }
+  .engine { border:1px solid var(--line); background:var(--panel2); border-radius:20px;
+    padding:7px 15px; font-size:12px; font-weight:600; color:var(--text); }
+  .engine .dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--green);
+    margin-right:7px; vertical-align:middle; }
 
-  .check { display:flex; gap:11px; align-items:flex-start; margin:7px 0; }
-  .box { flex:0 0 auto; width:17px; height:17px; border:2px solid var(--green);
-    border-radius:4px; margin-top:2px; }
-  .box.p { border-color:var(--purple); }
-  .check .t { font-size:13.5px; }
-  .check .t b { color:#fff; }
-  .check code { background:var(--panel2); border:1px solid var(--line); border-radius:4px;
-    padding:1px 5px; font-size:12px; color:var(--green); }
+  /* THE STACK diagram */
+  .stack { margin:16px 0 8px; }
+  .layer { display:flex; align-items:center; gap:14px; border-radius:10px; padding:13px 18px; margin:8px 0;
+    border:1px solid var(--line); }
+  .layer .lvl { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:11px; color:#06140b;
+    background:var(--green); border-radius:6px; padding:3px 8px; flex:0 0 auto; }
+  .layer .lvl.p { background:var(--purple); color:#fff; }
+  .layer .nm { font-family:'Outfit'; font-weight:800; font-size:15px; flex:0 0 200px; }
+  .layer .ds { font-size:11.5px; color:var(--muted); }
+  .layer.l5 { background:linear-gradient(90deg,#15281b,#141422); }
+  .layer.l4 { background:#171726; }
+  .layer.l3 { background:#161622; }
+  .layer.l2 { background:#15151f; }
+  .layer.l1 { background:#131320; }
 
-  .section { margin-top:20px; }
-  .divider { height:1px; background:var(--line); margin:18px 0; border:0; }
+  /* before / after */
+  .ba { display:flex; gap:14px; margin:14px 0; }
+  .ba .c { flex:1; border:1px solid var(--line); border-radius:10px; padding:15px 17px; background:var(--panel); }
+  .ba .c.after { border-color:var(--green); background:linear-gradient(160deg,#15281b,#11181e); }
+  .ba .c .h { font-family:'JetBrains Mono',monospace; font-size:9.5px; text-transform:uppercase;
+    letter-spacing:1.5px; color:var(--dim); margin-bottom:7px; }
+  .ba .c.after .h { color:var(--green); }
+  .ba .c p { font-size:12.5px; margin:0; color:var(--text); }
+
+  /* score chart */
+  .chart { display:flex; align-items:flex-end; gap:34px; height:210px; padding:18px 24px 0;
+    border:1px solid var(--line); border-radius:12px; background:var(--panel); margin:14px 0;
+    position:relative; }
+  .bar { width:90px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; }
+  .bar .col { width:100%; border-radius:8px 8px 0 0; position:relative; }
+  .bar .col .v { position:absolute; top:-22px; left:0; right:0; text-align:center;
+    font-family:'Outfit'; font-weight:900; font-size:20px; }
+  .bar .before { height:52px; background:linear-gradient(180deg,#3a3a52,#26263a); }
+  .bar .before .v { color:var(--muted); }
+  .bar .after { height:158px; background:linear-gradient(180deg,var(--green),var(--green2)); }
+  .bar .after .v { color:var(--green); }
+  .bar .lab { font-size:10.5px; color:var(--muted); margin-top:9px; text-align:center;
+    font-family:'JetBrains Mono',monospace; }
+  .chart .yaxis { position:absolute; left:8px; top:14px; bottom:34px; width:1px; }
+  .chart .note { position:absolute; right:22px; top:22px; font-size:10.5px; color:var(--dim);
+    font-family:'JetBrains Mono',monospace; text-align:right; line-height:1.5; }
+
+  /* footer */
+  .foot { position:absolute; bottom:0.26in; left:0.66in; right:0.66in;
+    font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--dim);
+    display:flex; justify-content:space-between; border-top:1px solid var(--line); padding-top:7px; }
 
   /* CTA */
   .cta { border:1px solid var(--purple); background:linear-gradient(160deg,#1d1a33,#15131f);
-    border-radius:14px; padding:20px 24px; margin-top:6px; }
-  .cta .tag { font-family:'JetBrains Mono',monospace; color:var(--purple); font-weight:700;
+    border-radius:14px; padding:20px 24px; margin-top:8px; }
+  .cta .tag { font-family:'JetBrains Mono',monospace; color:var(--purple2); font-weight:700;
     letter-spacing:2px; text-transform:uppercase; font-size:10px; }
-  .cta h2 { font-size:24px; margin-top:6px; }
-  .cta p { font-size:13.5px; color:var(--text); margin:8px 0; }
-  .cta .disc { font-size:12px; color:var(--muted); font-style:italic;
+  .cta h2 { font-family:'Outfit'; font-weight:800; font-size:24px; margin:6px 0; }
+  .cta p { font-size:13px; color:var(--text); margin:8px 0; }
+  .cta .disc { font-size:11.5px; color:var(--muted); font-style:italic;
     border-left:2px solid var(--line); padding-left:12px; margin:12px 0; }
-  .gift { border:1px dashed var(--green); background:rgba(74,222,128,0.06);
-    border-radius:11px; padding:16px 18px; margin:16px 0; }
-  .gift .gifttag { font-family:'JetBrains Mono',monospace; color:var(--green); font-weight:700;
-    letter-spacing:1px; text-transform:uppercase; font-size:10px; margin-bottom:6px; }
-  .gift p { margin:6px 0 0; font-size:13.5px; }
-  .gift .claim { font-size:12.5px; color:var(--muted); }
+  .gift { border:1px dashed var(--green); background:rgba(74,222,128,0.06); border-radius:11px;
+    padding:14px 17px; margin:14px 0; }
+  .gift .gt { font-family:'JetBrains Mono',monospace; color:var(--green); font-weight:700;
+    letter-spacing:1px; text-transform:uppercase; font-size:9.5px; margin-bottom:5px; }
+  .gift p { margin:5px 0 0; font-size:12.5px; }
+  .gift .claim { font-size:11.5px; color:var(--muted); }
   .gift .claim b { color:var(--text); }
   .btn { display:inline-block; background:var(--green); color:#06140b; font-weight:800;
-    font-family:'Outfit'; font-size:15px; text-decoration:none; padding:13px 22px;
-    border-radius:9px; margin-top:6px; }
-  .linkline { font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--green);
-    word-break:break-all; margin-top:12px; }
-  .foot { position:absolute; bottom:0.28in; left:0.7in; right:0.7in;
-    font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted);
-    display:flex; justify-content:space-between; border-top:1px solid var(--line); padding-top:8px; }
+    font-family:'Outfit'; font-size:15px; text-decoration:none; padding:13px 22px; border-radius:9px; margin-top:4px; }
+  .linkline { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--green);
+    word-break:break-all; margin-top:11px; }
+  .mistake { display:flex; gap:10px; margin:8px 0; align-items:flex-start; }
+  .mistake .x { color:#ff6b6b; font-weight:800; flex:0 0 auto; font-size:14px; line-height:1.3; }
+  .mistake .t { font-size:12.5px; }
+  .mistake .t b { color:#fff; }
 </style>
 </head>
 <body>
 
-<!-- PAGE 1: COVER + PILLARS 1-2 -->
+<!-- ============ PAGE 1: COVER ============ -->
 <div class="page">
-  <div class="kicker">brycenwood.ai · free guide</div>
-  <h1>The AI Visibility<br><span class="hl">Checklist</span></h1>
-  <div class="sub">How to get ChatGPT and every AI engine recommending your business by name. The exact steps I used on my own company.</div>
-  <div class="byline">by <b>Brycen Wood</b> &nbsp;·&nbsp; @brycenwood.ai</div>
+  <div class="kicker">brycenwood.ai &middot; the complete playbook</div>
+  <div class="cv-title">The AI<br>Visibility<br><span class="accent">Playbook</span></div>
+  <div class="cv-sub">How to get ChatGPT and every AI engine recommending your business by name. The full system I used on my own company, step by step.</div>
+  <div class="byline">by <b>Brycen Wood</b> &nbsp;&middot;&nbsp; @brycenwood.ai &nbsp;&middot;&nbsp; built 80+ systems with zero coding</div>
 
-  <div class="receipt">
-    <div class="big">20 &rarr; 61 in one week</div>
-    <p>Your customers stopped Googling. They ask AI now. If AI doesn't know you exist, you're invisible at the exact moment people are deciding who to buy from. I took my own business from a <b>20 to a 61</b> on AI visibility in a week, and now ChatGPT recommends it <b>by name</b>. Here's the whole checklist, nothing held back.</p>
+  <div class="herostat">
+    <div class="big"><div class="n">20&rarr;61</div><div class="l">in one week</div></div>
+    <div class="txt">Six weeks ago, AI had no idea my business existed. I took my AI-visibility score from a 20 to a 61 in a single week, and now ChatGPT recommends my shop by name. This playbook is exactly how.</div>
   </div>
 
-  <div class="section">
-    <h2><span class="pillnum">1</span> Make your business readable to AI</h2>
-    <div class="why">An llms.txt file is a plain-text cheat sheet that tells AI exactly what you do, where, and who for. This is the single fastest win, ~20 minutes.</div>
-    <div class="check"><div class="box"></div><div class="t">Create an <code>llms.txt</code> file at <code>yourdomain.com/llms.txt</code></div></div>
-    <div class="check"><div class="box"></div><div class="t">Include <b>who you are, what you do, where you serve, key services, and contact</b></div></div>
-    <div class="check"><div class="box"></div><div class="t">Add an <code>llms-full.txt</code> with deeper detail for engines that want more</div></div>
-    <div class="check"><div class="box"></div><div class="t">Link the exact pages you want AI to prioritize when it quotes you</div></div>
-    <div class="check"><div class="box"></div><div class="t">Keep it <b>factual and plain</b>. No marketing fluff, AI ignores hype</div></div>
+  <div class="toc">
+    <div class="tt">What's inside</div>
+    <div class="toc-row"><span class="i">01</span><b>The Shift</b> <span class="d">&mdash; why AI is the new front door to your business</span></div>
+    <div class="toc-row"><span class="i">02</span><b>The AI Visibility Stack</b> <span class="d">&mdash; the 5 layers, at a glance</span></div>
+    <div class="toc-row"><span class="i">03</span><b>llms.txt</b> <span class="d">&mdash; make your business readable to AI (the fastest win)</span></div>
+    <div class="toc-row"><span class="i">04</span><b>Markdown Mirrors</b> <span class="d">&mdash; clean pages every AI tool can read</span></div>
+    <div class="toc-row"><span class="i">05</span><b>Answer Content + Schema</b> <span class="d">&mdash; write what people actually ask AI</span></div>
+    <div class="toc-row"><span class="i">06</span><b>Technical Foundation</b> <span class="d">&mdash; sitemaps, Google, citations, NAP</span></div>
+    <div class="toc-row"><span class="i">07</span><b>Measure It</b> <span class="d">&mdash; track where you stand across the engines</span></div>
   </div>
-
-  <div class="section">
-    <h2><span class="pillnum p">2</span> Write content that answers what people ask AI</h2>
-    <div class="why">AI quotes the source that answers the question most directly. Keywords are out. Real questions are in.</div>
-    <div class="check"><div class="box p"></div><div class="t">List the <b>20 real questions</b> customers ask before buying (questions, not keywords)</div></div>
-    <div class="check"><div class="box p"></div><div class="t">Write one clear answer page per question: <i>"Best [service] in [city]," "How much does X cost," "X vs Y"</i></div></div>
-    <div class="check"><div class="box p"></div><div class="t">Put the answer in the <b>first two sentences</b> of the page. AI lifts the direct answer</div></div>
-    <div class="check"><div class="box p"></div><div class="t">Write like a human talking, not keyword-stuffed SEO copy</div></div>
-    <div class="check"><div class="box p"></div><div class="t">Add <b>FAQ schema</b> so engines can parse the Q&amp;A cleanly</div></div>
-  </div>
-
-  <div class="foot"><span>The AI Visibility Checklist</span><span>brycenwood.ai · 1</span></div>
+  <div class="foot"><span>The AI Visibility Playbook</span><span>brycenwood.ai &middot; 1</span></div>
 </div>
 
-<!-- PAGE 2: PILLARS 3-4 + CTA -->
+<!-- ============ PAGE 2: THE SHIFT ============ -->
 <div class="page">
-  <div class="section" style="margin-top:0;">
-    <h2><span class="pillnum">3</span> Get cited where AI already trusts</h2>
-    <div class="why">AI recommends businesses it sees mentioned across sources it already trusts. Citations are the proof.</div>
-    <div class="check"><div class="box"></div><div class="t">Claim and fully complete your <b>Google Business Profile</b></div></div>
-    <div class="check"><div class="box"></div><div class="t">Get listed in your industry's authority directories</div></div>
-    <div class="check"><div class="box"></div><div class="t">Earn reviews with <b>volume, recency, and your business name</b> in the text</div></div>
-    <div class="check"><div class="box"></div><div class="t">Get mentioned on local and industry sites AI scrapes (press, partners, guest posts)</div></div>
-    <div class="check"><div class="box"></div><div class="t">Keep your <b>name, address, phone</b> identical everywhere online</div></div>
+  <div class="kicker">01 &middot; the shift</div>
+  <h2 class="sec">Your customers stopped Googling</h2>
+  <div class="body">
+    <p>People used to Google "best vehicle wrap shop near me" and click through ten blue links. That behavior is dying. More and more people open ChatGPT, Perplexity, or Gemini and just ask: <i>"Who does the best commercial fleet wraps in Utah?"</i> The AI hands back three to five businesses. No ads. No SEO games. Just whatever companies it understands best.</p>
+    <p>If you're not in that answer, you don't exist to that customer. This is the same shift that happened when Google replaced the Yellow Pages. The businesses that adapted early won. The ones who said "I'll figure it out later" lost years of growth.</p>
+  </div>
+
+  <div class="evo">
+    <div class="node"><div class="era">then</div><div class="nm">Yellow Pages</div><div class="sm">Flip to your category, hope you're listed</div></div>
+    <div class="arrow">&rarr;</div>
+    <div class="node"><div class="era">last 20 years</div><div class="nm">Google</div><div class="sm">10 blue links, SEO, ads</div></div>
+    <div class="arrow">&rarr;</div>
+    <div class="node now"><div class="era">now</div><div class="nm">AI Search</div><div class="sm">One question, 3-5 named recommendations</div></div>
   </div>
 
   <div class="section">
-    <h2><span class="pillnum p">4</span> Measure it (and keep measuring)</h2>
-    <div class="why">You can't improve what you don't check. This compounds month over month.</div>
-    <div class="check"><div class="box p"></div><div class="t">Ask ChatGPT, Perplexity, and Gemini for the <b>best [your service] in [your city]</b></div></div>
-    <div class="check"><div class="box p"></div><div class="t">Note the result: <b>are you named, is a competitor named, or no one?</b> All three tell you something</div></div>
-    <div class="check"><div class="box p"></div><div class="t">Re-check <b>monthly</b>. Watch your name start showing up as the work compounds</div></div>
+    <h2 class="sec" style="font-size:19px">Where this is happening</h2>
+    <p class="lead" style="margin-top:6px">Your customers are already asking these tools to recommend businesses. Each one decides who to name from what it can understand about you online.</p>
+    <div class="engines">
+      <div class="engine"><span class="dot"></span>ChatGPT</div>
+      <div class="engine"><span class="dot"></span>Perplexity</div>
+      <div class="engine"><span class="dot"></span>Gemini</div>
+      <div class="engine"><span class="dot"></span>Claude</div>
+      <div class="engine"><span class="dot"></span>Copilot</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="lbl">What "AI visibility" actually means</div>
+    <p>It's how easily an AI engine can find, understand, and trust your business well enough to recommend it by name. It is not a hack and it is not paid placement. It's the same principle that made robots.txt and sitemaps standard: give machines a clean way to understand your business, and they represent you better.</p>
+  </div>
+
+  <div class="callout" style="border-left-color:var(--purple)">
+    <div class="lbl" style="color:var(--purple2)">The window</div>
+    <p>When I first set this up, almost no businesses had. Most still don't. The ones that do are getting recommended while their competitors are invisible, and that gap widens every month. Setting this up now builds a moat.</p>
+  </div>
+  <div class="foot"><span>The AI Visibility Playbook</span><span>brycenwood.ai &middot; 2</span></div>
+</div>
+
+<!-- ============ PAGE 3: THE STACK ============ -->
+<div class="page">
+  <div class="kicker">02 &middot; the system</div>
+  <h2 class="sec">The AI Visibility Stack</h2>
+  <p class="lead">Five layers. The bottom three make your business <b>readable</b> to AI. The top two make it <b>trusted</b> and let you <b>track</b> it. Build them bottom-up and AI starts naming you instead of your competitor.</p>
+
+  <div class="stack">
+    <div class="layer l5"><span class="lvl p">05</span><span class="nm">Measure &amp; Iterate</span><span class="ds">Check what AI says about you across engines. Improve what's weak. Compounds monthly.</span></div>
+    <div class="layer l4"><span class="lvl p">04</span><span class="nm">Trust &amp; Citations</span><span class="ds">Reviews, Google Business Profile, consistent NAP, mentions on sites AI already trusts.</span></div>
+    <div class="layer l3"><span class="lvl">03</span><span class="nm">Answer Content</span><span class="ds">Pages that answer the real questions people ask AI, marked up with schema.</span></div>
+    <div class="layer l2"><span class="lvl">02</span><span class="nm">Markdown Mirrors</span><span class="ds">A clean, chrome-free version of every page that any AI can read without wrestling code.</span></div>
+    <div class="layer l1"><span class="lvl">01</span><span class="nm">llms.txt + Foundation</span><span class="ds">The cheat-sheet file + a crawlable site and sitemap. The base everything sits on.</span></div>
+  </div>
+
+  <div class="ba">
+    <div class="c"><div class="h">Before</div><p>"I asked AI for the best wrap shop in my area and it had no idea my business existed. It named two competitors."</p></div>
+    <div class="c after"><div class="h">After the stack</div><p>"ChatGPT recommends my shop by name, lists my services, and points the customer to me. Score went 20 &rarr; 61 in a week."</p></div>
+  </div>
+
+  <div class="callout">
+    <div class="lbl">How to use the rest of this playbook</div>
+    <p>Each section that follows is one layer of the stack, with the exact steps and a checklist. You do not need to do all of it in one day. Start at the bottom (llms.txt, page 4) for the fastest win, then work up. Every box you check is one more reason AI picks you.</p>
+  </div>
+  <div class="foot"><span>The AI Visibility Playbook</span><span>brycenwood.ai &middot; 3</span></div>
+</div>
+
+<!-- ============ PAGE 4: llms.txt ============ -->
+<div class="page">
+  <h2 class="sec"><span class="pillnum">01</span> llms.txt &mdash; make your business readable to AI</h2>
+  <p class="lead">A plain-text file at your domain root (<span class="codeword">yoursite.com/llms.txt</span>) that tells AI exactly what you do, where, and who for. Think robots.txt, but instead of telling crawlers what to index, it tells AI assistants what to recommend. This is the single fastest win, about 20 minutes.</p>
+
+  <div class="body">
+    <p>If your website is a mess of JavaScript widgets, popups, and cookie banners, AI can't separate the signal from the noise, and your value proposition stays buried. A clean llms.txt hands the AI exactly what it needs on a silver platter: no guessing, no parsing.</p>
+  </div>
+
+  <div class="code"><span class="m"># llms.txt &mdash; yoursite.com/llms.txt</span>
+<span class="k"># Summit Wraps and Graphics</span>
+<span class="c">&gt;</span> Vehicle wrap, graphics, tint and PPF shop serving Utah County and the Salt Lake area.
+
+<span class="k">## What we do</span>
+- Full and partial vehicle wraps
+- Commercial fleet wraps and graphics
+- Color change wraps, chrome delete, PPF, window tint
+
+<span class="k">## Who we serve</span>
+- Utah businesses with fleets, and individual owners in the greater SLC area
+
+<span class="k">## Contact</span>
+- Location: Lehi, Utah &middot; Web: summitwrapsandgraphics.com</div>
+
+  <div class="callout">
+    <div class="lbl">What to include &mdash; and what to leave out</div>
+    <p><b>Include:</b> who you are, what you do, the areas you serve, your core services, and how to reach you. Keep it factual and plain. <b>Leave out:</b> marketing fluff, hype, and adjectives. AI ignores hype and rewards clarity.</p>
+  </div>
+
+  <div class="section">
+    <div class="check"><div class="box"></div><div class="t">Create a plain-text file at <span class="codeword">yoursite.com/llms.txt</span></div></div>
+    <div class="check"><div class="box"></div><div class="t">Lead with <b>who you are, what you do, where you serve, and contact</b></div></div>
+    <div class="check"><div class="box"></div><div class="t">Add an <span class="codeword">llms-full.txt</span> with deeper detail for engines that want more</div></div>
+    <div class="check"><div class="box"></div><div class="t">List your <b>core services</b> as clear bullets, not paragraphs</div></div>
+    <div class="check"><div class="box"></div><div class="t">Keep it factual. <b>No marketing fluff</b> &mdash; AI strips it out anyway</div></div>
+    <div class="check"><div class="box"></div><div class="t">Re-publish whenever your services or service area change</div></div>
+  </div>
+  <div class="foot"><span>Pillar 01 &middot; llms.txt</span><span>brycenwood.ai &middot; 4</span></div>
+</div>
+
+<!-- ============ PAGE 5: MARKDOWN MIRRORS ============ -->
+<div class="page">
+  <h2 class="sec"><span class="pillnum p">02</span> Markdown Mirrors</h2>
+  <p class="lead">llms.txt tells AI <i>what</i> your business is. Markdown mirrors let AI cleanly read <i>every page</i> on your site. When AI tries to quote a normal web page, it has to fight through navigation, popups, scripts, and cookie banners. A markdown mirror is the same page stripped down to clean text AI can read instantly.</p>
+
+  <div class="body">
+    <p>The pattern is simple: for every page, publish a clean <span class="codeword">.md</span> version next to it. Add <span class="codeword">/index.md</span> to any URL and you get the content with zero layout chrome. Then point to it in your llms.txt so AI knows the clean versions exist.</p>
+  </div>
+
+  <div class="code"><span class="m"># Add a clean mirror next to every page</span>
+yoursite.com/services/        <span class="m">&rarr; the human page (HTML)</span>
+yoursite.com/services/<span class="c">index.md</span>   <span class="m">&rarr; the AI page (clean markdown)</span>
+
+<span class="m"># Then in llms.txt:</span>
+<span class="k">## Clean versions for AI</span>
+Every page has a markdown mirror &mdash; add /index.md to any URL.</div>
+
+  <div class="callout">
+    <div class="lbl">The one-prompt build</div>
+    <p>You don't write these by hand. Open your site project in Claude Code and ask it to write a script that walks every page, strips the navigation and scripts, and saves a clean markdown version next to each one. One prompt builds the whole system. (The exact prompt is in my master playbook.)</p>
+  </div>
+
+  <div class="section">
+    <div class="check"><div class="box p"></div><div class="t">Generate a clean <span class="codeword">.md</span> mirror for <b>every</b> page on your site</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Strip navigation, popups, scripts, and cookie banners &mdash; <b>content only</b></div></div>
+    <div class="check"><div class="box p"></div><div class="t">Make them reachable at a predictable path (e.g. <span class="codeword">/index.md</span>)</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Reference the mirrors in your <span class="codeword">llms.txt</span> so AI knows they exist</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Keep the markdown clean &mdash; strip stray bullets, numbers, and separators that trip AI up</div></div>
+  </div>
+  <div class="foot"><span>Pillar 02 &middot; Markdown Mirrors</span><span>brycenwood.ai &middot; 5</span></div>
+</div>
+
+<!-- ============ PAGE 6: ANSWER CONTENT + SCHEMA ============ -->
+<div class="page">
+  <h2 class="sec"><span class="pillnum">03</span> Answer Content + Schema</h2>
+  <p class="lead">AI quotes the source that answers a question most directly. The old game was keywords. The new game is <b>real questions</b> &mdash; the exact things people type into AI before they buy &mdash; answered clearly, in your own words, and marked up so engines can parse them.</p>
+
+  <div class="body">
+    <p>Start by listing the 20 questions customers ask before hiring you. Not keywords. Questions: <i>"How much does a full wrap cost?" "Wrap vs paint?" "Best wrap shop in [city]?"</i> Write one clear page per question and put the answer in the <b>first two sentences</b>, because that's the part AI lifts.</p>
+  </div>
+
+  <div class="code"><span class="m">&lt;!-- FAQ schema: makes your Q&amp;A machine-readable --&gt;</span>
+<span class="k">&lt;script type="application/ld+json"&gt;</span>
+{
+  <span class="c">"@type"</span>: "FAQPage",
+  <span class="c">"mainEntity"</span>: [{
+    <span class="c">"@type"</span>: "Question",
+    <span class="c">"name"</span>: "How much does a full vehicle wrap cost?",
+    <span class="c">"acceptedAnswer"</span>: { "text": "A full wrap runs $3,500-$4,500..." }
+  }]
+}
+<span class="k">&lt;/script&gt;</span></div>
+
+  <div class="callout">
+    <div class="lbl">Answer-first beats keyword-stuffed</div>
+    <p>Write like a human talking, not like an SEO robot. A direct, honest answer in plain language gets quoted by AI far more often than a page stuffed with keywords. Add <span class="codeword">FAQPage</span> schema so the engine can read the question and answer as structured data.</p>
+  </div>
+
+  <div class="section">
+    <div class="check"><div class="box"></div><div class="t">List the <b>20 real questions</b> customers ask before buying (questions, not keywords)</div></div>
+    <div class="check"><div class="box"></div><div class="t">Write one clear answer page per question</div></div>
+    <div class="check"><div class="box"></div><div class="t">Put the answer in the <b>first two sentences</b> &mdash; AI lifts the direct answer</div></div>
+    <div class="check"><div class="box"></div><div class="t">Write like a human talking, not keyword-stuffed copy</div></div>
+    <div class="check"><div class="box"></div><div class="t">Add <span class="codeword">FAQPage</span> schema so engines parse the Q&amp;A cleanly</div></div>
+  </div>
+  <div class="foot"><span>Pillar 03 &middot; Answer Content</span><span>brycenwood.ai &middot; 6</span></div>
+</div>
+
+<!-- ============ PAGE 7: TECHNICAL FOUNDATION ============ -->
+<div class="page">
+  <h2 class="sec"><span class="pillnum p">04</span> Technical Foundation + Trust</h2>
+  <p class="lead">None of the above lands if AI can't crawl you or doesn't trust you. This layer is the plumbing (sitemap, schema) and the proof (Google, reviews, consistent listings) that makes an engine confident enough to put your name in front of a customer.</p>
+
+  <div class="section" style="margin-top:12px">
+    <h2 class="sec" style="font-size:16px"><span class="accent">&#9656;</span> Crawlable &amp; structured</h2>
+    <div class="check"><div class="box p"></div><div class="t">Publish a <span class="codeword">sitemap.xml</span> and submit it in <b>Google Search Console</b> &mdash; it's the map AI and search crawlers follow</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Add <span class="codeword">LocalBusiness</span> / <span class="codeword">Organization</span> schema (name, address, phone, hours, services)</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Make sure pages render their content in HTML, not only after JavaScript runs</div></div>
+  </div>
+
+  <div class="section">
+    <h2 class="sec" style="font-size:16px"><span class="accent">&#9656;</span> Trust signals AI reads</h2>
+    <div class="check"><div class="box p"></div><div class="t">Claim and fully complete your <b>Google Business Profile</b> &mdash; services, hours, photos, categories</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Earn reviews with <b>volume, recency, and your business name</b> written in them</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Get listed in your industry's authority directories</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Get mentioned on local + industry sites AI scrapes (press, partners, guest posts)</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Keep your <b>NAP</b> (name, address, phone) <b>identical everywhere</b> online</div></div>
+  </div>
+
+  <div class="callout">
+    <div class="lbl">Why NAP consistency matters more than you think</div>
+    <p>When your name, address, and phone match across your site, Google, and every directory, AI gets a consistent signal it can trust. When they conflict, the engine hedges &mdash; and a hedging AI recommends someone else.</p>
+  </div>
+  <div class="foot"><span>Pillar 04 &middot; Technical Foundation</span><span>brycenwood.ai &middot; 7</span></div>
+</div>
+
+<!-- ============ PAGE 8: MEASURE ============ -->
+<div class="page">
+  <h2 class="sec"><span class="pillnum p">05</span> Measure It (and keep measuring)</h2>
+  <p class="lead">You can't improve what you don't check. Test what AI actually says about you, track it, and watch it compound. Here's the real climb from my own business after building the stack:</p>
+
+  <div class="chart">
+    <div class="note">AI-visibility score<br>0&ndash;100</div>
+    <div class="bar"><div class="col before"><span class="v">20</span></div><div class="lab">Day 0<br>(before)</div></div>
+    <div class="bar"><div class="col after"><span class="v">61</span></div><div class="lab">After 1 week<br>(the stack)</div></div>
+  </div>
+
+  <div class="body">
+    <p>That jump is one week of work across the layers in this playbook. It keeps climbing as content, reviews, and citations compound. The point isn't the exact number &mdash; it's that it's <b>measurable</b>, so you always know whether you're winning.</p>
+  </div>
+
+  <div class="callout">
+    <div class="lbl">The monthly check &mdash; run these prompts</div>
+    <p>Ask each engine: <i>"What's the best [your service] in [your city]?"</i> and <i>"Recommend a [your service] near [your area]."</i> Then log the result: were you <b>named</b>, was a <b>competitor</b> named, or <b>no one</b>? All three tell you exactly where you stand.</p>
+  </div>
+
+  <div class="section">
+    <div class="check"><div class="box p"></div><div class="t">Ask <b>ChatGPT, Perplexity, and Gemini</b> for the best [your service] in [your city]</div></div>
+    <div class="check"><div class="box p"></div><div class="t">Log the result each time: <b>named / competitor / no one</b></div></div>
+    <div class="check"><div class="box p"></div><div class="t">Re-check <b>monthly</b> &mdash; watch your name start showing up as the work compounds</div></div>
+    <div class="check"><div class="box p"></div><div class="t">When a competitor outranks you, find the gap (reviews? content? citations?) and close it</div></div>
+  </div>
+  <div class="foot"><span>Pillar 05 &middot; Measure It</span><span>brycenwood.ai &middot; 8</span></div>
+</div>
+
+<!-- ============ PAGE 9: MISTAKES + CTA ============ -->
+<div class="page">
+  <div class="kicker">before you go</div>
+  <h2 class="sec" style="font-size:21px">Common mistakes to avoid</h2>
+  <div class="section" style="margin-top:8px">
+    <div class="mistake"><span class="x">&times;</span><div class="t"><b>Stuffing llms.txt with marketing copy.</b> AI strips hype. Facts only.</div></div>
+    <div class="mistake"><span class="x">&times;</span><div class="t"><b>Doing it once and forgetting.</b> AI visibility compounds &mdash; and decays if you stop.</div></div>
+    <div class="mistake"><span class="x">&times;</span><div class="t"><b>Inconsistent name, address, and phone.</b> Conflicting info makes AI hedge and pick someone else.</div></div>
+    <div class="mistake"><span class="x">&times;</span><div class="t"><b>Writing for keywords instead of questions.</b> The new game is answering what people actually ask.</div></div>
+    <div class="mistake"><span class="x">&times;</span><div class="t"><b>Never measuring.</b> If you don't check what AI says, you're flying blind.</div></div>
   </div>
 
   <hr class="divider">
@@ -143,11 +452,11 @@
   <div class="cta">
     <div class="tag">the honest part</div>
     <h2>Don't want to do all this by hand?</h2>
-    <p>Every box above works. I did them. But doing all of it by hand, writing the answer content, maintaining the llms.txt, chasing citations, tracking five different AI engines, is basically a part-time job. So I automate it with a tool called <b>cytd</b>. It auto-publishes the answer content, maintains your llms.txt, and tracks where you show up across the AI engines. It's the tool that took my own score from a <b>20 to a 61 in a week</b>.</p>
-    <p class="disc">Full disclosure: that's my affiliate link below, I earn a commission if you sign up. I only recommend it because I actually run it on my own business, and you just read the exact checklist of what it does so you can decide for yourself.</p>
+    <p>Every layer in this playbook works &mdash; I did them all. But writing the answer content, maintaining the llms.txt and mirrors, chasing citations, and tracking five AI engines is basically a part-time job. So I automate it with a tool called <b>cytd</b>. It auto-publishes the answer content, maintains your llms.txt, and tracks where you show up across the engines. It's what took my own score from a <b>20 to a 61 in a week</b>.</p>
+    <p class="disc">Full disclosure: that's my affiliate link below, I earn a commission if you sign up. I only recommend it because I actually run it on my own business &mdash; and you just read the exact system of what it does, so you can decide for yourself.</p>
     <div class="gift">
-      <div class="gifttag">&#127873; my gift for using my link</div>
-      <p><b>Sign up to cytd through my link and I'll give you free LIFETIME access to my private community, Business On Autopilot</b> (it used to be $97/mo). That's where I break down the AI visibility playbook, share what's working, and answer questions directly.</p>
+      <div class="gt">&#127873; my gift for using my link</div>
+      <p><b>Sign up to cytd through my link and I'll give you free LIFETIME access to my private community, Business On Autopilot</b> (it used to be $97/mo). That's where I break down the AI visibility playbook live, share what's working, and answer questions directly.</p>
       <p class="claim"><b>How to claim:</b> sign up with the link below, then reply to my DM (or message me <b>@brycenwood.ai</b>) with your confirmation and I'll add you, free, for life.</p>
     </div>
     <p><b>Start with the free AI visibility check.</b> It scores exactly where you stand right now across the engines. No card, no commitment, just your number.</p>
