@@ -1,6 +1,6 @@
 ---
 title: The Claude Code Business Playbook — Free Download | Brycen Wood
-description: Free playbook: 7 AI systems that get your business found by AI, ranked on Google, and run your CRM in plain English. Download now.
+description: Free playbook: 12 AI systems that get your business found by AI, ranked on Google, run your CRM in plain English, and read every ad your competitors are running. Download now.
 url: https://www.brycenwood.com/playbook/
 last_updated: 2026-04-14
 ---
@@ -10,7 +10,7 @@ Free Download
  
 # The Claude Code Business Playbook
 
- Eight AI systems that run my business -- explained step by step so you can build them for yours.
+ Twelve AI systems that run my business -- explained step by step so you can build them for yours.
 
  This is the exact system that got Gemini AI to recommend my business to a real customer.
 
@@ -44,7 +44,7 @@ Free Download
  
  
  03
- **Cold Email Engine** -- Score leads, draft personalized emails, and send automatically.
+ **Sitemaps + Google Search Console** -- Tell Google which pages matter, then see your real ranking data and where the quick wins are.
  
  
  04
@@ -53,6 +53,34 @@ Free Download
  
  05
  **Full Website Builder Prompt** -- The exact prompt I used to build a 40-page website in one afternoon. Swap in your business info, paste it into Claude Code, and get a complete site with SEO, schema, and AI visibility built in.
+ 
+ 
+ 06
+ **CRM Lead Recovery** -- Find every lead sitting dead in your CRM and get them followed up with before breakfast.
+ 
+ 
+ 07
+ **Claude Code + Your CRM** -- Operate your entire CRM in plain English. Works with GoHighLevel, HubSpot, or anything with an API.
+ 
+ 
+ 08
+ **The AI Executive Team** -- 5 AI executives and 13 specialists, each with a charter. Ask one question, they all go to work in parallel.
+ 
+ 
+ 09
+ **Free Infrastructure Layer** -- Host the whole thing on infrastructure that costs nothing and fires while you sleep, whether your laptop is open or not.
+ 
+ 
+ 10
+ **The Messaging Layer** -- Every text, voice call, voicemail, and AI receptionist through one system, at pennies per message.
+ 
+ 
+ 11
+ **The Research Agent** -- Analyze any creator's entire framework and get back the top 3 things to implement in your business this week. Specific to you, not generic advice.
+ 
+ 
+ 12
+ **The Ad Library Teardown** -- Read every ad your competitors are running, sorted by how long each one has been live, and turn it into ads you can film this week. They already paid for the test. This is how you read the results.
  
  
  

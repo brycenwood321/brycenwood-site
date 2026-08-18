@@ -16,6 +16,15 @@ Free Guides
  [
  
  AI Visibility
+ The AI Visibility Playbook
+ The exact 5-pillar system I used to get ChatGPT recommending my business by name. Free PDF.
+ Download the playbook
+ 
+ ](/guides/the-ai-visibility-checklist.pdf)
+
+ [
+ 
+ AI Visibility
  llms.txt Guide
  How to make AI recommend your business. The file that tells ChatGPT, Claude, and Perplexity what you do.
  Read the guide
@@ -75,6 +84,15 @@ Free Guides
  Read the guide
  
  ](/guides/business-operating-system/)
+
+ [
+ 
+ Building
+ Make Claude Code Talk Back
+ Dictate a question, hear the answer out loud. The hands-free voice setup I built on a road trip, plus the exact prompt.
+ Read the guide
+ 
+ ](/guides/claude-code-voice/)
 
  [
  

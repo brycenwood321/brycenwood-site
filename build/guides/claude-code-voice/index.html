@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GV8RG30MK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2GV8RG30MK');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make Claude Code Talk Back: The Voice Setup I Built in a Truck | Brycen Wood</title>
+<meta name="description" content="Talk to Claude Code and have it read the answer out loud. The full walkthrough plus the exact copy-paste prompt that builds it, from a founder who does not write code.">
+<link rel="canonical" href="https://www.brycenwood.com/guides/claude-code-voice/">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Make Claude Code Talk Back: The Voice Setup I Built in a Truck">
+<meta property="og:description" content="Talk to Claude Code and have it read the answer out loud. The full walkthrough plus the exact copy-paste prompt that builds it.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.brycenwood.com/guides/claude-code-voice/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Make Claude Code Talk Back: The Voice Setup I Built in a Truck">
+<meta name="twitter:description" content="Talk to Claude Code and have it read the answer out loud. The full walkthrough plus the exact copy-paste prompt that builds it.">
+
+<!-- Schema: Article + HowTo + FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Make Claude Code Talk Back: The Voice Setup I Built in a Truck",
+  "description": "Talk to Claude Code and have it read the answer out loud. The full walkthrough plus the exact copy-paste prompt that builds it.",
+  "url": "https://www.brycenwood.com/guides/claude-code-voice/",
+  "datePublished": "2026-08-18",
+  "author": {
+    "@type": "Person",
+    "name": "Brycen Wood",
+    "url": "https://www.brycenwood.com/about/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Brycen Wood"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to make Claude Code read its answers out loud",
+  "description": "Set up a hands-free voice loop for Claude Code using hooks, so you can dictate a question and hear the answer spoken back.",
+  "totalTime": "PT20M",
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "Set up dictation in", "text": "Install a dictation tool so you can talk into the Claude Code prompt instead of typing."},
+    {"@type": "HowToStep", "position": 2, "name": "Add the Stop hook", "text": "A Stop hook runs a script when Claude finishes a turn. That script is what speaks the answer out loud."},
+    {"@type": "HowToStep", "position": 3, "name": "Speak a summary, not the transcript", "text": "Have Claude author a short spoken summary inside a marker and read only that, so you hear the answer instead of the whole message."},
+    {"@type": "HowToStep", "position": 4, "name": "Add the interrupt", "text": "A UserPromptSubmit hook kills speech in progress, so talking back over the answer silences it."},
+    {"@type": "HowToStep", "position": 5, "name": "Add a control command", "text": "A small CLI gives you off, on, stop, status, test, and replay from any terminal."}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brycenwood.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.brycenwood.com/guides/"},
+    {"@type": "ListItem", "position": 3, "name": "Claude Code Voice"}
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link active">Guides</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+    <a href="/contact/" class="nav-cta">Book a Call</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container-narrow">
+    <div class="breadcrumb"><a href="/guides/">Guides</a> &nbsp;/&nbsp; Claude Code Voice</div>
+    <div class="hero-eyebrow">Free Walkthrough</div>
+    <h1 class="hero-line">Make Claude Code<br> Talk Back To You</h1>
+    <p class="hero-sub">I dictate a question. It answers out loud. I built the whole thing on a road trip, and I do not write code. Here is how it works and the exact prompt that builds it.</p>
+    <div class="last-updated">Last updated: August 18, 2026</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<div class="content">
+
+<h2>Why I built this</h2>
+
+<p>I already talked <em>to</em> Claude Code. I use a dictation tool, so I stopped typing prompts a long time ago. The problem was the other direction. Claude would answer, and the answer would be a wall of text on a laptop screen I was not looking at.</p>
+
+<p>I run three businesses. A lot of my actual work happens while I am driving, walking around a shop, or sitting in a different terminal doing something else. In all of those situations the screen is useless to me and the information is still important.</p>
+
+<p>So I made it talk. Now it is a conversation. I ask whether everyone paid this week, and it tells me, out loud, while my hands stay on the wheel.</p>
+
+<blockquote><p>The unlock is not text to speech. It is that Claude writes a short spoken summary of its own answer, and reads you that instead of the transcript.</p></blockquote>
+
+<h2>What it actually does</h2>
+
+<ul>
+  <li><strong>Reads the answer, not the message.</strong> Claude writes a summary meant to be heard, and only that gets spoken. No file paths, no code, no bullet points read aloud like a robot.</li>
+  <li><strong>Stops when you talk.</strong> Start speaking and the voice cuts off mid sentence. You never sit there waiting for it to finish.</li>
+  <li><strong>Talks during the work, not just at the end.</strong> If it finds something that changes what you would do, it says so immediately instead of banking it for the closing summary.</li>
+  <li><strong>Says the important thing first.</strong> Answer up front, in case you stop listening.</li>
+  <li><strong>Has an off switch that works everywhere.</strong> One command silences every session at once.</li>
+  <li><strong>Replays.</strong> A semi goes past, you miss half a sentence, you say replay instead of asking the whole question again.</li>
+</ul>
+
+<h2>How it works, in plain English</h2>
+
+<p>Claude Code has something called hooks. A hook is just a command that runs automatically when a certain thing happens. You do not have to write software to use them. You write a small script and tell Claude Code when to run it.</p>
+
+<div class="steps">
+
+  <div class="step reveal">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <h3>Dictation in</h3>
+      <p>This part is not custom. Any good dictation tool lets you talk into the Claude Code prompt instead of typing. This is the half most people already have and never think of as part of a system.</p>
+    </div>
+  </div>
+
+  <div class="step reveal">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <h3>A Stop hook speaks the answer</h3>
+      <p>The Stop hook fires when Claude finishes its turn. It hands your script the finished message, and the script speaks it. On a Mac the speaking part is built into the operating system already, so there is no account to make and nothing to pay for.</p>
+    </div>
+  </div>
+
+  <div class="step reveal">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <h3>Claude writes its own spoken summary</h3>
+      <p>This is the piece that makes it good instead of annoying. Reading a long technical message out loud is unbearable. Instead, Claude writes a short spoken version of the answer inside a marker, and the script reads only that. Everything else on screen is ignored.</p>
+      <p>Without a summary, a fallback reads just the opening prose and stops at the first heading, capped at about thirty seconds.</p>
+    </div>
+  </div>
+
+  <div class="step reveal">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <h3>A second hook makes it interruptible</h3>
+      <p>A hook on prompt submission kills any speech in progress. So the moment you start talking back, it stops. This one detail is the difference between a feature you keep and one you turn off in a day.</p>
+    </div>
+  </div>
+
+  <div class="step reveal">
+    <div class="step-number">5</div>
+    <div class="step-content">
+      <h3>A small command gives you control</h3>
+      <p>Off, on, stop, status, test, and replay, from any terminal, applying to every session at once. You want this before you want anything fancy, because the first time it talks at a bad moment you need one word that stops it.</p>
+    </div>
+  </div>
+
+</div>
+
+<h2>Three things that broke, so yours does not have to</h2>
+
+<p>I am putting these here because they are the parts you would spend an evening on, and none of them announce themselves.</p>
+
+<ul>
+  <li><strong>Two sessions talking over each other.</strong> If you run Claude in more than one terminal and both finish around the same time, you get two voices at once. It needs a lock so the second one waits its turn.</li>
+  <li><strong>It reads the wrong thing.</strong> If the hook fires before the final message is finished, it reads mid-work narration instead of the answer. The fix is structural, not a timing delay. A delay looks like it works and then fails on a long turn.</li>
+  <li><strong>The off switch that quietly does nothing.</strong> Mine looked like it worked for a while because a backup cleanup was doing the real work. Test that your stop command actually stops it, in the middle of a long sentence, not just that it prints a confirmation.</li>
+</ul>
+
+<h2>The prompt</h2>
+
+<p>This is the whole thing. Open Claude Code in any folder, paste this in, and answer its questions as it goes. It will tell you what it is doing in plain English as it builds.</p>
+
+<pre><code>I want Claude Code to read its answers to me out loud, so working
+with you is a conversation instead of me reading a screen. I am not
+a programmer, so explain what you are doing in plain English as you
+go, and do not assume I know what any of these pieces are.
+
+Build this on my machine:
+
+1. A Stop hook that speaks your final message aloud when you finish
+   a turn. Use whatever text to speech is already built into my
+   operating system. Nothing paid, no API key.
+
+2. IMPORTANT: do not read the whole message. Reading a long technical
+   answer out loud is unbearable. Instead:
+   - Let you write a short spoken summary inside a marker in your
+     message, and speak ONLY that, verbatim.
+   - If there is no marker, fall back to reading just the opening
+     prose and stop at the first heading or bullet, capped at about
+     30 seconds.
+   - Strip code blocks, file paths, and URLs before speaking, since
+     they are unlistenable.
+
+3. A hook on prompt submission that kills any speech in progress,
+   so when I start talking back it shuts up immediately. It must
+   NOT touch my on/off setting.
+
+4. A command called `voice` I can run from any terminal that
+   controls every session at once:
+   - voice off / voice on
+   - voice stop  (kill the sentence in progress right now)
+   - voice status (is it on, which voice, is it speaking)
+   - voice test  (say a sample line)
+   - voice again (replay the last thing it said, for when I miss it)
+
+5. A way for you to speak DURING a turn, not only at the end, so you
+   can tell me something important the moment you find it instead of
+   saving it for the summary. Make it non-blocking so it never slows
+   the work down.
+
+Handle these three failure cases, because they are the ones that
+will actually bite:
+
+- If I have two Claude sessions running and both finish at once,
+  they must not talk over each other. Use a lock and queue the
+  second one.
+- Make sure the hook reads my FINAL answer, not mid-work narration.
+  Solve this structurally. Do not paper over it with a timing delay,
+  because a delay will look fine and then break on a long turn.
+- Make sure `voice stop` genuinely kills speech mid sentence. Prove
+  it to me by testing it while a long sentence is playing, not just
+  by showing me that it prints a confirmation.
+
+Then write me a test suite that verifies all of it, and make sure
+the tests DO NOT speak out loud when they run.
+
+Before you start, tell me your plan and what you are about to change
+on my machine. Then build it, test it, and tell me exactly how to
+turn it off if I hate it.</code></pre>
+
+<h2>Two notes before you paste it</h2>
+
+<p><strong>It changes settings that need a restart.</strong> Some of the wiring is read fresh every time, and some is loaded once when a session starts. If a piece does not seem to work right away, restart Claude Code before you assume it is broken.</p>
+
+<p><strong>Start with the off switch working.</strong> Ask for that first and confirm it, then add the rest. The failure mode you care about is not that it fails to talk, it is that it talks when you do not want it to.</p>
+
+<h2>Questions I got asked</h2>
+
+<div class="faq-list">
+  <div class="faq-item">
+    <div class="faq-question">Do I need to know how to code?<span class="faq-toggle">+</span></div>
+    <div class="faq-answer"><p>No. I do not. Every part of this was built by describing what I wanted in plain English and answering questions. The prompt above is written to be pasted in as is.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Does this cost anything?<span class="faq-toggle">+</span></div>
+    <div class="faq-answer"><p>The speaking part is built into the operating system, so there is no extra subscription and no API key for the voice itself. You are already paying for Claude Code.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Will it read every single thing out loud?<span class="faq-toggle">+</span></div>
+    <div class="faq-answer"><p>Only if you build it badly. The whole point of the summary step is that you hear the answer, not the transcript. If it is reading you file paths, that part is not finished yet.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">What if I am on Windows?<span class="faq-toggle">+</span></div>
+    <div class="faq-answer"><p>The structure is identical, hooks are hooks. The only piece that changes is which built-in command speaks the text. Say so in the prompt and let Claude pick the right one for your machine.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Is this actually useful or is it a toy?<span class="faq-toggle">+</span></div>
+    <div class="faq-answer"><p>Fair question. For me the test was whether I still used it a week later, and I do, because a lot of my work happens away from a screen. If you are always sitting at your desk looking at the terminal, you probably do not need this.</p></div>
+  </div>
+</div>
+
+<h2>If you build it</h2>
+
+<p>Send me what you made. I read every message and the good ideas end up in the next version of mine. That is the only thing I want in return for this.</p>
+
+<p><a href="/guides/">Back to all guides</a></p>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/community/" class="footer-link">Community</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+document.querySelectorAll('.faq-question').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.closest('.faq-item');
+    const wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen)item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
