@@ -206,65 +206,11 @@
 
 <h2>The prompt</h2>
 
-<p>This is the whole thing. Open Claude Code in any folder, paste this in, and answer its questions as it goes. It will tell you what it is doing in plain English as it builds.</p>
+<p>The full copy-paste prompt that builds this, plus the twelve other systems that run my businesses, is in the playbook. It is free.</p>
 
-<pre><code>I want Claude Code to read its answers to me out loud, so working
-with you is a conversation instead of me reading a screen. I am not
-a programmer, so explain what you are doing in plain English as you
-go, and do not assume I know what any of these pieces are.
+<p style="margin:28px 0"><a href="/playbook/" class="btn-primary" style="display:inline-block">Get the playbook (free)</a></p>
 
-Build this on my machine:
-
-1. A Stop hook that speaks your final message aloud when you finish
-   a turn. Use whatever text to speech is already built into my
-   operating system. Nothing paid, no API key.
-
-2. IMPORTANT: do not read the whole message. Reading a long technical
-   answer out loud is unbearable. Instead:
-   - Let you write a short spoken summary inside a marker in your
-     message, and speak ONLY that, verbatim.
-   - If there is no marker, fall back to reading just the opening
-     prose and stop at the first heading or bullet, capped at about
-     30 seconds.
-   - Strip code blocks, file paths, and URLs before speaking, since
-     they are unlistenable.
-
-3. A hook on prompt submission that kills any speech in progress,
-   so when I start talking back it shuts up immediately. It must
-   NOT touch my on/off setting.
-
-4. A command called `voice` I can run from any terminal that
-   controls every session at once:
-   - voice off / voice on
-   - voice stop  (kill the sentence in progress right now)
-   - voice status (is it on, which voice, is it speaking)
-   - voice test  (say a sample line)
-   - voice again (replay the last thing it said, for when I miss it)
-
-5. A way for you to speak DURING a turn, not only at the end, so you
-   can tell me something important the moment you find it instead of
-   saving it for the summary. Make it non-blocking so it never slows
-   the work down.
-
-Handle these three failure cases, because they are the ones that
-will actually bite:
-
-- If I have two Claude sessions running and both finish at once,
-  they must not talk over each other. Use a lock and queue the
-  second one.
-- Make sure the hook reads my FINAL answer, not mid-work narration.
-  Solve this structurally. Do not paper over it with a timing delay,
-  because a delay will look fine and then break on a long turn.
-- Make sure `voice stop` genuinely kills speech mid sentence. Prove
-  it to me by testing it while a long sentence is playing, not just
-  by showing me that it prints a confirmation.
-
-Then write me a test suite that verifies all of it, and make sure
-the tests DO NOT speak out loud when they run.
-
-Before you start, tell me your plan and what you are about to change
-on my machine. Then build it, test it, and tell me exactly how to
-turn it off if I hate it.</code></pre>
+<p style="font-size:14px;color:var(--text-dim)">System 13 is this one, written out step by step, including the three bugs above and the rule for what is worth saying out loud.</p>
 
 <h2>Two notes before you paste it</h2>
 
