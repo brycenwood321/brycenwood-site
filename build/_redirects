@@ -2,5 +2,6 @@
 https://brycenwood-site.pages.dev/* https://www.brycenwood.com/:splat 301
 
 # Legacy redirects
+/guides/claude-code-voice/* /playbook/ 301
 /ai-playbook/* /playbook/ 301
 /waitlist /community/ 301

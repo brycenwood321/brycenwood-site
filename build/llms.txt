@@ -37,7 +37,6 @@
 - [How to Automate Your Business](https://www.brycenwood.com/guides/automate-your-business/) - Complete guide to small business automation with AI.
 - [AI SEO Playbook](https://www.brycenwood.com/guides/ai-seo-playbook/) - 3 files that make ChatGPT recommend you.
 - [Business Operating System](https://www.brycenwood.com/guides/business-operating-system/) - What a business OS is and why you need one.
-- [Make Claude Code Talk Back](https://www.brycenwood.com/guides/claude-code-voice/) - Dictate a question and hear the answer out loud. Hands-free voice setup plus the exact prompt.
 - [Claude Code Business Tools](https://www.brycenwood.com/guides/claude-code-business-tools/) - 10 things I built with Claude Code.
 
 ## Resources

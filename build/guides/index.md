@@ -87,15 +87,6 @@ Free Guides
 
  [
  
- Building
- Make Claude Code Talk Back
- Dictate a question, hear the answer out loud. The hands-free voice setup I built on a road trip, plus the exact prompt.
- Read the guide
- 
- ](/guides/claude-code-voice/)
-
- [
- 
  Tools
  Claude Code Business Tools
  10 things I built that run my business. Real tools, real results, built by someone who can't write a line of code.
