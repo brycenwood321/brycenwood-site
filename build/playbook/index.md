@@ -1,6 +1,6 @@
 ---
 title: The Claude Code Business Playbook — Free Download | Brycen Wood
-description: Free playbook: 13 AI systems that get your business found by AI, ranked on Google, run your CRM in plain English, read every ad your competitors are running, and talk back to you out loud. Download now.
+description: Free playbook: 14 AI systems that get your business found by AI, ranked on Google, run your CRM in plain English, read every ad your competitors are running, talk back to you out loud, and grade every plan before you trust it. Download now.
 url: https://www.brycenwood.com/playbook/
 last_updated: 2026-04-14
 ---
@@ -10,7 +10,7 @@ Free Download
  
 # The Claude Code Business Playbook
 
- Thirteen AI systems that run my business -- explained step by step so you can build them for yours.
+ Fourteen AI systems that run my business -- explained step by step so you can build them for yours.
 
  This is the exact system that got Gemini AI to recommend my business to a real customer.
 
@@ -85,6 +85,10 @@ Free Download
  
  13
  **Make It Talk Back** -- Ask a question out loud and hear the answer out loud. Two hooks turn Claude Code into something you hold a conversation with, so a drive or a walk through the shop becomes working time.
+ 
+ 
+ 14
+ **The Plan Grader** -- Your AI will never tell you it's wrong. A second copy of it will. One prompt grades any plan in a fresh window, and one command makes it a habit in Claude Code, so nothing that matters ships on the word of the thing that wrote it.
  
  
  
