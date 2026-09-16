@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GV8RG30MK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2GV8RG30MK');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Things That Make Claude Code a System, Not a Chatbot | Brycen Wood</title>
+<meta name="description" content="The five things that turn Claude Code from a chatbot into a system that runs a business: a folder, a memory, a rules-only file, a model table, and never trusting done. Each one explained in plain English, plus one prompt that sets all five up for you.">
+<link rel="canonical" href="https://www.brycenwood.com/five/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
+
+<meta property="og:title" content="5 Things That Make Claude Code a System, Not a Chatbot">
+<meta property="og:description" content="A folder, a memory, a rules-only file, a model table, and never trusting done. Explained in plain English, plus one prompt that sets all five up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.brycenwood.com/five/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5 Things That Make Claude Code a System, Not a Chatbot">
+<meta name="twitter:description" content="A folder, a memory, a rules-only file, a model table, and never trusting done. Plus one prompt that sets all five up.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "5 Things That Make Claude Code a System, Not a Chatbot",
+  "description": "Turn Claude Code from a chatbot into a system: work out of a folder, give it memory, keep the rules file rules-only, use a model table, and never trust done.",
+  "url": "https://www.brycenwood.com/five/",
+  "author": {"@type": "Person", "name": "Brycen Wood", "url": "https://www.brycenwood.com/about/"},
+  "step": [
+    {"@type": "HowToStep", "name": "Work out of a folder, not a chat"},
+    {"@type": "HowToStep", "name": "Give it a memory"},
+    {"@type": "HowToStep", "name": "Rules only in the main file"},
+    {"@type": "HowToStep", "name": "One table: which model for which job"},
+    {"@type": "HowToStep", "name": "Never trust done"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brycenwood.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Five"}
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<style>
+.five-step{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:28px 0;border-bottom:1px solid var(--card-border)}
+.five-step:last-child{border-bottom:none}
+.five-num{font-family:var(--mono);font-size:32px;font-weight:700;color:var(--lime);line-height:1}
+.five-step h3{font-size:22px;font-weight:800;margin:0 0 8px;line-height:1.2}
+.five-step .what{font-size:16px;color:var(--text);line-height:1.65;margin:0 0 12px}
+.five-step .how{font-size:15px;color:var(--text-dim);line-height:1.65;margin:0}
+.five-step .how strong{color:var(--text)}
+.five-step .say{display:inline-block;font-family:var(--mono);font-size:13px;color:var(--lime);background:var(--lime-dim);padding:3px 8px;border-radius:4px;margin-top:10px}
+.prompt-box{position:relative;background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--lime);border-radius:8px;padding:24px;margin-top:24px}
+.prompt-box pre{font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--text);white-space:pre-wrap;word-wrap:break-word;margin:0;background:none;padding:0}
+.copy-btn{width:100%;margin-top:18px;padding:16px;font-family:var(--sans);font-size:17px;font-weight:800;background:var(--lime);color:#050508;border:none;border-radius:8px;cursor:pointer;letter-spacing:0.3px}
+.copy-btn:active{transform:scale(0.99)}
+.copy-btn.done{background:var(--lime-deep)}
+.mini-steps{display:grid;gap:10px;margin-top:20px}
+.mini-steps div{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:15px;color:var(--text-dim);line-height:1.6}
+.mini-steps span{font-family:var(--mono);color:var(--lime);font-weight:700}
+@media (max-width:600px){.five-step{grid-template-columns:40px 1fr;gap:14px}.five-num{font-size:26px}.five-step h3{font-size:19px}}
+</style>
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link">Guides</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span>
+  <span>Five</span>
+</div>
+
+<section class="page-hero">
+  <p class="hero-eyebrow">From the video</p>
+  <h1>5 things that make Claude Code <span class="accent">a system, not a chatbot</span></h1>
+  <p class="hero-sub">Each one explained the way I wish someone had explained it to me. Then one prompt at the bottom that sets all five up for you. I do not write code. Neither will you.</p>
+  <div class="btn-group" style="margin-top:24px">
+    <a href="#prompt" class="btn-primary">Skip to the prompt</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding:48px 0;">
+  <div class="container-narrow">
+
+    <div class="five-step reveal">
+      <div class="five-num">1</div>
+      <div>
+        <h3>Work out of a folder, not a chat</h3>
+        <p class="what">A chat forgets everything the second you close it. A folder does not. When Claude Code runs inside a folder, every file in it is something it can go open and read on its own, so you stop re-explaining your business every morning.</p>
+        <p class="how"><strong>How:</strong> make a folder for the project. Open the terminal inside it and type <code>claude</code>. The first thing you say is <em>"run init"</em>. It writes a file called CLAUDE.md. That file is read at the start of every session. It is where you tell it who you are, what this is, and how you want it to talk to you.</p>
+        <span class="say">say: "run init"</span>
+      </div>
+    </div>
+
+    <div class="five-step reveal">
+      <div class="five-num">2</div>
+      <div>
+        <h3>Give it a memory</h3>
+        <p class="what">Memory is not magic. It is a folder plus one rule. Mine has over five hundred files in it, one fact per file, and one index file that lists them in a line each. Tomorrow's session reads the index first and knows what yesterday learned.</p>
+        <p class="how"><strong>How:</strong> add a folder called <code>memory</code> with a <code>MEMORY.md</code> index inside it. Then put one rule in CLAUDE.md: <em>"Before a session ends, write anything durable you learned as one file in memory/ and add a one-line pointer to MEMORY.md. Read MEMORY.md at the start of every session."</em> Then actually say <em>"write down what you learned"</em> before you close. The rule is the habit. The folder is just where it lands.</p>
+        <span class="say">say: "write down what you learned"</span>
+      </div>
+    </div>
+
+    <div class="five-step reveal">
+      <div class="five-num">3</div>
+      <div>
+        <h3>Rules only in the main file</h3>
+        <p class="what">CLAUDE.md loads on every single request. Every line in it costs attention on everything it does. So the more you "help" it by stuffing that file, the worse it gets. Mine is rules only, with a hard line cap.</p>
+        <p class="how"><strong>How:</strong> add this rule to CLAUDE.md: <em>"This file is rules only and stays under 150 lines. Anything only needed sometimes goes in its own file and this file points to it."</em> Then ask it to check the current file against that rule and move anything that is not a rule. The wrap-shop details go in a wrap-shop file. The main file just says where that file is.</p>
+        <span class="say">say: "check CLAUDE.md against the rules-only rule"</span>
+      </div>
+    </div>
+
+    <div class="five-step reveal">
+      <div class="five-num">4</div>
+      <div>
+        <h3>One table: which model for which job</h3>
+        <p class="what">Claude comes in sizes. The biggest brain costs about seven times more per call than the smallest. If you let it guess, it uses the biggest brain to rename a file. One small table fixes that forever.</p>
+        <p class="how"><strong>How:</strong> add a section to CLAUDE.md called <em>Which model for which job</em>. Sorting, extracting, summarizing and routing go to the smallest model. Drafting, analysis and generating go to the middle one. Reviewing work and design decisions go to the biggest. Then the rule that makes it stick: <em>"When you spawn an agent or write a script that calls the API, look the job up in this table. Never guess."</em></p>
+        <span class="say">say: "add the model table and never guess"</span>
+      </div>
+    </div>
+
+    <div class="five-step reveal">
+      <div class="five-num">5</div>
+      <div>
+        <h3>Never trust done</h3>
+        <p class="what">Mine once told me a message queue had sent zero. Meanwhile 162 customers had already been answered. Both were true. It was reading its own notes instead of the actual log. Confident is not the same as true.</p>
+        <p class="how"><strong>How:</strong> two rules in CLAUDE.md: <em>"Nothing is done until you show me the actual output or log, never your summary of it."</em> and <em>"A command that exits clean with no output is a failure, not a pass."</em> Then the one that matters most, a <strong>hook</strong>: a tiny script that runs before every command it tries and blocks anything that deletes files or spends money. A rule is something it tries to follow. A hook is something it cannot get past. Ask it to build the hook and explain what it blocks before it saves it.</p>
+        <span class="say">say: "show me the log, not your summary"</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="prompt" style="padding:64px 0;">
+  <div class="container-narrow">
+    <div class="section-header reveal">
+      <p class="hero-eyebrow">The prompt</p>
+      <h2>One paste sets up <span class="accent">all five</span></h2>
+      <p style="font-size:16px;color:var(--text-dim);max-width:600px;margin:16px auto 0;line-height:1.6">Copy it, open Claude Code inside the folder you want it to run from, paste it, and answer its questions one at a time. It shows you everything it built at the end.</p>
+    </div>
+
+    <div class="mini-steps reveal">
+      <div><span>1</span><div>Make a folder for the project. Any name.</div></div>
+      <div><span>2</span><div>Open the terminal inside that folder and type <code>claude</code>.</div></div>
+      <div><span>3</span><div>Paste the prompt below and hit enter.</div></div>
+    </div>
+
+    <div class="prompt-box reveal">
+<pre id="promptText">Set up this folder as a system, not a chat. Do these five things, and ask me one question at a time when you need something from me.
+
+1. FOLDER. If there is no CLAUDE.md here, create one. Ask me what this project is, who I am, and how I want you to talk to me. Keep it short.
+
+2. MEMORY. Create a folder called memory with a MEMORY.md index inside. Add this rule to CLAUDE.md: "Before a session ends, write anything durable you learned (a preference, a gotcha, a decision and why) as one file per fact in memory/, and add a one-line pointer to MEMORY.md. Read MEMORY.md at the start of every session."
+
+3. RULES ONLY. Add this rule to CLAUDE.md: "This file is rules only and stays under 150 lines. Anything only needed sometimes goes in its own file under docs/ and this file points to it." Then check the current file against that and move anything that is not a rule.
+
+4. MODEL TABLE. Add a section to CLAUDE.md called Which model for which job, with a table: classify, extract, summarize and route go to the smallest model; drafting, analysis and generating go to the middle model; reviewing work and design decisions go to the largest model. Add the rule: "When you spawn an agent or write a script that calls the API, look the job up in this table. Never guess."
+
+5. TRUST. Add these rules to CLAUDE.md: "Nothing is done until you show me the actual output or log, never your summary of it." and "A command that exits clean with no output is a failure, not a pass." Then set up a PreToolUse hook that runs before every Bash command and blocks anything that deletes files, force-pushes, or spends money. Explain to me in plain English what it blocks before you save it.
+
+When all five are done, show me the CLAUDE.md, the memory folder, and the hook, and tell me the one thing you would add next.</pre>
+      <button class="copy-btn" id="copyBtn">Copy the prompt</button>
+    </div>
+
+    <p class="reveal" style="text-align:center;font-size:14px;color:var(--text-muted);margin-top:28px;line-height:1.6">Nothing to buy here. If it helps, that is the whole point. I post what I learn as I build on <a href="https://www.instagram.com/brycenwood.ai/" target="_blank" rel="noopener" style="color:var(--lime)">@brycenwood.ai</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<script>
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+const copyBtn=document.getElementById('copyBtn');
+const promptText=document.getElementById('promptText');
+function fallbackCopy(text){
+  const ta=document.createElement('textarea');
+  ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.focus();ta.select();
+  let ok=false;
+  try{ok=document.execCommand('copy')}catch(e){ok=false}
+  document.body.removeChild(ta);
+  return ok;
+}
+if(copyBtn&&promptText){
+  copyBtn.addEventListener('click',async()=>{
+    const text=promptText.textContent;
+    let ok=false;
+    try{
+      if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);ok=true}
+      else{ok=fallbackCopy(text)}
+    }catch(e){ok=fallbackCopy(text)}
+    if(ok){
+      copyBtn.textContent='Copied. Now paste it into Claude Code.';
+      copyBtn.classList.add('done');
+      if(typeof gtag==='function'){gtag('event','copy_prompt',{page:'five'})}
+      setTimeout(()=>{copyBtn.textContent='Copy the prompt';copyBtn.classList.remove('done')},4000);
+    }else{
+      copyBtn.textContent='Press and hold the text above to copy it';
+    }
+  });
+}
+</script>
+</body>
+</html>
