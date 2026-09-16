@@ -1,218 +1,136 @@
 ---
-title: The Claude Code Business Playbook — Free Download | Brycen Wood
-description: Free playbook: 14 AI systems that get your business found by AI, ranked on Google, run your CRM in plain English, read every ad your competitors are running, talk back to you out loud, and grade every plan before you trust it. Download now.
+title: Free Claude Code Playbooks, One System Each | Brycen Wood
+description: Fifteen free playbooks, one system each: AI visibility, CRM automation, an AI executive team, free infrastructure, messaging, research, ad teardowns, voice, the plan grader, and the five things that make Claude Code a system. Pick one, get that one.
 url: https://www.brycenwood.com/playbook/
 last_updated: 2026-04-14
 ---
 
-Free Download
+Free Playbooks
 
  
-# The Claude Code Business Playbook
+# Pick the system you need.
 
- Fourteen AI systems that run my business -- explained step by step so you can build them for yours.
-
- This is the exact system that got Gemini AI to recommend my business to a real customer.
-
- 
- 
- 
- "A lead texted me 'you came highly recommended.' I asked by who. He said 'my friend Gemini.'"
-
- 
- Gemini didn't just mention my shop. It listed my services, my address, my 5-star rating, and asked the customer what color they wanted.
-
- -- Brycen Wood, Summit Wraps and Graphics
+ Fifteen systems that run my businesses, each one its own playbook with the exact prompts. Pick one, drop your email, and that one downloads. Come back for the next when you have built the first.
 
  
  
-
- 
- 
- 
-## What's Inside
-
- 
- 
- 
- 01
- **llms.txt System** -- Make ChatGPT recommend your business with one file.
- 
- 
- 02
- **Markdown Mirrors** -- Make your website readable by every AI tool on the internet.
- 
- 
- 03
- **Sitemaps + Google Search Console** -- Tell Google which pages matter, then see your real ranking data and where the quick wins are.
- 
- 
- 04
- **YouTube Autopilot** -- Auto-cross-post every video to YouTube with AI-optimized titles, descriptions, and tags. One prompt builds the entire system.
- 
- 
- 05
- **Full Website Builder Prompt** -- The exact prompt I used to build a 40-page website in one afternoon. Swap in your business info, paste it into Claude Code, and get a complete site with SEO, schema, and AI visibility built in.
- 
- 
- 06
- **CRM Lead Recovery** -- Find every lead sitting dead in your CRM and get them followed up with before breakfast.
- 
- 
- 07
- **Claude Code + Your CRM** -- Operate your entire CRM in plain English. Works with GoHighLevel, HubSpot, or anything with an API.
- 
- 
- 08
- **The AI Executive Team** -- 5 AI executives and 13 specialists, each with a charter. Ask one question, they all go to work in parallel.
- 
- 
- 09
- **Free Infrastructure Layer** -- Host the whole thing on infrastructure that costs nothing and fires while you sleep, whether your laptop is open or not.
- 
- 
- 10
- **The Messaging Layer** -- Every text, voice call, voicemail, and AI receptionist through one system, at pennies per message.
- 
- 
- 11
- **The Research Agent** -- Analyze any creator's entire framework and get back the top 3 things to implement in your business this week. Specific to you, not generic advice.
- 
- 
- 12
- **The Ad Library Teardown** -- Read every ad your competitors are running, sorted by how long each one has been live, and turn it into ads you can film this week. They already paid for the test. This is how you read the results.
- 
- 
- 13
- **Make It Talk Back** -- Ask a question out loud and hear the answer out loud. Two hooks turn Claude Code into something you hold a conversation with, so a drive or a walk through the shop becomes working time.
- 
- 
- 14
- **The Plan Grader** -- Your AI will never tell you it's wrong. A second copy of it will. One prompt grades any plan in a fresh window, and one command makes it a habit in Claude Code, so nothing that matters ships on the word of the thing that wrote it.
- 
- 
- 
-
- 
- 
- New System
-
- 
-## The AI Executive Team
-
- 5 AI executives + 13 specialists. Each one has a charter. Each one runs a part of my business. I ask one question. They all go to work in parallel.
-
- 
-
- 
- 
- CSA
- **Chief of Staff** -- Holds my strategic priorities across 3 businesses. Decides what I work on right now. The router for every other agent.
- 
- 
- CMO
- **Chief Marketing Officer** -- Runs brand, content, ads, and partnerships across all my businesses. Owns the audience thesis.
- 
- 
- CRO
- **Chief Revenue Officer** -- Watches every lead and every pipeline. Tells me which deals are dying. Owns conversion rate and sales cycle time.
- 
- 
- COO
- **Chief Operating Officer** -- Keeps operations from slipping. Calendar integrity. Vendor uptime. SOPs. The "everything happens on time" agent.
- 
- 
- CFO
- **Chief Financial Officer** -- Tracks every dollar across all 3 businesses. Flags AR. Owns capital allocation and pricing strategy.
- 
- 
-
- 
- + 13 Specialists Under Them
-
- A closer agent for hot inbound. A bookkeeper that reconciles QBO daily. An SEO agent. A deliverability agent that gates every campaign before it sends. An HR agent for my team. A vendor agent tracking every subscription. Each one has a scope. Each one knows when to escalate.
-
- 
-
- 
- 
- 
- ~$1/mo
- Cost to run them
- 
- 
- 0 lines
- Of code I wrote
- 
- 
- 1 prompt
- To dispatch the team
- 
- 
- 
-
- Built with Claude Code. Zero coding experience required. The exact charters, dispatch patterns, and setup are inside the playbook below.
-
- 
-
- 
- 
- 
- Get instant access
- Enter your email and the playbook downloads immediately.
- 
- 
- 
- 
- Already submitted and didn't get the download? [Click here to download the playbook.](#)
-
- 
- 
- 
- Your playbook is ready.
- If the download didn't start automatically, click the button below.
-
- [Download the Playbook (PDF)](/guides/the-claude-code-business-playbook.pdf)
- 
- Now get the tools to actually build it
-
  [
  
+ Start here
+ 5 Things That Make Claude Code a System, Not a Chatbot
+ A folder, a memory, a rules-only file, a model table, and never trusting done. Each one explained in plain English, plus one prompt that sets all five up for you.
+ Get this playbook
  
+ ](/five/)
+ [
  
+ System 01
+ The AI Recommendation System
+ Make ChatGPT, Claude, and Perplexity recommend your business by name. One plain text file, the structure that works, and how to open the door for AI crawlers.
+ Get this playbook
  
+ ](/playbook/llms-txt/)
+ [
  
+ System 02
+ Markdown Mirrors
+ Give every AI tool a clean, plain-text version of every page on your site so it quotes you faster, more accurately, and more often.
+ Get this playbook
  
+ ](/playbook/markdown-mirrors/)
+ [
  
- ](#community-bridge)
+ System 03
+ Sitemaps + Google Search Console
+ Tell Google exactly which pages matter, then read your real ranking data: which keywords you rank for, what position, and where the quick wins are.
+ Get this playbook
  
+ ](/playbook/sitemaps-search-console/)
+ [
  
+ System 04
+ YouTube Autopilot
+ Auto-cross-post every video to YouTube with AI-optimized titles, descriptions, and tags. One prompt builds the entire system.
+ Get this playbook
  
-
+ ](/playbook/youtube-autopilot/)
+ [
  
+ System 05
+ Full Website Builder Prompt
+ The exact prompt I used to build a 40-page website in one afternoon. Swap in your business, paste it into Claude Code, get a complete site with SEO, schema, and AI visibility built in.
+ Get this playbook
  
+ ](/playbook/website-builder/)
+ [
  
-## The Playbook Shows You What. The Community Shows You How.
-
+ System 06
+ Automated CRM Lead Recovery
+ Find every lead sitting dead in your CRM and get them followed up with before breakfast. Runs itself every morning.
+ Get this playbook
  
+ ](/playbook/crm-lead-recovery/)
+ [
  
+ System 07
+ Claude Code + Your CRM
+ Operate your entire CRM in plain English. Works with GoHighLevel, HubSpot, or anything with an API.
+ Get this playbook
  
- +
- **Post Your Site, Get Feedback** -- Share your llms.txt or markdown mirrors and get feedback from me and other builders who've done it.
+ ](/playbook/claude-code-crm/)
+ [
  
+ System 08
+ The AI Executive Team
+ Five AI executives and thirteen specialists, each with a charter. Ask one question and they all go to work in parallel.
+ Get this playbook
  
- +
- **Auto-Generator Scripts** -- The Python scripts that generate markdown mirrors and llms.txt files automatically. Copy, run, done.
+ ](/playbook/ai-executive-team/)
+ [
  
+ System 09
+ The Free Infrastructure Layer
+ Host the whole thing on infrastructure that costs nothing and fires while you sleep, whether your laptop is open or not.
+ Get this playbook
  
- +
- **Live Build Sessions** -- Watch me build these systems for real businesses in real time. Ask questions as I go.
+ ](/playbook/free-infrastructure/)
+ [
  
+ System 10
+ The Messaging Layer
+ Every text, voice call, voicemail, and AI receptionist through one system, at pennies per message.
+ Get this playbook
  
- +
- **Weekly Updates** -- Every time I discover a new technique or AI changes how it reads websites, you hear about it first.
+ ](/playbook/messaging-layer/)
+ [
  
+ System 11
+ The Research Agent
+ Analyze any creator's entire framework and get back the top three things to implement in your business this week. Specific to you, not generic advice.
+ Get this playbook
  
+ ](/playbook/research-agent/)
+ [
  
- [Get Founding Access -- $97/mo](https://skool.com/business-on-autopilot-8404)
- [Or Book a Discovery Call](/contact/)
+ System 12
+ The Ad Library Teardown
+ Read every ad your competitors are running, sorted by how long each one has been live, and turn it into ads you can film this week. They already paid for the test.
+ Get this playbook
+ 
+ ](/playbook/ad-library-teardown/)
+ [
+ 
+ System 13
+ Make It Talk Back
+ Ask a question out loud and hear the answer out loud. Two hooks turn Claude Code into something you hold a conversation with.
+ Get this playbook
+ 
+ ](/playbook/make-it-talk-back/)
+ [
+ 
+ System 14
+ The Plan Grader
+ Your AI will never tell you it is wrong. A second copy of it will. One prompt grades any plan in a fresh window, and one command makes it a habit.
+ Get this playbook
+ 
+ ](/playbook/plan-grader/)

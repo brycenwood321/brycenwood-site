@@ -12,16 +12,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>5 Things That Make Claude Code a System, Not a Chatbot | Brycen Wood</title>
-<meta name="description" content="The five things that turn Claude Code from a chatbot into a system that runs a business: a folder, a memory, a rules-only file, a model table, and never trusting done. Each one explained in plain English, plus one prompt that sets all five up for you.">
+<meta name="description" content="A folder, a memory, a rules-only file, a model table, and never trusting done. Each one explained in plain English, plus one prompt that sets all five up for you.">
 <link rel="canonical" href="https://www.brycenwood.com/five/">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
-
 <meta property="og:title" content="5 Things That Make Claude Code a System, Not a Chatbot">
-<meta property="og:description" content="A folder, a memory, a rules-only file, a model table, and never trusting done. Explained in plain English, plus one prompt that sets all five up.">
+<meta property="og:description" content="A folder, a memory, a rules-only file, a model table, and never trusting done. Each one explained in plain English, plus one prompt that sets all five up for you.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.brycenwood.com/five/">
 <meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
@@ -29,36 +27,13 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="5 Things That Make Claude Code a System, Not a Chatbot">
-<meta name="twitter:description" content="A folder, a memory, a rules-only file, a model table, and never trusting done. Plus one prompt that sets all five up.">
-
+<meta name="twitter:description" content="A folder, a memory, a rules-only file, a model table, and never trusting done. Each one explained in plain English, plus one prompt that sets all five up for you.">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "5 Things That Make Claude Code a System, Not a Chatbot",
-  "description": "Turn Claude Code from a chatbot into a system: work out of a folder, give it memory, keep the rules file rules-only, use a model table, and never trust done.",
-  "url": "https://www.brycenwood.com/five/",
-  "author": {"@type": "Person", "name": "Brycen Wood", "url": "https://www.brycenwood.com/about/"},
-  "step": [
-    {"@type": "HowToStep", "name": "Work out of a folder, not a chat"},
-    {"@type": "HowToStep", "name": "Give it a memory"},
-    {"@type": "HowToStep", "name": "Rules only in the main file"},
-    {"@type": "HowToStep", "name": "One table: which model for which job"},
-    {"@type": "HowToStep", "name": "Never trust done"}
-  ]
-}
+{"@context":"https://schema.org","@type":"WebPage","name":"5 Things That Make Claude Code a System, Not a Chatbot","description":"A folder, a memory, a rules-only file, a model table, and never trusting done. Each one explained in plain English, plus one prompt that sets all five up for you.","url":"https://www.brycenwood.com/five/","author":{"@type":"Person","name":"Brycen Wood","url":"https://www.brycenwood.com/about/"}}
 </script>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brycenwood.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Five"}
-  ]
-}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.brycenwood.com/"},{"@type":"ListItem","position":2,"name":"Playbook","item":"https://www.brycenwood.com/playbook/"},{"@type":"ListItem","position":3,"name":"Five"}]}
 </script>
-
 <link rel="stylesheet" href="/assets/css/global.css">
 <link rel="stylesheet" href="/assets/css/components.css">
 <style>
@@ -78,6 +53,7 @@
 .mini-steps{display:grid;gap:10px;margin-top:20px}
 .mini-steps div{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:15px;color:var(--text-dim);line-height:1.6}
 .mini-steps span{font-family:var(--mono);color:var(--lime);font-weight:700}
+.locked-content{display:none}
 @media (max-width:600px){.five-step{grid-template-columns:40px 1fr;gap:14px}.five-num{font-size:26px}.five-step h3{font-size:19px}}
 </style>
 </head>
@@ -93,6 +69,7 @@
     <a href="/services/" class="nav-link">Services</a>
     <a href="/case-studies/" class="nav-link">Case Studies</a>
     <a href="/guides/" class="nav-link">Guides</a>
+    <a href="/playbook/" class="nav-link">Playbooks</a>
     <a href="/about/" class="nav-link">About</a>
     <a href="/contact/" class="nav-link">Contact</a>
   </div>
@@ -103,24 +80,85 @@
 
 <div class="breadcrumb">
   <a href="/">Home</a><span class="sep">/</span>
+  <a href="/playbook/">Playbooks</a><span class="sep">/</span>
   <span>Five</span>
 </div>
 
 <section class="page-hero">
-  <p class="hero-eyebrow">From the video</p>
+  <p class="hero-eyebrow">From the video &middot; Free Playbook</p>
   <h1>5 things that make Claude Code <span class="accent">a system, not a chatbot</span></h1>
-  <p class="hero-sub">Each one explained the way I wish someone had explained it to me. Then one prompt at the bottom that sets all five up for you. I do not write code. Neither will you.</p>
+  <p class="hero-sub">Each one explained the way I wish someone had explained it to me. Then one prompt that sets all five up for you. Drop your email below and it unlocks. I do not write code. Neither will you.</p>
   <div class="btn-group" style="margin-top:24px">
-    <a href="#prompt" class="btn-primary">Skip to the prompt</a>
+    <a href="#get" class="btn-primary">Unlock the five + the prompt</a>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<section style="padding:48px 0;">
+<section style="padding:56px 0;">
   <div class="container-narrow">
+    <div class="section-header reveal">
+      <p class="hero-eyebrow">What&rsquo;s inside</p>
+      <h2>The five, <span class="accent">one breath each</span></h2>
+    </div>
+    <div class="perks reveal" style="margin-top:40px">
+      <div class="perk"><div class="perk-icon">01</div><div class="perk-text"><strong>Work out of a folder, not a chat</strong> &middot; Everything it needs to know becomes a file it can open.</div></div>
+      <div class="perk"><div class="perk-icon">02</div><div class="perk-text"><strong>Give it a memory</strong> &middot; A folder it writes to before it closes and reads before it starts.</div></div>
+      <div class="perk"><div class="perk-icon">03</div><div class="perk-text"><strong>Rules only in the main file</strong> &middot; With a line cap. Everything else lives somewhere it can look up.</div></div>
+      <div class="perk"><div class="perk-icon">04</div><div class="perk-text"><strong>One table: which model for which job</strong> &middot; It looks the job up. It never guesses. About seven times cheaper.</div></div>
+      <div class="perk"><div class="perk-icon">05</div><div class="perk-text"><strong>Never trust done</strong> &middot; Nothing is done until it shows you the log. A hook blocks what it cannot undo.</div></div>
+    </div>
+    <p class="reveal" style="text-align:center;font-size:15px;color:var(--text-dim);margin-top:28px;line-height:1.6">The full explanation of each one, the exact line to say to Claude Code for it, and the one-paste prompt that builds all five are below the form.</p>
+  </div>
+</section>
 
-    <div class="five-step reveal">
+<div class="divider"></div>
+
+<section class="section-raised" id="get" style="padding:72px 0;">
+  <div class="container-narrow">
+    <div class="form-wrapper reveal" id="formPanel">
+      <div class="form-title">Get the five + the prompt</div>
+      <div class="form-sub">Enter your email and this playbook unlocks immediately. Just this one, not all of them.</div>
+      <div id="ghl-form">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/Z1F5E7GVhmaDPvn8B7ww"
+          style="display:inline;width:100%;height:600px;border:none;border-radius:4px"
+          id="inline-Z1F5E7GVhmaDPvn8B7ww"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Waitlist Form"
+          data-height="600"
+          data-layout-iframe-id="inline-Z1F5E7GVhmaDPvn8B7ww"
+          data-form-id="Z1F5E7GVhmaDPvn8B7ww"
+          title="Playbook request"
+        ></iframe>
+        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+      </div>
+      <p style="text-align:center;margin-top:20px;font-size:14px;color:var(--text-dim)">Already submitted and nothing happened? <a href="#" id="manualTriggerLink" style="color:var(--lime);text-decoration:underline;font-weight:600">Click here to unlock it.</a></p>
+    </div>
+    <div id="successPanel" style="display:none;text-align:center;padding:48px 24px;">
+      <div style="font-size:32px;font-weight:800;margin-bottom:12px;color:var(--text)">The five is <span class="accent">yours.</span></div>
+      <p style="color:var(--text-dim);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">The PDF should be downloading, and everything is unlocked below: the full explanations and the prompt with a copy button.</p>
+      <a href="/guides/playbooks/five.pdf" download class="btn-primary" id="manualDownload" style="display:inline-block;margin-bottom:16px">Download the PDF</a>
+      <p style="font-size:14px;color:var(--text-muted);margin-top:24px">Want a different one? <a href="/playbook/" style="color:var(--lime)">All the playbooks</a>, one download each.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="locked-content" id="unlocked" style="padding:48px 0;">
+  <div class="container-narrow">
+    <div class="section-header">
+      <p class="hero-eyebrow">Unlocked</p>
+      <h2>The five, <span class="accent">explained</span></h2>
+    </div>
+
+    <div class="five-step">
       <div class="five-num">1</div>
       <div>
         <h3>Work out of a folder, not a chat</h3>
@@ -129,8 +167,7 @@
         <span class="say">say: "run init"</span>
       </div>
     </div>
-
-    <div class="five-step reveal">
+    <div class="five-step">
       <div class="five-num">2</div>
       <div>
         <h3>Give it a memory</h3>
@@ -139,8 +176,7 @@
         <span class="say">say: "write down what you learned"</span>
       </div>
     </div>
-
-    <div class="five-step reveal">
+    <div class="five-step">
       <div class="five-num">3</div>
       <div>
         <h3>Rules only in the main file</h3>
@@ -149,8 +185,7 @@
         <span class="say">say: "check CLAUDE.md against the rules-only rule"</span>
       </div>
     </div>
-
-    <div class="five-step reveal">
+    <div class="five-step">
       <div class="five-num">4</div>
       <div>
         <h3>One table: which model for which job</h3>
@@ -159,8 +194,7 @@
         <span class="say">say: "add the model table and never guess"</span>
       </div>
     </div>
-
-    <div class="five-step reveal">
+    <div class="five-step">
       <div class="five-num">5</div>
       <div>
         <h3>Never trust done</h3>
@@ -173,42 +207,42 @@
   </div>
 </section>
 
-<div class="divider"></div>
-
-<section id="prompt" style="padding:64px 0;">
+<section class="locked-content" id="prompt" style="padding:32px 0 72px;">
   <div class="container-narrow">
-    <div class="section-header reveal">
+    <div class="section-header">
       <p class="hero-eyebrow">The prompt</p>
       <h2>One paste sets up <span class="accent">all five</span></h2>
       <p style="font-size:16px;color:var(--text-dim);max-width:600px;margin:16px auto 0;line-height:1.6">Copy it, open Claude Code inside the folder you want it to run from, paste it, and answer its questions one at a time. It shows you everything it built at the end.</p>
     </div>
-
-    <div class="mini-steps reveal">
+    <div class="mini-steps">
       <div><span>1</span><div>Make a folder for the project. Any name.</div></div>
       <div><span>2</span><div>Open the terminal inside that folder and type <code>claude</code>.</div></div>
       <div><span>3</span><div>Paste the prompt below and hit enter.</div></div>
     </div>
-
-    <div class="prompt-box reveal">
+    <div class="prompt-box">
 <pre id="promptText">Set up this folder as a system, not a chat. Do these five things, and ask me one question at a time when you need something from me.
 
 1. FOLDER. If there is no CLAUDE.md here, create one. Ask me what this project is, who I am, and how I want you to talk to me. Keep it short.
 
-2. MEMORY. Create a folder called memory with a MEMORY.md index inside. Add this rule to CLAUDE.md: "Before a session ends, write anything durable you learned (a preference, a gotcha, a decision and why) as one file per fact in memory/, and add a one-line pointer to MEMORY.md. Read MEMORY.md at the start of every session."
+2. MEMORY. Create a folder called memory with a MEMORY.md index inside. Add this rule to CLAUDE.md: &quot;Before a session ends, write anything durable you learned (a preference, a gotcha, a decision and why) as one file per fact in memory/, and add a one-line pointer to MEMORY.md. Read MEMORY.md at the start of every session.&quot;
 
-3. RULES ONLY. Add this rule to CLAUDE.md: "This file is rules only and stays under 150 lines. Anything only needed sometimes goes in its own file under docs/ and this file points to it." Then check the current file against that and move anything that is not a rule.
+3. RULES ONLY. Add this rule to CLAUDE.md: &quot;This file is rules only and stays under 150 lines. Anything only needed sometimes goes in its own file under docs/ and this file points to it.&quot; Then check the current file against that and move anything that is not a rule.
 
-4. MODEL TABLE. Add a section to CLAUDE.md called Which model for which job, with a table: classify, extract, summarize and route go to the smallest model; drafting, analysis and generating go to the middle model; reviewing work and design decisions go to the largest model. Add the rule: "When you spawn an agent or write a script that calls the API, look the job up in this table. Never guess."
+4. MODEL TABLE. Add a section to CLAUDE.md called Which model for which job, with a table: classify, extract, summarize and route go to the smallest model; drafting, analysis and generating go to the middle model; reviewing work and design decisions go to the largest model. Add the rule: &quot;When you spawn an agent or write a script that calls the API, look the job up in this table. Never guess.&quot;
 
-5. TRUST. Add these rules to CLAUDE.md: "Nothing is done until you show me the actual output or log, never your summary of it." and "A command that exits clean with no output is a failure, not a pass." Then set up a PreToolUse hook that runs before every Bash command and blocks anything that deletes files, force-pushes, or spends money. Explain to me in plain English what it blocks before you save it.
+5. TRUST. Add these rules to CLAUDE.md: &quot;Nothing is done until you show me the actual output or log, never your summary of it.&quot; and &quot;A command that exits clean with no output is a failure, not a pass.&quot; Then set up a PreToolUse hook that runs before every Bash command and blocks anything that deletes files, force-pushes, or spends money. Explain to me in plain English what it blocks before you save it.
 
 When all five are done, show me the CLAUDE.md, the memory folder, and the hook, and tell me the one thing you would add next.</pre>
       <button class="copy-btn" id="copyBtn">Copy the prompt</button>
     </div>
-
-    <p class="reveal" style="text-align:center;font-size:14px;color:var(--text-muted);margin-top:28px;line-height:1.6">Nothing to buy here. If it helps, that is the whole point. I post what I learn as I build on <a href="https://www.instagram.com/brycenwood.ai/" target="_blank" rel="noopener" style="color:var(--lime)">@brycenwood.ai</a>.</p>
+    <p style="text-align:center;font-size:14px;color:var(--text-muted);margin-top:28px;line-height:1.6">Nothing to buy here. If it helps, that is the whole point. I post what I learn as I build on <a href="https://www.instagram.com/brycenwood.ai/" target="_blank" rel="noopener" style="color:var(--lime)">@brycenwood.ai</a>.</p>
   </div>
 </section>
+
+<div class="sticky-bar" id="stickyBar">
+  <a href="#get" class="sticky-bar-btn">Get this playbook</a>
+  <div class="sticky-bar-sub">The five + the prompt &middot; free &middot; one download</div>
+</div>
 
 <footer>
   <div class="footer-grid">
@@ -225,7 +259,7 @@ When all five are done, show me the CLAUDE.md, the memory folder, and the hook, 
     </div>
     <div>
       <div class="footer-heading">Resources</div>
-      <a href="/playbook/" class="footer-link">Playbook</a>
+      <a href="/playbook/" class="footer-link">Playbooks</a>
       <a href="/tools/" class="footer-link">Tools</a>
       <a href="/contact/" class="footer-link">Contact</a>
     </div>
@@ -242,6 +276,7 @@ When all five are done, show me the CLAUDE.md, the memory folder, and the hook, 
 </footer>
 
 <script>
+
 const navToggle=document.getElementById('navToggle');
 const navLinks=document.getElementById('navLinks');
 if(navToggle&&navLinks){
@@ -261,13 +296,79 @@ if(navToggle&&navLinks){
 }
 const revealObs=new IntersectionObserver((entries)=>{
   entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('visible');
-      revealObs.unobserve(e.target);
-    }
+    if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);}
   });
 },{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+const SLUG='five';
+const PDF_URL='/guides/playbooks/five.pdf';
+try{localStorage.setItem('bw_playbook_pending',SLUG)}catch(e){}
+let unlocked=false;
+function unlock(opts){
+  if(unlocked)return;
+  unlocked=true;
+  try{localStorage.removeItem('bw_playbook_pending')}catch(e){}
+  try{localStorage.setItem('bw_playbook_'+SLUG,'1')}catch(e){}
+  if(!(opts&&opts.noDownload)){
+    const a=document.createElement('a');a.href=PDF_URL;a.download='';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+  }
+  const formPanel=document.getElementById('formPanel');
+  const successPanel=document.getElementById('successPanel');
+  if(formPanel)formPanel.style.display='none';
+  if(successPanel)successPanel.style.display='block';
+  document.querySelectorAll('.locked-content').forEach(el=>{el.style.display='block';el.classList.add('visible')});
+  if(typeof gtag==='function'){gtag('event','playbook_unlock',{playbook:SLUG})}
+  if(successPanel)successPanel.scrollIntoView({behavior:'smooth',block:'center'});
+}
+// 0: came back from the GHL redirect
+if(new URLSearchParams(window.location.search).get('dl')==='1'){setTimeout(unlock,500);}
+// already unlocked this one on this device: show it, no re-download
+try{if(localStorage.getItem('bw_playbook_'+SLUG)==='1'&&!unlocked){unlock({noDownload:true});}}catch(e){}
+// 1: GHL postMessage
+window.addEventListener('message',function(e){
+  try{
+    var d=e.data;
+    if(typeof d==='string'&&(d.includes('formSubmitted')||d.includes('form_submitted')||d.includes('lcWidget')))unlock();
+    if(typeof d==='object'&&d){
+      var json=JSON.stringify(d).toLowerCase();
+      if(json.includes('formsubmitted')||json.includes('form_submitted')||json.includes('lcwidget')||json.includes('appreciate')||json.includes('thank you'))unlock();
+    }
+  }catch(err){}
+});
+// 2: iframe shrinks after submit
+const ghlIframe=document.getElementById('inline-Z1F5E7GVhmaDPvn8B7ww');
+if(ghlIframe){
+  // only counts as a submit if the form was tall (loaded) for at least 4 s
+  // first; a widget that never loads, or a blocked one, must not unlock anything
+  let lastHeight=0,tallSince=0;
+  const heightPoll=setInterval(()=>{
+    try{
+      const h=ghlIframe.offsetHeight||ghlIframe.clientHeight;
+      const now=Date.now();
+      if(h>400){if(!tallSince)tallSince=now;}
+      if(lastHeight>400&&h<350&&!unlocked&&tallSince&&(now-tallSince)>4000){unlock();clearInterval(heightPoll);}
+      lastHeight=h;
+    }catch(err){}
+  },500);
+  setTimeout(()=>clearInterval(heightPoll),600000);
+}
+// 3: manual
+const manualLink=document.getElementById('manualTriggerLink');
+if(manualLink){manualLink.addEventListener('click',function(e){e.preventDefault();unlock();});}
+
+const stickyBar=document.getElementById('stickyBar');
+if(stickyBar){
+  const heroEl=document.querySelector('.page-hero');
+  const stickyObs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      const gateVisible=(()=>{const g=document.getElementById('get');if(!g)return false;const r=g.getBoundingClientRect();return r.top<window.innerHeight&&r.bottom>0})();
+      if(!e.isIntersecting&&!gateVisible&&!unlocked){stickyBar.classList.add('visible')}else{stickyBar.classList.remove('visible')}
+    });
+  },{threshold:0});
+  if(heroEl)stickyObs.observe(heroEl);
+}
 
 const copyBtn=document.getElementById('copyBtn');
 const promptText=document.getElementById('promptText');
@@ -298,6 +399,7 @@ if(copyBtn&&promptText){
     }
   });
 }
+
 </script>
 </body>
 </html>
