@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GV8RG30MK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2GV8RG30MK');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>420 Hours in Claude Code: The Three Lessons | Brycen Wood</title>
+<meta name="description" content="A list of its own mistakes that has to become code, a grader that never built the thing, and a greeting that leads with what is working. Each one explained in plain English, plus one prompt that sets all three up.">
+<link rel="canonical" href="https://www.brycenwood.com/hours/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
+<meta property="og:title" content="420 Hours in Claude Code: The Three Lessons">
+<meta property="og:description" content="A list of its own mistakes that has to become code, a grader that never built the thing, and a greeting that leads with what is working. Each one explained in plain English, plus one prompt that sets all three up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.brycenwood.com/hours/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="420 Hours in Claude Code: The Three Lessons">
+<meta name="twitter:description" content="A list of its own mistakes that has to become code, a grader that never built the thing, and a greeting that leads with what is working. Each one explained in plain English, plus one prompt that sets all three up.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"420 Hours in Claude Code: The Three Lessons","description":"A list of its own mistakes that has to become code, a grader that never built the thing, and a greeting that leads with what is working. Each one explained in plain English, plus one prompt that sets all three up.","url":"https://www.brycenwood.com/hours/","author":{"@type":"Person","name":"Brycen Wood","url":"https://www.brycenwood.com/about/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.brycenwood.com/"},{"@type":"ListItem","position":2,"name":"Playbook","item":"https://www.brycenwood.com/playbook/"},{"@type":"ListItem","position":3,"name":"420 Hours"}]}
+</script>
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<style>
+.five-step{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:28px 0;border-bottom:1px solid var(--card-border)}
+.five-step:last-child{border-bottom:none}
+.five-num{font-family:var(--mono);font-size:32px;font-weight:700;color:var(--lime);line-height:1}
+.five-step h3{font-size:22px;font-weight:800;margin:0 0 8px;line-height:1.2}
+.five-step .what{font-size:16px;color:var(--text);line-height:1.65;margin:0 0 12px}
+.five-step .how{font-size:15px;color:var(--text-dim);line-height:1.65;margin:0}
+.five-step .how strong{color:var(--text)}
+.five-step .say{display:inline-block;font-family:var(--mono);font-size:13px;color:var(--lime);background:var(--lime-dim);padding:3px 8px;border-radius:4px;margin-top:10px}
+.prompt-box{position:relative;background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--lime);border-radius:8px;padding:24px;margin-top:24px}
+.prompt-box pre{font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--text);white-space:pre-wrap;word-wrap:break-word;margin:0;background:none;padding:0}
+.copy-btn{width:100%;margin-top:18px;padding:16px;font-family:var(--sans);font-size:17px;font-weight:800;background:var(--lime);color:#050508;border:none;border-radius:8px;cursor:pointer;letter-spacing:0.3px}
+.copy-btn:active{transform:scale(0.99)}
+.copy-btn.done{background:var(--lime-deep)}
+.mini-steps{display:grid;gap:10px;margin-top:20px}
+.mini-steps div{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:15px;color:var(--text-dim);line-height:1.6}
+.mini-steps span{font-family:var(--mono);color:var(--lime);font-weight:700}
+.locked-content{display:none}
+@media (max-width:600px){.five-step{grid-template-columns:40px 1fr;gap:14px}.five-num{font-size:26px}.five-step h3{font-size:19px}}
+</style>
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link">Guides</a>
+    <a href="/playbook/" class="nav-link">Playbooks</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span>
+  <a href="/playbook/">Playbooks</a><span class="sep">/</span>
+  <span>420 Hours</span>
+</div>
+
+<section class="page-hero">
+  <p class="hero-eyebrow">From the video &middot; Free Playbook</p>
+  <h1>420 hours in Claude Code. <span class="accent">The three lessons.</span></h1>
+  <p class="hero-sub">Running a wrap shop and a meal prep company with it since March. These three took the longest to learn, and I paid the hours so you do not have to. Each one explained in plain English, then one prompt that sets all three up. Drop your email below and it unlocks. Nothing to buy.</p>
+  <div class="btn-group" style="margin-top:24px">
+    <a href="#get" class="btn-primary">Unlock the three + the prompt</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding:56px 0;">
+  <div class="container-narrow">
+    <div class="section-header reveal">
+      <p class="hero-eyebrow">What&rsquo;s inside</p>
+      <h2>The three, <span class="accent">one breath each</span></h2>
+    </div>
+    <div class="perks reveal" style="margin-top:40px">
+      <div class="perk"><div class="perk-icon">01</div><div class="perk-text"><strong>It keeps a list of its own mistakes</strong> &middot; A mistake that is only a note is not learned. Every one has to become a check that runs on its own.</div></div>
+      <div class="perk"><div class="perk-icon">02</div><div class="perk-text"><strong>The one that builds never grades</strong> &middot; A second Claude with no memory of the work grades it cold. D+ to A- in five passes.</div></div>
+      <div class="perk"><div class="perk-icon">03</div><div class="perk-text"><strong>The greeting shapes who you think you are</strong> &middot; Mine opened with everything unfinished. Every morning. Now it opens with what is working.</div></div>
+    </div>
+    <p class="reveal" style="text-align:center;font-size:15px;color:var(--text-dim);margin-top:28px;line-height:1.6">The full explanation of each one, the exact line to say to Claude Code for it, and the one-paste prompt that builds all three are below the form.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section-raised" id="get" style="padding:72px 0;">
+  <div class="container-narrow">
+    <div class="form-wrapper reveal" id="formPanel">
+      <div class="form-title">Get the three + the prompt</div>
+      <div class="form-sub">Enter your email and this playbook unlocks immediately. Just this one, not all of them.</div>
+      <div id="ghl-form">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/Z1F5E7GVhmaDPvn8B7ww"
+          style="display:inline;width:100%;height:600px;border:none;border-radius:4px"
+          id="inline-Z1F5E7GVhmaDPvn8B7ww"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Waitlist Form"
+          data-height="600"
+          data-layout-iframe-id="inline-Z1F5E7GVhmaDPvn8B7ww"
+          data-form-id="Z1F5E7GVhmaDPvn8B7ww"
+          title="Playbook request"
+        ></iframe>
+        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+      </div>
+      <p style="text-align:center;margin-top:20px;font-size:14px;color:var(--text-dim)">Already submitted and nothing happened? <a href="#" id="manualTriggerLink" style="color:var(--lime);text-decoration:underline;font-weight:600">Click here to unlock it.</a></p>
+    </div>
+    <div id="successPanel" style="display:none;text-align:center;padding:48px 24px;">
+      <div style="font-size:32px;font-weight:800;margin-bottom:12px;color:var(--text)">The three is <span class="accent">yours.</span></div>
+      <p style="color:var(--text-dim);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">The PDF should be downloading, and everything is unlocked below: the full explanations and the prompt with a copy button.</p>
+      <a href="/guides/playbooks/hours.pdf" download class="btn-primary" id="manualDownload" style="display:inline-block;margin-bottom:16px">Download the PDF</a>
+      <p style="font-size:14px;color:var(--text-muted);margin-top:24px">Want a different one? <a href="/playbook/" style="color:var(--lime)">All the playbooks</a>, one download each.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="locked-content" id="unlocked" style="padding:48px 0;">
+  <div class="container-narrow">
+    <div class="section-header">
+      <p class="hero-eyebrow">Unlocked</p>
+      <h2>The three, <span class="accent">explained</span></h2>
+    </div>
+
+    <div class="five-step">
+      <div class="five-num">1</div>
+      <div>
+        <h3>It keeps a list of its own mistakes</h3>
+        <p class="what">Every AI forgets what it got wrong. So mine writes each mistake into one file the moment it happens: what went wrong, and what that mistake has to turn into. A hook that blocks it, a test that catches it, or a scheduled check that reports it. Thirty-six entries so far. The rule is simple: a mistake that is still just a note after one session was not learned.</p>
+        <p class="how"><strong>How:</strong> a file called <code>lessons.json</code> and one rule in CLAUDE.md: <em>When you get something wrong, add it to lessons.json the same turn with what happened and what it must become. Build that thing before the session ends and mark it implemented.</em> The first time it corrects itself you will feel the difference. The tenth time you will have a system that gets harder to fool every week.</p>
+        <span class="say">say: "add that to the lessons ledger"</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">2</div>
+      <div>
+        <h3>The one that builds never grades</h3>
+        <p class="what">Whoever writes a plan cannot see its own blind spot. Checking a connection you built feels sound from the inside. So a second Claude, a brand new process with no memory of the work, reads the plan file cold and grades it. It is only allowed to read, never to fix. Mine took a plan from a D+ to an A- in five passes and every single pass found something the author swore was fine. Same model both times. Different job, different blind spots.</p>
+        <p class="how"><strong>How:</strong> a two-line script, <code>grade.sh</code>, that starts a fresh <code>claude -p</code> with read-only tools and this job: <em>Read the file at this path. Grade it A to F. List every claim you cannot verify, every number with no source, and every step that cannot be run as written. Do not fix anything.</em> Then the rule: <em>Before I approve any plan you wrote, run grade.sh on it and show me the findings word for word.</em> Give it the PATH, never a summary. A summary is the author's framing all over again.</p>
+        <span class="say">say: "grade this plan cold"</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">3</div>
+      <div>
+        <h3>The greeting shapes who you think you are</h3>
+        <p class="what">A SessionStart hook is a tiny script that runs the second you open Claude Code, before you type a word. Mine used to print everything I had not finished. Every morning, the first thing I read was the to-do list. That was feeding a story about myself I am trying to get out from under. Now it prints what is working first, then what needs me. Same information, opposite effect. You talk to this thing every day. Design the greeting on purpose.</p>
+        <p class="how"><strong>How:</strong> a hook in <code>.claude/settings.json</code> under SessionStart that runs a small script. The script prints WORKING, three things shipped or running from the last week, then NEEDS ME, at most three. Working always prints first. Plus one rule in CLAUDE.md: <em>Open every session with what is working before what is unfinished. Never read the to-do list back to me as a greeting.</em></p>
+        <span class="say">say: "lead with what is working"</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="locked-content" id="prompt" style="padding:32px 0 72px;">
+  <div class="container-narrow">
+    <div class="section-header">
+      <p class="hero-eyebrow">The prompt</p>
+      <h2>One paste sets up <span class="accent">all three</span></h2>
+      <p style="font-size:16px;color:var(--text-dim);max-width:600px;margin:16px auto 0;line-height:1.6">Copy it, open Claude Code inside the folder it already runs from, paste it, and answer its questions one at a time. It shows you everything it built at the end and runs the new greeting once.</p>
+    </div>
+    <div class="mini-steps">
+      <div><span>1</span><div>Open the terminal inside your project folder.</div></div>
+      <div><span>2</span><div>Type <code>claude</code>.</div></div>
+      <div><span>3</span><div>Paste the prompt below and hit enter.</div></div>
+    </div>
+    <div class="prompt-box">
+<pre id="promptText">Set up three things in this folder. Ask me one question at a time when you need something from me, and explain what each thing DOES before how it works.
+
+1. A LIST OF YOUR OWN MISTAKES. Create a file called lessons.json. Add this rule to CLAUDE.md: &quot;When you get something wrong, or I correct you, add an entry to lessons.json the same turn with: what happened, the date, and what it must become: a hook that blocks it, a test that catches it, or a scheduled check that reports it. Then build that thing before the session ends and mark the entry implemented. An entry that is still only a note after one session means it was not learned.&quot; Then ask me for the last three times you or any AI got something wrong for me, and write them in as the first three entries, each with what it should become.
+
+2. THE BUILDER NEVER GRADES. Create a short script called grade.sh that takes a file path and runs a brand new Claude Code process with read-only tools to grade it: claude -p &quot;Read the file at $1. Grade it A to F. List every claim you cannot verify, every number that has no source, and every step that cannot be run as written. Do not fix anything, only report.&quot; --allowedTools &quot;Read,Glob,Grep&quot;. Add this rule to CLAUDE.md: &quot;Whoever writes a plan never grades it. Before I approve any plan you wrote, run grade.sh on the file and show me the grade and the findings word for word. Fix, regrade, repeat until it is an A or I say stop.&quot; Then explain to me, in plain English, why a fresh process with no memory of the work finds things you cannot.
+
+3. THE GREETING. Set up a SessionStart hook that runs a small script every time I open Claude Code here, before I type anything. It prints two short blocks: WORKING, three things that are running or shipped, from the last week of git history and anything in a file called working.md, and then NEEDS ME, at most three things. Working always prints first. Add this rule to CLAUDE.md: &quot;Open every session with what is working before what is unfinished. Never read the to-do list back to me as a greeting.&quot; Ask me what I want the WORKING block to pull from if there is no git history yet.
+
+When all three are done, show me lessons.json, grade.sh, the hook, and the new lines in CLAUDE.md, and run the greeting once so I can see it.</pre>
+      <button class="copy-btn" id="copyBtn">Copy the prompt</button>
+    </div>
+    <p style="text-align:center;font-size:14px;color:var(--text-muted);margin-top:28px;line-height:1.6">Nothing to buy here. If it helps, that is the whole point. I post what I learn as I build on <a href="https://www.instagram.com/brycenwood.ai/" target="_blank" rel="noopener" style="color:var(--lime)">@brycenwood.ai</a>.</p>
+  </div>
+</section>
+
+<div class="sticky-bar" id="stickyBar">
+  <a href="#get" class="sticky-bar-btn">Get this playbook</a>
+  <div class="sticky-bar-sub">The three + the prompt &middot; free &middot; one download</div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbooks</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<script>
+
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);}
+  });
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+const SLUG='hours';
+const PDF_URL='/guides/playbooks/hours.pdf';
+try{localStorage.setItem('bw_playbook_pending',SLUG)}catch(e){}
+let unlocked=false;
+function unlock(opts){
+  if(unlocked)return;
+  unlocked=true;
+  try{localStorage.removeItem('bw_playbook_pending')}catch(e){}
+  try{localStorage.setItem('bw_playbook_'+SLUG,'1')}catch(e){}
+  if(!(opts&&opts.noDownload)){
+    const a=document.createElement('a');a.href=PDF_URL;a.download='';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+  }
+  const formPanel=document.getElementById('formPanel');
+  const successPanel=document.getElementById('successPanel');
+  if(formPanel)formPanel.style.display='none';
+  if(successPanel)successPanel.style.display='block';
+  document.querySelectorAll('.locked-content').forEach(el=>{el.style.display='block';el.classList.add('visible')});
+  if(typeof gtag==='function'){gtag('event','playbook_unlock',{playbook:SLUG})}
+  if(successPanel)successPanel.scrollIntoView({behavior:'smooth',block:'center'});
+}
+// 0: came back from the GHL redirect
+if(new URLSearchParams(window.location.search).get('dl')==='1'){setTimeout(unlock,500);}
+// already unlocked this one on this device: show it, no re-download
+try{if(localStorage.getItem('bw_playbook_'+SLUG)==='1'&&!unlocked){unlock({noDownload:true});}}catch(e){}
+// 1: GHL postMessage
+window.addEventListener('message',function(e){
+  try{
+    var d=e.data;
+    if(typeof d==='string'&&(d.includes('formSubmitted')||d.includes('form_submitted')||d.includes('lcWidget')))unlock();
+    if(typeof d==='object'&&d){
+      var json=JSON.stringify(d).toLowerCase();
+      if(json.includes('formsubmitted')||json.includes('form_submitted')||json.includes('lcwidget')||json.includes('appreciate')||json.includes('thank you'))unlock();
+    }
+  }catch(err){}
+});
+// 2: iframe shrinks after submit
+const ghlIframe=document.getElementById('inline-Z1F5E7GVhmaDPvn8B7ww');
+if(ghlIframe){
+  // only counts as a submit if the form was tall (loaded) for at least 4 s
+  // first; a widget that never loads, or a blocked one, must not unlock anything
+  let lastHeight=0,tallSince=0;
+  const heightPoll=setInterval(()=>{
+    try{
+      const h=ghlIframe.offsetHeight||ghlIframe.clientHeight;
+      const now=Date.now();
+      if(h>400){if(!tallSince)tallSince=now;}
+      if(lastHeight>400&&h<350&&!unlocked&&tallSince&&(now-tallSince)>4000){unlock();clearInterval(heightPoll);}
+      lastHeight=h;
+    }catch(err){}
+  },500);
+  setTimeout(()=>clearInterval(heightPoll),600000);
+}
+// 3: manual
+const manualLink=document.getElementById('manualTriggerLink');
+if(manualLink){manualLink.addEventListener('click',function(e){e.preventDefault();unlock();});}
+
+const stickyBar=document.getElementById('stickyBar');
+if(stickyBar){
+  const heroEl=document.querySelector('.page-hero');
+  const stickyObs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      const gateVisible=(()=>{const g=document.getElementById('get');if(!g)return false;const r=g.getBoundingClientRect();return r.top<window.innerHeight&&r.bottom>0})();
+      if(!e.isIntersecting&&!gateVisible&&!unlocked){stickyBar.classList.add('visible')}else{stickyBar.classList.remove('visible')}
+    });
+  },{threshold:0});
+  if(heroEl)stickyObs.observe(heroEl);
+}
+
+const copyBtn=document.getElementById('copyBtn');
+const promptText=document.getElementById('promptText');
+function fallbackCopy(text){
+  const ta=document.createElement('textarea');
+  ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.focus();ta.select();
+  let ok=false;
+  try{ok=document.execCommand('copy')}catch(e){ok=false}
+  document.body.removeChild(ta);
+  return ok;
+}
+if(copyBtn&&promptText){
+  copyBtn.addEventListener('click',async()=>{
+    const text=promptText.textContent;
+    let ok=false;
+    try{
+      if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);ok=true}
+      else{ok=fallbackCopy(text)}
+    }catch(e){ok=fallbackCopy(text)}
+    if(ok){
+      copyBtn.textContent='Copied. Now paste it into Claude Code.';
+      copyBtn.classList.add('done');
+      if(typeof gtag==='function'){gtag('event','copy_prompt',{page:'hours'})}
+      setTimeout(()=>{copyBtn.textContent='Copy the prompt';copyBtn.classList.remove('done')},4000);
+    }else{
+      copyBtn.textContent='Press and hold the text above to copy it';
+    }
+  });
+}
+
+</script>
+</body>
+</html>

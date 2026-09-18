@@ -83,6 +83,14 @@
         <div class="card-link">Get this playbook</div>
       </div>
     </a>
+    <a href="/hours/" class="card reveal">
+      <div class="card-body">
+        <div class="card-tag">From the video</div>
+        <div class="card-title">420 Hours in Claude Code: The Three Lessons</div>
+        <div class="card-desc">A list of its own mistakes that has to become code, a grader that never built the thing, and a greeting that leads with what is working. Each one explained in plain English, plus one prompt that sets all three up.</div>
+        <div class="card-link">Get this playbook</div>
+      </div>
+    </a>
     <a href="/playbook/llms-txt/" class="card reveal">
       <div class="card-body">
         <div class="card-tag">System 01</div>
@@ -259,7 +267,7 @@ document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
 // GHL redirect lands here with ?dl=1: send the visitor to the playbook they asked for
 if(new URLSearchParams(window.location.search).get('dl')==='1'){
   let slug=null;try{slug=localStorage.getItem('bw_playbook_pending')}catch(e){}
-  if(slug){window.location.replace(slug==='five'?'/five/?dl=1':'/playbook/'+slug+'/?dl=1');}
+  if(slug){window.location.replace((slug==='five'||slug==='hours')?'/'+slug+'/?dl=1':'/playbook/'+slug+'/?dl=1');}
 }
 </script>
 </body>

@@ -133,7 +133,7 @@ document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
 
 (function(){
   let slug=null;try{slug=localStorage.getItem('bw_playbook_pending')}catch(e){}
-  if(slug){window.location.replace(slug==='five'?'/five/?dl=1':'/playbook/'+slug+'/?dl=1');}
+  if(slug){window.location.replace((slug==='five'||slug==='hours')?'/'+slug+'/?dl=1':'/playbook/'+slug+'/?dl=1');}
   else{var s=document.getElementById('thanksSub');if(s)s.textContent='We could not tell which playbook you asked for on this device. Pick it below and it unlocks right there, no second form.';}
 })();
 </script>
