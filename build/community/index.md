@@ -1,23 +1,23 @@
 ---
-title: Business On Autopilot -- Founding Member Access | Brycen Wood
-description: Stop using AI to rewrite emails. Use it to run your business. A community for service businesses, ecommerce stores, and agencies building lead engines, websites, and automations with Claude Code. $97/mo founding rate -- lifetime price lock.
+title: Business On Autopilot -- Free Community | Brycen Wood
+description: Stop using AI to rewrite emails. Use it to run your business. A community for service businesses, ecommerce stores, and agencies building lead engines, websites, and automations with Claude Code. Free to join.
 url: https://www.brycenwood.com/community/
 last_updated: 2026-04-14
 ---
 
 # Stop rewriting emails. Run your business with AI.
 
- A community for service businesses, ecommerce stores, and agencies using Claude Code to build their own lead engine, website, and automations. The same systems I'm using to scale my Utah wrap shop from $300K in 2025 to a projected $750K-$1M this year -- without hiring a single new person.
+ A community for service businesses, ecommerce stores, and agencies using Claude Code to build their own lead engine, website, and automations. The same systems I use every day to run my Utah wrap shop and a meal prep company. I have never written a line of code.
 
  
- [Get Founding Access -- $97/mo](https://skool.com/business-on-autopilot-8404)
+ [Join Free](https://skool.com/business-on-autopilot-8404)
  [See What's Inside](#whats-inside)
  
- $97/mo for the first 250 founding members -- lifetime price lock. After: $147/mo.
+ Free to join. No card needed.
 
  
- $97
- Founding Rate
+ $0
+ To Join
  
  
  9
@@ -28,8 +28,8 @@ last_updated: 2026-04-14
  Lessons
  
  
- 250
- Founding Spots
+ 97
+ Members
  
 
  
@@ -53,7 +53,7 @@ last_updated: 2026-04-14
  
  
  04
- **Live Build Sessions** -- Watch me build real systems for real businesses in real time. Ask questions, get answers.
+ **Monday Night Builds** -- I host an in-person Claude Code night in Utah on Mondays. What we work on gets shared in the group.
  
  
  05
@@ -65,7 +65,7 @@ last_updated: 2026-04-14
  
  
  07
- **Weekly Updates** -- Every new system I build gets documented and shared. The library grows every week.
+ **New Builds** -- When I build a new system for one of my businesses, it gets documented and shared here.
  
  
  08
@@ -96,7 +96,7 @@ last_updated: 2026-04-14
  
  
  1
- **Learn to Build ($97/mo)** -- Join the community, follow the modules, ask questions, build your own systems step by step. This is the DIY path. Most people start here. Founding rate locked at $97 for the first 250 members.
+ **Learn to Build (free)** -- Join the community, follow the modules, ask questions, build your own systems step by step. This is the DIY path. Most people start here.
  
  
  2
@@ -114,21 +114,21 @@ last_updated: 2026-04-14
  
  
  
- What does $97/mo include?
+ What does it cost?
  +
  
  
- Full access to 9 modules, 80+ lessons, every prompt and template, live build sessions, the 7-Day AI Visibility Challenge, and community Q&A. Cancel any time. No contracts.
+ Nothing. It is free to join. You get the modules, 80+ lessons, every prompt and template, the 7-Day AI Visibility Challenge, and community Q&A.
 
  
  
  
  
- What happens after the 250 founding spots fill?
+ Why is it free?
  +
  
  
- Price goes to $147/mo for new members. Founding members are locked at $97/mo forever, even when the price increases. As long as your subscription stays active, your rate never changes.
+ Because I want a room full of people who are actually building, and a price tag gets in the way of that right now. If that ever changes, anyone already inside will hear it from me first.
 
  
  
@@ -154,7 +154,7 @@ last_updated: 2026-04-14
  
  
  
- What tools do I need on top of the $97?
+ What tools do I need?
  +
  
  
@@ -164,11 +164,11 @@ last_updated: 2026-04-14
  
  
  
- Can I cancel?
+ Can I leave?
  +
  
  
- Yes, any time, directly inside Skool. No contracts, no questions asked. If you cancel and rejoin later, you'll pay whatever the current price is at that time, not the founding rate.
+ Yes, any time, directly inside Skool. There is nothing to cancel because there is nothing to pay.
 
  
  
@@ -178,7 +178,7 @@ last_updated: 2026-04-14
  
 ## Ready to start building?
 
- 9 modules. 80+ lessons. Every prompt, script, and template I use. $97/mo, lifetime locked for the first 250 founding members.
+ 80+ lessons. Every prompt, script, and template I use. Free to join.
 
  
- [Get Founding Access -- $97/mo](https://skool.com/business-on-autopilot-8404)
+ [Join Free](https://skool.com/business-on-autopilot-8404)

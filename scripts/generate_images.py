@@ -298,10 +298,10 @@ JOBS = [
         "data": {
             "tag": "COMMUNITY",
             "title": "Business On Autopilot",
-            "desc": "The same systems I'm using to scale Summit Wraps. Modules, live builds, exact prompts. Founding rate locked for life.",
-            "metric": "$97/mo",
-            "metric_label": "Founding Rate",
-            "cta": "JOIN FOUNDING →",
+            "desc": "The same systems I use to run Summit Wraps. Modules, real builds, exact prompts. Free to join.",
+            "metric": "Free",
+            "metric_label": "To Join",
+            "cta": "JOIN FREE →",
         },
     },
 

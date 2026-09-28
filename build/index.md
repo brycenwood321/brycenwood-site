@@ -14,7 +14,7 @@ Most owners use AI to rewrite emails
 
  
  
- [Get Founding Access -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)
  
  Scroll to explore
@@ -291,13 +291,13 @@ Most owners use AI to rewrite emails
  
  
  04
- **Founding member access** — first 200 members shape what gets built. You tell me what systems you need. I build the guides.
+ **Early member access** -- early members shape what gets built. You tell me what systems you need. I build the guides.
  
  
 
  "But I'm not technical." — Neither am I. Everything on this page was built through conversation. If you can describe what your business needs, you can build it.
 
  
- $97/mo founding -- 250 spots, lifetime locked
- Join the Founding Cohort
- $97/mo for the first 250 founding members. Learn to build AI-powered business systems with Claude Code. Lifetime price lock -- after the first 250, $147/mo.
+ Free to join
+ Join the Free Community
+ Free to join. Learn to build AI-powered business systems with Claude Code.

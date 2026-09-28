@@ -169,7 +169,7 @@ I have zero financial relationship with any company listed here. No affiliate li
  See How These Tools Work Together
  Setup walkthroughs, integration patterns, and the exact prompts for building systems with this stack. Free to join. No upsell inside.
 
- [Get Founding Access -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
 
 ## The Total Monthly Cost Breakdown
@@ -275,8 +275,8 @@ The full quick reference for every tool in the stack, including setup links and 
  
 ## Ready to Build Your $350/Month Operating System?
 
- Get founding access alongside local service business owners building AI-powered systems with Claude Code. Or book a discovery call to get your custom stack built in 2 weeks.
+ Join free alongside local service business owners building AI-powered systems with Claude Code. Or book a discovery call to get your custom stack built in 2 weeks.
 
  
- [Get Founding Access -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Discovery Call](/contact/)

@@ -108,7 +108,7 @@ About
 
  I'm not a tech guy who decided to do business. I'm a business guy who discovered the most powerful tool ever built for people like me. I've never taken a coding class. I don't know Python syntax. I couldn't write a for loop if you asked me to. But I understand business problems -- deeply -- and that turns out to be the only skill that matters when AI handles the technical execution.
 
- I also run a [community called Business On Autopilot](https://www.brycenwood.com/community/) where I teach local service business owners how to build their own AI-powered systems with Claude Code. $97/mo for the first 250 founding members, lifetime price lock.
+ I also run a [community called Business On Autopilot](https://www.brycenwood.com/community/) where I teach local service business owners how to build their own AI-powered systems with Claude Code. It is free to join.
 
  If you're a business owner who's been told you need to hire a developer, pay an agency, or learn to code -- there's another way. I'm living proof. And I want to help you build it too.
 

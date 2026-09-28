@@ -300,7 +300,7 @@ Industry Solutions
  +
  
  
- If you're doing $20K+/month and spending on ads, the ROI is fast -- cart recovery alone typically pays for the build inside 60 days. Below $20K/month, the better starting point is the community ($97/mo) where you can build the foundational flows yourself with the exact prompts and templates I use. The custom build is for brands that already have product-market fit and are losing revenue to operational gaps, not for brands still figuring out what to sell.
+ If you're doing $20K+/month and spending on ads, the ROI is fast -- cart recovery alone typically pays for the build inside 60 days. Below $20K/month, the better starting point is the community (free to join) where you can build the foundational flows yourself with the exact prompts and templates I use. The custom build is for brands that already have product-market fit and are losing revenue to operational gaps, not for brands still figuring out what to sell.
 
  
  

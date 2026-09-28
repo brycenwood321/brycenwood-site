@@ -103,4 +103,4 @@ Free Guides
  Exact prompts, templates, step-by-step walkthroughs, and screen recordings. Everything you need to actually build these systems for your business.
 
  
- [Get Founding Access -- $97/mo](/community/)
+ [Join the Free Community](/community/)

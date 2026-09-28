@@ -145,7 +145,7 @@ FREE GUIDE
  FOUNDING ACCESS
  Want the exact prompts I used to build my first system?
  Inside the community, I share the full conversation transcripts, the prompts that worked, and the mistakes that didn't. No paywalls. No upsells. Just the playbook.
- [Get Founding Access -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  
  
 
@@ -186,7 +186,7 @@ FREE GUIDE
  
  - **Understand the full picture** -- read [The Business Operating System Guide](/guides/business-operating-system/) to learn what systems your business needs before you start building
  - **Learn the automation framework** -- read [How to Automate Your Small Business with AI](/guides/automate-your-business/) for the priority framework and step-by-step approach
- - **Join the community** -- get the exact prompts, conversation transcripts, and real-time help from other builders inside the [founding member community](/community/) ($97/mo, lifetime locked for the first 250)
+ - **Join the community** -- get the exact prompts, conversation transcripts, and real-time help from other builders inside the [community](/community/) (free to join)
  
  This isn't a course. It's not a coaching program. It's the actual tools and systems I use to run my business, shared openly with anyone who wants to build. The guides on this site give you the what and the why. The community gives you the how -- the exact prompts, the walkthroughs, the templates.
 
@@ -232,5 +232,5 @@ FREE GUIDE
  Join the community for the exact prompts, conversation transcripts, and walkthroughs. Or book a call and I'll build it for you.
 
  
- [Get Founding Access -- $97/mo](/community/)
+ [Join the Free Community](/community/)
  [Book a Call](/contact/)
