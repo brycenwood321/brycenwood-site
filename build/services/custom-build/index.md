@@ -1,6 +1,6 @@
 ---
-title: Done-for-You Business Automation -- Custom AI Systems in 2 Weeks | Brycen Wood
-description: Done-for-you business automation powered by AI, not templates. I build your entire operating system in 2 weeks -- CRM, email, SEO, dashboards. Starting at $3,500. No developers needed.
+title: Done-for-You Business Automation -- Custom AI Systems, Fixed Price | Brycen Wood
+description: Done-for-you business automation powered by AI, not templates. I build the one system your business needs most -- CRM, email, SEO, dashboards. Fixed price, quoted after a $1,500 diagnosis. No developers needed.
 url: https://www.brycenwood.com/services/custom-build/
 last_updated: 2026-04-14
 ---
@@ -8,7 +8,7 @@ last_updated: 2026-04-14
 Custom Business Build
 
  
-# Your Entire Business.Automated in Two Weeks.
+# Your Entire Business.Automated, One System at a Time.
 
  I interview your business, build a custom operating system with Claude Code, and hand it off — fully working, fully yours. No hiring developers. No paying agencies. No adding headcount. Just systems that replace the need for all of it.
 
@@ -28,7 +28,7 @@ Custom Business Build
  
  
  0
- Weeks Delivery
+ Days Bug Fixes
  
  
  0
@@ -49,9 +49,9 @@ Custom Business Build
  01
  
  
-### 60-Minute Discovery Call
+### $1,500 Diagnosis
 
- We talk about your business, your bottlenecks, your goals. I ask the questions. You talk about what you know best -- your business.
+ A 90-minute session on Zoom or in person in Utah County. You share your screen, I read your business and ask the questions. You talk about what you know best -- your business.
 
  
  
@@ -59,9 +59,9 @@ Custom Business Build
  02
  
  
-### Custom Plan in 72 Hours
+### Written Plan in 5 Business Days
 
- I build a detailed operating system blueprint -- every automation, every integration, every workflow mapped out. You review and approve.
+ What to automate, in what order, what each piece saves or earns, and what it would cost to build. One 30-minute follow-up call to go over it. The full fee is credited against a build bought within 30 days.
 
  
  
@@ -69,9 +69,9 @@ Custom Business Build
  03
  
  
-### 2-Week Build
+### Fixed-Price Build
 
- I build everything using Claude Code. CRM automations, email systems, dashboards, SEO, content pipelines -- whatever your business needs. You get progress updates throughout.
+ I build one named system using Claude Code, scoped on a one-page agreement you sign first. Half up front, half at hand-off, with the hand-off date written on the scope before work starts.
 
  
  
@@ -81,7 +81,7 @@ Custom Business Build
  
 ### Full Handoff + Training
 
- Everything is deployed, documented, and handed off to you. I walk you through every system so you know how to use it. Optional: $2K/month retainer for ongoing support.
+ Everything is deployed, documented, and handed off to you. I walk you through every system so you know how to use it. After a build you can add the $1,500/month retainer for ongoing support.
 
  
  
@@ -127,7 +127,7 @@ Custom Business Build
  
  
  08
- **Full documentation and training session** -- every system explained, recorded walkthrough, 30-day support
+ **Full documentation and training session** -- every system explained, recorded walkthrough, 14 days of bug fixes
  
  
  
@@ -136,52 +136,25 @@ Custom Business Build
  
 ## Simple Pricing
 
- No hourly billing. No surprise invoices. One price, one scope, one delivery date.
+ No hourly billing. No surprise invoices. One price, one scope, one hand-off date.
 
  
 
  
  
- Limited to first 5 clients
- Founder Rate
- $3,500
- One-time investment
+ Fixed price, quoted after a diagnosis
+ Build
+ One named system, built, tested, handed over
  
- - Everything in What's Included
- - 60-min discovery call
- - Custom blueprint in 72 hours
- - Full 2-week build
+ - Starts with a $1,500 diagnosis, credited if you build within 30 days
+ - One-page scope signed first
+ - Half up front, half at hand-off
+ - Hand-off date written on the scope
  - Complete handoff + training
- - 30-day support included
+ - 14 days of bug fixes after hand-off
+ - Change orders for anything not on the page
  
- [Book a Call](/contact/)
- 
-
- 
- Standard
- $7,500
- Full custom build
- 
- - Everything in Founder Rate
- - Priority scheduling
- - Extended 60-day support
- - Monthly optimization check-in
- 
- [Book a Call](/contact/)
- 
-
- 
- Enterprise
- $15,000+
- Complex multi-system builds
- 
- - Everything in Standard
- - Multiple business units
- - Advanced API integrations
- - Dedicated Slack channel
- - Ongoing retainer option
- 
- [Contact Me](/contact/)
+ [See Pricing](/pricing/)
  
  
 
@@ -231,7 +204,7 @@ Custom Business Build
  +
  
  
- None whatsoever. Everything is built through conversation with AI. I have zero coding experience myself -- every system I have built, including 80+ automations for my own vehicle wrap company, was created by describing what I needed in plain English to Claude Code. You do not need to know Python, JavaScript, APIs, or databases. If you can describe how your business works and what you need it to do, I can build it. During the 60-minute discovery call, I ask the questions that surface exactly what your business needs. You bring the business knowledge; the AI and I handle the technical execution.
+ None whatsoever. Everything is built through conversation with AI. I have zero coding experience myself -- every system I have built, including 80+ automations for my own vehicle wrap company, was created by describing what I needed in plain English to Claude Code. You do not need to know Python, JavaScript, APIs, or databases. If you can describe how your business works and what you need it to do, I can build it. During the 90-minute diagnosis, I ask the questions that surface exactly what your business needs. You bring the business knowledge; the AI and I handle the technical execution.
 
  
  
@@ -251,17 +224,17 @@ Custom Business Build
  +
  
  
- Agencies charge $5,000-$20,000 for just a website and then bill you monthly for maintenance. A full-time developer costs $8,000-$15,000 per month. I build your entire operating system -- CRM automation, email sequences, website with full SEO, real-time dashboards, content pipelines, lead generation, financial tracking -- in 2 weeks for a fraction of the cost. The Summit Wraps operating system replaced the equivalent of $13,500-$24,000/month in agency, developer, and virtual assistant costs, and it runs 24/7 with zero ongoing fees. You also own everything outright -- no proprietary lock-in, no monthly subscription to me, no vendor dependency.
+ Agencies charge $5,000-$20,000 for just a website and then bill you monthly for maintenance. A full-time developer costs $8,000-$15,000 per month. I build your operating system -- CRM automation, email sequences, website with full SEO, real-time dashboards, content pipelines, lead generation, financial tracking -- one named system at a time, at a fixed price quoted after a diagnosis. The Summit Wraps operating system replaced the equivalent of $13,500-$24,000/month in agency, developer, and virtual assistant costs, and it runs 24/7 with zero ongoing fees. You also own everything outright -- no proprietary lock-in, no monthly subscription to me, no vendor dependency.
 
  
  
  
  
- What happens after the 2-week build?
+ What happens after hand-off?
  +
  
  
- You own everything -- 100%. Every system, every script, every configuration is fully documented and handed off to you in a live training session where I walk you through how everything works. The first 30 days of support are included at no extra cost, so if anything needs tweaking as you start using the systems in production, I am there to fix it. After 30 days, you can manage it yourself (everything is documented), join the community where I share build tutorials, or opt for the $2,000/month retainer that covers ongoing maintenance, new feature builds, and optimization. Most clients find the documentation sufficient to manage day-to-day operations on their own.
+ You own everything -- 100%. Every system, every script, every configuration is fully documented and handed off to you in a live training session where I walk you through how everything works. After hand-off you get 14 days of bug fixes. After that you can run it yourself (everything is documented), or, once a build is done, add the $1,500/month retainer for monitoring, fixes, small changes, and a monthly review. Anything not on the signed scope page is a change order.
 
  
  
@@ -271,7 +244,7 @@ Custom Business Build
  +
  
  
- Yes. I have built systems for vehicle wrap shops and auto tint businesses, and I am currently building for HVAC companies, artisanal coffee shops, steel sales operations, web designers, and authors. Every build is custom-researched for your specific industry and workflow -- no templates, no copy-paste from previous clients. The 60-minute discovery call is where I learn the nuances of your business: your sales process, your customer journey, your bottlenecks, your competitive landscape. The architecture patterns (lead scoring, CRM automation, content pipelines) are universal, but the specific implementation -- scoring criteria, email tone, pipeline stages, dashboard metrics -- is tailored to exactly how your business operates.
+ Yes. I have built systems for vehicle wrap shops and auto tint businesses, and I am currently building for HVAC companies, artisanal coffee shops, steel sales operations, web designers, and authors. Every build is custom-researched for your specific industry and workflow -- no templates, no copy-paste from previous clients. The 90-minute diagnosis is where I learn the nuances of your business: your sales process, your customer journey, your bottlenecks, your competitive landscape. The architecture patterns (lead scoring, CRM automation, content pipelines) are universal, but the specific implementation -- scoring criteria, email tone, pipeline stages, dashboard metrics -- is tailored to exactly how your business operates.
 
  
  

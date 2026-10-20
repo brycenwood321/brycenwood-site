@@ -96,8 +96,8 @@ My Stack
  
 ## Want help setting up your stack?
 
- Join the community for walkthroughs, or book a call if you want me to build it for you.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Call](/contact/)

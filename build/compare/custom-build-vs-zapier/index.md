@@ -56,11 +56,11 @@ Handles multi-step logic, AI decisions, custom workflows
 Best for simple if-this-then-that connections
 
 Cost (Year 1)
-$3,500 one-time
+Fixed price, quoted after a $1,500 diagnosis
 $240-$7,200/year (scales with usage)
 
 Cost at Scale
-Same -- $3,500 whether you run 100 or 100,000 automations
+Same fixed price whether you run 100 or 100,000 automations
 $299-$599/mo for 10K-50K tasks
 
 Customization
@@ -76,7 +76,7 @@ Direct API access -- no middleware throttling
 Subject to Zapier's rate limits on top of each app's limits
 
 Setup Time
-2 weeks for complete system
+Hand-off date written on the scope before work starts
 Minutes per zap (but weeks to build a full system of zaps)
 
 ## Where Zapier Works Perfectly
@@ -101,7 +101,7 @@ The problems start when your needs exceed what point-to-point app connections ca
 
 **System-level coordination.** Our operating system has 80+ workflows that talk to each other. The lead scoring system feeds the outreach system, which feeds the follow-up system, which feeds the CRM pipeline, which feeds the analytics dashboard. These systems share state, pass context, and make coordinated decisions. In Zapier, each zap is an island. Getting zaps to communicate with each other requires hacky workarounds involving webhooks and storage tables that become unmaintainable at scale.
 
-**Cost at volume.** When your business grows and you're processing 20,000+ automated tasks per month, Zapier's pricing becomes significant. At $349/month for the Team plan with 50,000 tasks, you're paying $4,188 per year for a connection layer -- not including the cost of the apps you're connecting. A custom build costs $3,500 once and handles unlimited volume.
+**Cost at volume.** When your business grows and you're processing 20,000+ automated tasks per month, Zapier's pricing becomes significant. At $349/month for the Team plan with 50,000 tasks, you're paying $4,188 per year for a connection layer -- not including the cost of the apps you're connecting. A custom build is a fixed price, quoted after a diagnosis, and has no per-task charge.
 
 ## The Cost Math That Nobody Shows You
 
@@ -119,11 +119,11 @@ That's 2,150 tasks per month for basic operations. You've already outgrown the $
 
 Scale that to serious automation -- lead scoring, multi-step email sequences, content distribution, analytics updates, re-engagement campaigns -- and you're easily at 15,000-30,000 tasks per month. That's $299-$599/month. Over two years: $7,176 to $14,376.
 
-A custom AI build: $3,500. Once. No task limits. No per-event pricing. No surprise overages.
+A custom AI build: one fixed price, quoted after a $1,500 diagnosis. No task limits. No per-event pricing. No surprise overages.
 
  
- $3,500
- Custom Build (One-Time)
+ Fixed
+ Build Price, Quoted After Diagnosis
  
  
  $7K-$14K
@@ -135,11 +135,11 @@ A custom AI build: $3,500. Once. No task limits. No per-event pricing. No surpri
  
 
  
- Inside the Community
- See Real Automation Systems in Action
- Join the community to see the actual systems I built for Summit Wraps, get the templates and prompts, and learn which automations deliver the highest ROI for your specific business.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## The API Problem Nobody Talks About
@@ -194,7 +194,7 @@ I have nothing against Zapier. I still recommend it for simple use cases. But fo
  
  How much does Zapier actually cost at scale?+
  
- Zapier's pricing scales with usage in ways that surprise most people. The free plan gives you 100 tasks per month, which is basically a trial. The Starter plan is $19.99 per month for 750 tasks. The Professional plan is $49 per month for 2,000 tasks. But a real business automation system can easily consume 10,000 to 50,000 tasks per month once you start automating lead scoring, follow-ups, CRM updates, notifications, and content distribution. At that volume, you are looking at $299 to $599 per month -- and that is just for the connection layer. You still need to pay for every app you are connecting. Over 12 months, a scaled Zapier setup can easily exceed the one-time cost of a custom build that does far more.
+ Zapier's pricing scales with usage in ways that surprise most people. The free plan gives you 100 tasks per month, which is basically a trial. The Starter plan is $19.99 per month for 750 tasks. The Professional plan is $49 per month for 2,000 tasks. But a real business automation system can easily consume 10,000 to 50,000 tasks per month once you start automating lead scoring, follow-ups, CRM updates, notifications, and content distribution. At that volume, you are looking at $299 to $599 per month -- and that is just for the connection layer. You still need to pay for every app you are connecting. Over 12 months, a scaled Zapier setup can easily exceed the fixed price of a custom build that does far more.
 
  
  
@@ -218,8 +218,8 @@ I have nothing against Zapier. I still recommend it for simple use cases. But fo
  
 ## Ready to Outgrow No-Code Tools?
 
- See what real business automation looks like inside the community. Or book a discovery call and I'll show you exactly which systems would have the biggest impact on your business.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

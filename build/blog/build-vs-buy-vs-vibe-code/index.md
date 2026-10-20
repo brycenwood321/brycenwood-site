@@ -92,7 +92,7 @@ Here is how the three options actually stack up when you remove the marketing an
  Upfront Cost
  $50K - $200K+
  $0 - $500
- $3,500 one-time
+ Fixed, quoted after a $1,500 diagnosis
  
  
  Monthly Cost
@@ -104,7 +104,7 @@ Here is how the three options actually stack up when you remove the marketing an
  Timeline
  3 - 12 months
  Immediate
- 2 weeks
+ Hand-off date set on the scope
  
  
  Customization
@@ -202,10 +202,10 @@ The target for the rest of 2025 is $600K-$750K in revenue. Same two people. Same
 You can see the full breakdown at [the Summit Wraps case study](/case-studies/summit-wraps/).
 
  
- FOUNDING ACCESS
- Want to see exactly how I vibe coded each system?
- The prompts, walkthroughs, and templates are inside the community. See the actual conversations that built these systems -- not theory, not screenshots, the real thing.
- [Join the Free Community](/community/)
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
+ [Start with a diagnosis](/pricing/)
  
 
 ## How to Get Started with Vibe Coding
@@ -283,8 +283,8 @@ For the full deep-dive on vibe coding, read [the Vibe Coding for Business guide]
  
 ## Ready to stop debating and start building?
 
- Join the community for the exact prompts, conversation transcripts, and walkthroughs. Or book a call and I'll build your operating system for you.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

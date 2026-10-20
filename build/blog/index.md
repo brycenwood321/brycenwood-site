@@ -26,7 +26,7 @@ Blog
  
  Comparison
  AI Automation vs Hiring an Agency: What Actually Works
- Agencies charge $5K-$20K for a website. I build entire operating systems in 2 weeks for less. Here's the honest comparison.
+ Agencies charge $5K-$20K for a website. I build one system at a time at a fixed price, quoted after a diagnosis. Here's the honest comparison.
  Read the article
  
  ](/blog/ai-automation-vs-agency/)
@@ -91,7 +91,7 @@ Blog
  
 ## More Posts Coming Weekly
 
- Join the community for early access to new articles, plus the exact prompts, templates, and walkthroughs behind every system I build.
+ Want one of these systems built for your business? Start with a $1,500 diagnosis.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)

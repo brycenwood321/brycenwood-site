@@ -157,10 +157,10 @@ FREE GUIDE
  
  
  
- FOUNDING ACCESS
- Want the full 30-day automation challenge?
- Inside the community, I walk through the exact build order week by week -- with daily prompts, conversation transcripts, and the templates I used. No theory. Just build.
- [Join the Free Community](/community/)
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
+ [Start with a diagnosis](/pricing/)
  
  
 
@@ -177,7 +177,7 @@ FREE GUIDE
  
  Total: $13,500-$24,000/month. That's $162,000-$288,000/year.
 
- A custom business build? [$3,500 one-time](/services/custom-build/). Or $20/month if you build it yourself with Claude Code. The systems run forever. There's no monthly retainer. There's no developer salary. There's no agency fee.
+ A custom business build? [a fixed price, quoted after a $1,500 diagnosis](/services/custom-build/). Or $20/month if you build it yourself with Claude Code. The systems run forever. There's no required monthly retainer. There's no developer salary. There's no agency fee.
 
  This isn't a minor cost savings. It's a structural advantage that compounds every month your competitors are still paying for the old way.
 
@@ -212,8 +212,7 @@ FREE GUIDE
 
  Look at the data. How many leads were contacted? How fast? What was the response rate? What broke? What needs to be adjusted? Use the numbers to improve the system, then start planning your second build.
 
- The full challenge with daily prompts, specific build instructions, and conversation transcripts is inside the community.
-
+ 
  
 ## Where to Go From Here
 
@@ -223,7 +222,7 @@ FREE GUIDE
  - **Learn the tool** -- read [Vibe Coding for Business](/guides/vibe-coding-for-business/) to understand how to build systems yourself with Claude Code
  - **Get AI-visible** -- read [The AI SEO Playbook](/guides/ai-seo-playbook/) to make ChatGPT and Claude recommend your business to potential customers
  - **See the proof** -- read the [Summit Wraps case study](/case-studies/summit-wraps/) to see every system I built and the results they produced
- - **Join the community** -- get the prompts, walkthroughs, and real-time help inside the [community](/community/) (free to join)
+ - **Get it done for you** -- start with a [$1,500 diagnosis](/pricing/)
  
 
  
@@ -235,7 +234,7 @@ FREE GUIDE
  
  How much does it cost to automate a small business with AI?+
  
- If you build it yourself with vibe coding, the only cost is Claude Code at $20/month. If you hire someone to build it for you, a custom business build starts at $3,500 -- which is less than one month of a developer's salary. Either way, it's a fraction of what agencies and developers charge for the same work.
+ If you build it yourself with vibe coding, the only cost is Claude Code at $20/month. If you hire someone to build it for you, a custom business build is a fixed price, quoted after a $1,500 diagnosis. Either way, it's a fraction of what agencies and developers charge for the same work.
 
  
  
@@ -265,8 +264,8 @@ FREE GUIDE
  
 ## Ready to automate your business?
 
- Join the community for the 30-day challenge, build prompts, and real-time support. Or book a call and I'll build it for you.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Call](/contact/)

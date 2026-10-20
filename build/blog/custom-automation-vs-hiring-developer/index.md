@@ -114,11 +114,11 @@ But here is the thing: the vast majority of small businesses -- service companie
 The honest framework: if your business IS a software company, hire developers. If your business USES software to operate, build with AI.
 
  
- Inside the Community
- Learn to Build Business Systems Without Code
- The exact prompts, walkthroughs, and build patterns I use to create production systems with Claude Code. Free to join. No dev experience needed.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## The Summit Wraps Proof
@@ -183,8 +183,8 @@ The tools exist right now to turn your business knowledge into production system
  
 ## Ready to Build Without Hiring a Developer?
 
- Join free alongside local service business owners building their own systems with AI. Or book a discovery call to get your entire operating system built in 2 weeks.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

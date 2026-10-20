@@ -176,10 +176,10 @@ Utah County, Salt Lake County, and surrounding areas.
  
  
  
- FOUNDING ACCESS
- Want the exact files and scripts I used?
- Inside the community, I share the llms.txt template, the markdown mirror generator script, and the schema markup examples -- ready to copy and customize for your business.
- [Join the Free Community](/community/)
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
+ [Start with a diagnosis](/pricing/)
  
  
 
@@ -232,9 +232,9 @@ Utah County, Salt Lake County, and surrounding areas.
  - **Markdown mirrors deep dive** -- read the [complete markdown mirrors guide](/guides/markdown-mirrors/) for the technical walkthrough and automation script
  - **Learn to build these systems yourself** -- read [Vibe Coding for Business](/guides/vibe-coding-for-business/) to understand how to use Claude Code to implement everything
  - **See the full automation picture** -- read [How to Automate Your Business](/guides/automate-your-business/) to understand where AI SEO fits in the broader system
- - **Get the templates** -- join the [community](/community/) for the llms.txt template, mirror generator script, and schema examples (free to join)
+ - **Get it done for you** -- start with a [$1,500 diagnosis](/pricing/)
  
- Every guide on this site gives you the full what and why. The community gives you the how -- the exact files, the prompts, the scripts. No paywalls. No upsells. Just the playbook that's already working.
+ Every guide on this site gives you the full what and why. If you want the how for your own business, start with a $1,500 diagnosis.
 
  
  
@@ -259,7 +259,7 @@ Utah County, Salt Lake County, and surrounding areas.
  
  How long does it take to implement the 3-file AI SEO system?+
  
- Schema markup improvements take 1-2 hours if you already have some in place, or 3-4 hours if you are starting from scratch. Creating an llms.txt file takes 15-30 minutes -- the format is simple and there is a template inside the community. Markdown mirrors can be automated with a Python script I built that generates mirrors for all 27 Summit Wraps pages in under a minute. Total implementation time for most businesses: one afternoon. Business owners flooded the comments on the explainer video for this system once they realized they could implement the whole thing in a few hours. Start with llms.txt (fastest win), then schema, then mirrors. You will see AI crawlers visiting your new files within days.
+ Schema markup improvements take 1-2 hours if you already have some in place, or 3-4 hours if you are starting from scratch. Creating an llms.txt file takes 15-30 minutes -- the format is simple. Markdown mirrors can be automated with a Python script I built that generates mirrors for all 27 Summit Wraps pages in under a minute. Total implementation time for most businesses: one afternoon. Business owners flooded the comments on the explainer video for this system once they realized they could implement the whole thing in a few hours. Start with llms.txt (fastest win), then schema, then mirrors. You will see AI crawlers visiting your new files within days.
 
  
  
@@ -275,8 +275,8 @@ Utah County, Salt Lake County, and surrounding areas.
  
 ## Ready to get recommended by AI?
 
- Join the community for the templates, scripts, and step-by-step walkthroughs. Or book a call and I'll implement it for you.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Call](/contact/)

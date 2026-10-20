@@ -1,6 +1,6 @@
 ---
-title: How It Works -- From Interview to Live System in 2 Weeks | Brycen Wood
-description: See exactly how a custom business build works. 60-min interview, custom plan in 72 hours, 2-week build, full handoff. No code required.
+title: How It Works -- From Diagnosis to Live System | Brycen Wood
+description: See exactly how a custom business build works. $1,500 diagnosis, written plan, fixed-price build, full handoff. No code required.
 url: https://www.brycenwood.com/process/
 last_updated: 2026-04-14
 ---
@@ -8,7 +8,7 @@ last_updated: 2026-04-14
 The Process
 
  
-# From Interview to Live System in Two Weeks
+# From Diagnosis to Live System
 
  No learning curve. No coding. Just a conversation about your business, then I build everything.
 
@@ -20,9 +20,9 @@ The Process
  01
  
  
-### Book Your Discovery Call
+### Book Your Diagnosis
 
- A 60-minute conversation about your business. I ask about your workflows, your bottlenecks, what's eating your time, what you wish was automated. You don't need to know anything about AI or code -- just know your business.
+ A 90-minute session ($1,500) on Zoom or in person in Utah County, where I read your business over a screen share. I ask about your workflows, your bottlenecks, what's eating your time, what you wish was automated. You don't need to know anything about AI or code -- just know your business.
 
  
  
@@ -30,9 +30,9 @@ The Process
  02
  
  
-### Review Your Custom Blueprint
+### Review Your Written Plan
 
- Within 72 hours, you get a detailed plan: every system I'll build, every integration, every automation -- mapped to your specific business. You review it, ask questions, request changes. Nothing gets built until you approve.
+ Within 5 business days, you get a written plan: what to automate, in what order, what each piece saves or earns, and what it would cost to build. We go over it on a 30-minute follow-up call. The full diagnosis fee is credited against a build bought within 30 days. Nothing gets built until you sign a one-page scope.
 
  
  
@@ -42,7 +42,7 @@ The Process
  
 ### Watch It Get Built
 
- Over 2 weeks, I build your entire operating system using Claude Code. CRM, email automation, lead generation, content pipelines, dashboards, SEO -- whatever your plan calls for. You get progress updates and can see things take shape in real time.
+ The build is a fixed price, quoted after the diagnosis, for one named system. Half is due up front and half at hand-off, and the hand-off date is written on the scope before work starts. I build it using Claude Code and you get progress updates along the way.
 
  
  
@@ -52,7 +52,7 @@ The Process
  
 ### Own It Forever
 
- Everything is deployed, documented, and handed off. I walk you through every system in a live training session. You own it all -- no subscriptions to me, no proprietary lock-in. Optional: $2K/month retainer if you want ongoing support and new features.
+ Everything is deployed, documented, and handed off. I walk you through every system in a live training session. You own it all -- no subscriptions to me, no proprietary lock-in. You get 14 days of bug fixes after hand-off. After a build you can add the $1,500/month retainer for monitoring, fixes, and small changes.
 
  
  

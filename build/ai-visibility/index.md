@@ -104,8 +104,6 @@ Free Download
  
  Full disclosure: the link below is my affiliate link, I earn a commission if you sign up. I only recommend it because I actually run it on my own business.
 
- Plus a gift for using my link: free LIFETIME access to my Business On Autopilot community (normally $97/mo).
-
  
  
  [Run My Free AI Visibility Check](https://www.cytd.ai/?deal=brycen#free-ai-visibility-check)

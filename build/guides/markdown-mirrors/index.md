@@ -148,11 +148,11 @@ from scratch. Design is included with every full wrap order.
 Clean. Readable. No noise. The AI can consume this in one pass and know exactly what the page is about.
 
  
- Inside the Community
- Get the Auto-Generator Script
- The Python script that automatically generates markdown mirrors for your entire website, plus the exact server config to serve them correctly. All inside the community.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## The Technical Setup
@@ -163,7 +163,7 @@ There are two things you need to get markdown mirrors working:
 
 You need an `index.md` file next to every `index.html` on your site. You can create these manually for a small site, or use a script to generate them automatically for a larger one.
 
-For Summit Wraps, I built a Python script that walks every page on the site, strips out the HTML scaffolding, and generates clean markdown. 27 pages, 27 mirrors, done in about 10 seconds. The script is inside the community for anyone who wants it.
+For Summit Wraps, I built a Python script that walks every page on the site, strips out the HTML scaffolding, and generates clean markdown. 27 pages, 27 mirrors, done in about 10 seconds.
 
 If your site has fewer than 10 pages, you can honestly just write them by hand. Open each page in your browser, copy the content, paste it into a text file, add markdown formatting, save as `index.md`. 5-10 minutes per page.
 
@@ -284,7 +284,7 @@ If you want to see the complete transformation -- from zero AI visibility to Cha
  
  Can I generate these automatically?+
  
- Yes. I built a Python script that walks your entire website and generates .md files for every page. It strips out HTML scaffolding, preserves content, and outputs clean markdown. The script and step-by-step walkthrough are available inside the community.
+ Yes. I built a Python script that walks your entire website and generates .md files for every page. It strips out HTML scaffolding, preserves content, and outputs clean markdown.
 
  
  
@@ -308,8 +308,8 @@ If you want to see the complete transformation -- from zero AI visibility to Cha
  
 ## Make Your Website Visible to AI
 
- Get the auto-generator script, server configs, and step-by-step walkthroughs inside the community. Or book a call and I'll build the whole AI visibility stack for your business.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

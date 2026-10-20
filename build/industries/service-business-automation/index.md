@@ -1,6 +1,6 @@
 ---
 title: Service Business Automation: AI Systems for Any Trade or Service Company | Brycen Wood
-description: Automate any service business with AI. Lead generation, CRM, scheduling, invoicing, marketing, and operations -- custom-built for your industry in 2 weeks.
+description: Automate any service business with AI. Lead generation, CRM, scheduling, invoicing, marketing, and operations -- custom-built for your industry.
 url: https://www.brycenwood.com/industries/service-business-automation/
 last_updated: 2026-04-14
 ---
@@ -188,7 +188,7 @@ Industry Solutions
  
 ## How It Works
 
- Four steps. Two weeks. No technical knowledge required on your end.
+ Four steps. No technical knowledge required on your end.
 
  
 
@@ -197,7 +197,7 @@ Industry Solutions
  01
  
  
-### 60-Minute Discovery Call
+### $1,500 Diagnosis (90 Minutes)
 
  We talk about your business -- your industry, your team, your tools, your customers, your bottlenecks. I have direct experience with service businesses across every major trade. I ask the right questions because I know the problems firsthand.
 
@@ -207,9 +207,9 @@ Industry Solutions
  02
  
  
-### Custom Blueprint in 72 Hours
+### Written Plan in 5 Business Days
 
- I build a detailed automation plan researched specifically for your industry and market. Every system, every workflow, every integration documented in plain English. You review and approve before anything gets built.
+ You get a written plan: what to automate, in what order, what each piece saves or earns, and what it would cost to build. We go over it on a 30-minute follow-up call. The full fee is credited against a build bought within 30 days.
 
  
  
@@ -217,9 +217,9 @@ Industry Solutions
  03
  
  
-### 2-Week Build
+### Fixed-Price Build
 
- I build everything using Claude Code. CRM, scheduling, follow-ups, review generation, marketing campaigns, website, dashboards -- whatever your blueprint calls for. Progress updates throughout the build.
+ One named system, fixed price quoted after the diagnosis, hand-off date written on the scope before work starts. I build it using Claude Code. CRM, scheduling, follow-ups, review generation, marketing campaigns, website, dashboards -- whatever the plan calls for. Progress updates throughout the build.
 
  
  
@@ -229,7 +229,7 @@ Industry Solutions
  
 ### Handoff and Training
 
- Everything deployed, documented, and handed off. Live training session walks you through every system. 30 days of support included. Optional $2K/month retainer for ongoing optimization and new feature builds.
+ Everything deployed, documented, and handed off. Live training session walks you through every system. 14 days of bug fixes included after hand-off. After a build, an optional $1,500/month retainer covers monitoring, fixes, and small changes.
 
  
  

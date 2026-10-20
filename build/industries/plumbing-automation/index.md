@@ -1,6 +1,6 @@
 ---
 title: Plumbing Business Automation: AI Systems That Keep Your Phones Ringing | Brycen Wood
-description: Automate your plumbing business with AI. Emergency call routing, follow-ups, maintenance reminders, review collection, and marketing. Custom-built in 2 weeks.
+description: Automate your plumbing business with AI. Emergency call routing, follow-ups, maintenance reminders, review collection, and marketing. Custom-built, fixed price.
 url: https://www.brycenwood.com/industries/plumbing-automation/
 last_updated: 2026-04-14
 ---
@@ -139,7 +139,7 @@ Industry Solutions
  
 ## How It Works
 
- Four steps. Two weeks. No technical knowledge required on your end.
+ Four steps. No technical knowledge required on your end.
 
  
 
@@ -148,7 +148,7 @@ Industry Solutions
  01
  
  
-### 60-Minute Discovery Call
+### $1,500 Diagnosis (90 Minutes)
 
  We talk about your plumbing operation -- your service area, your team, your current tools, your biggest bottlenecks. I ask the questions. You talk about what you know best.
 
@@ -158,9 +158,9 @@ Industry Solutions
  02
  
  
-### Custom Blueprint in 72 Hours
+### Written Plan in 5 Business Days
 
- I build a detailed automation plan mapped to your specific business. Every system, every workflow, every integration documented in plain English. You review and approve before anything gets built.
+ You get a written plan: what to automate, in what order, what each piece saves or earns, and what it would cost to build. We go over it on a 30-minute follow-up call. The full fee is credited against a build bought within 30 days.
 
  
  
@@ -168,9 +168,9 @@ Industry Solutions
  03
  
  
-### 2-Week Build
+### Fixed-Price Build
 
- I build everything using Claude Code. Call routing, scheduling, follow-ups, maintenance reminders, CRM pipelines, website, marketing -- whatever your blueprint calls for. Progress updates throughout.
+ One named system, fixed price quoted after the diagnosis, hand-off date written on the scope before work starts. I build it using Claude Code. Call routing, scheduling, follow-ups, maintenance reminders, CRM pipelines, website, marketing -- whatever the plan calls for. Progress updates throughout.
 
  
  
@@ -180,7 +180,7 @@ Industry Solutions
  
 ### Handoff and Training
 
- Everything deployed, documented, and handed off. Live training session walks you through every system. 30 days of support included. Optional $2K/month retainer for ongoing optimization.
+ Everything deployed, documented, and handed off. Live training session walks you through every system. 14 days of bug fixes included after hand-off. After a build, an optional $1,500/month retainer covers monitoring, fixes, and small changes.
 
  
  
@@ -229,7 +229,7 @@ Industry Solutions
  +
  
  
- A full-time dispatcher costs $3,000-$4,500 per month in salary, plus benefits, plus the management overhead of training and supervising another employee. The custom build is a one-time investment of $3,500 at the founder rate. The systems handle call routing, scheduling, follow-ups, reminders, and review requests -- the core tasks that consume a dispatcher's day. They work 24/7, never call in sick, and never forget to follow up. For plumbing companies with 3-10 trucks, the automation typically handles the workload equivalent of one to two office staff.
+ A full-time dispatcher costs $3,000-$4,500 per month in salary, plus benefits, plus the management overhead of training and supervising another employee. The custom build is a fixed price, quoted after a $1,500 diagnosis that is credited toward it. The systems handle call routing, scheduling, follow-ups, reminders, and review requests -- the core tasks that consume a dispatcher's day. They work 24/7, never call in sick, and never forget to follow up. For plumbing companies with 3-10 trucks, the automation typically handles the workload equivalent of one to two office staff.
 
  
  

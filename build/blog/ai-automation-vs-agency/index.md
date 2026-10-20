@@ -1,6 +1,6 @@
 ---
 title: AI Automation vs Hiring an Agency: The Honest Comparison | Brycen Wood
-description: Agencies charge $5K-$20K for a website. I build entire business operating systems in 2 weeks for $3,500. Here's the real comparison with actual numbers.
+description: Agencies charge $5K-$20K for a website. I build one system at a time at a fixed price, quoted after a $1,500 diagnosis. Here's the real comparison with actual numbers.
 url: https://www.brycenwood.com/blog/ai-automation-vs-agency/
 last_updated: 2026-04-14
 ---
@@ -19,7 +19,7 @@ Blog
  Business Automation Consultant -- Built 80+ systems with zero coding experience
  
 
-> **Key Takeaway:** Agencies charge $5K-$20K for just a website. A custom AI build delivers your entire operating system -- CRM, email, SEO, dashboards, content pipelines -- in 2 weeks for a fraction of the cost. The difference: AI builds at 10x the speed with 10x less overhead.
+> **Key Takeaway:** Agencies charge $5K-$20K for just a website. A custom AI build delivers one system at a time -- CRM, email, SEO, dashboards, content pipelines -- at a fixed price quoted after a diagnosis. The difference: AI builds at 10x the speed with 10x less overhead.
 
 ## The Agency Model Is Broken (for Small Businesses)
 
@@ -45,12 +45,12 @@ I'm one person. I don't write code. I don't have a CS degree. I don't have a tea
 
 The process looks like this:
 
-- **60-minute interview.** I get on a call with you and ask about your business. What do you sell? Who are your customers? Where do leads come from? What's your biggest bottleneck? What does your day look like? What do you wish was automated? This isn't a sales call -- it's research. I need to understand your business the way you understand it.
-- **72-hour blueprint.** I take everything from the interview and use Claude Code to generate a master plan. Not a vague strategy doc -- an actual architecture document that maps every system, every automation, every integration, every data flow. You review it, we align, and then I build.
-- **2-week build.** This is where the magic happens. Using Claude Code, I build the entire operating system in roughly two weeks. Website, CRM automation, email sequences, lead pipelines, dashboards, SEO infrastructure, content systems -- whatever your business needs. The AI handles the code. I handle the business logic.
+- **90-minute diagnosis ($1,500).** I get on a call with you and ask about your business. What do you sell? Who are your customers? Where do leads come from? What's your biggest bottleneck? What does your day look like? What do you wish was automated? This isn't a sales call -- it's research. I need to understand your business the way you understand it.
+- **Written plan in 5 business days.** I take everything from the diagnosis and write the plan: what to automate, in what order, what each piece saves or earns, and what it would cost to build. We go over it on a 30-minute call. The full fee is credited against a build bought within 30 days.
+- **Fixed-price build.** This is where the magic happens. Using Claude Code, I build one named system, on a one-page scope you sign first, with the hand-off date written on it. CRM automation, email sequences, lead pipelines, dashboards, SEO infrastructure, content systems -- whichever the plan puts first. The AI handles the code. I handle the business logic.
 - **Full handoff.** Everything I build is yours. The code, the hosting, the documentation. I walk you through every system so you understand what's running and how to make changes. You're not locked into a retainer. You're not dependent on me to keep the lights on.
 
-Cost: **$3,500** at the founder rate. That's not for a website. That's for the entire operating system. [See the full scope here](/services/custom-build/).
+Cost: a **fixed price**, quoted after the $1,500 diagnosis. That's not for a website. That's for a working system. [See the full scope here](/services/custom-build/).
 
 To put that in perspective: most agencies charge $5,000-$20,000 for just the website portion of what I deliver in a single build.
 
@@ -60,15 +60,15 @@ Let me break this down across every dimension that actually matters when you're 
 
 **Scope of work.** An agency delivers a website, possibly social media management, possibly some ad campaigns. Each of those is a separate project with a separate budget. An AI custom build delivers the entire operating system: CRM, email, SEO, lead gen, content pipelines, dashboards, automations -- all integrated, all talking to each other. The scope difference isn't incremental. It's an order of magnitude.
 
-**Cost.** Agency website: $5,000-$20,000. Agency monthly retainer: $2,000-$10,000. AI custom build: $3,500 one-time (founder rate). Even at the standard rate of $7,500, you're getting 10x the deliverables for less than the agency charges for the website alone.
+**Cost.** Agency website: $5,000-$20,000. Agency monthly retainer: $2,000-$10,000. AI custom build: a fixed price for one system, quoted after a $1,500 diagnosis that is credited toward it, so the most you can lose before deciding is the diagnosis.
 
-**Timeline.** Agency project: 4-8 weeks for a website, 3-6 months for anything complex. AI custom build: 2 weeks from blueprint to handoff. The AI doesn't take holidays, doesn't get sick, and doesn't juggle your project with fourteen others.
+**Timeline.** Agency project: 4-8 weeks for a website, 3-6 months for anything complex. AI custom build: a hand-off date written on the scope before work starts. The AI doesn't take holidays, doesn't get sick, and doesn't juggle your project with fourteen others.
 
 **Customization.** Most agency work is template-based, whether they admit it or not. They have their preferred WordPress theme, their standard Zapier workflows, their go-to email templates. They customize the colors and swap the logos, but the architecture is the same for every client. An AI custom build is composed from reusable modules but assembled specifically for your business. The CRM fields match your sales process. The email sequences match your customer journey. The dashboard shows the metrics that matter to you.
 
 **Ownership.** With an agency, you typically own the website files but not the systems they built around it. The Zapier automations live in their account. The analytics dashboards are on their login. When you stop paying, half your infrastructure disappears. With an AI custom build, you own everything. The code, the hosting, the data, the documentation. Walk away tomorrow and nothing breaks.
 
-**Ongoing costs.** Agency retainers run $2,000-$10,000 per month, indefinitely. An AI custom build has no mandatory ongoing cost. The systems run on their own. The optional retainer ($2,000/month) is for adding new capabilities, not keeping existing ones alive.
+**Ongoing costs.** Agency retainers run $2,000-$10,000 per month, indefinitely. An AI custom build has no mandatory ongoing cost. The systems run on their own. The optional retainer ($1,500/month, only after a build) covers monitoring, fixes, and small changes.
 
 **Communication.** With an agency, you talk to an account manager who translates your requests to a project manager who translates them to a developer who builds something that may or may not match what you described. With an AI custom build, you talk directly to the person building it. No game of telephone. No "let me check with the team." No two-week turnaround on a question that should take five minutes.
 
@@ -132,11 +132,11 @@ And the agency version wouldn't have the custom integrations, the AI-powered lea
 The full Summit Wraps case study is at [summitwrapsandgraphics.com case study](/case-studies/summit-wraps/). Every number is documented.
 
  
- Inside the Community
- See the Exact Systems Behind These Numbers
- The prompts, the templates, the walkthroughs -- everything I use to build business operating systems with Claude Code. Free to join, no upsell inside.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## How to Evaluate What You Actually Need
@@ -185,7 +185,7 @@ Get the systems right first. The aesthetic layer is easier and cheaper to add on
  
  What about ongoing support and maintenance?+
  
- With an agency, you typically pay a monthly retainer of $2,000-$10,000 for ongoing support. With an AI custom build, the system is designed to run autonomously from day one. Most of the 80+ systems I built for Summit Wraps require zero daily intervention -- they run on cron jobs and automated triggers. When changes are needed, the optional $2,000/month retainer covers ongoing development and optimization, but the core system works without it. The community also gives you access to troubleshooting guides and direct support from other builders. The fundamental difference is that agency support keeps the lights on, while AI build support adds new capabilities.
+ With an agency, you typically pay a monthly retainer of $2,000-$10,000 for ongoing support. With an AI custom build, the system is designed to run autonomously from day one. Most of the 80+ systems I built for Summit Wraps require zero daily intervention -- they run on cron jobs and automated triggers. When changes are needed, the optional $1,500/month retainer (available after a build) covers monitoring, fixes, and small changes, but the core system works without it. The fundamental difference is that agency support keeps the lights on, while AI build support adds new capabilities.
 
  
  
@@ -212,5 +212,5 @@ Get the systems right first. The aesthetic layer is easier and cheaper to add on
  Join free alongside local service business owners learning to build with AI. Or book a discovery call to see what a custom build looks like for your business.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

@@ -54,3 +54,5 @@ Free Playbook · System 7 of 14
 
  [Download the PDF](/guides/playbooks/claude-code-crm.pdf)
  Want a different one? [All the playbooks](/playbook/), one download each.
+
+ Want this done for your business? [Start with a diagnosis.](/pricing/)

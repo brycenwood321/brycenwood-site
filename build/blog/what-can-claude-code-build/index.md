@@ -110,11 +110,11 @@ These 10 systems are a representative sample. The full count is over 80 intercon
 **How long it took.** The initial guardian with basic monitoring took about 3 hours. Adding monitoring for each new system takes 10-15 minutes of incremental work. The alert routing and suggested-fix logic took another 2 hours.
 
  
- Inside the Community
- Watch These Systems Get Built Live
- Build-along walkthroughs for every system type listed above. See the exact prompts, the iteration process, and the final output. Free to join.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## The 70+ Systems I Didn't List
@@ -135,9 +135,9 @@ But the categories are universal. Every business needs some version of lead mana
 
 That is the foundation of the custom build service. I interview your business the same way I interrogated mine -- finding the bottlenecks, mapping the workflows, identifying what should be automated. Then I compose your operating system from proven modules, customized to your exact business context.
 
-The result is not a generic SaaS tool. It is not a template. It is a system that was designed for your business specifically, built in two weeks, and handed off completely -- code, hosting, documentation, everything.
+The result is not a generic SaaS tool. It is not a template. It is a system that was designed for your business specifically, built to a written hand-off date, and handed off completely -- code, hosting, documentation, everything.
 
-If you want to explore what that would look like for your business, the [discovery call](/contact/) is where we start. If you want to learn to build these systems yourself, the [community](/community/) has the walkthroughs and prompts for every system type listed above.
+If you want to explore what that would look like for your business, the [discovery call](/contact/) is where we start. If you already run Claude Code and want to build these yourself, [Claude Code Night](/community/) is a free Monday night in Utah County.
 
  
  
@@ -182,5 +182,5 @@ If you want to explore what that would look like for your business, the [discove
  Join free alongside local service business owners building with AI. Or book a discovery call to map out your custom operating system.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

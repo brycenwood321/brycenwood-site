@@ -1,6 +1,6 @@
 ---
 title: Hire Someone to Automate Your Business -- Custom AI Builds | Brycen Wood
-description: Stop hiring developers and agencies. I build custom AI-powered business operating systems in 2 weeks. CRM, email, SEO, dashboards -- everything automated. Starting at $3,500.
+description: Stop hiring developers and agencies. I build custom AI-powered business systems with Claude Code. CRM, email, SEO, dashboards -- automated. Start with a $1,500 diagnosis.
 url: https://www.brycenwood.com/services/
 last_updated: 2026-04-14
 ---
@@ -10,14 +10,14 @@ Services
  
 # Replace Developers, Agencies, and Extra Hires with AI Systems
 
- I build custom business operating systems using Claude Code. Everything your business needs to run -- automated, documented, and handed off in two weeks.
+ I build custom business operating systems using Claude Code. Everything your business needs to run -- automated, documented, and handed off.
 
  
  [
  
  Primary Service
  Custom Business Operating System Build
- 60-min interview, custom plan in 72 hours, 2-week build, full handoff. Starting at $3,500.
+ 90-minute diagnosis, written plan, then a fixed-price build quoted after the diagnosis. Start at $1,500.
  Learn more
  
  ](/services/custom-build/)
@@ -25,7 +25,7 @@ Services
  
  Ongoing Support
  Monthly AI Retainer
- New features, maintenance, optimization. Keep your systems evolving as your business grows. $2,000/month.
+ Monitoring, fixes, and small changes after a build, with a monthly review. $1,500/month.
  Learn more
  
  ](/services/retainer/)
@@ -71,9 +71,9 @@ Services
  01
  
  
-### Discovery Call
+### Diagnosis
 
- A conversation about your business -- your workflows, bottlenecks, and what you wish was automated.
+ A 90-minute session where I read your business over a screen share -- your workflows, bottlenecks, and what you wish was automated. $1,500, credited against a build.
 
  
  
@@ -81,9 +81,9 @@ Services
  02
  
  
-### Custom Plan
+### Written Plan
 
- A detailed operating system blueprint delivered within 72 hours. You review and approve before anything gets built.
+ A written plan within 5 business days: what to automate, in what order, and what it would cost to build. You review and approve before anything gets built.
 
  
  
@@ -91,9 +91,9 @@ Services
  03
  
  
-### 2-Week Build
+### Fixed-Price Build
 
- Everything your business needs -- CRM, email, SEO, dashboards, content pipelines -- built and deployed.
+ One named system built and tested, on a signed one-page scope with the hand-off date written on it.
 
  
  
@@ -112,7 +112,7 @@ Services
  
 ## Ready to replace your overheadwith AI?
 
- Book a free discovery call. No obligation. Just a real conversation about your business and what's possible.
+ Book a call. No obligation. Just a real conversation about your business and what's possible.
 
  
  [Book a Discovery Call](/contact/)

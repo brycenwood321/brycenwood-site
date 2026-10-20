@@ -1,6 +1,6 @@
 ---
 title: HVAC Business Automation: AI Systems That Replace Your Back Office | Brycen Wood
-description: Automate your HVAC business with AI. Lead generation, scheduling, follow-ups, invoicing, and marketing -- all running on autopilot. Custom-built in 2 weeks.
+description: Automate your HVAC business with AI. Lead generation, scheduling, follow-ups, invoicing, and marketing -- all running on autopilot. Custom-built, fixed price.
 url: https://www.brycenwood.com/industries/hvac-automation/
 last_updated: 2026-04-14
 ---
@@ -139,7 +139,7 @@ Industry Solutions
  
 ## How It Works
 
- Four steps. Two weeks. No technical knowledge required on your end.
+ Four steps. No technical knowledge required on your end.
 
  
 
@@ -148,7 +148,7 @@ Industry Solutions
  01
  
  
-### 60-Minute Discovery Call
+### $1,500 Diagnosis (90 Minutes)
 
  We talk about your HVAC business -- your service area, your team size, your current tools, your bottlenecks, your goals. I ask the questions. You talk about what you know best.
 
@@ -158,9 +158,9 @@ Industry Solutions
  02
  
  
-### Custom Blueprint in 72 Hours
+### Written Plan in 5 Business Days
 
- I build a detailed automation plan mapped to your specific operation. Every system, every integration, every workflow -- documented and explained in plain English. You review and approve before I build anything.
+ You get a written plan: what to automate, in what order, what each piece saves or earns, and what it would cost to build. We go over it on a 30-minute follow-up call. The full fee is credited against a build bought within 30 days.
 
  
  
@@ -168,9 +168,9 @@ Industry Solutions
  03
  
  
-### 2-Week Build
+### Fixed-Price Build
 
- I build everything using Claude Code. CRM automations, scheduling flows, follow-up sequences, marketing campaigns, website, dashboards -- whatever your blueprint calls for. You get progress updates throughout.
+ One named system, fixed price quoted after the diagnosis, hand-off date written on the scope before work starts. I build it using Claude Code. CRM automations, scheduling flows, follow-up sequences, marketing campaigns, website, dashboards -- whatever the plan calls for. You get progress updates throughout.
 
  
  
@@ -180,7 +180,7 @@ Industry Solutions
  
 ### Handoff and Training
 
- Everything is deployed, documented, and handed off. I walk you through every system in a live training session. 30 days of support included. Optional $2K/month retainer for ongoing optimization.
+ Everything is deployed, documented, and handed off. I walk you through every system in a live training session. 14 days of bug fixes included after hand-off. After a build, an optional $1,500/month retainer covers monitoring, fixes, and small changes.
 
  
  
@@ -229,7 +229,7 @@ Industry Solutions
  +
  
  
- A single office coordinator costs $3,500-$5,000 per month in salary alone, plus benefits, training, and management overhead. The custom build is a one-time investment of $3,500 at the founder rate, and the systems run 24/7 with no ongoing labor costs. They do not call in sick, do not need training, and do not miss follow-ups on Fridays at 4 PM. For HVAC companies doing $500K-$2M in annual revenue, the automation typically replaces the equivalent of 1-2 full-time office positions.
+ A single office coordinator costs $3,500-$5,000 per month in salary alone, plus benefits, training, and management overhead. The custom build is a fixed price, quoted after a $1,500 diagnosis that is credited toward it, and the systems run 24/7 with no ongoing labor costs. They do not call in sick, do not need training, and do not miss follow-ups on Fridays at 4 PM. For HVAC companies doing $500K-$2M in annual revenue, the automation typically replaces the equivalent of 1-2 full-time office positions.
 
  
  

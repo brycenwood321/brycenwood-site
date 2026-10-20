@@ -14,7 +14,7 @@ Most owners use AI to rewrite emails
 
  
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)
  
  Scroll to explore
@@ -27,7 +27,7 @@ Most owners use AI to rewrite emails
  **10** APIs connected/
  **24/7** systems running/
  **3,000+** on the waitlist/
- **2-week** builds, full handoff/
+ **Fixed-price** builds, full handoff/
  
  **$52K → $300K** revenue (one shop)/
  **6×** revenue, 0 new hires/
@@ -36,7 +36,7 @@ Most owners use AI to rewrite emails
  **10** APIs connected/
  **24/7** systems running/
  **3,000+** on the waitlist/
- **2-week** builds, full handoff/
+ **Fixed-price** builds, full handoff/
  
 
  
@@ -60,7 +60,7 @@ Most owners use AI to rewrite emails
  
 ## What I Build
 
- Custom operating systems for real businesses. Not templates. Not tutorials. Built from scratch, tailored to your business, delivered in two weeks.
+ Custom operating systems for real businesses. Not templates. Not tutorials. Built from scratch, tailored to your business, with the hand-off date written down before work starts.
 
  
 
@@ -73,7 +73,16 @@ Most owners use AI to rewrite emails
  ](/case-studies/summit-wraps/)
  [
  
- ](/community/)
+ 5-WEEK COHORT
+ Run your business on Claude Code
+ One evening a week, 8 to 12 owners. You leave with your own system running.
+
+ 
+ 
+ $1,500
+ SEE THE WEEKS
+ 
+ ](/cohort/)
  
 
  
@@ -268,36 +277,34 @@ Most owners use AI to rewrite emails
 
  Every prompt. Every tool. Every mistake I made along the way. And exactly how to replicate each system for your business — even if you've never written a line of code.
 
- Community
+ 5-week cohort
  
-## Stop watching tutorials.Start building your business.
+## Stop watching tutorials.Run your business on Claude Code.
 
- Most people see what AI can do and think "that's cool" — then go back to doing everything manually. This community is for the ones who actually want to build.
-
- I'm opening up my entire playbook — every system on this page, broken down so you can build it for YOUR business. No coding required. No fluff. Just the exact prompts, tools, and steps I used.
+ Most people see what AI can do and think "that's cool", then go back to doing everything by hand. The cohort is five evenings with 8 to 12 owners, and you leave with your own system running.
 
  
  
  01
- **Full system breakdowns** — the exact prompts, tools, and decisions behind every automation on this page. Copy what works.
+ **Setup Day in week 1**: Claude Code installed on your machine and set up the way I run mine.
  
  
  02
- **Live build sessions** — watch me build real systems from scratch for real businesses. Ask questions in real time.
+ **Your business in files**: written down once, read by Claude every session, so you stop explaining yourself.
  
  
  03
- **Your custom blueprint** — tell me about your business and I'll generate a personalized build plan with exactly what to build first, second, third.
+ **Your plan**: a ranked list of what to automate, plus a 20-minute one-on-one with me in week 3.
  
  
  04
- **Early member access** -- early members shape what gets built. You tell me what systems you need. I build the guides.
+ **Your first system, shown to the room**: a daily brief, a follow-up drafter or a quote drafter running on your real data by week 5.
  
  
 
- "But I'm not technical." — Neither am I. Everything on this page was built through conversation. If you can describe what your business needs, you can build it.
+ "But I'm not technical." Neither am I. Everything on this page was built through conversation. $1,500, full refund before week 1 ends. [See the five weeks.](/cohort/)
 
  
- Free to join
- Join the Free Community
- Free to join. Learn to build AI-powered business systems with Claude Code.
+ First cohort: December or January
+ Hold me a cohort seat
+ Leave your name and email and write COHORT in the message. You hear the dates first. Nothing is charged until you take the seat. [See the five weeks.](/cohort/)

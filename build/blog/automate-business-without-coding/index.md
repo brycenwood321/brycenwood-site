@@ -75,7 +75,7 @@ The build process is iterative. Claude Code writes a first version, you test it,
 
 What makes this work without coding knowledge is that the feedback is always in plain English. You never need to read or modify code. You say "the email is sending immediately but I want it to wait 2 minutes so it doesn't look automated" and Claude Code makes the change. You say "the lead score is weighing company size too heavily -- a one-truck plumber should score higher than a 50-person office company because plumbers actually wrap their trucks" and the scoring logic adjusts.
 
-Two practical tips from building 80+ systems this way. First, start small. Build the core functionality, test it with real data, then add complexity. A lead scoring system that uses 3 factors and works perfectly is more valuable than one that uses 15 factors and has bugs. Second, save your prompts. Every good description you write becomes a template for future systems. My most effective prompt patterns are documented in the community so you don't have to rediscover them.
+Two practical tips from building 80+ systems this way. First, start small. Build the core functionality, test it with real data, then add complexity. A lead scoring system that uses 3 factors and works perfectly is more valuable than one that uses 15 factors and has bugs. Second, save your prompts. Every good description you write becomes a template for future systems.
 
 ### Step 4: Test Against Real Data
 
@@ -136,11 +136,11 @@ Let me walk through how this framework played out for three specific systems, fr
 **Deploy:** Runs on demand (batch mode). Generates drafts that I spot-check before sending. The sending step is separate to maintain quality control. Produces in hours what would take weeks of manual writing.
 
  
- Inside the Community
- Get the Framework Templates and Prompt Library
- The exact prompts, description templates, and build-along walkthroughs for the five-step framework. Free to join. Built for non-coders.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## The Most Common Mistakes
@@ -183,7 +183,7 @@ After automation, the business runs whether you are there or not. Leads get capt
 
 That shift -- from being the bottleneck to being the strategist -- is worth more than any individual system. It is the difference between running a business and being run by one.
 
-The detailed guides for each system type are at [the vibe coding guide](/guides/vibe-coding-for-business/) and [the automation guide](/guides/automate-your-business/). Both walk through the WHAT and WHY in detail. The HOW -- the exact prompts, templates, and build-along walkthroughs -- lives inside the [community](/community/).
+The detailed guides for each system type are at [the vibe coding guide](/guides/vibe-coding-for-business/) and [the automation guide](/guides/automate-your-business/). Both walk through the WHAT and WHY in detail. If you want the HOW for your business, start with a [$1,500 diagnosis](/pricing/).
 
  
  
@@ -215,7 +215,7 @@ The detailed guides for each system type are at [the vibe coding guide](/guides/
  
  How long does it take to automate a full business?+
  
- A complete operating system can be built in 2-4 weeks of focused work. The Summit Wraps system took 14 months of iterative development because I was building it alongside running the business and learning the tools as I went. For client custom builds, the typical timeline is 2 weeks from approved blueprint to full deployment. The key insight is that you do not need to automate everything at once. Start with the highest-impact system, get it running, then add systems incrementally. Each new system builds on the foundation, so they get faster to build as the operating system grows.
+ A complete operating system can be built in 2-4 weeks of focused work. The Summit Wraps system took 14 months of iterative development because I was building it alongside running the business and learning the tools as I went. For client custom builds, the hand-off date is written on the scope before work starts. The key insight is that you do not need to automate everything at once. Start with the highest-impact system, get it running, then add systems incrementally. Each new system builds on the foundation, so they get faster to build as the operating system grows.
 
  
  
@@ -225,8 +225,8 @@ The detailed guides for each system type are at [the vibe coding guide](/guides/
  
 ## Ready to Automate Your Business?
 
- Join free alongside local service business owners building automation systems without code. Or book a discovery call to get your custom operating system built in 2 weeks.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

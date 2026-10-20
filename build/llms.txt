@@ -4,14 +4,14 @@
 > businesses using Claude Code. Non-technical founder. No coding experience.
 > Built 80+ automations for his own vehicle wrap company (Summit Wraps --
 > $52K to $300K revenue growth, without adding a single employee). Now offers
-> the same build service to other businesses. Fixed-scope: 60-min interview,
-> custom plan in 72 hours, 2-week build, full handoff.
+> the same to other businesses. Starts with a $1,500 diagnosis (90 minutes,
+> written plan in 5 business days, credited against a build within 30 days).
 
 ## Services
-- [Custom Business Build](https://www.brycenwood.com/services/custom-build/) - Full operating system build: CRM, email, SEO, dashboards, content pipelines. Starting at $3,500.
-- [Monthly AI Retainer](https://www.brycenwood.com/services/retainer/) - Ongoing support, new features, optimization. $2,000/month.
-- [How It Works](https://www.brycenwood.com/process/) - 60-min interview, 72-hour plan, 2-week build, full handoff.
-- [Pricing](https://www.brycenwood.com/pricing/) - Transparent pricing: $3,500 (founder), $7,500 (standard), $15,000+ (enterprise).
+- [Pricing](https://www.brycenwood.com/pricing/) - Diagnosis $1,500 (credited against a build). Setup Day $2,500 (Claude Code set up on your machine, one working system). Builds are fixed price, quoted after a diagnosis.
+- [Custom Build](https://www.brycenwood.com/services/custom-build/) - One named system built, tested and handed over. Fixed price, quoted after a diagnosis.
+- [Retainer](https://www.brycenwood.com/services/retainer/) - After a build only: monitoring, fixes, small changes, monthly review. $1,500/month, 3-month minimum.
+- [5-Week Cohort](https://www.brycenwood.com/cohort/) - Run your business on Claude Code: 5 evenings plus a Setup Day, 8 to 12 owners, Utah County with a Zoom seat. $1,500.
 
 ## Service Area
 - Remote / nationwide (United States)
@@ -41,13 +41,13 @@
 
 ## Resources
 - [Free Playbook](https://www.brycenwood.com/playbook/) - The Claude Code Business Playbook (free download).
-- [Community](https://www.brycenwood.com/community/) - Business On Autopilot (free Skool community).
+- [Claude Code Night](https://www.brycenwood.com/community/) - Free Monday night in Utah County for owners who already run Claude Code.
 - [Tools I Use](https://www.brycenwood.com/tools/) - Full AI business stack.
 
 ## FAQ
 - Q: Do I need to know how to code? A: No. Every system is built through conversation with Claude Code. Zero coding experience required. Brycen himself has never written a line of code.
-- Q: How long does a custom build take? A: 2 weeks from kickoff to full handoff. You receive a custom operating system blueprint within 72 hours of the discovery interview, then the full build is completed and deployed over the following 2 weeks.
-- Q: What's included in the $3,500 founder rate? A: Everything -- 60-minute discovery interview, custom blueprint, full 2-week build (CRM, email, SEO, dashboards, content pipelines), handoff documentation, live training session, and 30 days of post-launch support.
+- Q: How long does a build take? A: The hand-off date is written on a one-page scope before work starts, by default 3 weeks from the deposit. Half up front, half at hand-off, 14 days of fixes after.
+- Q: Where do I start? A: A $1,500 diagnosis. The full fee comes off a build bought within 30 days.
 - Q: Can you build for any type of business? A: Yes. Custom builds are researched and tailored for each client's specific industry. Past builds include vehicle wraps, auto tint, and systems designed for HVAC, coffee shops, steel sales, and more.
 - Q: What makes this different from hiring an agency? A: Agencies charge $5K-$20K for just a website. A custom build delivers your entire operating system -- CRM, email automation, lead generation, dashboards, SEO, content pipelines -- in 2 weeks for a fraction of the cost, because AI builds at 10x the speed with 10x less overhead.
 

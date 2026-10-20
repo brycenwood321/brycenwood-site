@@ -1,6 +1,6 @@
 ---
 title: Roofing Company Automation: AI Systems for Roofers Who Want to Scale | Brycen Wood
-description: Automate your roofing company with AI. Storm lead capture, estimate follow-ups, crew scheduling, review management, and marketing. Built in 2 weeks.
+description: Automate your roofing company with AI. Storm lead capture, estimate follow-ups, crew scheduling, review management, and marketing. Fixed-price build.
 url: https://www.brycenwood.com/industries/roofing-automation/
 last_updated: 2026-04-14
 ---
@@ -139,7 +139,7 @@ Industry Solutions
  
 ## How It Works
 
- Four steps. Two weeks. No technical knowledge required on your end.
+ Four steps. No technical knowledge required on your end.
 
  
 
@@ -148,7 +148,7 @@ Industry Solutions
  01
  
  
-### 60-Minute Discovery Call
+### $1,500 Diagnosis (90 Minutes)
 
  We talk about your roofing operation -- your service area, your crew structure, your current tools, your sales process, and where leads are slipping through. I ask the questions. You talk about what you know best.
 
@@ -158,9 +158,9 @@ Industry Solutions
  02
  
  
-### Custom Blueprint in 72 Hours
+### Written Plan in 5 Business Days
 
- I build a detailed automation plan mapped to your specific business. Every system, every workflow, every integration -- documented in plain English. You review and approve before anything gets built.
+ You get a written plan: what to automate, in what order, what each piece saves or earns, and what it would cost to build. We go over it on a 30-minute follow-up call. The full fee is credited against a build bought within 30 days.
 
  
  
@@ -168,9 +168,9 @@ Industry Solutions
  03
  
  
-### 2-Week Build
+### Fixed-Price Build
 
- I build everything using Claude Code. Storm campaigns, follow-up sequences, scheduling systems, CRM pipelines, website, marketing automations -- whatever your blueprint calls for. Progress updates throughout.
+ One named system, fixed price quoted after the diagnosis, hand-off date written on the scope before work starts. I build it using Claude Code. Storm campaigns, follow-up sequences, scheduling systems, CRM pipelines, website, marketing automations -- whatever the plan calls for. Progress updates throughout.
 
  
  
@@ -180,7 +180,7 @@ Industry Solutions
  
 ### Handoff and Training
 
- Everything deployed, documented, and handed off. Live training session walks you through every system. 30 days of support included. Optional $2K/month retainer for ongoing optimization.
+ Everything deployed, documented, and handed off. Live training session walks you through every system. 14 days of bug fixes included after hand-off. After a build, an optional $1,500/month retainer covers monitoring, fixes, and small changes.
 
  
  

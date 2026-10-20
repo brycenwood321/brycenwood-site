@@ -56,3 +56,5 @@ Free Playbook · System 8 of 14
 
  [Download the PDF](/guides/playbooks/ai-executive-team.pdf)
  Want a different one? [All the playbooks](/playbook/), one download each.
+
+ Want this done for your business? [Start with a diagnosis.](/pricing/)

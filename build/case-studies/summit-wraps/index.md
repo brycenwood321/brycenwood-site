@@ -121,7 +121,7 @@ Case Study
 
  This isn't about one vehicle wrap company. The systems I built for Summit Wraps are the same types of systems every small business needs — just tailored to their industry. A plumber needs lead scoring and automated follow-ups. A landscaper needs a content pipeline and a CRM. A roofer needs SEO and a design proof system. The problems are universal. The solutions just need to be built for each business specifically.
 
- That's why I'm now offering [Custom Business Builds](/services/custom-build/). Same approach. Same tools. Same methodology. I sit down with a business owner for 60 minutes, map out exactly where their bottlenecks are, and build a custom operating system tailored to their industry, their workflow, and their goals. No templates. No one-size-fits-all. Just systems that actually fit.
+ That's why I'm now offering [Custom Business Builds](/services/custom-build/). Same approach. Same tools. Same methodology. I sit down with a business owner for a 90-minute diagnosis, map out exactly where their bottlenecks are, and build a custom system tailored to their industry, their workflow, and their goals. No templates. No one-size-fits-all. Just systems that actually fit.
 
  
 > Every business owner I talk to has the same problem: they know what they need but can't build it themselves, and hiring someone to do it costs $10K-$50K. I built proof that there's a better way.

@@ -122,18 +122,18 @@ The two detailed guides cover each file type in depth:
 - [How to Create an llms.txt File](/guides/llms-txt/) -- the complete walkthrough with templates, formatting rules, and examples from multiple industries.
 - [How to Build Markdown Mirrors](/guides/markdown-mirrors/) -- the step-by-step process for creating markdown versions of your site pages, including the automated script approach I used.
 
-Both guides show you the WHAT and the WHY in full detail. For the exact prompts, templates, and build-along walkthroughs, those are inside the [free community](/community/) where local service business owners are implementing these systems together.
+Both guides show you the WHAT and the WHY in full detail. If you want this done for your business, start with a [$1,500 diagnosis](/pricing/).
 
 The window of opportunity is open right now. Every week that passes, more businesses will discover this channel and the first-mover advantage shrinks. The businesses that implement the 3-file system this month will have months of AI recommendation history building in their favor before the majority catches on.
 
 I know this because I watched it happen with Google SEO twenty years ago. The businesses that built authority early still dominate. The same pattern is starting right now with AI, and the cost of entry is three text files and a few hours of work.
 
  
- Inside the Community
- Get the Exact Prompts and Templates
- The llms.txt template, the markdown mirror generator script, the schema snippets -- everything you need to make AI recommend your business. Free to join.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## What Comes After the 3-File System
@@ -146,7 +146,7 @@ Second, freshness signals matter. AI tools are increasingly able to detect when 
 
 Third, cross-platform presence amplifies AI recommendations. When your business shows up not only on your website but also in social media content, YouTube videos, directory listings, and review platforms -- all saying consistent things about who you are and what you do -- AI tools build higher confidence in their recommendation. The Summit Wraps system includes automated cross-posting to YouTube and structured social media content specifically to build this cross-platform consistency.
 
-Every one of these extensions is something I built for Summit Wraps using Claude Code. Every one of them is documented inside the community. And every one of them starts with the same foundation: making your business readable by AI through the 3-file system.
+Every one of these extensions is something I built for Summit Wraps using Claude Code. And every one of them starts with the same foundation: making your business readable by AI through the 3-file system.
 
  
  
@@ -188,8 +188,8 @@ Every one of these extensions is something I built for Summit Wraps using Claude
  
 ## Ready to Make AI Recommend Your Business?
 
- Join free alongside local service business owners building AI-readable websites. Or book a discovery call to get your entire operating system built in 2 weeks.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

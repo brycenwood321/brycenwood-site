@@ -173,11 +173,11 @@ FREE GUIDE
  
  
  
- Community
- Get the Exact Prompts and Scoring Criteria
- The guide above covers WHAT to build and WHY it works. Inside the community, you get HOW -- the exact Claude Code prompts, scoring formulas, email templates, and step-by-step walkthroughs to build this system for your business.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
  
- [Join Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
  
  
@@ -262,8 +262,8 @@ FREE GUIDE
  
 ## Ready to Build This?
 
- The guide covers WHAT and WHY. The community gives you the exact prompts, templates, and walkthroughs to build the system yourself. Or book a call and I will build it for you.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Call](/contact/)

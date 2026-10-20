@@ -1,6 +1,6 @@
 ---
 title: Ecommerce Automation: Custom AI Systems for Shopify, WooCommerce & DTC Brands | Brycen Wood
-description: Run your ecommerce store with AI. Cart recovery, email flows, inventory alerts, review collection, and post-purchase journeys -- custom-built for your store in 2 weeks. Not just a Klaviyo template.
+description: Run your ecommerce store with AI. Cart recovery, email flows, inventory alerts, review collection, and post-purchase journeys -- custom-built for your store. Not just a Klaviyo template.
 url: https://www.brycenwood.com/industries/ecommerce-automation/
 last_updated: 2026-04-14
 ---
@@ -185,7 +185,7 @@ Industry Solutions
  
 ## How It Works
 
- Four steps. Two weeks. No technical knowledge required on your end.
+ Four steps. No technical knowledge required on your end.
 
  
 
@@ -194,7 +194,7 @@ Industry Solutions
  01
  
  
-### 60-Minute Discovery Call
+### $1,500 Diagnosis (90 Minutes)
 
  We talk about your store -- your products, your customers, your current stack, your ad spend, your biggest leaks. I look at your actual data, not a generic checklist.
 
@@ -204,9 +204,9 @@ Industry Solutions
  02
  
  
-### Custom Blueprint in 72 Hours
+### Written Plan in 5 Business Days
 
- I build a detailed automation plan researched specifically for your brand, category, and stage. Every flow, every trigger, every integration documented in plain English. You review and approve before anything gets built.
+ You get a written plan: what to automate, in what order, what each piece saves or earns, and what it would cost to build. We go over it on a 30-minute follow-up call. The full fee is credited against a build bought within 30 days.
 
  
  
@@ -214,9 +214,9 @@ Industry Solutions
  03
  
  
-### 2-Week Build
+### Fixed-Price Build
 
- I build everything using Claude Code. Cart recovery, email flows, review automation, inventory alerts, dashboards, whatever the blueprint calls for. Progress updates throughout. Built to fit your brand voice and existing stack.
+ One named system, fixed price quoted after the diagnosis, hand-off date written on the scope before work starts. I build it using Claude Code. Cart recovery, email flows, review automation, inventory alerts, dashboards, whatever the plan calls for. Progress updates throughout. Built to fit your brand voice and existing stack.
 
  
  
@@ -226,7 +226,7 @@ Industry Solutions
  
 ### Handoff and Training
 
- Everything deployed, documented, and handed off. Live training session walks you through every system. 30 days of support included. Optional $2K/month retainer for ongoing optimization and new flow builds.
+ Everything deployed, documented, and handed off. Live training session walks you through every system. 14 days of bug fixes included after hand-off. After a build, an optional $1,500/month retainer covers monitoring, fixes, and small changes.
 
  
  
@@ -300,7 +300,7 @@ Industry Solutions
  +
  
  
- If you're doing $20K+/month and spending on ads, the ROI is fast -- cart recovery alone typically pays for the build inside 60 days. Below $20K/month, the better starting point is the community (free to join) where you can build the foundational flows yourself with the exact prompts and templates I use. The custom build is for brands that already have product-market fit and are losing revenue to operational gaps, not for brands still figuring out what to sell.
+ If you're doing $20K+/month and spending on ads, a $1,500 diagnosis tells you what to build first and what it would cost, so you can judge the ROI before you commit. Below $20K/month, the better starting point is building the foundational flows yourself with Claude Code. The custom build is for brands that already have product-market fit and are losing revenue to operational gaps, not for brands still figuring out what to sell.
 
  
  

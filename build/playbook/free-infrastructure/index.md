@@ -56,3 +56,5 @@ Free Playbook · System 9 of 14
 
  [Download the PDF](/guides/playbooks/free-infrastructure.pdf)
  Want a different one? [All the playbooks](/playbook/), one download each.
+
+ Want this done for your business? [Start with a diagnosis.](/pricing/)

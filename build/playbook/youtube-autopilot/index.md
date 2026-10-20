@@ -53,3 +53,5 @@ Free Playbook · System 4 of 14
 
  [Download the PDF](/guides/playbooks/youtube-autopilot.pdf)
  Want a different one? [All the playbooks](/playbook/), one download each.
+
+ Want this done for your business? [Start with a diagnosis.](/pricing/)

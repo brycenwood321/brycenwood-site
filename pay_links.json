@@ -1,0 +1,13 @@
+{
+  "_what": "Live Stripe payment links (Business On Autopilot, acct_1TNLJe2QQBPPIPlu). Empty means the button falls back to /contact/. Rebuild with: python3 scripts/build_offer_pages.py",
+  "diagnosis": "https://buy.stripe.com/eVq3co8ID0AbcDWg4xbII00",
+  "setup_day": "https://buy.stripe.com/8x200c3oj6YzeM47y1bII01",
+  "cohort": "",
+  "cohort_start": "",
+  "_links": {
+    "diagnosis": "plink_1USQbp2QQBPPIPluTLv78qCd",
+    "setup_day": "plink_1USQcy2QQBPPIPluFSG5vlXq",
+    "created": "2026-10-19",
+    "cohort": "not created yet; make it when he sets the start date"
+  }
+}

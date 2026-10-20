@@ -165,11 +165,11 @@ I have zero financial relationship with any company listed here. No affiliate li
 **Honest cons.** Gets expensive quickly if you need advanced features. The UI has gotten bloated over the years. Customer support quality has declined. Occasional sync issues with bank feeds. The API OAuth flow is unnecessarily complex for initial setup.
 
  
- Inside the Community
- See How These Tools Work Together
- Setup walkthroughs, integration patterns, and the exact prompts for building systems with this stack. Free to join. No upsell inside.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## The Total Monthly Cost Breakdown
@@ -275,8 +275,8 @@ The full quick reference for every tool in the stack, including setup links and 
  
 ## Ready to Build Your $350/Month Operating System?
 
- Join free alongside local service business owners building AI-powered systems with Claude Code. Or book a discovery call to get your custom stack built in 2 weeks.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

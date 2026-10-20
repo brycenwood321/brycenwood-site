@@ -1,6 +1,6 @@
 ---
 title: How Much Does Business Automation Actually Cost in 2026? | Brycen Wood
-description: Real pricing breakdown: agencies ($5K-$20K), developers ($8K-$15K/month), SaaS ($500-$2K/month), or AI custom builds ($3,500 one-time). With proof from my own business.
+description: Real pricing breakdown: agencies ($5K-$20K), developers ($8K-$15K/month), SaaS ($500-$2K/month), or an AI custom build (fixed price, quoted after a $1,500 diagnosis). With proof from my own business.
 url: https://www.brycenwood.com/blog/ai-business-automation-cost/
 last_updated: 2026-04-14
 ---
@@ -19,7 +19,7 @@ Blog
  Business Automation Consultant -- Built 80+ systems with zero coding experience
  
 
-> **Key Takeaway:** Business automation costs range from $500/month (basic SaaS) to $200K+ (enterprise custom development). For small businesses, the sweet spot is an AI-powered custom build: $3,500-$15,000 one-time for a complete operating system that would cost $50K-$200K through traditional development.
+> **Key Takeaway:** Business automation costs range from $500/month (basic SaaS) to $200K+ (enterprise custom development). For small businesses, the sweet spot is an AI-powered custom build: a fixed price for one system, quoted after a $1,500 diagnosis, for work that would cost $50K-$200K through traditional development.
 
 ## The 4 Paths to Business Automation
 
@@ -52,7 +52,7 @@ The hidden problem is integration. Each of these tools was built by a different 
 
 The deeper problem is that you're limited to what the vendor decided to build. If GoHighLevel doesn't have a feature you need, you can't add it. If Zapier can't connect two of your tools, you're stuck. You're renting someone else's vision of what your business should look like, and you're paying for it every single month.
 
-**Real cost over 3 years:** $7,200-$72,000 (monthly subscriptions compound). And that doesn't include the dozens of hours you'll spend each month manually patching the gaps between tools.
+**Real cost over 3 years:** it depends on the build. You pay $1,500 for a diagnosis (credited toward a build), a fixed price for the build, and the retainer only if you want it. Compare that to $118,000 for a typical agency relationship or $300,000+ for a developer.
 
 ## Path 2: Hire a Marketing Agency
 
@@ -75,7 +75,7 @@ The advantage is that it's hands-off. You pay, they deliver. You focus on runnin
 
 The disadvantages are significant. First, you're paying for overhead -- every dollar of your invoice covers not just the work on your project but also the agency's rent, salaries, tools, and profit margin. Second, the work is often more templated than it appears. Your "custom" website is usually a theme with your colors. Your "custom" email sequence is their standard flow with your name. Third, and this is the one that hurts most: when you stop paying, the systems disappear. The workflows they built live in their accounts. The automations they configured are on their logins. You're renting capability, not building equity.
 
-**Real cost over 3 years:** $77,000-$410,000+ (upfront projects plus ongoing retainers). For the typical small business spending $3,000/month on an agency retainer plus a $10,000 website build, that's $118,000 over three years.
+**Real cost over 3 years:** it depends on the build. You pay $1,500 for a diagnosis (credited toward a build), a fixed price for the build, and the retainer only if you want it. Compare that to $118,000 for a typical agency relationship or $300,000+ for a developer.
 
 ## Path 3: Hire a Developer or Dev Team
 
@@ -92,7 +92,7 @@ The disadvantages are brutal for small businesses. The cost is 5-10x higher than
 
 There's also the technical debt problem. Every custom system accumulates code that needs to be maintained, updated, and eventually refactored. Without ongoing developer involvement, your custom system gradually degrades as the tools it depends on release updates and breaking changes.
 
-**Real cost over 3 years:** $250,000-$600,000+ for a full-time developer, or $100,000-$300,000 for a freelancer working part-time on your project.
+**Real cost over 3 years:** it depends on the build. You pay $1,500 for a diagnosis (credited toward a build), a fixed price for the build, and the retainer only if you want it. Compare that to $118,000 for a typical agency relationship or $300,000+ for a developer.
 
 ## Path 4: AI-Powered Custom Build (What I Do)
 
@@ -100,20 +100,20 @@ This path didn't exist two years ago. The emergence of AI coding tools like Clau
 
 Here's how it's priced:
 
-- **Custom Business Build (Founder Rate):** $3,500 one-time
-- **Custom Business Build (Standard):** $7,500 one-time
-- **Custom Business Build (Enterprise):** $15,000 one-time
-- **Optional ongoing retainer:** $2,000/month for continuous development
+- **Diagnosis:** $1,500, credited against a build bought within 30 days
+- **Setup Day:** $2,500
+- **Custom Business Build:** fixed price, quoted after a diagnosis
+- **Optional retainer, after a build only:** $1,500/month
 
-What you get for that price isn't a website. It's not a marketing campaign. It's the entire business operating system: CRM automation, lead pipelines, email sequences, dashboards, SEO infrastructure, content systems, financial tracking, client communication workflows -- everything your business needs to run, integrated and automated.
+What you get from a build isn't a website. It's not a marketing campaign. It's a working system built for one named job, such as CRM automation, lead pipelines, email sequences, dashboards, or content systems, integrated and automated.
 
-The process takes two weeks from blueprint to handoff. Everything is custom-built for your specific business -- not a template with your logo swapped in. You own 100% of the code, the hosting, and the data. Nothing disappears when you stop paying.
+The hand-off date is written on the one-page scope before work starts. Everything is custom-built for your specific business -- not a template with your logo swapped in. You own 100% of the code, the hosting, and the data. Nothing disappears when you stop paying.
 
-The optional $2,000/month retainer covers ongoing development of NEW capabilities, not maintenance of existing ones. The core system is designed to run autonomously. Most clients start without a retainer and add it later once they see the initial results and want to keep building.
+The optional $1,500/month retainer is available after a build and covers monitoring, fixes, and small changes, not new systems. The core system is designed to run autonomously.
 
 [See the full pricing breakdown here](/pricing/).
 
-**Real cost over 3 years:** $3,500-$87,000 (build plus optional retainer). The median client spends about $3,500-$7,500 for the initial build and runs the system for months before deciding whether to add the retainer. Compare that to $118,000 for a typical agency relationship or $300,000+ for a developer.
+**Real cost over 3 years:** it depends on the build. You pay $1,500 for a diagnosis (credited toward a build), a fixed price for the build, and the retainer only if you want it. Compare that to $118,000 for a typical agency relationship or $300,000+ for a developer.
 
 ## The Cost Comparison Table
 
@@ -126,19 +126,19 @@ Upfront cost
 $0-$500
 $5K-$50K
 $10K-$50K
-$3.5K-$15K
+Fixed, quoted after a diagnosis
 
 Monthly cost
 $200-$2K
 $2K-$10K
 $8K-$16K
-$0-$2K
+$0, or $1.5K retainer after a build
 
 3-year total
 $7K-$72K
 $77K-$410K
 $250K-$600K
-$3.5K-$87K
+Build price + optional retainer
 
 What you get
 Disconnected tools
@@ -156,7 +156,7 @@ Timeline
 Immediate
 4-24 weeks
 8-24 weeks
-2 weeks
+Hand-off date set on the scope
 
 Customization
 Low (vendor decides)
@@ -232,37 +232,37 @@ Every path has costs that don't show up in the initial quote. Here's what the sa
 
 **AI build hidden costs (being honest):**
 
-- **Learning curve.** If you're building yourself using Claude Code (the DIY community path), there's a learning curve. It's significantly shorter than learning to code, but it's not zero. Budget 10-20 hours to get comfortable.
+- **Learning curve.** If you're building yourself using Claude Code (the DIY path), there's a learning curve. It's significantly shorter than learning to code, but it's not zero. Budget 10-20 hours to get comfortable.
 - **Tool evolution.** Claude Code and other AI tools are evolving rapidly. What works today might have a better approach next month. This is mostly a benefit (capabilities keep improving), but it does mean occasional adaptation.
 - **Edge cases.** AI-built systems handle 95% of scenarios perfectly. The last 5% -- unusual integrations, legacy system compatibility, platform-specific quirks -- sometimes requires creative problem-solving that takes longer than expected.
 
  
- FOUNDING ACCESS
- Learn to Build Your Own Systems
- A community of local service business owners learning to automate with Claude Code. Prompts, templates, walkthroughs, and direct support. Free to join.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## How to Decide What's Right for Your Budget
 
 After working with dozens of business owners across different revenue stages, I've developed a framework for matching the right automation path to the right business.
 
-**Under $100K revenue: DIY with community guidance.**
+**Under $100K revenue: DIY with Claude Code.**
 
-At this stage, you need automation but you can't afford to outsource it. The move is to join the [community](/community/) (free to join), learn the basics of vibe coding with Claude Code, and build your own systems incrementally. Start with the highest-impact automation (usually lead follow-up or CRM organization), get it working, then build the next one. The community fee is a fraction of what you'd pay an agency, and most business owners at this stage can build their first 5-10 automations within a month of joining.
+At this stage, you need automation but you can't afford to outsource it. The move is to learn the basics of vibe coding with Claude Code and build your own systems incrementally. Start with the highest-impact automation (usually lead follow-up or CRM organization), get it working, then build the next one.
 
-**$100K-$500K revenue: Custom Build ($3,500-$7,500, one-time).**
+**$100K-$500K revenue: a diagnosis, then a fixed-price build.**
 
-You've proven the business works. Now you need it to work without you being involved in every step. This is the sweet spot for a custom build. The $3,500-$7,500 investment buys you the entire operating system foundation -- CRM, email, pipelines, dashboards, SEO -- and frees up 10-20 hours per week of manual work that you can redirect toward growth. At this revenue level, the build pays for itself within the first month through time savings and improved lead conversion alone.
+You've proven the business works. Now you need it to work without you being involved in every step. The $1,500 diagnosis (credited toward a build bought within 30 days) tells you which system to build first and what it would cost, so you decide with a number in front of you. The right first system frees up manual work you can redirect toward growth.
 
-**$500K+ revenue: Custom Build + Retainer ($7,500-$15,000 + $2,000/month).**
+**$500K+ revenue: a fixed-price build, then the retainer if you want it.**
 
-The business is generating serious revenue and every optimization has a measurable dollar impact. The build creates the foundation, and the retainer funds continuous expansion. New integrations, new dashboards, new automations that emerge as the business evolves. At $500K+ revenue, a $2,000/month retainer that improves conversion by even 5% pays for itself 10x over.
+The business is generating serious revenue and every optimization has a measurable dollar impact. The build creates the foundation, and the $1,500/month retainer (after a build only) covers monitoring, fixes, and small changes. New systems are a separate, scoped build.
 
-**$1M+ revenue: Enterprise build + full retainer.**
+**$1M+ revenue: larger builds, one scoped system at a time.**
 
-At this level, you're looking at the $15,000 enterprise build with a full retainer and potentially a quarterly strategy session. The system complexity matches the business complexity -- multi-location operations, team-wide dashboards, advanced analytics, investor-ready reporting. This is the tier where the AI custom build competes directly with hiring a full-time CTO and developer, at a fraction of the cost.
+At this level, you're looking at several fixed-price builds, each on its own one-page scope, with the retainer after. The system complexity matches the business complexity -- multi-location operations, team-wide dashboards, advanced analytics, investor-ready reporting.
 
 The common thread across all stages: start with the systems that save you the most time or capture the most revenue. Never start with "nice to have" automations. Always start with "this is costing me money or hours every week." The ROI calculates itself.
 
@@ -273,30 +273,30 @@ The common thread across all stages: start with the systems that save you the mo
  
  
  
- Is $3,500 really enough for a full business operating system?+
+ Can a fixed-price AI build really cost less than custom software?+
  
- Yes, and here is why the number sounds too low: you are comparing it to the old cost of custom software development, where every line of code was written by a human developer billing $100-$250 per hour. AI coding tools like Claude Code have collapsed the cost of building software by roughly 10x. The work that used to take a developer 200 hours now takes 20 hours of AI-assisted building. The $3,500 founder rate reflects the actual time and tooling cost, not an artificial markup to match industry expectations. The Summit Wraps operating system -- 80+ automations, full CRM, email engine, dashboards, SEO infrastructure, content pipelines -- was built at this cost level. The output is the same quality and complexity you would get from a $50,000+ custom development project. The difference is the tool, not the result.
+ Yes. If the price sounds low, you are comparing it to the old cost of custom software development, where every line of code was written by a human developer billing $100-$250 per hour. AI coding tools like Claude Code have collapsed the cost of building software by roughly 10x. The work that used to take a developer 200 hours now takes 20 hours of AI-assisted building. The build price is fixed, quoted after a $1,500 diagnosis, and reflects the actual time and tooling cost, not an artificial markup to match industry expectations. I do not publish a build number because it depends on the one system you need. The Summit Wraps operating system -- 80+ automations, full CRM, email engine, dashboards, SEO infrastructure, content pipelines -- was built with these tools. The difference is the tool, not the result.
 
  
  
  
  What's included in the monthly retainer?+
  
- The optional $2,000 per month retainer covers ongoing development and optimization of your operating system. This is not maintenance or support for existing systems -- those are designed to run autonomously. The retainer is for building NEW capabilities: adding a new automation, integrating a new tool, building a new dashboard, optimizing a lead pipeline based on performance data, expanding your content system, or adapting to changes in your business model. Think of it as having a fractional CTO and developer on call who already understands your entire business system. Most clients start without a retainer and add it later once they see the results from the initial build and want to keep expanding. There is no lock-in period and you can pause or cancel anytime.
+ The $1,500 per month retainer is available after a build only. It covers monitoring, fixes, and small changes (under 2 hours each), a monthly 30-minute review, and a written change log. It does not cover new systems, which are a separate build, and it does not include on-call or same-day response. There is a 3-month minimum, then 30 days notice from either side.
 
  
  
  
  How does the ROI compare to hiring a full-time developer?+
  
- A full-time developer in 2026 costs $80,000-$150,000 per year in salary alone, plus benefits, equipment, management overhead, and onboarding time. That is $100,000-$200,000 per year all-in. A custom AI build costs $3,500-$15,000 one-time, plus an optional $2,000 per month retainer ($24,000 per year maximum). Even at the highest tier with a full retainer, you are spending $39,000 per year compared to $100,000-$200,000 for a developer. But the cost comparison understates the real advantage. A full-time developer needs weeks to onboard and understand your business. They build what you describe, which requires you to know what to ask for. An AI custom build process starts with a deep business interview that surfaces automation opportunities you did not know existed. The Summit Wraps system includes dozens of automations that I never would have thought to request from a developer because they emerged from the AI understanding the business holistically.
+ A full-time developer in 2026 costs $80,000-$150,000 per year in salary alone, plus benefits, equipment, management overhead, and onboarding time. That is $100,000-$200,000 per year all-in. A custom AI build is a fixed price for one named system, quoted after a $1,500 diagnosis, plus an optional $1,500 per month retainer after a build. But the cost comparison understates the real advantage. A full-time developer needs weeks to onboard and understand your business. They build what you describe, which requires you to know what to ask for. An AI custom build starts with a 90-minute diagnosis that surfaces automation opportunities you did not know existed. The Summit Wraps system includes dozens of automations that I never would have thought to request from a developer because they emerged from the AI understanding the business holistically.
 
  
  
  
  Can I start small and scale up?+
  
- Absolutely, and for most businesses under $100,000 in revenue that is exactly what I recommend. Start with the community where you learn to build basic automations yourself using Claude Code. Graduate to a custom build when you hit a complexity ceiling or want to accelerate. Add the retainer when you are ready to continuously expand your system. The pricing tiers are designed to match your business stage: under $100K revenue, learn to vibe code inside the community (free to join). Between $100K-$500K, invest in a one-time custom build to create your operating system foundation. Above $500K, the retainer makes sense because the ROI on each new automation scales with your revenue. There is no pressure to start at the top tier. Every successful client I have worked with started with a single focused build and expanded from there.
+ Absolutely, and for most businesses under $100,000 in revenue that is exactly what I recommend. Start by learning to build basic automations yourself using Claude Code. Move to a custom build when you hit a complexity ceiling or want to accelerate, and start that with a $1,500 diagnosis, which is credited toward a build bought within 30 days. The retainer ($1,500 per month) is only available after a build. There is no pressure to start big. Every successful client I have worked with started with a single focused build and expanded from there.
 
  
  

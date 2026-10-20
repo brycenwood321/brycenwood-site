@@ -1,6 +1,6 @@
 ---
 title: Custom AI Build vs Marketing Agency: Which Is Right for Your Business? | Brycen Wood
-description: Custom AI build ($3,500, 2 weeks, full operating system) vs agency ($5K-$20K, 4-8 weeks, just a website). Honest comparison with real numbers.
+description: Custom AI build (fixed price after a $1,500 diagnosis, hand-off date on the scope) vs agency ($5K-$20K, 4-8 weeks, just a website). Honest comparison with real numbers.
 url: https://www.brycenwood.com/compare/custom-build-vs-agency/
 last_updated: 2026-04-14
 ---
@@ -9,7 +9,7 @@ Comparison Guide
  
 # Custom AI Build vs Marketing Agency
 
- One costs $3,500 and delivers in 2 weeks. The other costs $5K-$20K and takes 4-8 weeks. But cost isn't even the biggest difference.
+ One is a fixed price quoted after a $1,500 diagnosis, with a hand-off date written on the scope. The other costs $5K-$20K and takes 4-8 weeks. But cost isn't even the biggest difference.
 
  Last updated: April 2026
 
@@ -41,7 +41,7 @@ They were selling me a storefront when what I needed was an engine.
 
 ## What a Custom AI Build Actually Delivers
 
-When I say "custom AI build," I mean a complete business operating system built in 2 weeks using Claude Code. Not a website. Not a marketing campaign. A living, breathing system that handles the work you're currently doing manually.
+When I say "custom AI build," I mean a business system built with Claude Code, one named system at a time. Not a website. Not a marketing campaign. A living, breathing system that handles the work you're currently doing manually.
 
 For Summit Wraps, that system grew to include over 80 automated workflows. Here's what that looks like in practice:
 
@@ -67,11 +67,11 @@ Custom AI Build
 Marketing Agency
 
 Upfront Cost
-$3,500 one-time
+Fixed price, quoted after a $1,500 diagnosis
 $5,000-$20,000 setup + $2K-$8K/mo retainer
 
 Timeline
-2 weeks
+Hand-off date written on the scope before work starts
 4-8 weeks (often longer)
 
 Scope
@@ -87,7 +87,7 @@ You own everything -- code, content, systems
 Often locked to their platform or hosting
 
 Ongoing Costs
-$0 required (optional $2K/mo retainer)
+$0 required (optional $1,500/mo retainer after a build)
 $2,000-$8,000/mo retainer (mandatory)
 
 Communication
@@ -104,17 +104,17 @@ Let's do the math on a typical 12-month engagement.
 
 **Agency route:** $8,000 website build + $4,000/month retainer = $56,000 in year one. And you still don't own the underlying systems. Cancel the retainer and you might lose access to your own analytics, your ad accounts, sometimes even your website if it's on their hosting.
 
-**Custom AI build:** $3,500 one-time. That's it. If you want the optional retainer for ongoing optimization, that's $2,000/month -- but the core system works independently. Year one with the retainer: $27,500. Year one without: $3,500.
+**Custom AI build:** a fixed price for the one system you need, quoted after a $1,500 diagnosis that is credited toward the build. The retainer is optional, only after a build, and the core system works independently of it.
 
-Even at the low end of agency pricing, you're paying 3-4x more for a fraction of the deliverables. At the high end, the gap is staggering.
+The agency number keeps running every month. The build is one fixed price for one system, and you see the number before you commit.
 
-## Timeline: Two Weeks vs Two Months
+## Timeline: A Written Date vs Two Months
 
 Most agency projects take 4-8 weeks just for the website. Add in the strategy phase, the revisions, the "we need to schedule a call to discuss the call" meetings, and you're looking at 2-3 months before anything goes live.
 
-A custom AI build delivers in 2 weeks. Not because corners are being cut -- because AI tools like Claude Code compress what used to be team-based development work into focused build sessions. There's no waiting for the designer to finish before the developer can start. There's no project manager scheduling syncs. The entire system gets built in a continuous flow.
+A custom AI build is scoped to one system, with the hand-off date written on the scope before work starts. That is possible not because corners are being cut -- because AI tools like Claude Code compress what used to be team-based development work into focused build sessions. There's no waiting for the designer to finish before the developer can start. There's no project manager scheduling syncs. The entire system gets built in a continuous flow.
 
-For a small business, those extra 6-10 weeks matter. Every week without a proper system is a week of leads falling through the cracks, follow-ups getting missed, and revenue left on the table.
+For a small business, those extra weeks matter. Every week without a proper system is a week of leads falling through the cracks, follow-ups getting missed, and revenue left on the table.
 
 ## Scope: A Website vs an Operating System
 
@@ -161,11 +161,11 @@ I want to be honest here because this page would be worthless if I just trashed 
 But if you're a small or mid-size business owner who needs both a web presence and operational systems -- which is most of the people reading this -- the custom AI build delivers dramatically more value per dollar.
 
  
- Inside the Community
- See What Other Owners Are Building
- Join the community to see real before-and-after builds, ask questions about your specific business, and get the templates and prompts I use for every client project.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
 
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
 
 ## Ownership: The Hidden Cost of Agencies
@@ -186,7 +186,7 @@ When you hire an agency, you get an account manager. That account manager transl
 
 With a custom build, you talk directly to the person building your system. There's no game of telephone. When you say "I need the follow-up sequence to wait 48 hours instead of 24," that change happens in the conversation, not after a Jira ticket gets prioritized in next week's sprint.
 
-The discovery call at the start of a custom build is 60 minutes of me learning your business -- not pitching you on services. I need to understand your workflows, your bottlenecks, your customer journey, and your goals. That depth of understanding is what allows the system to be truly custom, not a template with different colors.
+The diagnosis at the start of a custom build is 90 minutes of me learning your business -- not pitching you on services. I need to understand your workflows, your bottlenecks, your customer journey, and your goals. That depth of understanding is what allows the system to be truly custom, not a template with different colors.
 
 ## The Bottom Line
 
@@ -214,14 +214,14 @@ I know which side I'm building on. I've seen the numbers.
  
  How can a custom build cost less than an agency?+
  
- AI tools like Claude Code have fundamentally changed the economics of building business systems. What used to take an agency team of 4-6 people working across weeks now gets built in focused 2-week sprints by one person working with AI. There is no project manager billing you $150 per hour for status meetings. There are no junior designers learning on your dime. The entire build happens in direct conversation between me and the AI, with you involved in the key decisions. The result is faster delivery, lower cost, and a product that is actually tailored to your specific business instead of a template with your logo swapped in.
+ AI tools like Claude Code have fundamentally changed the economics of building business systems. What used to take an agency team of 4-6 people working across weeks now gets built in focused sprints by one person working with AI. There is no project manager billing you $150 per hour for status meetings. There are no junior designers learning on your dime. The entire build happens in direct conversation between me and the AI, with you involved in the key decisions. The result is faster delivery, lower cost, and a product that is actually tailored to your specific business instead of a template with your logo swapped in.
 
  
  
  
- What happens after the 2-week build is finished?+
+ What happens after the build is finished?+
  
- You own everything. The code, the systems, the automations, the content -- it is all yours. Most agencies lock you into monthly retainers where you lose access to your own website if you stop paying. With a custom build, the handoff includes full documentation and training so you can maintain it yourself. If you want ongoing support, there is an optional $2,000 per month retainer for continued optimization, new system builds, and strategic guidance. But the core system works independently whether you keep the retainer or not. You will never be held hostage by a vendor.
+ You own everything. The code, the systems, the automations, the content -- it is all yours. Most agencies lock you into monthly retainers where you lose access to your own website if you stop paying. With a custom build, the handoff includes full documentation and training so you can maintain it yourself. If you want ongoing support, there is an optional $1,500 per month retainer, available after a build, for monitoring, fixes, and small changes. New systems are a separate build. The core system works independently whether you keep the retainer or not. You will never be held hostage by a vendor.
 
  
  
@@ -238,8 +238,8 @@ I know which side I'm building on. I've seen the numbers.
  
 ## Ready to Build Your Operating System?
 
- See what other business owners are building inside the community. Or book a discovery call and I'll map out exactly what your custom build would include.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Discovery Call](/contact/)

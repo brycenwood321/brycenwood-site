@@ -58,7 +58,7 @@ About
  
 ## What I Build Now
 
- I offer [Custom Business Builds](/services/custom-build/) -- I interview your business, build a custom operating system with Claude Code, and hand it off in two weeks. CRM, email automation, SEO, dashboards, content pipelines, lead generation -- whatever your business needs.
+ I offer [Custom Business Builds](/services/custom-build/) -- I start with a $1,500 diagnosis, then build one named system with Claude Code at a fixed price and hand it off. CRM, email automation, SEO, dashboards, content pipelines, lead generation -- whichever the plan puts first.
 
  Every build is completely custom. I don't use templates. I don't copy-paste from one client to another. I research your industry, study your competitors, and build systems designed specifically for how your business works.
 
@@ -108,7 +108,7 @@ About
 
  I'm not a tech guy who decided to do business. I'm a business guy who discovered the most powerful tool ever built for people like me. I've never taken a coding class. I don't know Python syntax. I couldn't write a for loop if you asked me to. But I understand business problems -- deeply -- and that turns out to be the only skill that matters when AI handles the technical execution.
 
- I also run a [community called Business On Autopilot](https://www.brycenwood.com/community/) where I teach local service business owners how to build their own AI-powered systems with Claude Code. It is free to join.
+ I also run [Claude Code Night](https://www.brycenwood.com/community/), a free Monday night in Utah County for owners who already run Claude Code.
 
  If you're a business owner who's been told you need to hire a developer, pay an agency, or learn to code -- there's another way. I'm living proof. And I want to help you build it too.
 

@@ -300,13 +300,6 @@ Every page has a markdown mirror -- add /index.md to any URL.
 
  Full disclosure: that's my affiliate link below, I earn a commission if you sign up. I only recommend it because I actually run it on my own business -- and you just read the exact system of what it does, so you can decide for yourself.
 
- 
- &#127873; my gift for using my link
- Sign up to cytd through my link and I'll give you free LIFETIME access to my private community, Business On Autopilot (it used to be $97/mo). That's where I break down the AI visibility playbook live, share what's working, and answer questions directly.
-
- How to claim: sign up with the link below, then reply to my DM (or message me @brycenwood.ai) with your confirmation and I'll add you, free, for life.
-
- 
  Start with the free AI visibility check. It scores exactly where you stand right now across the engines. No card, no commitment, just your number.
 
  [Run my free AI visibility check →](https://www.cytd.ai/?deal=brycen#free-ai-visibility-check)

@@ -43,7 +43,7 @@ FREE GUIDE
 
  Here are 10 of the most impactful systems -- the ones that actually changed how my business runs and directly contributed to growing from $52K to $300K in revenue without hiring a single employee. These are not toy projects or demos. They run in production every day. Some of them run every 5 minutes.
 
- For each system, I will tell you what it does, why it matters, and what changed after I built it. The exact prompts and build walkthroughs are in the [community](/community/).
+ For each system, I will tell you what it does, why it matters, and what changed after I built it.
 
  
 ## 1. AI Lead Scorer
@@ -158,11 +158,11 @@ FREE GUIDE
  
  
  
- Community
- Get the Exact Prompts for Every System
- This guide covers WHAT each system does and WHY it matters. Inside the community, you get HOW -- the exact Claude Code prompts I used, step-by-step build walkthroughs, and templates you can adapt for your own business.
+ Done For You
+ Want this built for your business?
+ Start with a $1,500 diagnosis: a written plan of what to automate, in what order, and what it would cost to build. The full fee is credited toward a build bought within 30 days.
  
- [Join Community](/community/)
+ [Start with a diagnosis](/pricing/)
  
  
  
@@ -225,8 +225,8 @@ FREE GUIDE
  
 ## Ready to Start Building?
 
- The community has exact prompts, build walkthroughs, and templates for every system on this page. Or book a call and I will build your operating system for you.
+ Want this built for your business? Start with a $1,500 diagnosis, credited toward a build.
 
  
- [Join the Free Community](/community/)
+ [Start with a diagnosis](/pricing/)
  [Book a Call](/contact/)

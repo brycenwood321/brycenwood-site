@@ -1,6 +1,6 @@
 ---
 title: Book a Discovery Call — Brycen Wood
-description: Book a free 30-minute discovery call with Brycen Wood. Get a custom automation plan for your business — no obligation, no pitch.
+description: Book a free 30-minute discovery call with Brycen Wood. Find out what to automate first. No obligation, no pitch.
 url: https://www.brycenwood.com/contact/
 last_updated: 2026-04-14
 ---
@@ -39,7 +39,7 @@ Let's Talk
  3
  
  **You get a custom plan**
- Within 72 hours, you'll have a detailed blueprint -- whether or not you hire me.
+ If it's a fit, the next step is a $1,500 diagnosis, which ends in a written plan.
 
  
  
