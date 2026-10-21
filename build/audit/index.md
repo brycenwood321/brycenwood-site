@@ -154,7 +154,7 @@ Free website analysis
  
 ## Get your free audit.
 
- Drop your website below. Your personalized PDF report will be ready in under 60 seconds.
+ Drop your website below. I build your personalized PDF report and email it to you myself.
 
  
  
