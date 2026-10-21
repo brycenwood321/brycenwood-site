@@ -75,7 +75,7 @@ FREE GUIDE
 # About Summit Wraps
 
 Summit Wraps is a full-service vehicle wrap and branding company
-based in Springville, Utah with a second location in Lehi.
+based in American Fork, Utah.
 
 ## What We Do
 - Full vehicle wraps (commercial and personal)

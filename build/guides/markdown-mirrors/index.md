@@ -119,7 +119,7 @@ Here's an example of what a markdown mirror looks like for a services page:
 Summit Wraps offers full-service vehicle wrapping, fleet
 graphics, and commercial branding in Utah. We serve
 businesses across Salt Lake County, Utah County, and the
-Wasatch Front from our two locations in Springville and Lehi.
+Wasatch Front from our shop in American Fork.
 
 ## Full Vehicle Wraps
 Complete color-change wraps for cars, trucks, vans, and SUVs.

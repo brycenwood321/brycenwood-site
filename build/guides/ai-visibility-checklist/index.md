@@ -127,7 +127,7 @@ The AI Visibility Playbook | Brycen Wood
 - Utah businesses with fleets, and individual owners in the greater SLC area
 
 ## Contact
-- Location: Lehi, Utah · Web: summitwrapsandgraphics.com
+- Location: American Fork, Utah · Web: summitwrapsandgraphics.com
 
  
  What to include -- and what to leave out

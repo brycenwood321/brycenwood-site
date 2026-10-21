@@ -1,0 +1,16 @@
+I have jobs that run on their own: scheduled scripts, automations, AI tasks. I want ONE watcher that checks each job actually PRODUCED something, not just that it ran. Ask me one question at a time, and explain what each piece DOES before how it works.
+
+Step 1. Help me list every job: its name, when it runs, and what it should leave behind when it works (a file, a row in a spreadsheet, a sent email, a report, a backup). If I don't know where a job leaves its output, look in this folder and help me find it.
+
+Step 2. Build a watcher that runs once a day, after the jobs should be finished, and checks each job:
+- The output exists AND is new since the job's last scheduled run. A file that is there but old is a failure.
+- The output is not empty and looks normal next to its last few runs. A report with 0 rows when it usually has 40 is a failure, even if the job said "success".
+- Give each job one of: OK, LATE, EMPTY, MISSING, or CANNOT CHECK.
+
+Rules:
+- A job that says success but left nothing behind is a FAILURE. A false "all good" is worse than an error, because nobody looks.
+- If the watcher cannot see a job's output at all (wrong folder, no access), it says CANNOT CHECK. Never OK.
+- Stay silent when everything is OK. When something needs me, send ONE short message: which job, what is wrong, what to do first. One line per problem. No list of the things that worked.
+- Before you switch it on, run it once and show me what it would have said today. Then break one job on purpose (rename a test output file) and show me the watcher catches it. Put the file back after.
+
+Last, tell me how to schedule it on my computer, how to change where the message goes (text, email or just a file I open), and how to turn it off.

@@ -1,0 +1,22 @@
+I want to find out whether something I changed made customers leave. I will give you two lists.
+
+LIST 1, CHANGES: every change I made to the business, with the date. Prices, hours, menu or services, staff, policies, delivery or pickup, the website, how we bill. Small ones count.
+LIST 2, WHO LEFT: every customer who cancelled, paused or stopped coming, with the date they left and anything I know about them (how they bought, what they bought, how long they had been a customer). First names or initials are fine.
+
+Then:
+1. Put everything on one timeline, oldest first, changes and departures together.
+2. For each change, count how many people left in the 30 days before it and the 30 days after it.
+3. Look at who left after each change. Do they have something in common (same way of buying, same product, same length as a customer)?
+4. Tell me the one change most worth a closer look, and how sure you are: strong, weak, or too few people to tell.
+5. Give me one question I could ask a customer who left, to check whether you are right.
+
+Rules:
+- Say "after", never "because". A timeline can show a pattern. It cannot prove a cause.
+- If the numbers are too small to mean anything, say so plainly.
+- Do not invent dates, customers or reasons. If something is missing from my lists, ask me for it before you start.
+
+My changes:
+[paste your list of changes and dates here]
+
+Who left:
+[paste your list of who left and when here]

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GV8RG30MK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2GV8RG30MK');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Review Prompt: What Your Reviews Have in Common | Brycen Wood</title>
+<meta name="description" content="Paste your last ten reviews into AI with one prompt. It tells you what people keep praising and what keeps coming up as a complaint. Copy button included.">
+<link rel="canonical" href="https://www.brycenwood.com/reviews/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
+<meta property="og:title" content="The Review Prompt: What Your Reviews Have in Common">
+<meta property="og:description" content="Paste your last ten reviews into AI with one prompt. It tells you what people keep praising and what keeps coming up as a complaint. Copy button included.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.brycenwood.com/reviews/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Review Prompt: What Your Reviews Have in Common">
+<meta name="twitter:description" content="Paste your last ten reviews into AI with one prompt. It tells you what people keep praising and what keeps coming up as a complaint. Copy button included.">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebPage", "name": "The Review Prompt: What Your Reviews Have in Common", "description": "Paste your last ten reviews into AI with one prompt. It tells you what people keep praising and what keeps coming up as a complaint. Copy button included.", "url": "https://www.brycenwood.com/reviews/", "author": {"@type": "Person", "name": "Brycen Wood", "url": "https://www.brycenwood.com/about/"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brycenwood.com/"}, {"@type": "ListItem", "position": 2, "name": "Playbook", "item": "https://www.brycenwood.com/playbook/"}, {"@type": "ListItem", "position": 3, "name": "The Review Prompt"}]}
+</script>
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<style>
+.five-step{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:28px 0;border-bottom:1px solid var(--card-border)}
+.five-step:last-child{border-bottom:none}
+.five-num{font-family:var(--mono);font-size:32px;font-weight:700;color:var(--lime);line-height:1}
+.five-step h3{font-size:22px;font-weight:800;margin:0 0 8px;line-height:1.2}
+.five-step .what{font-size:16px;color:var(--text);line-height:1.65;margin:0 0 12px}
+.five-step .how{font-size:15px;color:var(--text-dim);line-height:1.65;margin:0}
+.five-step .how strong{color:var(--text)}
+.five-step a,.tick-list a{color:var(--lime)}
+.five-step .say{display:inline-block;font-family:var(--mono);font-size:13px;color:var(--lime);background:var(--lime-dim);padding:3px 8px;border-radius:4px;margin-top:10px}
+.prompt-box{position:relative;background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--lime);border-radius:8px;padding:24px;margin-top:24px}
+.prompt-box h3{font-size:18px;font-weight:800;margin:0 0 14px}
+.prompt-box pre{font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--text);white-space:pre-wrap;word-wrap:break-word;margin:0;background:none;padding:0}
+.copy-btn{width:100%;margin-top:18px;padding:16px;font-family:var(--sans);font-size:17px;font-weight:800;background:var(--lime);color:#050508;border:none;border-radius:8px;cursor:pointer;letter-spacing:0.3px}
+.copy-btn:active{transform:scale(0.99)}
+.copy-btn.done{background:var(--lime-deep)}
+.mini-steps{display:grid;gap:10px;margin-top:20px}
+.mini-steps div{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:15px;color:var(--text-dim);line-height:1.6}
+.mini-steps span{font-family:var(--mono);color:var(--lime);font-weight:700}
+.tick-group{margin-top:32px}
+.tick-group h3{font-size:20px;font-weight:800;margin:0 0 8px}
+.tick{display:grid;grid-template-columns:32px 1fr;gap:12px;padding:18px 0;border-bottom:1px solid var(--card-border);cursor:pointer}
+.tick:last-child{border-bottom:none}
+.tick input,.step-tick input{width:22px;height:22px;margin-top:2px;accent-color:var(--lime);cursor:pointer}
+.tick strong{display:block;font-size:17px;color:var(--text);margin-bottom:4px}
+.tick span{font-size:15px;color:var(--text-dim);line-height:1.6}
+.step-tick{display:inline-flex;align-items:center;gap:10px;margin-top:14px;font-size:14px;color:var(--text-dim);cursor:pointer}
+.steps-intro{font-size:16px;color:var(--text-dim);max-width:600px;margin:16px auto 0;line-height:1.6;text-align:center}
+.locked-content{display:none}
+@media (max-width:600px){.five-step{grid-template-columns:40px 1fr;gap:14px}.five-num{font-size:26px}.five-step h3{font-size:19px}}
+</style>
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link">Guides</a>
+    <a href="/playbook/" class="nav-link">Playbooks</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span>
+  <a href="/playbook/">Playbooks</a><span class="sep">/</span>
+  <span>The Review Prompt</span>
+</div>
+
+<section class="page-hero">
+  <p class="hero-eyebrow">From the video &middot; Free</p>
+  <h1>Paste your last ten reviews into AI. <span class="accent">Ask one question.</span></h1>
+  <p class="hero-sub">You read reviews one at a time. AI reads them together. Whatever shows up more than once is the thing to fix, or the thing to say louder. Here is the exact prompt, with a copy button. Drop your email below and it unlocks. Nothing to buy.</p>
+  <div class="btn-group" style="margin-top:24px">
+    <a href="#get" class="btn-primary">Unlock the review prompt</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding:56px 0;">
+  <div class="container-narrow">
+    <div class="section-header reveal">
+      <p class="hero-eyebrow">What&rsquo;s inside</p>
+      <h2>What is inside, <span class="accent">one breath each</span></h2>
+    </div>
+    <div class="perks reveal" style="margin-top:40px">
+      <div class="perk"><div class="perk-icon">01</div><div class="perk-text"><strong>What people keep praising</strong> &middot; Every theme that shows up in two or more reviews, with a count and a quote.</div></div>
+      <div class="perk"><div class="perk-icon">02</div><div class="perk-text"><strong>What keeps coming up as a complaint</strong> &middot; Including the polite ones, like &ldquo;only thing I'd change...&rdquo;</div></div>
+      <div class="perk"><div class="perk-icon">03</div><div class="perk-text"><strong>One fix and one thing to say louder</strong> &middot; Based only on what your customers actually wrote.</div></div>
+    </div>
+    <p class="reveal" style="text-align:center;font-size:15px;color:var(--text-dim);margin-top:28px;line-height:1.6">Four short steps and the prompt with a copy button. Unlocked by the form below.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section-raised" id="get" style="padding:72px 0;">
+  <div class="container-narrow">
+    <div class="form-wrapper reveal" id="formPanel">
+      <div class="form-title">Get the review prompt</div>
+      <div class="form-sub">Enter your email and this page unlocks immediately. Just this one, not all of them.</div>
+      <div id="ghl-form">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/Z1F5E7GVhmaDPvn8B7ww"
+          style="display:inline;width:100%;height:600px;border:none;border-radius:4px"
+          id="inline-Z1F5E7GVhmaDPvn8B7ww"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Waitlist Form"
+          data-height="600"
+          data-layout-iframe-id="inline-Z1F5E7GVhmaDPvn8B7ww"
+          data-form-id="Z1F5E7GVhmaDPvn8B7ww"
+          title="Playbook request"
+        ></iframe>
+        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+      </div>
+      <p style="text-align:center;margin-top:20px;font-size:14px;color:var(--text-dim)">Already submitted and nothing happened? <a href="#" id="manualTriggerLink" style="color:var(--lime);text-decoration:underline;font-weight:600">Click here to unlock it.</a></p>
+    </div>
+    <div id="successPanel" style="display:none;text-align:center;padding:48px 24px;">
+      <div style="font-size:32px;font-weight:800;margin-bottom:12px;color:var(--text)">The review prompt is <span class="accent">yours.</span></div>
+      <p style="color:var(--text-dim);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">Everything is unlocked below: the steps, and the prompt with a copy button.</p>
+      <p style="font-size:14px;color:var(--text-muted);margin-top:24px">Want more? <a href="/playbook/" style="color:var(--lime)">All the playbooks</a>, one download each.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="locked-content" id="unlocked" style="padding:48px 0;">
+  <div class="container-narrow">
+    <div class="section-header">
+      <p class="hero-eyebrow">Unlocked</p>
+      <h2>Four steps, <span class="accent">ten minutes</span></h2>
+    </div>
+    <div class="five-step">
+      <div class="five-num">1</div>
+      <div>
+        <h3>Copy your last ten reviews</h3>
+        <p class="what">From Google, Facebook, wherever you get them. Keep the star rating with each one. Take the names out if you like. The prompt does not need them.</p>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">2</div>
+      <div>
+        <h3>Paste them into the prompt</h3>
+        <p class="what">Copy the prompt below into ChatGPT, Claude or Gemini, and paste your reviews where it says.</p>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">3</div>
+      <div>
+        <h3>Read the patterns, not the single reviews</h3>
+        <p class="what">The prompt only counts something as a pattern if it shows up in at least two reviews. One-offs go in their own short list at the end, so one angry customer does not set your to-do list.</p>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">4</div>
+      <div>
+        <h3>Do one thing with it</h3>
+        <p class="what">Fix the complaint that keeps coming up. Then take the praise that keeps coming up and put it on your home page, in your customers' own words.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="locked-content" id="prompt" style="padding:32px 0 72px;">
+  <div class="container-narrow">
+    <div class="section-header">
+      <p class="hero-eyebrow">The prompt</p>
+      <h2>The exact <span class="accent">review prompt</span></h2>
+      <p style="font-size:16px;color:var(--text-dim);max-width:600px;margin:16px auto 0;line-height:1.6">Works in ChatGPT, Claude or Gemini. No setup.</p>
+    </div>
+    <div class="prompt-box">
+<pre id="promptText">Below are my last ten customer reviews. Read them together, not one at a time, and tell me:
+
+1. WHAT PEOPLE KEEP PRAISING. Every theme that shows up in two or more reviews. For each one: how many reviews mention it, and one short quote.
+2. WHAT KEEPS COMING UP AS A COMPLAINT. Anything negative, or a wish, even when it is said politely (&quot;only thing I&#x27;d change...&quot;, &quot;a little pricey but...&quot;). Same format: how many, one short quote.
+3. ONE THING TO FIX and ONE THING TO SAY LOUDER in my marketing, based only on these reviews, with the reason for each in one sentence.
+
+Rules:
+- Only call something a pattern if it shows up in at least two reviews. Things mentioned once go in a short &quot;mentioned once&quot; list at the end.
+- Use only what is in the text. Do not invent, and do not soften a complaint.
+- If there are no repeated complaints, say that plainly instead of stretching to find one.
+- Leave reviewer names out of your answer.
+
+My reviews:
+[paste your last ten reviews here]</pre>
+      <button class="copy-btn" data-target="promptText">Copy the prompt</button>
+    </div>
+    <p style="text-align:center;font-size:14px;color:var(--text-muted);margin-top:28px;line-height:1.6">Nothing to buy here. If it helps, that is the whole point. I post what I learn as I build on <a href="https://www.instagram.com/brycenwood.ai/" target="_blank" rel="noopener" style="color:var(--lime)">@brycenwood.ai</a>.</p>
+  </div>
+</section>
+
+<div class="sticky-bar" id="stickyBar">
+  <a href="#get" class="sticky-bar-btn">Get the review prompt</a>
+  <div class="sticky-bar-sub">The review prompt &middot; free</div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbooks</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<script>
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);}
+  });
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+const SLUG='reviews';
+try{localStorage.setItem('bw_playbook_pending',SLUG)}catch(e){}
+let unlocked=false;
+function unlock(opts){
+  if(unlocked)return;
+  unlocked=true;
+  try{localStorage.removeItem('bw_playbook_pending')}catch(e){}
+  try{localStorage.setItem('bw_playbook_'+SLUG,'1')}catch(e){}
+  const formPanel=document.getElementById('formPanel');
+  const successPanel=document.getElementById('successPanel');
+  if(formPanel)formPanel.style.display='none';
+  if(successPanel)successPanel.style.display='block';
+  document.querySelectorAll('.locked-content').forEach(el=>{el.style.display='block';el.classList.add('visible')});
+  if(typeof gtag==='function'){gtag('event','playbook_unlock',{playbook:SLUG})}
+  if(successPanel)successPanel.scrollIntoView({behavior:'smooth',block:'center'});
+}
+// 0: came back from the GHL redirect
+if(new URLSearchParams(window.location.search).get('dl')==='1'){setTimeout(unlock,500);}
+// already unlocked this one on this device
+try{if(localStorage.getItem('bw_playbook_'+SLUG)==='1'&&!unlocked){unlock({noDownload:true});}}catch(e){}
+// 1: GHL postMessage
+window.addEventListener('message',function(e){
+  try{
+    var d=e.data;
+    if(typeof d==='string'&&(d.includes('formSubmitted')||d.includes('form_submitted')||d.includes('lcWidget')))unlock();
+    if(typeof d==='object'&&d){
+      var json=JSON.stringify(d).toLowerCase();
+      if(json.includes('formsubmitted')||json.includes('form_submitted')||json.includes('lcwidget')||json.includes('appreciate')||json.includes('thank you'))unlock();
+    }
+  }catch(err){}
+});
+// 2: iframe shrinks after submit (only after it was tall, loaded, for 4 s)
+const ghlIframe=document.getElementById('inline-Z1F5E7GVhmaDPvn8B7ww');
+if(ghlIframe){
+  let lastHeight=0,tallSince=0;
+  const heightPoll=setInterval(()=>{
+    try{
+      const h=ghlIframe.offsetHeight||ghlIframe.clientHeight;
+      const now=Date.now();
+      if(h>400){if(!tallSince)tallSince=now;}
+      if(lastHeight>400&&h<350&&!unlocked&&tallSince&&(now-tallSince)>4000){unlock();clearInterval(heightPoll);}
+      lastHeight=h;
+    }catch(err){}
+  },500);
+  setTimeout(()=>clearInterval(heightPoll),600000);
+}
+// 3: manual
+const manualLink=document.getElementById('manualTriggerLink');
+if(manualLink){manualLink.addEventListener('click',function(e){e.preventDefault();unlock();});}
+
+const stickyBar=document.getElementById('stickyBar');
+if(stickyBar){
+  const heroEl=document.querySelector('.page-hero');
+  const stickyObs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      const gateVisible=(()=>{const g=document.getElementById('get');if(!g)return false;const r=g.getBoundingClientRect();return r.top<window.innerHeight&&r.bottom>0})();
+      if(!e.isIntersecting&&!gateVisible&&!unlocked){stickyBar.classList.add('visible')}else{stickyBar.classList.remove('visible')}
+    });
+  },{threshold:0});
+  if(heroEl)stickyObs.observe(heroEl);
+}
+
+// tick boxes remember their state on this device
+document.querySelectorAll('input[data-tick]').forEach(function(box){
+  var key='bw_tick_'+SLUG+'_'+box.getAttribute('data-tick');
+  try{if(localStorage.getItem(key)==='1')box.checked=true}catch(e){}
+  box.addEventListener('change',function(){try{localStorage.setItem(key,box.checked?'1':'0')}catch(e){}});
+});
+
+function fallbackCopy(text){
+  const ta=document.createElement('textarea');
+  ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.focus();ta.select();
+  let ok=false;
+  try{ok=document.execCommand('copy')}catch(e){ok=false}
+  document.body.removeChild(ta);
+  return ok;
+}
+document.querySelectorAll('.copy-btn[data-target]').forEach(function(btn){
+  const label=btn.textContent;
+  btn.addEventListener('click',async()=>{
+    const src=document.getElementById(btn.getAttribute('data-target'));
+    if(!src)return;
+    const text=src.textContent;
+    let ok=false;
+    try{
+      if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);ok=true}
+      else{ok=fallbackCopy(text)}
+    }catch(e){ok=fallbackCopy(text)}
+    if(ok){
+      btn.textContent='Copied. Now paste it in.';
+      btn.classList.add('done');
+      if(typeof gtag==='function'){gtag('event','copy_prompt',{page:SLUG,box:btn.getAttribute('data-target')})}
+      setTimeout(()=>{btn.textContent=label;btn.classList.remove('done')},4000);
+    }else{
+      btn.textContent='Press and hold the text above to copy it';
+    }
+  });
+});
+</script>
+</body>
+</html>

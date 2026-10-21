@@ -51,7 +51,7 @@ Think of it like a robots.txt file, but instead of telling search crawlers which
 
 The format is simple. Plain text. Clear headings. Structured information. No HTML, no styling, no JavaScript. Just the facts about your business laid out in a way that any language model can parse in milliseconds.
 
-For Summit Wraps, our llms.txt includes our business name, both locations (Springville and Lehi), the specific services we offer (full wraps, partial wraps, fleet branding, PPF, tint), our target market (commercial fleet operators, small businesses, individuals), what makes us different (in-house design, free consultations, dual-location coverage), and links to every important page on our site.
+For Summit Wraps, our llms.txt includes our business name, our location (American Fork, Utah), the specific services we offer (full wraps, partial wraps, fleet branding, PPF, tint), our target market (commercial fleet operators, small businesses, individuals), what makes us different (in-house design, free consultations, coverage across Utah County), and links to every important page on our site.
 
 When ChatGPT encounters this file, it gets a perfect summary of our business without having to crawl through 27 pages of HTML to piece it together. That efficiency translates directly into recommendation quality. The AI can confidently describe who we are and why we might be the right fit for a specific customer.
 

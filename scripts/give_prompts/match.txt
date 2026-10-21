@@ -1,0 +1,17 @@
+Compare my Google listing with my website, line by line, and tell me everything that does not match exactly.
+
+Check these, in this order:
+1. Address: street, suite or unit number, city, ZIP. Treat "Ste" vs "Suite" or "S" vs "South" as a style difference, but flag a different number, a missing suite, or an old address as a real mismatch.
+2. Business name: exactly as written, with no extra words on either side. "&" vs "and" is a style difference.
+3. Phone number.
+4. Hours, day by day, including any holiday or special hours.
+5. What we do: my Google primary category and other categories, next to how my website's home page title and headline describe the business.
+6. The website link on the listing: does it go to a real page that matches the listing?
+
+For each line, give me: MATCH, STYLE DIFFERENCE, or MISMATCH, then what each side says. Put the mismatches at the top. End with the one fix to make first. Do not guess at anything I did not paste. If a piece is missing, say "not provided".
+
+My Google listing (copy everything you can see on it):
+[paste here]
+
+My website (paste the footer, contact page and home page title and headline):
+[paste here]

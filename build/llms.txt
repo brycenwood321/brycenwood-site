@@ -44,6 +44,17 @@
 - [Claude Code Night](https://www.brycenwood.com/community/) - Free Monday night in Utah County for owners who already run Claude Code.
 - [Tools I Use](https://www.brycenwood.com/tools/) - Full AI business stack.
 
+## Free Tools From the Videos
+- [Get Found by ChatGPT](https://www.brycenwood.com/found/) - Three website checks that help AI find your business, plus one setup prompt.
+- [The 12 Checks](https://www.brycenwood.com/checks/) - Twelve one-minute checks on your own business, with what a fail looks like and the first fix.
+- [The Watcher Prompt](https://www.brycenwood.com/watch/) - Builds an AI that checks your other automated jobs actually produced something.
+- [Listing Match Checklist](https://www.brycenwood.com/match/) - What must match between your Google listing and your website, address first.
+- [The Do Not Guess Sentence](https://www.brycenwood.com/guess/) - One sentence, plus versions for ChatGPT, Claude and Gemini, that stops AI guessing.
+- [The Review Prompt](https://www.brycenwood.com/reviews/) - Finds what your last ten reviews keep praising and complaining about.
+- [The Churn Prompt](https://www.brycenwood.com/churn/) - Lines up the changes you made with the customers who left.
+- [Town Page Template](https://www.brycenwood.com/towns/) - A fill-in-the-blank page for each town you serve.
+- [The Ad Library Teardown](https://www.brycenwood.com/playbook/ad-library-teardown/) - Read every ad your competitors run, sorted by how long each has been live.
+
 ## FAQ
 - Q: Do I need to know how to code? A: No. Every system is built through conversation with Claude Code. Zero coding experience required. Brycen himself has never written a line of code.
 - Q: How long does a build take? A: The hand-off date is written on a one-page scope before work starts, by default 3 weeks from the deposit. Half up front, half at hand-off, 14 days of fixes after.

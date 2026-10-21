@@ -10,7 +10,7 @@ From the video · Free
  
 # Ask ChatGPT who the best is in your city. Then make it say your name.
 
- ChatGPT puts my wrap shop at the top of its list for Lehi, Utah. No ad, no agency. Three things on the website did it, and I do not know which one tipped it, so do all three. Each one explained in plain English, then one prompt that sets all three up for you. Drop your email below and it unlocks. Nothing to buy.
+ ChatGPT puts my wrap shop at the top of its list for American Fork, Utah. No ad, no agency. Three things on the website did it, and I do not know which one tipped it, so do all three. Each one explained in plain English, then one prompt that sets all three up for you. Drop your email below and it unlocks. Nothing to buy.
 
  
  [Unlock the three + the prompt](#get)
@@ -81,7 +81,7 @@ From the video · Free
  
 ### Your business as data
 
- Your name, address, phone, hours and services are probably on your site as words, or worse, inside a picture. Machines read data, not paragraphs. Structured data is a small block, hidden in the page, that states each fact in a format every AI and search engine understands. It is how ChatGPT knew my shop was in Lehi, what it does and that it is open.
+ Your name, address, phone, hours and services are probably on your site as words, or worse, inside a picture. Machines read data, not paragraphs. Structured data is a small block, hidden in the page, that states each fact in a format every AI and search engine understands. It is how ChatGPT knew my shop was in American Fork, what it does and that it is open.
 
  **How to check:** search "Google Rich Results Test", paste your homepage address in, and look for a LocalBusiness result. Nothing found means your business is words only.
 

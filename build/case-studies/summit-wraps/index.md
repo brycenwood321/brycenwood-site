@@ -45,7 +45,7 @@ Case Study
  
 ## The Problem
 
- Summit Wraps is a vehicle wrap and branding company based in Utah with two locations — Springville and Lehi. My business partner Landon handles installation and production. I handle sales, marketing, design, and systems. In 2024, the business did $52K in revenue.
+ Summit Wraps is a vehicle wrap and branding company based in American Fork, Utah. My business partner Landon handles installation and production. I handle sales, marketing, design, and systems. In 2024, the business did $52K in revenue.
 
  The bottleneck was never the quality of our work. Walk into our shop and you'll see trucks, vans, and trailers getting full-coverage wraps that look incredible. The problem was everything around the installation — the invisible infrastructure that separates a shop from a business.
 

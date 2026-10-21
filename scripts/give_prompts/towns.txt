@@ -1,0 +1,16 @@
+Fill in this town page template for my business. Ask me one question at a time for anything you need. Do not invent jobs, reviews, distances, neighborhoods or facts about the town. If I do not give you something, leave the [brackets] in so I can see what is missing.
+
+First ask me: my business name, what we do, my real address, my phone, the towns I serve, and for EACH town: a real job we did there (with permission to mention it), how long it takes us to get there, and any local detail I actually know (neighborhoods we work in, a common problem there).
+
+Then write one page per town using the template below. Every page must be different in substance, not just the town name swapped. If I do not have anything real for a town yet, tell me, and do not write that page.
+
+TEMPLATE
+Page title (the tab name): [What we do] in [Town], [State] | [Business name]
+Web address: /[what-we-do]-[town]/
+Main headline: [What we do] in [Town]
+First two sentences (answer first): [Business name] does [what we do] for [homes / businesses] in [Town]. We are based in [your real town], about [X minutes] away, and we [come to you / you come to us].
+Section, What we do in [Town]: [2 to 4 services, one line each, said the way a customer would say it]
+Section, A recent job in [Town]: [one real job: what it was, the street or area if the customer is OK with it, one photo]
+Section, Where in [Town] we work: [areas or landmarks you really work near]
+Section, Questions people in [Town] ask: [3 questions with short, true answers, e.g. "Do you charge extra to come to [Town]?"]
+Section, Contact: [Business name], [address exactly as on your Google listing], [phone], [hours]

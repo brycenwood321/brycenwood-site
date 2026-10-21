@@ -79,7 +79,7 @@ Total tool cost for building all of this: roughly $200/month for Claude Code plu
 
 The cost savings are dramatic, but they're not the real story. The real story is about context.
 
-When I sit down with Claude Code and describe a system I need, I am describing it from the perspective of someone who lives inside the business. I know that fleet operators make purchase decisions differently than individual customers. I know that our closing rate is highest when we follow up within 4 hours of initial contact. I know that the Springville shop handles different services than the Lehi location. I know which email subject lines get responses and which get ignored.
+When I sit down with Claude Code and describe a system I need, I am describing it from the perspective of someone who lives inside the business. I know that fleet operators make purchase decisions differently than individual customers. I know that our closing rate is highest when we follow up within 4 hours of initial contact. I know which services our American Fork shop handles and which ones we send out. I know which email subject lines get responses and which get ignored.
 
 A developer would need weeks of meetings to learn even a fraction of this context. And they would still miss the nuances -- the tribal knowledge that only comes from running the business day to day.
 
