@@ -108,7 +108,7 @@ About
 
  
  - [Summit Wraps & Graphics](https://summitwrapsandgraphics.com/): a vehicle wrap and graphics company. This is where the 80+ automations started. [Read the case study](/case-studies/summit-wraps/).
- - [Gainz Train](https://gainztrainprep.com/): weekly high-protein meal prep in Orem, Utah, co-founded with Jayson. The systems behind it run with Claude Code.
+ - [Gainz Train](https://gainztrainprep.com/): weekly high-protein meal prep in Orem, Utah, co-founded with Jayson. The systems behind it run with Claude Code. [Read the case study](/case-studies/gainz-train/).
  
 
  

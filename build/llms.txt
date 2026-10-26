@@ -20,11 +20,12 @@
 
 ## Case Studies
 - [Summit Wraps Transformation](https://www.brycenwood.com/case-studies/summit-wraps/) - 80+ automations, $52K to $300K revenue, zero code, zero new hires.
+- [Gainz Train Case Study](https://www.brycenwood.com/case-studies/gainz-train/) - High-protein meal prep in Orem, Utah, co-founded with Jayson; every system outside the kitchen built with Claude Code. Site: https://gainztrainprep.com/
 - [Blackout Auto Tint Demo](https://www.brycenwood.com/case-studies/blackout-auto-tint/) - 7-page custom website built in 4 hours.
 
 ## Businesses I've Built
 - [Summit Wraps & Graphics](https://summitwrapsandgraphics.com/) - Vehicle wrap and graphics company I co-own. The 80+ automations started here. Case study: https://www.brycenwood.com/case-studies/summit-wraps/
-- [Gainz Train](https://gainztrainprep.com/) - Weekly high-protein meal prep in Orem, Utah, co-founded with Jayson. The systems behind it run with Claude Code.
+- [Gainz Train](https://gainztrainprep.com/) - Weekly high-protein meal prep in Orem, Utah, co-founded with Jayson. The systems behind it run with Claude Code. Case study: https://www.brycenwood.com/case-studies/gainz-train/
 
 ## Industries
 - [Service Business Automation](https://www.brycenwood.com/industries/service-business-automation/) - Universal pattern for any field service business: lead capture, follow-up, scheduling, review generation, marketing on autopilot.

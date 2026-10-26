@@ -31,6 +31,21 @@ Case Studies
 
  [
  
+ Second Business
+ Gainz Train: A Meal Prep Company Run on Claude Code
+ High-protein meal prep in Orem, Utah, co-founded with Jayson. He runs the kitchen; ordering, subscriptions, the weekly menu lock, packing checklists and customer reminders were all built through conversation with AI.
+ 
+ 41Paying Customers
+ ~438Meals a Week
+ 1,000+Tests
+ June 2026Launched
+ 
+ Read the Gainz Train case study
+ 
+ ](/case-studies/gainz-train/)
+
+ [
+ 
  Demo Build
  Blackout Auto Tint — 7-Page Website in 4 Hours
  A custom website built live in 4 hours to demonstrate what's possible. Custom design system, full schema markup, llms.txt, markdown mirrors — deployed and live.
@@ -49,7 +64,7 @@ Case Studies
  
 ## Businesses I've built.
 
- The case study above is the company I know best. I also co-own [Gainz Train](https://gainztrainprep.com/), weekly high-protein meal prep in Orem, Utah, co-founded with Jayson, with its systems run on Claude Code. The Summit Wraps & Graphics site is [summitwrapsandgraphics.com](https://summitwrapsandgraphics.com/).
+ The case study above is the company I know best. I also co-own [Gainz Train](https://gainztrainprep.com/), weekly high-protein meal prep in Orem, Utah, co-founded with Jayson, with its systems run on Claude Code ([read the Gainz Train case study](/case-studies/gainz-train/)). The Summit Wraps & Graphics site is [summitwrapsandgraphics.com](https://summitwrapsandgraphics.com/).
 
  
 ## More case studies coming soon
