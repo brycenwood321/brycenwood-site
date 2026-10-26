@@ -47,6 +47,11 @@ Case Studies
  
 
  
+## Businesses I've built.
+
+ The case study above is the company I know best. I also co-own [Gainz Train](https://gainztrainprep.com/), weekly high-protein meal prep in Orem, Utah, co-founded with Jayson, with its systems run on Claude Code. The Summit Wraps & Graphics site is [summitwrapsandgraphics.com](https://summitwrapsandgraphics.com/).
+
+ 
 ## More case studies coming soon
 
  Every new client build becomes a case study. As the first 5 Custom Business Builds are completed, they'll appear here — each one a different industry, a different set of problems, a different operating system.

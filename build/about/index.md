@@ -102,6 +102,16 @@ About
  
 
  
+## Businesses I've Built
+
+ Two businesses I co-own and run with Claude Code:
+
+ 
+ - [Summit Wraps & Graphics](https://summitwrapsandgraphics.com/): a vehicle wrap and graphics company. This is where the 80+ automations started. [Read the case study](/case-studies/summit-wraps/).
+ - [Gainz Train](https://gainztrainprep.com/): weekly high-protein meal prep in Orem, Utah, co-founded with Jayson. The systems behind it run with Claude Code.
+ 
+
+ 
 ## Beyond Business
 
  I'm married to my wife Marissa. We live in Utah. I care about health, growth, and building things that matter. I lift weights, I chase growth in every direction, and I believe the best version of yourself shows up when you commit fully to something -- not when you spread thin across everything.
