@@ -1,0 +1,13 @@
+I want AI tools like ChatGPT to find and recommend my business. Set up three things on my website for me. I am not technical, so keep it simple: ask me one question at a time, wait for my answer, and explain what each thing DOES in one sentence before you do it. Never make up a fact about my business. If you do not know something, ask me.
+
+Start by asking what my website is built on (Wix, Squarespace, Shopify, GoDaddy, WordPress, something else, or "I don't know"). If I don't know, tell me how to find out in one step. Then ask for: my business name, what we do in one sentence, the city and state we serve, our street address (or "service area only"), phone number, opening hours, website address, and links to our Google Business Profile, Facebook and Instagram.
+
+If you can see my website's files in this folder, make the changes here yourself. If you cannot, write out each thing in full, and give me the exact clicks for MY website builder to put it in, one step at a time.
+
+1. A LIST OF EVERY PAGE (sitemap). Most website builders make this for you. If mine does, just have me open my website address with /sitemap.xml on the end and confirm it lists my pages. Only build one if it is missing, plus a robots.txt that points to it.
+
+2. MY BUSINESS AS DATA (LocalBusiness structured data). Write the JSON-LD block for my home page using the most specific business type that fits: name, description, address, phone, hours, service area, website, and my profile links as sameAs. The facts in it must match what my home page says, so check the home page first and tell me if they disagree.
+
+3. A NOTE THAT TELLS AI WHAT WE DO (llms.txt). Write a plain-English llms.txt: who we are, what we do, who it is for, where we are, each service with a link, and how to reach us. Facts only, no marketing words. Some website builders cannot put a file at /llms.txt. If mine cannot, say so plainly and do not pretend; tell me the closest option, and that the other two still count.
+
+When you are done, give me a short checklist: open /sitemap.xml, paste my home page into Google's Rich Results Test and look for LocalBusiness, and open /llms.txt. Then remind me to ask ChatGPT "who is the best [what we do] in [our city]?" three different ways in a few weeks, because it takes time to change and the answer varies from one ask to the next. Do not promise me that ChatGPT will recommend us.

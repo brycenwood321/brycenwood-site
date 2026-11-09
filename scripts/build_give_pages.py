@@ -367,6 +367,47 @@ PAGES["towns"] = dict(
 )
 
 
+PAGES["lazy"] = dict(
+    title="The Lazy Version: One Prompt So ChatGPT Can Find Your Business",
+    desc="Too long, didn't read? Same. One prompt sets up the three things on your website that help ChatGPT and Google read your business: a list of your pages, your business as data, and a note for AI. Paste it into ChatGPT, Claude or Claude Code and answer its questions.",
+    crumb="The Lazy Version",
+    h1='Didn&rsquo;t read it? <span class="accent">Same. Here&rsquo;s the lazy version.</span>',
+    sub="One prompt. Paste it into ChatGPT or Claude, answer its questions one at a time, and it sets up the three things that help AI read your business. It works on Wix, Squarespace, Shopify, WordPress, or a site you can't touch at all. Drop your email below and it unlocks. Nothing to buy.",
+    btn="Unlock the lazy version",
+    perks_h2='What it sets up, <span class="accent">in one line each</span>',
+    perks=[
+        ("A list of every page", "So AI and Google can find all of your site, not just the home page. Most website builders already make this; it checks yours."),
+        ("Your business as data", "Your name, hours, phone and services in the format machines read. It gives you the exact clicks to add it."),
+        ("A note that tells AI what you do", "One plain-English page about your business, written for AI. If your website builder can't host it, it says so."),
+    ],
+    perks_note="The three steps to use it (about 15 minutes) and the prompt with a copy button. Unlocked by the form below.",
+    form_title="Get the lazy version",
+    success_h='The lazy version is <span class="accent">yours.</span>',
+    success_p="Everything is unlocked below: three steps and the prompt with a copy button.",
+    steps_eyebrow="Unlocked",
+    steps_h2='Three steps, <span class="accent">about 15 minutes</span>',
+    steps=[
+        ("Copy the prompt below",
+         "Tap the button under the prompt. That's the whole reading part.",
+         None, None),
+        ("Paste it into an AI chat",
+         'ChatGPT or Claude both work, on your phone or computer. If you have <a href="https://claude.com/claude-code">Claude Code</a> and your website\'s files, open it in that folder instead and it makes the changes for you.',
+         None, None),
+        ("Answer its questions, one at a time",
+         "It asks what your website is built on, then your basics: name, city, phone, hours, links. Then it hands you each piece with the exact clicks for your website builder.",
+         "<strong>Then wait.</strong> In a few weeks, ask ChatGPT &ldquo;who is the best [what you do] in [your city]?&rdquo; three different ways. It takes time to change, and the answer varies from one ask to the next, so nobody can promise you a spot. This makes your business easier for AI to read. That's the part you control.",
+         None),
+    ],
+    boxes_eyebrow="The prompt",
+    boxes_h2='Copy, paste, <span class="accent">answer its questions</span>',
+    boxes_intro='Tested on a plain website in Claude Code and on a Wix site in a chat before it went on this page. Want the long version with every detail? <a href="/found/" style="color:var(--lime)">It\'s here</a>.',
+    mini_steps=["Copy the prompt.", "Paste it into ChatGPT, Claude, or Claude Code.", "Answer one question at a time."],
+    boxes=[("promptText", None, prompt("lazy"), "Copy the prompt")],
+    sticky_btn="Get the lazy version",
+    sticky_sub="The lazy version &middot; free",
+)
+
+
 # ---------------------------------------------------------------- template
 
 HEAD_STYLE = """<style>
@@ -653,7 +694,10 @@ def render(slug, p):
             h = f"\n      <h3>{heading}</h3>" if heading else ""
             boxes.append(f'    <div class="prompt-box">{h}\n<pre id="{bid}">{esc(text)}</pre>\n      <button class="copy-btn" data-target="{bid}">{label}</button>\n    </div>')
         mini = ""
-        if p.get("mini_steps"):
+        if isinstance(p.get("mini_steps"), list):
+            rows = "\n".join(f'      <div><span>{i}</span><div>{x}</div></div>' for i, x in enumerate(p["mini_steps"], 1))
+            mini = f'\n    <div class="mini-steps">\n{rows}\n    </div>'
+        elif p.get("mini_steps"):
             mini = """
     <div class="mini-steps">
       <div><span>1</span><div>Open the terminal inside the folder where your jobs or scripts live.</div></div>

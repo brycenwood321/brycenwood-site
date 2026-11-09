@@ -135,7 +135,7 @@ document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
 
 (function(){
   let slug=null;try{slug=localStorage.getItem('bw_playbook_pending')}catch(e){}
-  var ROOT=['five','hours','found','checks','watch','match','guess','reviews','churn','towns'];
+  var ROOT=['five','hours','found','checks','watch','match','guess','reviews','churn','towns','lazy'];
   if(slug){window.location.replace(ROOT.indexOf(slug)>-1?'/'+slug+'/?dl=1':'/playbook/'+slug+'/?dl=1');}
   else{var s=document.getElementById('thanksSub');if(s)s.textContent='We could not tell which playbook you asked for on this device. Pick it below and it unlocks right there, no second form.';}
 })();

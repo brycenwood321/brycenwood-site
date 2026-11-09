@@ -10,7 +10,7 @@ From the video · Free
  
 # Ask ChatGPT who the best is in your city. Then make it say your name.
 
- ChatGPT puts my wrap shop at the top of its list for American Fork, Utah. No ad, no agency. Three things on the website did it, and I do not know which one tipped it, so do all three. Each one explained in plain English, then one prompt that sets all three up for you. Drop your email below and it unlocks. Nothing to buy.
+ ChatGPT has named my wrap shop when asked for the best in American Fork, Utah, and some days it does not. The answer changes from one ask to the next. These three things on your website are the part you control, and I do not know which one matters most, so do all three. Each one explained in plain English, then one prompt that sets all three up for you. Drop your email below and it unlocks. Nothing to buy.
 
  
  [Unlock the three + the prompt](#get)
