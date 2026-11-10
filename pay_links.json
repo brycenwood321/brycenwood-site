@@ -8,6 +8,9 @@
     "diagnosis": "plink_1USQbp2QQBPPIPluTLv78qCd",
     "setup_day": "plink_1USQcy2QQBPPIPluFSG5vlXq",
     "created": "2026-10-19",
-    "cohort": "not created yet; make it when he sets the start date"
-  }
+    "cohort": "not created yet; make it when he sets the start date",
+    "founding": "plink_1Ua5A52QQBPPIPluksg4t2ld, price_1Ua59s2QQBPPIPluzuf2t8Of, prod_VbHjivkZRCrXg4; created 2026-11-09, stops itself after 10 paid seats"
+  },
+  "founding": "https://buy.stripe.com/5kQeV64snbeP9rK2dHbII02",
+  "founding_start": "Monday, November 30"
 }

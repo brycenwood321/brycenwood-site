@@ -30,7 +30,7 @@ def pay(key, label, fallback="Book a call"):
     return f'<a href="/contact/" class="btn-primary" style="display:block;text-align:center">{fallback}</a>'
 
 
-def page(path, title, desc, crumb, body, faq=None):
+def page(path, title, desc, crumb, body, faq=None, noindex=False):
     url = f"{DOMAIN}/{path}/"
     graph = [{"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{DOMAIN}/"},
@@ -53,6 +53,7 @@ def page(path, title, desc, crumb, body, faq=None):
   </div>
 </div>'''
     t, d = html.escape(title), html.escape(desc)
+    robots = '\n<meta name="robots" content="noindex, nofollow">' if noindex else ""
     out = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +62,7 @@ def page(path, title, desc, crumb, body, faq=None):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{t}</title>
 <meta name="description" content="{d}">
-<link rel="canonical" href="{url}">
+<link rel="canonical" href="{url}">{robots}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -236,6 +237,48 @@ cohort_faq = [
     ("Can you just build it for me instead?", "Yes, but that is a different thing. Start with a diagnosis on the pricing page."),
 ]
 written.append(page("cohort", "Run Your Business on Claude Code, 5-Week Cohort | Brycen Wood", "Five weeks, one evening a week, 8 to 12 business owners. Leave with your own Claude Code system running. $1,500, full refund before week 1 ends.", "Cohort", cohort_body, cohort_faq))
+
+# ---------- /founding/ (invite only, ruled 2026-11-09: $300, 10 seats, handpicked, install call first) ----------
+# Not in the nav, not in the sitemap, noindex. Brycen sends the link by hand in his HELP replies.
+f_start = LINKS.get("founding_start") or ""
+f_pay = (pay("founding", "Take my seat, $300") if LINKS.get("founding")
+         else '<a href="/contact/" class="btn-primary" style="display:inline-block">Message me for a seat</a>')
+f_when = f"Week 1 starts {html.escape(f_start)}." if f_start else "Dates are set with the group."
+founding_body = f'''<section class="page-hero">
+  <p class="hero-eyebrow">Founding cohort, invite only, 10 seats</p>
+  <h1>Your first system, <span class="accent">built with me.</span></h1>
+  <p class="hero-sub">Four weeks, one live call a week, a small group of business owners. You leave with one working system running on your own business. {f_when}</p>
+  <div class="btn-group" style="margin-top:24px">{f_pay}</div>
+</section>
+<div class="divider"></div>
+<div class="section-dark">
+  <div class="section-header reveal"><h2>How it <span class="accent">works</span></h2></div>
+  <div class="container-narrow reveal">
+    <div class="week-row"><div class="wk">FIRST</div><div><strong>A 30-minute install call, just you and me.</strong><p>Before week 1. We get Claude Code running on your own computer so nobody starts the first call stuck on setup.</p></div></div>
+    <div class="week-row"><div class="wk">WEEKS 1-4</div><div><strong>One live call a week.</strong><p>Each of us picks one system for our own business and we build it together, on your real work, not a demo.</p></div></div>
+    <div class="week-row"><div class="wk">THE END</div><div><strong>One working system, yours.</strong><p>It runs on your machine and you own it. You pay Anthropic for your own Claude plan; nothing is paid to me after the four weeks.</p></div></div>
+  </div>
+</div>
+<div class="divider"></div>
+<div class="section-raised">
+  <div class="section-header reveal"><h2>The founding <span class="accent">deal</span></h2></div>
+  <div class="container-narrow reveal">
+    <ul class="plain-list">
+      <li><strong>$300, one time.</strong> This is the founding price for the first 10. After these 10 the price goes up.</li>
+      <li><strong>Refunds:</strong> change your mind before week 1 ends and you get a full refund, no questions.</li>
+      <li><strong>Handpicked.</strong> If you are reading this, I sent you the link.</li>
+      <li><strong>The one ask:</strong> a short filmed testimonial at the end, good or bad, so the next group knows what it is really like.</li>
+      <li><strong>Not for:</strong> people who want it built for them. That is a different thing, and I will tell you straight if that fits you better.</li>
+    </ul>
+  </div>
+</div>'''
+founding_faq = [
+    ("Do I need to know how to code?", "No. I have never written a line of code. Everything happens by talking to Claude Code in plain English."),
+    ("What does it cost to run afterward?", "Your own Claude subscription, which you pay Anthropic directly. Nothing is paid to me after the four weeks."),
+    ("What happens after I pay?", "I message you to book your 30-minute install call. That call happens the week before week 1."),
+    ("Can I get a refund?", "Yes. Change your mind before week 1 ends and you get all $300 back."),
+]
+written.append(page("founding", "Founding Cohort | Brycen Wood", "Invite only. Four weeks, one live call a week, a 30-minute install call first. Leave with one working system. $300 founding price, 10 seats.", "Founding cohort", founding_body, founding_faq, noindex=True))
 
 # ---------- /community/ ----------
 community_body = '''<section class="page-hero">
