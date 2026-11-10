@@ -1,5 +1,5 @@
 ---
-title: 420 Hours in Claude Code: The Three Lessons | Brycen Wood
+title: 600+ Hours in Claude Code: The Three Lessons | Brycen Wood
 description: A list of its own mistakes that has to become code, a grader that never built the thing, and a greeting that leads with what is working. Each one explained in plain English, plus one prompt that sets all three up.
 url: https://www.brycenwood.com/hours/
 last_updated: 2026-04-14
@@ -8,7 +8,7 @@ last_updated: 2026-04-14
 From the video · Free Playbook
 
  
-# 420 hours in Claude Code. The three lessons.
+# 600+ hours in Claude Code. The three lessons.
 
  Running a wrap shop and a meal prep company with it since March. These three took the longest to learn, and I paid the hours so you do not have to. Each one explained in plain English, then one prompt that sets all three up. Drop your email below and it unlocks. Nothing to buy.
 
