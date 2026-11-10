@@ -448,6 +448,47 @@ PAGES["inbox"] = dict(
     sticky_sub="The slipped prompt &middot; free",
 )
 
+PAGES["edit"] = dict(
+    title="The AI Editor: How I Have Claude Edit My Videos",
+    desc="How my AI video editor is set up, in plain English, plus the starter prompt that builds a basic one on your own computer: it cuts the dead air, cuts your retakes, and adds captions. Free.",
+    crumb="The AI Editor",
+    h1='I film one messy take. <span class="accent">AI does the edit.</span>',
+    sub="Here is how mine is set up, with nothing hidden, and the starter prompt that builds a basic version on your own computer. You talk to the camera once. It cuts the dead air and your retakes and adds the captions. Drop your email below and it unlocks. Nothing to buy.",
+    btn="Unlock the setup",
+    perks_h2='What the starter builds, <span class="accent">one line each</span>',
+    perks=[
+        ("It hears every word", "It writes down what you said with a time for each word. Everything else is built on that."),
+        ("It cuts the dead air and your retakes", "Long pauses come out. When you say a line twice, it keeps the last one and shows you what it cut."),
+        ("It adds the captions", "A few words at a time, timed to your voice, sized for a phone."),
+    ],
+    perks_note="How mine works, three steps to build yours, and the prompt with a copy button. Unlocked by the form below.",
+    form_title="Get the setup",
+    success_h='The setup is <span class="accent">yours.</span>',
+    success_p="Everything is unlocked below: how mine works, three steps, and the prompt with a copy button.",
+    steps_eyebrow="Unlocked",
+    steps_h2='How mine works, <span class="accent">then how to start yours</span>',
+    steps=[
+        ("How mine is set up",
+         "It runs in <a href=\"https://claude.com/claude-code\">Claude Code</a> on my own Mac. I drop in one take. One AI plans the cut and picks effects from a library I built with it over a few weeks. A second AI grades that plan and sends it back with a fix. Plain rules in code check the rest, like captions never covering my face.",
+         "<strong>The honest part.</strong> Mine took weeks of me saying &ldquo;no, not like that.&rdquo; The starter below gets you the first three jobs on day one: dead air, retakes, captions. The fancy stuff comes from giving it notes.",
+         None),
+        ("Make a folder and put one clip in it",
+         "Any talking video from your phone works. Open Claude Code in that folder. Claude Code needs a paid Claude plan, and everything else it uses is free and runs on your computer.",
+         None, None),
+        ("Paste the prompt, then give it notes",
+         "It builds the editor, runs it on your clip, and tells you what it cut. Watch the video once. Then tell it what you did not like in plain words, and it fixes the editor itself, so the next video comes out better.",
+         "<strong>Watch before you post.</strong> It will miss things at first. Mine still gets a note from me now and then.",
+         None),
+    ],
+    boxes_eyebrow="The prompt",
+    boxes_h2='Copy, paste, <span class="accent">drop in a clip</span>',
+    boxes_intro="Tested once on a 20 second practice clip before it went on this page: it took out the long pauses, cut a line that was started twice, and added the captions (20 seconds became 9). That clip was a computer voice, not a real person, so watch your first cut.",
+    mini_steps=["Put one clip in a folder.", "Open Claude Code there and paste the prompt.", "Watch it once, then give it notes."],
+    boxes=[("promptText", None, prompt("edit"), "Copy the prompt")],
+    sticky_btn="Get the setup",
+    sticky_sub="The AI editor &middot; free",
+)
+
 # ---------------------------------------------------------------- template
 
 HEAD_STYLE = """<style>
