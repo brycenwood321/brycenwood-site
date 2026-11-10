@@ -59,6 +59,7 @@
 - [The Churn Prompt](https://www.brycenwood.com/churn/) - Lines up the changes you made with the customers who left.
 - [Town Page Template](https://www.brycenwood.com/towns/) - A fill-in-the-blank page for each town you serve.
 - [The Lazy Version](https://www.brycenwood.com/lazy/) - One prompt that sets up a sitemap, LocalBusiness data and llms.txt, for any website builder.
+- [The Slipped Prompt](https://www.brycenwood.com/inbox/) - One read-only prompt that has AI find what slipped in the last 30 days of your email: deadlines, money, people waiting.
 - [The Ad Library Teardown](https://www.brycenwood.com/playbook/ad-library-teardown/) - Read every ad your competitors run, sorted by how long each has been live.
 
 ## FAQ

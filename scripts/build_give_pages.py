@@ -408,6 +408,46 @@ PAGES["lazy"] = dict(
 )
 
 
+PAGES["inbox"] = dict(
+    title="The Slipped Prompt: Have AI Find What You Missed in Your Inbox",
+    desc="One prompt that has AI read the last 30 days of your email and find what slipped: unanswered questions, dates with a deadline, money you owe or are owed, customers waiting, free opportunities. Read only. Nothing sends without you.",
+    crumb="The Slipped Prompt",
+    h1='Have AI find what <span class="accent">slipped through your inbox.</span>',
+    sub="The prompt I use to have AI go through a month of email and find the boring stuff nobody followed up on. The first time I ran it, it found a city inspection date, $20 I owed a designer, and a free press feature, all sitting unread. Drop your email below and it unlocks. Nothing to buy.",
+    btn="Unlock the prompt",
+    perks_h2='What it finds, <span class="accent">one line each</span>',
+    perks=[
+        ("Dates with a deadline", "Appointments, inspections and offers that expire if nobody answers."),
+        ("Money", "Who you owe, who owes you, and payments that failed."),
+        ("People waiting on you", "Customers, leads and free opportunities you never answered, with a reply written for each."),
+    ],
+    perks_note="Three steps and the prompt with a copy button. Unlocked by the form below.",
+    form_title="Get the prompt",
+    success_h='The prompt is <span class="accent">yours.</span>',
+    success_p="Everything is unlocked below: three steps and the prompt with a copy button.",
+    steps_eyebrow="Unlocked",
+    steps_h2='Three steps, <span class="accent">about 10 minutes</span>',
+    steps=[
+        ("Give an AI read access to your email",
+         "Claude, ChatGPT and Claude Duet can all connect to Gmail or Outlook. In Claude it is under Settings, then Connectors. Can't connect it? Paste in your unanswered emails instead and the prompt still works.",
+         None, None),
+        ("Paste the prompt",
+         "Copy the prompt below into that chat. It reads only. It never sends, deletes or archives anything, and the rule is written into the prompt.",
+         None, None),
+        ("Answer the top three tonight",
+         "It ranks what it finds: deadlines first, then money, then customers. Each one comes with a short reply. Read it, fix anything it got wrong, and send it yourself.",
+         "<strong>Nothing sends without you.</strong> That is the first thing I told my own AI, and it is the first line of this prompt.",
+         None),
+    ],
+    boxes_eyebrow="The prompt",
+    boxes_h2='Copy, paste, <span class="accent">see what slipped</span>',
+    boxes_intro="Tested on a sample inbox before it went on this page: it found the deadline, the money and the waiting customer, skipped the newsletter, and sent nothing.",
+    mini_steps=["Connect your email, or paste it in.", "Paste the prompt.", "Answer the top three tonight."],
+    boxes=[("promptText", None, prompt("inbox"), "Copy the prompt")],
+    sticky_btn="Get the prompt",
+    sticky_sub="The slipped prompt &middot; free",
+)
+
 # ---------------------------------------------------------------- template
 
 HEAD_STYLE = """<style>
