@@ -134,3 +134,26 @@ When all three are done: show me each file, tell me how to check each one myself
  Copy the prompt
  
  Nothing to buy here. If it helps, that is the whole point. I post what I learn as I build on [@brycenwood.ai](https://www.instagram.com/brycenwood.ai/).
+
+ 
+
+ 
+ 
+ Bonus · the checker from the video
+
+ 
+## Ask ten times, get a score
+
+ Asking ChatGPT once tells you almost nothing, because the answer changes every time. This is the exact prompt I typed to build a little tool that asks ten separate times and shows how many of the ten named your business, how often you were the top pick, and who got named instead. Mine was built in about 6 minutes.
+
+ 
+ 
+ 1. You need your own OpenAI key (from platform.openai.com). In an empty folder, save it in a file called `.env` as `OPENAI_API_KEY=your key`. Each check is 11 small requests on your key, a few cents.
+
+ 2. Open Claude Code in that folder, paste the prompt below and hit enter.
+
+ 3. Run it on your business, then do the three checks above and run it again in a few weeks.
+
+ 
+ Build me a one-page tool where I type a business, a service and a town, and it asks OpenAI's model (with web search on) "Who is the best [service] in [town]?" ten separate times. Then show me a score card: how many of the ten answers named the business, how many made it the top pick, which other businesses got named instead, and what it said about them. My OpenAI key is in the file .env, never show it on screen, and test the tool on yourself before you hand it to me.Copy the checker prompt
+ One honest note: the tool asks OpenAI&rsquo;s model with web search turned on. That is very close to what ChatGPT does, not identical, so treat the score as a strong hint and not a promise.

@@ -126,6 +126,17 @@
       <div style="font-size:32px;font-weight:800;margin-bottom:12px;color:var(--text)">System 5 is <span class="accent">yours.</span></div>
       <p style="color:var(--text-dim);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">The PDF should be downloading. If it did not start, the button below has it.</p>
       <a href="/guides/playbooks/website-builder.pdf" download class="btn-primary" id="manualDownload" style="display:inline-block;margin-bottom:16px">Download the PDF</a>
+      <div style="margin:36px auto 8px;max-width:640px;text-align:left">
+        <p class="hero-eyebrow" style="text-align:center">New &middot; November 2026</p>
+        <div style="font-size:24px;font-weight:800;color:var(--text);text-align:center;margin-bottom:10px">The short prompts <span class="accent">from the videos</span></div>
+        <p style="color:var(--text-dim);font-size:15px;line-height:1.6;text-align:center">The PDF has the long April prompt. With Claude&rsquo;s newer model the prompt got a lot shorter. These are the exact words I typed in the videos, nothing added.</p>
+        <p style="color:var(--text);font-size:16px;font-weight:700;margin-top:28px">1. The 40-page website remake (56 words)</p>
+        <p style="color:var(--text-dim);font-size:14.5px;line-height:1.6;margin-top:6px">Before you paste: put a copy of your current website in a folder called <code>my-current-website</code> and a screenshot of your home page next to it, named <code>my-current-website.png</code>. Open Claude Code in the folder that holds both. Mine built 43 pages in about 36 minutes. No site yet? Use the long prompt in the PDF instead.</p>
+        <div style="background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--lime);border-radius:8px;padding:24px;margin-top:16px;text-align:left"><pre id="promptRemake" style="font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--text);white-space:pre-wrap;word-wrap:break-word;margin:0;background:none;padding:0">Rebuild my current website (the folder my-current-website, home page pictured in my-current-website.png) as a 40-page site that looks more premium than this. Every service gets its own page, plus blog posts and the files that help ChatGPT and Google recommend me. Plan it, split the work, and check every page before you hand it to me.</pre><button data-copy="promptRemake" style="width:100%;margin-top:18px;padding:16px;font-family:var(--sans);font-size:17px;font-weight:800;background:var(--lime);color:#050508;border:none;border-radius:8px;cursor:pointer">Copy the website prompt</button></div>
+        <p style="color:var(--text);font-size:16px;font-weight:700;margin-top:32px">2. A whole ordering business from one paragraph</p>
+        <p style="color:var(--text-dim);font-size:14.5px;line-height:1.6;margin-top:6px">Before you paste: make a text file called <code>my-business.txt</code> with your menu, prices and pickup or delivery info, and open Claude Code in that folder. Swap &ldquo;meal prep company&rdquo; for what you sell. Mine took about 18 minutes. Treat what you get as a first draft: it does not take card payments yet, and the recipe amounts on the shopping list are the AI&rsquo;s guesses until you correct them.</p>
+        <div style="background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--lime);border-radius:8px;padding:24px;margin-top:16px;text-align:left"><pre id="promptBusiness" style="font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--text);white-space:pre-wrap;word-wrap:break-word;margin:0;background:none;padding:0">I run a meal prep company. Here's my menu, prices and pickup info: my-business.txt. Build the whole business: a website people can order from, and an owner side that turns every week's orders into a shopping list and a prep sheet. Make it look like a real brand.</pre><button data-copy="promptBusiness" style="width:100%;margin-top:18px;padding:16px;font-family:var(--sans);font-size:17px;font-weight:800;background:var(--lime);color:#050508;border:none;border-radius:8px;cursor:pointer">Copy the business prompt</button></div>
+      </div>
       <p style="font-size:14px;color:var(--text-muted);margin-top:24px">Want a different one? <a href="/playbook/" style="color:var(--lime)">All the playbooks</a>, one download each.</p>
       <p style="font-size:14px;color:var(--text-muted);margin-top:12px">Want this done for your business? <a href="/pricing/" style="color:var(--lime)">Start with a diagnosis.</a></p>
     </div>
@@ -265,6 +276,18 @@ if(stickyBar){
   if(heroEl)stickyObs.observe(heroEl);
 }
 
+
+document.querySelectorAll('[data-copy]').forEach(function(btn){
+  btn.addEventListener('click',async function(){
+    var el=document.getElementById(btn.getAttribute('data-copy'));if(!el)return;
+    var text=el.textContent,ok=false,label=btn.textContent;
+    try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);ok=true}}catch(e){ok=false}
+    if(!ok){var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();try{ok=document.execCommand('copy')}catch(e){ok=false}document.body.removeChild(ta)}
+    btn.textContent=ok?'Copied. Now paste it into Claude Code.':'Press and hold the text above to copy it';
+    if(ok&&typeof gtag==='function'){gtag('event','copy_prompt',{page:btn.getAttribute('data-copy')})}
+    setTimeout(function(){btn.textContent=label},4000);
+  });
+});
 </script>
 </body>
 </html>

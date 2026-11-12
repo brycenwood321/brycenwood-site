@@ -216,6 +216,23 @@ When all three are done: show me each file, tell me how to check each one myself
   </div>
 </section>
 
+<section class="locked-content" id="checker" style="padding:0 0 72px;">
+  <div class="container-narrow">
+    <div class="section-header">
+      <p class="hero-eyebrow">Bonus &middot; the checker from the video</p>
+      <h2>Ask ten times, <span class="accent">get a score</span></h2>
+      <p style="font-size:16px;color:var(--text-dim);max-width:600px;margin:16px auto 0;line-height:1.6">Asking ChatGPT once tells you almost nothing, because the answer changes every time. This is the exact prompt I typed to build a little tool that asks ten separate times and shows how many of the ten named your business, how often you were the top pick, and who got named instead. Mine was built in about 6 minutes.</p>
+    </div>
+    <div style="max-width:600px;margin:28px auto 0">
+      <p style="color:var(--text-dim);font-size:15px;line-height:1.65;margin:14px 0 0;text-align:left"><strong style="color:var(--lime)">1.</strong> You need your own OpenAI key (from platform.openai.com). In an empty folder, save it in a file called <code>.env</code> as <code>OPENAI_API_KEY=your key</code>. Each check is 11 small requests on your key, a few cents.</p>
+      <p style="color:var(--text-dim);font-size:15px;line-height:1.65;margin:14px 0 0;text-align:left"><strong style="color:var(--lime)">2.</strong> Open Claude Code in that folder, paste the prompt below and hit enter.</p>
+      <p style="color:var(--text-dim);font-size:15px;line-height:1.65;margin:14px 0 0;text-align:left"><strong style="color:var(--lime)">3.</strong> Run it on your business, then do the three checks above and run it again in a few weeks.</p>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--lime);border-radius:8px;padding:24px;margin-top:16px;text-align:left"><pre id="promptChecker" style="font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--text);white-space:pre-wrap;word-wrap:break-word;margin:0;background:none;padding:0">Build me a one-page tool where I type a business, a service and a town, and it asks OpenAI's model (with web search on) "Who is the best [service] in [town]?" ten separate times. Then show me a score card: how many of the ten answers named the business, how many made it the top pick, which other businesses got named instead, and what it said about them. My OpenAI key is in the file .env, never show it on screen, and test the tool on yourself before you hand it to me.</pre><button data-copy="promptChecker" style="width:100%;margin-top:18px;padding:16px;font-family:var(--sans);font-size:17px;font-weight:800;background:var(--lime);color:#050508;border:none;border-radius:8px;cursor:pointer">Copy the checker prompt</button></div>
+    <p style="text-align:center;font-size:14px;color:var(--text-muted);margin-top:20px;line-height:1.6">One honest note: the tool asks OpenAI&rsquo;s model with web search turned on. That is very close to what ChatGPT does, not identical, so treat the score as a strong hint and not a promise.</p>
+  </div>
+</section>
+
 <div class="sticky-bar" id="stickyBar">
   <a href="#get" class="sticky-bar-btn">Get the three checks</a>
   <div class="sticky-bar-sub">The three checks + the prompt &middot; free</div>
@@ -372,6 +389,18 @@ if(copyBtn&&promptText){
   });
 }
 
+
+document.querySelectorAll('[data-copy]').forEach(function(btn){
+  btn.addEventListener('click',async function(){
+    var el=document.getElementById(btn.getAttribute('data-copy'));if(!el)return;
+    var text=el.textContent,ok=false,label=btn.textContent;
+    try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);ok=true}}catch(e){ok=false}
+    if(!ok){var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();try{ok=document.execCommand('copy')}catch(e){ok=false}document.body.removeChild(ta)}
+    btn.textContent=ok?'Copied. Now paste it into Claude Code.':'Press and hold the text above to copy it';
+    if(ok&&typeof gtag==='function'){gtag('event','copy_prompt',{page:btn.getAttribute('data-copy')})}
+    setTimeout(function(){btn.textContent=label},4000);
+  });
+});
 </script>
 </body>
 </html>
