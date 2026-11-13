@@ -322,6 +322,47 @@ PAGES["churn"] = dict(
     sticky_sub="The churn prompt &middot; free",
 )
 
+PAGES["track"] = dict(
+    title="The Track Prompt: Watch Where Visitors Quit Your Website",
+    desc="One prompt for Claude Code that sets up visitor tracking on your own website: how far people scroll, where they quit, and a private page that replays it. No names, no cookies. Copy button included.",
+    crumb="The Track Prompt",
+    h1='See the exact spot where visitors quit. <span class="accent">One prompt.</span>',
+    sub="Most owners guess why the phone is quiet. This prompt has Claude Code set up scroll tracking on your own website, so you can watch how far people get and where they leave. Drop your email below and it unlocks. Nothing to buy.",
+    btn="Unlock the track prompt",
+    perks_h2='What it builds, <span class="accent">one breath each</span>',
+    perks=[
+        ("One visit at a time", "A dot moves down your page the way a real visitor did, and stops where they stopped."),
+        ("Everyone at once", "Every visit stacked on one page, so the spot where the scrolling goes cold is easy to see."),
+        ("The numbers per page", "What share of visitors got a quarter, half, three quarters and all the way down."),
+    ],
+    perks_note="Four short steps and the prompt with a copy button. Unlocked by the form below.",
+    form_title="Get the track prompt",
+    success_h='The track prompt is <span class="accent">yours.</span>',
+    success_p="Everything is unlocked below: the steps, and the prompt with a copy button.",
+    steps_eyebrow="Unlocked",
+    steps_h2='Four steps, <span class="accent">one cold spot</span>',
+    steps=[
+        ("Open Claude Code in your website's folder",
+         "This one needs Claude Code, because it has to add a small file to your site. It will not work pasted into a normal chat.",
+         None, None),
+        ("Paste the prompt and read what it tells you first",
+         "Before it builds anything it tells you how your site is set up, where the visit data will live, and whether anything costs money. Then it waits for your yes.",
+         None, None),
+        ("Let it run for two weeks",
+         "A handful of visits tells you nothing. Give it two weeks, then open the private page and look for the spot where most people stop.",
+         None, None),
+        ("Fix that one spot, then watch again",
+         "Move what sells above the cold spot, or cut what sits in front of it. Change one thing, then give it another two weeks so you can tell what the change did.",
+         None, None),
+    ],
+    boxes_eyebrow="The prompt",
+    boxes_h2='The exact <span class="accent">track prompt</span>',
+    boxes_intro="For Claude Code. It records how far people scroll and what they tap. No names, no emails, no cookies.",
+    boxes=[("promptText", None, prompt("track"), "Copy the prompt")],
+    sticky_btn="Get the track prompt",
+    sticky_sub="The track prompt &middot; free",
+)
+
 PAGES["towns"] = dict(
     title="The Town Page Template: One Page for Every Town You Serve",
     desc="A fill-in-the-blank page template for each town you serve, with the town in the title, plus a prompt that fills it in from real jobs without making anything up.",

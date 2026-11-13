@@ -1,0 +1,21 @@
+I want to see how far people scroll on my website and the exact spot where they quit. Set this up on this site.
+
+Before you build anything, look at how this site is built and where it is hosted. Tell me in plain English what you found, where the visit data will be stored, and whether any part of it costs money. Then stop and wait for my yes.
+
+Then build three things:
+
+1. A small script on every page. For each visit it records: which page, how long they stayed, the furthest point of the page they actually saw (the bottom edge of their screen, as a percent of the full page height, so someone who sees the last line counts as 100%), and what they tapped or clicked. It sends that when they leave the page.
+2. A place to store those visits that fits my hosting. Use a free option if there is one.
+3. A private page only I can open. Protect it with a login or a secret key, tell me how I get in, and never put the key in the public site files. It shows:
+   - one visit at a time, replayed as a dot moving down the page
+   - every visit stacked on one page, so I can see where the scrolling goes cold
+   - for each page, the percent of visitors who got a quarter, half, three quarters and all the way down
+
+Rules:
+- No names, no emails, no IP addresses and no cookies. One random id per visit, nothing else about the person.
+- Never record anything typed into a form.
+- Leave out bots, and ignore visits shorter than 1 second.
+- Give me a way to leave out my own visits: one click on the private page that marks this browser (saved in the browser, not a cookie). Remind me to click it on each of my devices.
+- It must never slow the page down and never show a visitor an error. If the tracking fails, the page still works.
+- When you are done, open the site yourself, scroll about halfway down one page, and show me that visit on the private page. Tell me what you tested and what you did not.
+- Tell me if my privacy policy needs a line about this, and write the line for me.
