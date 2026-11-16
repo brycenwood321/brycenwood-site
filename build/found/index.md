@@ -15,6 +15,7 @@ From the video · Free
  
  [Unlock the three + the prompt](#get)
  
+ Here from the ChatGPT Business Hub video? The same email unlocks every step and the fine print, at the bottom of this page.
 
  
  
@@ -157,3 +158,53 @@ When all three are done: show me each file, tell me how to check each one myself
  
  Build me a one-page tool where I type a business, a service and a town, and it asks OpenAI's model (with web search on) "Who is the best [service] in [town]?" ten separate times. Then show me a score card: how many of the ten answers named the business, how many made it the top pick, which other businesses got named instead, and what it said about them. My OpenAI key is in the file .env, never show it on screen, and test the tool on yourself before you hand it to me.Copy the checker prompt
  One honest note: the tool asks OpenAI&rsquo;s model with web search turned on. That is very close to what ChatGPT does, not identical, so treat the score as a strong hint and not a promise.
+
+ 
+
+ 
+ 
+ From the Business Hub video
+
+ 
+## Claim your business in ChatGPT, step by step
+
+ ChatGPT now lets business owners claim their own listing. It is called Business Hub. You control what ChatGPT says about you, you get a blue check, and you can see how often you come up. Here is every step I took, and the fine print I read before I signed.
+
+ 
+ 
+ 1. Go to **chatgpt.com/business-hub** and sign in. A free ChatGPT account worked for me. Search your business name. Starting here accepts OpenAI&rsquo;s terms, so read the fine print below first.
+
+ 2. If your business shows up, claim it. If not, add it with your website. Right now you need a website to claim. To prove the site is yours, it gives you one line of text (a TXT record) to add in your domain&rsquo;s DNS settings, wherever you bought the domain. Mine passed on the first try.
+
+ 3. Pick your category and write your description. Check the category it suggests. It suggested Gym for my meal prep company. Describe what you sell, where, and who it is for, in plain words.
+
+ 4. Add your contact details. Use a real cell number for the text code. It rejected my internet business line. Then confirm the email code.
+
+ 5. Verify your ID. After that it goes to review. OpenAI does not publish how long review takes. When it clears, a blue check shows on your listing.
+
+ 
+ 
+ The fine print, in plain English
+
+ From OpenAI&rsquo;s Businesses in ChatGPT terms, last updated November 9, 2026.
+
+ **You are listed either way.** OpenAI can list your business whether or not you claim it. Claiming is how you get a say in what it shows.
+
+ **Claiming is not full control.** OpenAI can still add to, edit or replace what you write, or choose not to show it.
+
+ **No promised ranking.** In their words: claiming does not guarantee higher placement or sales.
+
+ **Your basic info is licensed to them for good.** Name, address, contact details, category, hours and website. That license is permanent and cannot be taken back.
+
+ **Their AI may call you.** You agree their assistant can phone your business for ChatGPT users. The terms link to an opt-out.
+
+ **You agree not to sue them over your own online content.** The terms include a promise not to bring claims about content you have published online, and you cover OpenAI for claims tied to your business or listing. My plain-English reading, not legal advice. If it matters to you, have a lawyer read it.
+
+ **The stats are confidential.** The mentions and website-clicks numbers in your dashboard are OpenAI&rsquo;s confidential info. Do not post screenshots of them.
+
+ **Own it with a partner?** Whoever clicks is agreeing on behalf of the whole company. Check with your partner first.
+
+ **Cost:** no price is listed anywhere. I was not charged anything.
+
+ 
+ Want to read it yourself? [OpenAI&rsquo;s full terms are here](https://openai.com/policies/businesses-in-chatgpt-terms/).
