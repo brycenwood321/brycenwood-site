@@ -299,6 +299,14 @@
         <div class="card-link">Get this playbook</div>
       </div>
     </a>
+    <a href="/agent/" class="card reveal">
+      <div class="card-body">
+        <div class="card-tag">From the videos</div>
+        <div class="card-title">The Agent Rules: What I Told My ChatGPT Business Agent</div>
+        <div class="card-desc">The exact rules I gave my ChatGPT Business Agent, plus a fill-in-the-blank version any business can paste into Agent builder, and five questions to test it with before you publish. Free.</div>
+        <div class="card-link">Get this playbook</div>
+      </div>
+    </a>
     </div>
   </div>
 </section>
@@ -365,7 +373,7 @@ document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
 // GHL redirect lands here with ?dl=1: send the visitor to the playbook they asked for
 if(new URLSearchParams(window.location.search).get('dl')==='1'){
   let slug=null;try{slug=localStorage.getItem('bw_playbook_pending')}catch(e){}
-  if(slug){var ROOT=['five','hours','found','checks','watch','match','guess','reviews','churn','track','towns','lazy','inbox','edit'];window.location.replace(ROOT.indexOf(slug)>-1?'/'+slug+'/?dl=1':'/playbook/'+slug+'/?dl=1');}
+  if(slug){var ROOT=['five','hours','found','checks','watch','match','guess','reviews','churn','track','towns','lazy','inbox','edit','agent'];window.location.replace(ROOT.indexOf(slug)>-1?'/'+slug+'/?dl=1':'/playbook/'+slug+'/?dl=1');}
 }
 </script>
 </body>

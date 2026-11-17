@@ -238,3 +238,11 @@ Free Playbooks
  Get this playbook
  
  ](/edit/)
+ [
+ 
+ From the videos
+ The Agent Rules: What I Told My ChatGPT Business Agent
+ The exact rules I gave my ChatGPT Business Agent, plus a fill-in-the-blank version any business can paste into Agent builder, and five questions to test it with before you publish. Free.
+ Get this playbook
+ 
+ ](/agent/)
