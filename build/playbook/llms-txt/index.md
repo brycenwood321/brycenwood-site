@@ -55,6 +55,15 @@ Free Playbook · System 1 of 14
  The PDF should be downloading. If it did not start, the button below has it.
 
  [Download the PDF](/guides/playbooks/llms-txt.pdf)
+ 
+ Next step
+
+ Join the free community
+
+ Business owners setting this up for real. Ask questions, see what others built, and come to the live calls. Free.
+
+ [Join the free Skool](https://www.skool.com/business-on-autopilot-8404)
+ 
  Want a different one? [All the playbooks](/playbook/), one download each.
 
  Want this done for your business? [Start with a diagnosis.](/pricing/)

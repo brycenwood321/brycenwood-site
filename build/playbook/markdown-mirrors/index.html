@@ -128,6 +128,12 @@
       <div style="font-size:32px;font-weight:800;margin-bottom:12px;color:var(--text)">System 2 is <span class="accent">yours.</span></div>
       <p style="color:var(--text-dim);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">The PDF should be downloading. If it did not start, the button below has it.</p>
       <a href="/guides/playbooks/markdown-mirrors.pdf" download class="btn-primary" id="manualDownload" style="display:inline-block;margin-bottom:16px">Download the PDF</a>
+      <div style="margin:28px auto 8px;max-width:480px;padding:22px 20px;border:1px solid var(--card-border);border-radius:10px;background:var(--card)">
+        <p style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin:0 0 8px">Next step</p>
+        <p style="font-size:18px;font-weight:800;color:var(--text);margin:0 0 8px">Join the free community</p>
+        <p style="font-size:14.5px;color:var(--text-dim);line-height:1.6;margin:0 0 16px">Business owners setting this up for real. Ask questions, see what others built, and come to the live calls. Free.</p>
+        <a href="https://www.skool.com/business-on-autopilot-8404" target="_blank" rel="noopener" id="skoolNext" class="btn-primary" style="display:inline-block">Join the free Skool</a>
+      </div>
       <p style="font-size:14px;color:var(--text-muted);margin-top:24px">Want a different one? <a href="/playbook/" style="color:var(--lime)">All the playbooks</a>, one download each.</p>
       <p style="font-size:14px;color:var(--text-muted);margin-top:12px">Want this done for your business? <a href="/pricing/" style="color:var(--lime)">Start with a diagnosis.</a></p>
     </div>
@@ -220,17 +226,17 @@ function unlock(opts){
   if(successPanel)successPanel.scrollIntoView({behavior:'smooth',block:'center'});
 }
 // 0: came back from the GHL redirect
-if(new URLSearchParams(window.location.search).get('dl')==='1'){setTimeout(unlock,500);}
+if(new URLSearchParams(window.location.search).get('dl')==='1'){countSignup();setTimeout(unlock,500);}
 // already unlocked this one on this device: show it, no re-download
 try{if(localStorage.getItem('bw_playbook_'+SLUG)==='1'&&!unlocked){unlock({noDownload:true});}}catch(e){}
 // 1: GHL postMessage
 window.addEventListener('message',function(e){
   try{
     var d=e.data;
-    if(typeof d==='string'&&(d.includes('formSubmitted')||d.includes('form_submitted')||d.includes('lcWidget')))unlock();
+    if(typeof d==='string'&&(d.includes('formSubmitted')||d.includes('form_submitted')||d.includes('lcWidget'))){countSignup();unlock();}
     if(typeof d==='object'&&d){
       var json=JSON.stringify(d).toLowerCase();
-      if(json.includes('formsubmitted')||json.includes('form_submitted')||json.includes('lcwidget')||json.includes('appreciate')||json.includes('thank you'))unlock();
+      if(json.includes('formsubmitted')||json.includes('form_submitted')||json.includes('lcwidget')||json.includes('appreciate')||json.includes('thank you')){countSignup();unlock();}
     }
   }catch(err){}
 });
@@ -245,7 +251,7 @@ if(ghlIframe){
       const h=ghlIframe.offsetHeight||ghlIframe.clientHeight;
       const now=Date.now();
       if(h>400){if(!tallSince)tallSince=now;}
-      if(lastHeight>400&&h<350&&!unlocked&&tallSince&&(now-tallSince)>4000){unlock();clearInterval(heightPoll);}
+      if(lastHeight>400&&h<350&&!unlocked&&tallSince&&(now-tallSince)>4000){countSignup();unlock();clearInterval(heightPoll);}
       lastHeight=h;
     }catch(err){}
   },500);
@@ -253,6 +259,14 @@ if(ghlIframe){
 }
 // 3: manual
 const manualLink=document.getElementById('manualTriggerLink');
+// signup = a REAL form submit only (postMessage, iframe shrink, GHL redirect back),
+// never a revisit or the manual link; once per page per device (added 2026-11-18)
+function countSignup(){
+  try{if(localStorage.getItem('bw_signup_'+SLUG)==='1')return;localStorage.setItem('bw_signup_'+SLUG,'1')}catch(e){}
+  if(typeof gtag==='function'){gtag('event','signup',{playbook:SLUG})}
+}
+var skoolBtn=document.getElementById('skoolNext');var skoolSent=false;
+if(skoolBtn){skoolBtn.addEventListener('click',function(){if(skoolSent)return;skoolSent=true;if(typeof gtag==='function'){gtag('event','skool_click',{playbook:SLUG})}});}
 if(manualLink){manualLink.addEventListener('click',function(e){e.preventDefault();unlock();});}
 
 const stickyBar=document.getElementById('stickyBar');

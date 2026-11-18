@@ -52,6 +52,15 @@ Free Playbook · System 5 of 14
 
  [Download the PDF](/guides/playbooks/website-builder.pdf)
  
+ Next step
+
+ Join the free community
+
+ Business owners setting this up for real. Ask questions, see what others built, and come to the live calls. Free.
+
+ [Join the free Skool](https://www.skool.com/business-on-autopilot-8404)
+ 
+ 
  New · November 2026
 
  The short prompts from the videos

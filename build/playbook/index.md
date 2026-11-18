@@ -25,7 +25,7 @@ Free Playbooks
  [
  
  From the video
- 420 Hours in Claude Code: The Three Lessons
+ 600+ Hours in Claude Code: The Three Lessons
  A list of its own mistakes that has to become code, a grader that never built the thing, and a greeting that leads with what is working. Each one explained in plain English, plus one prompt that sets all three up.
  Get this playbook
  

@@ -5,3 +5,7 @@ https://brycenwood-site.pages.dev/* https://www.brycenwood.com/:splat 301
 /guides/claude-code-voice/* /playbook/ 301
 /ai-playbook/* /playbook/ 301
 /waitlist /community/ 301
+# Old 'comment BUILD' ManyChat and bio link went to a Skool waitlist page that no longer exists;
+# about 17 landings a month still arrive (GA4, 2026-11-18). Send them to the free Skool.
+/build https://www.skool.com/business-on-autopilot-8404 302
+/build/* https://www.skool.com/business-on-autopilot-8404 302

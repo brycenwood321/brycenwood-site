@@ -48,6 +48,15 @@ From the video · Free
  The prompt is yours.
  Everything is unlocked below: three steps and the prompt with a copy button.
 
+ 
+ Next step
+
+ Join the free community
+
+ Business owners setting this up for real. Ask questions, see what others built, and come to the live calls. Free.
+
+ [Join the free Skool](https://www.skool.com/business-on-autopilot-8404)
+ 
  Want more? [All the playbooks](/playbook/), one download each.
 
  
