@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GV8RG30MK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2GV8RG30MK');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Board: What Matters With AI in Your Business and What Doesn&#x27;t | Brycen Wood</title>
+<meta name="description" content="The ten AI things from the video, sorted into five that matter and five you can ignore, with how to start on each one and three prompts to copy. Free.">
+<link rel="canonical" href="https://www.brycenwood.com/board/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap">
+<meta property="og:title" content="The Board: What Matters With AI in Your Business and What Doesn&#x27;t">
+<meta property="og:description" content="The ten AI things from the video, sorted into five that matter and five you can ignore, with how to start on each one and three prompts to copy. Free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.brycenwood.com/board/">
+<meta property="og:image" content="https://www.brycenwood.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Board: What Matters With AI in Your Business and What Doesn&#x27;t">
+<meta name="twitter:description" content="The ten AI things from the video, sorted into five that matter and five you can ignore, with how to start on each one and three prompts to copy. Free.">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebPage", "name": "The Board: What Matters With AI in Your Business and What Doesn't", "description": "The ten AI things from the video, sorted into five that matter and five you can ignore, with how to start on each one and three prompts to copy. Free.", "url": "https://www.brycenwood.com/board/", "author": {"@type": "Person", "name": "Brycen Wood", "url": "https://www.brycenwood.com/about/"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brycenwood.com/"}, {"@type": "ListItem", "position": 2, "name": "Playbook", "item": "https://www.brycenwood.com/playbook/"}, {"@type": "ListItem", "position": 3, "name": "The Board"}]}
+</script>
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<style>
+.five-step{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:28px 0;border-bottom:1px solid var(--card-border)}
+.five-step:last-child{border-bottom:none}
+.five-num{font-family:var(--mono);font-size:32px;font-weight:700;color:var(--lime);line-height:1}
+.five-step h3{font-size:22px;font-weight:800;margin:0 0 8px;line-height:1.2}
+.five-step .what{font-size:16px;color:var(--text);line-height:1.65;margin:0 0 12px}
+.five-step .how{font-size:15px;color:var(--text-dim);line-height:1.65;margin:0}
+.five-step .how strong{color:var(--text)}
+.five-step a,.tick-list a{color:var(--lime)}
+.five-step .say{display:inline-block;font-family:var(--mono);font-size:13px;color:var(--lime);background:var(--lime-dim);padding:3px 8px;border-radius:4px;margin-top:10px}
+.prompt-box{position:relative;background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--lime);border-radius:8px;padding:24px;margin-top:24px}
+.prompt-box h3{font-size:18px;font-weight:800;margin:0 0 14px}
+.prompt-box pre{font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--text);white-space:pre-wrap;word-wrap:break-word;margin:0;background:none;padding:0}
+.copy-btn{width:100%;margin-top:18px;padding:16px;font-family:var(--sans);font-size:17px;font-weight:800;background:var(--lime);color:#050508;border:none;border-radius:8px;cursor:pointer;letter-spacing:0.3px}
+.copy-btn:active{transform:scale(0.99)}
+.copy-btn.done{background:var(--lime-deep)}
+.mini-steps{display:grid;gap:10px;margin-top:20px}
+.mini-steps div{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:15px;color:var(--text-dim);line-height:1.6}
+.mini-steps span{font-family:var(--mono);color:var(--lime);font-weight:700}
+.tick-group{margin-top:32px}
+.tick-group h3{font-size:20px;font-weight:800;margin:0 0 8px}
+.tick{display:grid;grid-template-columns:32px 1fr;gap:12px;padding:18px 0;border-bottom:1px solid var(--card-border);cursor:pointer}
+.tick:last-child{border-bottom:none}
+.tick input,.step-tick input{width:22px;height:22px;margin-top:2px;accent-color:var(--lime);cursor:pointer}
+.tick strong{display:block;font-size:17px;color:var(--text);margin-bottom:4px}
+.tick span{font-size:15px;color:var(--text-dim);line-height:1.6}
+.step-tick{display:inline-flex;align-items:center;gap:10px;margin-top:14px;font-size:14px;color:var(--text-dim);cursor:pointer}
+.steps-intro{font-size:16px;color:var(--text-dim);max-width:600px;margin:16px auto 0;line-height:1.6;text-align:center}
+.locked-content{display:none}
+@media (max-width:600px){.five-step{grid-template-columns:40px 1fr;gap:14px}.five-num{font-size:26px}.five-step h3{font-size:19px}}
+</style>
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<nav>
+  <a href="/" class="nav-logo">BRYCEN WOOD</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/services/" class="nav-link">Services</a>
+    <a href="/case-studies/" class="nav-link">Case Studies</a>
+    <a href="/guides/" class="nav-link">Guides</a>
+    <a href="/playbook/" class="nav-link">Playbooks</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/contact/" class="nav-link">Contact</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span>
+  <a href="/playbook/">Playbooks</a><span class="sep">/</span>
+  <span>The Board</span>
+</div>
+
+<section class="page-hero">
+  <p class="hero-eyebrow">From the video &middot; Free</p>
+  <h1>AI in your business: <span class="accent">what matters and what doesn&rsquo;t.</span></h1>
+  <p class="hero-sub">The whole board from the video, five things worth your time and five you can stop worrying about, with how to start on each one. Drop your email below and it unlocks. Nothing to buy.</p>
+  <div class="btn-group" style="margin-top:24px">
+    <a href="#get" class="btn-primary">Unlock the board</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding:56px 0;">
+  <div class="container-narrow">
+    <div class="section-header reveal">
+      <p class="hero-eyebrow">What&rsquo;s inside</p>
+      <h2>What you get, <span class="accent">one line each</span></h2>
+    </div>
+    <div class="perks reveal" style="margin-top:40px">
+      <div class="perk"><div class="perk-icon">01</div><div class="perk-text"><strong>The five that matter</strong> &middot; Each one with what I said in the video and the first thing to do tomorrow.</div></div>
+      <div class="perk"><div class="perk-icon">02</div><div class="perk-text"><strong>The five you can ignore</strong> &middot; What to do instead, so you can drop them without feeling behind.</div></div>
+      <div class="perk"><div class="perk-icon">03</div><div class="perk-text"><strong>Three prompts to copy</strong> &middot; Teach it your business, make it check its own work, and find the task you hate most.</div></div>
+    </div>
+    <p class="reveal" style="text-align:center;font-size:15px;color:var(--text-dim);margin-top:28px;line-height:1.6">All ten, how to start on each, and three prompts with copy buttons. Unlocked by the form below.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section-raised" id="get" style="padding:72px 0;">
+  <div class="container-narrow">
+    <div class="form-wrapper reveal" id="formPanel">
+      <div class="form-title">Get the board</div>
+      <div class="form-sub">Enter your email and this page unlocks immediately. Just this one, not all of them.</div>
+      <div id="ghl-form">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/Z1F5E7GVhmaDPvn8B7ww"
+          style="display:inline;width:100%;height:600px;border:none;border-radius:4px"
+          id="inline-Z1F5E7GVhmaDPvn8B7ww"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Waitlist Form"
+          data-height="600"
+          data-layout-iframe-id="inline-Z1F5E7GVhmaDPvn8B7ww"
+          data-form-id="Z1F5E7GVhmaDPvn8B7ww"
+          title="Playbook request"
+        ></iframe>
+        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+      </div>
+      <p style="text-align:center;margin-top:20px;font-size:14px;color:var(--text-dim)">Already submitted and nothing happened? <a href="#" id="manualTriggerLink" style="color:var(--lime);text-decoration:underline;font-weight:600">Click here to unlock it.</a></p>
+    </div>
+    <div id="successPanel" style="display:none;text-align:center;padding:48px 24px;">
+      <div style="font-size:32px;font-weight:800;margin-bottom:12px;color:var(--text)">The board is <span class="accent">yours.</span></div>
+      <p style="color:var(--text-dim);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">Everything is unlocked below: the five that matter, the five you can ignore, and the three prompts.</p>
+      <div style="margin:28px auto 8px;max-width:480px;padding:22px 20px;border:1px solid var(--card-border);border-radius:10px;background:var(--card)">
+        <p style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin:0 0 8px">Next step</p>
+        <p style="font-size:18px;font-weight:800;color:var(--text);margin:0 0 8px">Join the free community</p>
+        <p style="font-size:14.5px;color:var(--text-dim);line-height:1.6;margin:0 0 16px">Business owners setting this up for real. Ask questions, see what others built, and come to the live calls. Free.</p>
+        <a href="https://www.skool.com/business-on-autopilot-8404" target="_blank" rel="noopener" id="skoolNext" class="btn-primary" style="display:inline-block">Join the free Skool</a>
+      </div>
+      <p style="font-size:14px;color:var(--text-muted);margin-top:24px">Want more? <a href="/playbook/" style="color:var(--lime)">All the playbooks</a>, one download each.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="locked-content" id="unlocked" style="padding:48px 0;">
+  <div class="container-narrow">
+    <div class="section-header">
+      <p class="hero-eyebrow">Unlocked</p>
+      <h2>Five that matter, <span class="accent">five you can ignore</span></h2>
+    </div>
+    <div class="five-step">
+      <div class="five-num">1</div>
+      <div>
+        <h3>Important: giving it your real business info</h3>
+        <p class="what">Before you ask it for anything, tell it how your business actually works. Use the fill-in note below, then paste it into a ChatGPT Project or a Claude Project so it is there every time.</p>
+        <p class="how"><strong>What I said:</strong> your pricing, your hours, and how you do things. That is what makes it useful.</p>
+        <span class="say">Important</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">2</div>
+      <div>
+        <h3>Important: paying the $20 a month</h3>
+        <p class="what">Pay for one month of the paid plan of whichever one you picked and use it every day. If you have not opened it by the end of the month, cancel it.</p>
+        <p class="how"><strong>What I said:</strong> the free one is a completely different tool.</p>
+        <span class="say">Important</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">3</div>
+      <div>
+        <h3>Important: talking to it instead of typing</h3>
+        <p class="what">Tap the microphone in the app and talk the way you would to a new hire. Messy is fine. It sorts it out.</p>
+        <p class="how"><strong>What I said:</strong> I talk to it way more than I type, even in the truck or when I am cooking dinner.</p>
+        <span class="say">Important</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">4</div>
+      <div>
+        <h3>Important: checking what it actually did</h3>
+        <p class="what">When it says something is done, open it and look. Then paste the check prompt below and make it list what it did not finish.</p>
+        <p class="how"><strong>What I said:</strong> it will tell you it is done when it is not.</p>
+        <span class="say">Important</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">5</div>
+      <div>
+        <h3>Important: letting it run things while you sleep</h3>
+        <p class="what">Start with one job on a schedule, like a summary of yesterday waiting for you each morning. Get one working before you add a second.</p>
+        <p class="how"><strong>What I said:</strong> mine runs jobs every single night, and when I wake up there is a report waiting for me.</p>
+        <span class="say">Important</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">6</div>
+      <div>
+        <h3>Not important: ChatGPT, Claude or Gemini</h3>
+        <p class="what">Pick one and stay with it for three months. Learning one well beats switching every time a new one wins the week.</p>
+        <p class="how"><strong>What I said:</strong> they pass each other every single month. Pick one and learn it.</p>
+        <span class="say">Not important</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">7</div>
+      <div>
+        <h3>Not important: knowing how to code</h3>
+        <p class="what">Describe what you want in plain English, the way you would explain it to a person. Ask it to explain anything you do not follow.</p>
+        <p class="how"><strong>What I said:</strong> I literally have zero coding experience.</p>
+        <span class="say">Not important</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">8</div>
+      <div>
+        <h3>Not important: paying for ten AI tools</h3>
+        <p class="what">Look at what you paid for last month and cancel anything you did not open. Keep the one you actually use.</p>
+        <p class="how"><strong>What I said:</strong> one AI that you actually use beats ten that you don&rsquo;t.</p>
+        <span class="say">Not important</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">9</div>
+      <div>
+        <h3>Not important: letting it write all your posts</h3>
+        <p class="what">Talk your idea out first, then let it clean up your words. If you want it to write, give it ten of your own past posts to learn from.</p>
+        <p class="how"><strong>What I said:</strong> unless you have trained it very well, people can usually tell.</p>
+        <span class="say">Not important</span>
+      </div>
+    </div>
+    <div class="five-step">
+      <div class="five-num">10</div>
+      <div>
+        <h3>Not important: AI replacing you</h3>
+        <p class="what">Use the last prompt below to find the parts of your week you hate, and start with the first one.</p>
+        <p class="how"><strong>What I said:</strong> it is replacing the parts of your day that you hate.</p>
+        <span class="say">Not important</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="locked-content" id="prompt" style="padding:32px 0 72px;">
+  <div class="container-narrow">
+    <div class="section-header">
+      <p class="hero-eyebrow">The prompts</p>
+      <h2>Copy, paste, <span class="accent">start tomorrow</span></h2>
+      <p style="font-size:16px;color:var(--text-dim);max-width:600px;margin:16px auto 0;line-height:1.6">Paste each one into whichever AI you picked. Fill in the parts in [BRACKETS] first.</p>
+    </div>
+    <div class="mini-steps">
+      <div><span>1</span><div>Paste the business note into a Project so it is always there.</div></div>
+      <div><span>2</span><div>Use the check prompt every time it says it is done.</div></div>
+      <div><span>3</span><div>Run the last prompt once, then start with the task it picks.</div></div>
+    </div>
+    <div class="prompt-box">
+      <h3>Your business, in one note</h3>
+<pre id="promptInfo">Here is how my business works. Use this every time you help me, and ask me before you guess anything that is not on this list.
+
+Business: [NAME], [WHAT YOU DO] in [TOWNS YOU SERVE]
+Hours: [YOUR HOURS]
+Prices: [YOUR MAIN PRICES OR PRICE RANGES]
+How a job goes, start to finish: [3 TO 5 STEPS]
+What we never do: [THINGS YOU SAY NO TO]
+Who my best customers are: [ONE OR TWO LINES]
+How I talk to customers: [FOR EXAMPLE: SHORT, FRIENDLY, NO PRESSURE]</pre>
+      <button class="copy-btn" data-target="promptInfo">Copy the note</button>
+    </div>
+    <div class="prompt-box">
+      <h3>Make it check its own work</h3>
+<pre id="promptCheck">Before I trust this, go back over what you just did and answer plainly:
+1. What exactly did you change or make? List each one.
+2. What did you NOT finish, skip, or guess at?
+3. How can I see it myself? Tell me where to look.
+If anything is unfinished, say so first. Do not tell me it is done unless I can open it and see it.</pre>
+      <button class="copy-btn" data-target="promptCheck">Copy the check</button>
+    </div>
+    <div class="prompt-box">
+      <h3>Find the task you hate most</h3>
+<pre id="promptHate">Ask me about my work week, one question at a time, until you know the tasks I put off, dread, or do over and over. Then give me the three that would save me the most hours if you helped with them, and for the first one, tell me exactly what to paste into you tomorrow morning to start.</pre>
+      <button class="copy-btn" data-target="promptHate">Copy the prompt</button>
+    </div>
+    <p style="text-align:center;font-size:14px;color:var(--text-muted);margin-top:28px;line-height:1.6">Nothing to buy here. If it helps, that is the whole point. I post what I learn as I build on <a href="https://www.instagram.com/brycenwood.ai/" target="_blank" rel="noopener" style="color:var(--lime)">@brycenwood.ai</a>.</p>
+  </div>
+</section>
+
+<div class="sticky-bar" id="stickyBar">
+  <a href="#get" class="sticky-bar-btn">Get the board</a>
+  <div class="sticky-bar-sub">The board &middot; free</div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BRYCEN WOOD</div>
+      <div class="footer-desc">Custom business operating systems built with Claude Code. No coding experience required. Based in Utah.</div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <a href="/services/" class="footer-link">Services</a>
+      <a href="/case-studies/" class="footer-link">Case Studies</a>
+      <a href="/guides/" class="footer-link">Guides</a>
+      <a href="/about/" class="footer-link">About</a>
+    </div>
+    <div>
+      <div class="footer-heading">Resources</div>
+      <a href="/playbook/" class="footer-link">Playbooks</a>
+      <a href="/tools/" class="footer-link">Tools</a>
+      <a href="/contact/" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-heading">Social</div>
+      <a href="https://www.instagram.com/brycenwood.ai/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@brycenwood1" class="footer-link" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@brycenwood-ai" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>BUILT WITH <span class="lime">CLAUDE CODE</span> &nbsp;&middot;&nbsp; BRYCENWOOD.COM &nbsp;&middot;&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<script>
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+if(navToggle&&navLinks){
+  navToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=navToggle.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    }else{
+      spans[0].style.transform='none';
+      spans[1].style.opacity='1';
+      spans[2].style.transform='none';
+    }
+  });
+}
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);}
+  });
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+const SLUG='board';
+try{localStorage.setItem('bw_playbook_pending',SLUG)}catch(e){}
+let unlocked=false;
+function unlock(opts){
+  if(unlocked)return;
+  unlocked=true;
+  try{localStorage.removeItem('bw_playbook_pending')}catch(e){}
+  try{localStorage.setItem('bw_playbook_'+SLUG,'1')}catch(e){}
+  const formPanel=document.getElementById('formPanel');
+  const successPanel=document.getElementById('successPanel');
+  if(formPanel)formPanel.style.display='none';
+  if(successPanel)successPanel.style.display='block';
+  document.querySelectorAll('.locked-content').forEach(el=>{el.style.display='block';el.classList.add('visible')});
+  if(typeof gtag==='function'){gtag('event','playbook_unlock',{playbook:SLUG})}
+  if(successPanel)successPanel.scrollIntoView({behavior:'smooth',block:'center'});
+}
+// 0: came back from the GHL redirect
+if(new URLSearchParams(window.location.search).get('dl')==='1'){countSignup();setTimeout(unlock,500);}
+// already unlocked this one on this device
+try{if(localStorage.getItem('bw_playbook_'+SLUG)==='1'&&!unlocked){unlock({noDownload:true});}}catch(e){}
+// 1: GHL postMessage
+window.addEventListener('message',function(e){
+  try{
+    var d=e.data;
+    if(typeof d==='string'&&(d.includes('formSubmitted')||d.includes('form_submitted')||d.includes('lcWidget'))){countSignup();unlock();}
+    if(typeof d==='object'&&d){
+      var json=JSON.stringify(d).toLowerCase();
+      if(json.includes('formsubmitted')||json.includes('form_submitted')||json.includes('lcwidget')||json.includes('appreciate')||json.includes('thank you')){countSignup();unlock();}
+    }
+  }catch(err){}
+});
+// 2: iframe shrinks after submit (only after it was tall, loaded, for 4 s)
+const ghlIframe=document.getElementById('inline-Z1F5E7GVhmaDPvn8B7ww');
+if(ghlIframe){
+  let lastHeight=0,tallSince=0;
+  const heightPoll=setInterval(()=>{
+    try{
+      const h=ghlIframe.offsetHeight||ghlIframe.clientHeight;
+      const now=Date.now();
+      if(h>400){if(!tallSince)tallSince=now;}
+      if(lastHeight>400&&h<350&&!unlocked&&tallSince&&(now-tallSince)>4000){countSignup();unlock();clearInterval(heightPoll);}
+      lastHeight=h;
+    }catch(err){}
+  },500);
+  setTimeout(()=>clearInterval(heightPoll),600000);
+}
+// 3: manual
+const manualLink=document.getElementById('manualTriggerLink');
+// signup = a REAL form submit only (postMessage, iframe shrink, GHL redirect back),
+// never a revisit or the manual link; once per page per device (added 2026-11-18)
+function countSignup(){
+  try{if(localStorage.getItem('bw_signup_'+SLUG)==='1')return;localStorage.setItem('bw_signup_'+SLUG,'1')}catch(e){}
+  if(typeof gtag==='function'){gtag('event','signup',{playbook:SLUG})}
+}
+var skoolBtn=document.getElementById('skoolNext');var skoolSent=false;
+if(skoolBtn){skoolBtn.addEventListener('click',function(){if(skoolSent)return;skoolSent=true;if(typeof gtag==='function'){gtag('event','skool_click',{playbook:SLUG})}});}
+if(manualLink){manualLink.addEventListener('click',function(e){e.preventDefault();unlock();});}
+
+const stickyBar=document.getElementById('stickyBar');
+if(stickyBar){
+  const heroEl=document.querySelector('.page-hero');
+  const stickyObs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      const gateVisible=(()=>{const g=document.getElementById('get');if(!g)return false;const r=g.getBoundingClientRect();return r.top<window.innerHeight&&r.bottom>0})();
+      if(!e.isIntersecting&&!gateVisible&&!unlocked){stickyBar.classList.add('visible')}else{stickyBar.classList.remove('visible')}
+    });
+  },{threshold:0});
+  if(heroEl)stickyObs.observe(heroEl);
+}
+
+// tick boxes remember their state on this device
+document.querySelectorAll('input[data-tick]').forEach(function(box){
+  var key='bw_tick_'+SLUG+'_'+box.getAttribute('data-tick');
+  try{if(localStorage.getItem(key)==='1')box.checked=true}catch(e){}
+  box.addEventListener('change',function(){try{localStorage.setItem(key,box.checked?'1':'0')}catch(e){}});
+});
+
+function fallbackCopy(text){
+  const ta=document.createElement('textarea');
+  ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.focus();ta.select();
+  let ok=false;
+  try{ok=document.execCommand('copy')}catch(e){ok=false}
+  document.body.removeChild(ta);
+  return ok;
+}
+document.querySelectorAll('.copy-btn[data-target]').forEach(function(btn){
+  const label=btn.textContent;
+  btn.addEventListener('click',async()=>{
+    const src=document.getElementById(btn.getAttribute('data-target'));
+    if(!src)return;
+    const text=src.textContent;
+    let ok=false;
+    try{
+      if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);ok=true}
+      else{ok=fallbackCopy(text)}
+    }catch(e){ok=fallbackCopy(text)}
+    if(ok){
+      btn.textContent='Copied. Now paste it in.';
+      btn.classList.add('done');
+      if(typeof gtag==='function'){gtag('event','copy_prompt',{page:SLUG,box:btn.getAttribute('data-target')})}
+      setTimeout(()=>{btn.textContent=label;btn.classList.remove('done')},4000);
+    }else{
+      btn.textContent='Press and hold the text above to copy it';
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -241,6 +241,14 @@ Free Playbooks
  [
  
  From the videos
+ The Board: What Matters With AI in Your Business and What Doesn&rsquo;t
+ The ten AI things from the video, sorted into five that matter and five you can ignore, with how to start on each one and three prompts to copy. Free.
+ Get this playbook
+ 
+ ](/board/)
+ [
+ 
+ From the videos
  The Agent Rules: What I Told My ChatGPT Business Agent
  The exact rules I gave my ChatGPT Business Agent, plus a fill-in-the-blank version any business can paste into Agent builder, and five questions to test it with before you publish. Free.
  Get this playbook
