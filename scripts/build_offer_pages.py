@@ -239,11 +239,16 @@ cohort_faq = [
 written.append(page("cohort", "Run Your Business on Claude Code, 5-Week Cohort | Brycen Wood", "Five weeks, one evening a week, 8 to 12 business owners. Leave with your own Claude Code system running. $1,500, full refund before week 1 ends.", "Cohort", cohort_body, cohort_faq))
 
 # ---------- /founding/ (invite only, ruled 2026-11-09: $300, 10 seats, handpicked, install call first) ----------
-# Not in the nav, not in the sitemap, noindex. Brycen sends the link by hand in his HELP replies.
+# Not in the nav, not in the sitemap, noindex. Brycen sends the link by hand to people who reply COHORT
+# (ruled 2026-11-23: week 1 Mon Dec 7, calls Sunday 8pm MT, install calls Dec 1 to 5).
 f_start = LINKS.get("founding_start") or ""
+f_calls = LINKS.get("founding_calls") or ""
+f_install = LINKS.get("founding_install") or "the week before week 1"
 f_pay = (pay("founding", "Take my seat, $300") if LINKS.get("founding")
          else '<a href="/contact/" class="btn-primary" style="display:inline-block">Message me for a seat</a>')
 f_when = f"Week 1 starts {html.escape(f_start)}." if f_start else "Dates are set with the group."
+if f_calls:
+    f_when += f" Calls are {html.escape(f_calls)}."
 founding_body = f'''<section class="page-hero">
   <p class="hero-eyebrow">Founding cohort, invite only, 10 seats</p>
   <h1>Your first system, <span class="accent">built with me.</span></h1>
@@ -254,7 +259,7 @@ founding_body = f'''<section class="page-hero">
 <div class="section-dark">
   <div class="section-header reveal"><h2>How it <span class="accent">works</span></h2></div>
   <div class="container-narrow reveal">
-    <div class="week-row"><div class="wk">FIRST</div><div><strong>A 30-minute install call, just you and me.</strong><p>Before week 1. We get Claude Code running on your own computer so nobody starts the first call stuck on setup.</p></div></div>
+    <div class="week-row"><div class="wk">FIRST</div><div><strong>A 30-minute install call, just you and me.</strong><p>{html.escape(f_install[0].upper() + f_install[1:])}. We get Claude Code running on your own computer so nobody starts the first call stuck on setup.</p></div></div>
     <div class="week-row"><div class="wk">WEEKS 1-4</div><div><strong>One live call a week.</strong><p>Each of us picks one system for our own business and we build it together, on your real work, not a demo.</p></div></div>
     <div class="week-row"><div class="wk">THE END</div><div><strong>One working system, yours.</strong><p>It runs on your machine and you own it. You pay Anthropic for your own Claude plan; nothing is paid to me after the four weeks.</p></div></div>
   </div>
@@ -275,7 +280,7 @@ founding_body = f'''<section class="page-hero">
 founding_faq = [
     ("Do I need to know how to code?", "No. I have never written a line of code. Everything happens by talking to Claude Code in plain English."),
     ("What does it cost to run afterward?", "Your own Claude subscription, which you pay Anthropic directly. Nothing is paid to me after the four weeks."),
-    ("What happens after I pay?", "I message you to book your 30-minute install call. That call happens the week before week 1."),
+    ("What happens after I pay?", f"I message you to book your 30-minute install call. That call happens {f_install}."),
     ("Can I get a refund?", "Yes. Change your mind before week 1 ends and you get all $300 back."),
 ]
 written.append(page("founding", "Founding Cohort | Brycen Wood", "Invite only. Four weeks, one live call a week, a 30-minute install call first. Leave with one working system. $300 founding price, 10 seats.", "Founding cohort", founding_body, founding_faq, noindex=True))

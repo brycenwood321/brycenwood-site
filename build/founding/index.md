@@ -10,7 +10,7 @@ Founding cohort, invite only, 10 seats
  
 # Your first system, built with me.
 
- Four weeks, one live call a week, a small group of business owners. You leave with one working system running on your own business. Week 1 starts Monday, November 30.
+ Four weeks, one live call a week, a small group of business owners. You leave with one working system running on your own business. Week 1 starts Sunday, December 6. Calls are Sunday nights, 8pm Mountain (Dec 6, 13, 20, 27).
 
  [Take my seat, $300](https://buy.stripe.com/5kQeV64snbeP9rK2dHbII02)
 
@@ -18,7 +18,7 @@ Founding cohort, invite only, 10 seats
 ## How it works
 
  
- FIRST**A 30-minute install call, just you and me.**Before week 1. We get Claude Code running on your own computer so nobody starts the first call stuck on setup.
+ FIRST**A 30-minute install call, just you and me.**The week of December 1. We get Claude Code running on your own computer so nobody starts the first call stuck on setup.
 
  WEEKS 1-4**One live call a week.**Each of us picks one system for our own business and we build it together, on your real work, not a demo.
 
@@ -55,7 +55,7 @@ Founding cohort, invite only, 10 seats
  
  
  What happens after I pay?+
- I message you to book your 30-minute install call. That call happens the week before week 1.
+ I message you to book your 30-minute install call. That call happens the week of December 1.
 
  
  
