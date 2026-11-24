@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Search and AI answer crawlers, allowed by name
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://[YOURDOMAIN.COM]/sitemap.xml

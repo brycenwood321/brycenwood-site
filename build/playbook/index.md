@@ -241,6 +241,14 @@ Free Playbooks
  [
  
  From the videos
+ Get Found Online: Everything I Learned in 6 Months About SEO and AI Visibility
+ The whole playbook for getting a local business found on Google, Siri, Alexa, ChatGPT and the rest: listings, reviews, website, how each AI picks a business, how to measure it, and the myths. Free.
+ Get this playbook
+ 
+ ](/visible/)
+ [
+ 
+ From the videos
  The Board: What Matters With AI in Your Business and What Doesn&rsquo;t
  The ten AI things from the video, sorted into five that matter and five you can ignore, with how to start on each one and three prompts to copy. Free.
  Get this playbook

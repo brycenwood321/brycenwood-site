@@ -1,0 +1,30 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "[EXACT NAME, SAME AS YOUR GOOGLE LISTING]",
+  "url": "https://[YOURDOMAIN.COM]/",
+  "telephone": "[+1-555-555-5555]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[123 Main St Ste B]",
+    "addressLocality": "[City]",
+    "addressRegion": "[State]",
+    "postalCode": "[Zip]",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "[City 1]"},
+    {"@type": "City", "name": "[City 2]"}
+  ],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00"}
+  ],
+  "sameAs": [
+    "[YOUR GOOGLE MAPS LINK]",
+    "[YOUR APPLE MAPS LINK]",
+    "[YOUR YELP PAGE]",
+    "[YOUR FACEBOOK PAGE]"
+  ]
+}
+</script>
