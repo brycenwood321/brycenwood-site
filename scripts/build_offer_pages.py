@@ -240,7 +240,7 @@ written.append(page("cohort", "Run Your Business on Claude Code, 5-Week Cohort |
 
 # ---------- /founding/ (invite only, ruled 2026-11-09: $300, 10 seats, handpicked, install call first) ----------
 # Not in the nav, not in the sitemap, noindex. Brycen sends the link by hand to people who reply COHORT
-# (ruled 2026-11-23: week 1 Mon Dec 7, calls Sunday 8pm MT, install calls Dec 1 to 5).
+# (ruled 2026-11-23: calls Sunday 8pm MT Dec 6, 13, 20; call 4 moved to Jan 3 on 2026-11-24; install calls Dec 1 to 5).
 f_start = LINKS.get("founding_start") or ""
 f_calls = LINKS.get("founding_calls") or ""
 f_install = LINKS.get("founding_install") or "the week before week 1"
@@ -251,21 +251,102 @@ if f_calls:
     f_when += f" Calls are {html.escape(f_calls)}."
 founding_body = f'''<section class="page-hero">
   <p class="hero-eyebrow">Founding cohort, invite only, 10 seats</p>
-  <h1>Your first system, <span class="accent">built with me.</span></h1>
-  <p class="hero-sub">Four weeks, one live call a week, a small group of business owners. You leave with one working system running on your own business. {f_when}</p>
+  <h1>By January, part of your business <span class="accent">runs without you.</span></h1>
+  <p class="hero-sub">In four live calls you set up an AI assistant that knows your business, build one system that takes a real job off your plate every week, and learn to build the next one yourself. No code. Your business, your computer, yours to keep. {f_when}</p>
   <div class="btn-group" style="margin-top:24px">{f_pay}</div>
 </section>
 <div class="divider"></div>
 <div class="section-dark">
-  <div class="section-header reveal"><h2>How it <span class="accent">works</span></h2></div>
+  <div class="section-header reveal"><h2>What you walk away <span class="accent">with</span></h2></div>
   <div class="container-narrow reveal">
-    <div class="week-row"><div class="wk">FIRST</div><div><strong>A 30-minute install call, just you and me.</strong><p>{html.escape(f_install[0].upper() + f_install[1:])}. We get Claude Code running on your own computer so nobody starts the first call stuck on setup.</p></div></div>
-    <div class="week-row"><div class="wk">WEEKS 1-4</div><div><strong>One live call a week.</strong><p>Each of us picks one system for our own business and we build it together, on your real work, not a demo.</p></div></div>
-    <div class="week-row"><div class="wk">THE END</div><div><strong>One working system, yours.</strong><p>It runs on your machine and you own it. You pay Anthropic for your own Claude plan; nothing is paid to me after the four weeks.</p></div></div>
+    <div class="week-row"><div class="wk">1</div><div><strong>An assistant that knows your business.</strong><p>Claude Code, set up on your own computer with a folder that holds your prices, your services, your customers and how you talk. It reads that every morning, so you stop re-explaining your business every time you open a chat.</p></div></div>
+    <div class="week-row"><div class="wk">2</div><div><strong>One system doing a job you do by hand today.</strong><p>Picked from your own answers, not from a template. Running on your real work by the last call, and you have watched it work, run it twice and seen it handle the weird case.</p></div></div>
+    <div class="week-row"><div class="wk">3</div><div><strong>Guardrails, so it never goes rogue.</strong><p>It drafts, you decide. Nothing sends, spends or deletes without your yes. When it cannot tell, it says "ask me" instead of guessing.</p></div></div>
+    <div class="week-row"><div class="wk">4</div><div><strong>The skill to build the next one without me.</strong><p>You leave knowing how to describe a job in plain English and turn it into a system. The first one is the hardest. The second takes an afternoon.</p></div></div>
   </div>
 </div>
 <div class="divider"></div>
 <div class="section-raised">
+  <div class="section-header reveal"><h2>The kind of system you <span class="accent">build</span></h2></div>
+  <div class="container-narrow reveal"><p style="text-align:center;opacity:0.8;margin-bottom:28px">You pick one. Most owners pick from these, because they are the ones you feel the next Monday.</p></div>
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <div class="price-label">Morning brief</div>
+      <div class="price-period">Your day, on one page, before you start it</div>
+      <ul class="price-features">
+        <li>What came in yesterday: calls, forms, emails</li>
+        <li>Who is waiting on you, and for how long</li>
+        <li>What is due today, so nothing slips</li>
+      </ul>
+    </div>
+    <div class="price-card featured reveal">
+      <div class="price-label">Follow-up drafter</div>
+      <div class="price-period">No inquiry goes unanswered again</div>
+      <ul class="price-features">
+        <li>Every unanswered message gets a reply drafted in your voice</li>
+        <li>Uses your real prices and services</li>
+        <li>You read it, tap send. It never sends on its own</li>
+      </ul>
+    </div>
+    <div class="price-card reveal">
+      <div class="price-label">Quote drafter</div>
+      <div class="price-period">Say the job, get the quote</div>
+      <ul class="price-features">
+        <li>Built from your own price sheet</li>
+        <li>Same format every time, in minutes not an evening</li>
+        <li>Flags anything it is not sure how to price</li>
+      </ul>
+    </div>
+    <div class="price-card reveal">
+      <div class="price-label">Lead board</div>
+      <div class="price-period">Every lead in one place, none lost</div>
+      <ul class="price-features">
+        <li>Your website form lands on a board automatically</li>
+        <li>See who is new, who is quoted, who went quiet</li>
+        <li>A lost reason on every lead you do not win</li>
+      </ul>
+    </div>
+    <div class="price-card reveal">
+      <div class="price-label">Website in a day</div>
+      <div class="price-period">A site that looks like you paid for it</div>
+      <ul class="price-features">
+        <li>Built by talking, live on your own domain</li>
+        <li>Says clearly what you do and where</li>
+        <li>You can change it yourself, any time</li>
+      </ul>
+    </div>
+    <div class="price-card reveal">
+      <div class="price-label">Get found</div>
+      <div class="price-period">Show up when people ask Google or ChatGPT</div>
+      <ul class="price-features">
+        <li>Google Business Profile filled out completely</li>
+        <li>Listed where ChatGPT and other AI look</li>
+        <li>A monthly re-test so you know where you stand</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+<div class="section-dark">
+  <div class="section-header reveal"><h2>What we cover, <span class="accent">call by call</span></h2></div>
+  <div class="container-narrow reveal">
+    <div class="week-row"><div class="wk">INSTALL</div><div><strong>30 minutes, just you and me.</strong><p>{html.escape(f_install[0].upper() + f_install[1:])}. Claude Code running on your computer, your business folder made, and the interview done, so it already knows your business before the first call.</p></div></div>
+    <div class="week-row"><div class="wk">DEC 6</div><div><strong>See it, then pick yours.</strong><p>I show you how I run my own businesses this way, on my real setup. Then your assistant reads your answers and proposes your first system. You leave with it scoped on one page: what is in, what is out, what done looks like.</p></div></div>
+    <div class="week-row"><div class="wk">DEC 13</div><div><strong>Build it.</strong><p>How to describe a job in plain English so it gets built right. Where everyone is stuck, fixed live on screen so the whole group learns from it.</p></div></div>
+    <div class="week-row"><div class="wk">DEC 20</div><div><strong>Put it to work.</strong><p>It runs on your real work, not a test. Guardrails go in: what it can do alone, what needs your yes. The three checks before anything counts as done.</p></div></div>
+    <div class="week-row"><div class="wk">JAN 3</div><div><strong>Make it a habit, and plan the next one.</strong><p>Everyone shows their system running. The daily routine that keeps it working, how it remembers, and your second build picked so you keep going on your own.</p></div></div>
+    <p style="opacity:0.75;margin-top:18px">No call on Dec 27. Between calls, post where you are stuck in the Skool group.</p>
+  </div>
+</div>
+<div class="divider"></div>
+<div class="section-raised">
+  <div class="section-header reveal"><h2>Why I am <span class="accent">teaching this</span></h2></div>
+  <div class="container-narrow reveal">
+    <p>I run a wrap shop and a meal prep business. I have never written a line of code. My morning brief, my customer reply drafts, my meal prep site's ordering and billing, and my lead follow-up all run on Claude Code, built by talking to it the way this cohort teaches. I got buried running two businesses; this is how I dug out. The founding group is where I teach it live for the first time.</p>
+  </div>
+</div>
+<div class="divider"></div>
+<div class="section-dark">
   <div class="section-header reveal"><h2>The founding <span class="accent">deal</span></h2></div>
   <div class="container-narrow reveal">
     <ul class="plain-list">
@@ -275,15 +356,19 @@ founding_body = f'''<section class="page-hero">
       <li><strong>The one ask:</strong> a short filmed testimonial at the end, good or bad, so the next group knows what it is really like.</li>
       <li><strong>Not for:</strong> people who want it built for them. That is a different thing, and I will tell you straight if that fits you better.</li>
     </ul>
+    <div class="btn-group" style="margin-top:28px;justify-content:center">{f_pay}</div>
   </div>
 </div>'''
 founding_faq = [
     ("Do I need to know how to code?", "No. I have never written a line of code. Everything happens by talking to Claude Code in plain English."),
-    ("What does it cost to run afterward?", "Your own Claude subscription, which you pay Anthropic directly. Nothing is paid to me after the four weeks."),
+    ("What kind of business is this for?", "Owners of small businesses, especially local service businesses, who are buried in admin and want to learn to hand some of it off. If you have customers, quotes, leads or a website, there is a system here for you."),
+    ("What if I do not know which system to build?", "That is normal. The install call runs an interview about your business, and your assistant proposes three builds from your answers. We pick together on the first call."),
+    ("What does it cost to run afterward?", "Your own Claude subscription, which you pay Anthropic directly (Pro is enough to start). Nothing is paid to me after the cohort."),
+    ("Does it work on Windows?", "Yes. Claude Code runs on Mac and Windows. I am on a Mac, so the install call is where we sort out anything Windows-specific."),
     ("What happens after I pay?", f"I message you to book your 30-minute install call. That call happens {f_install}."),
     ("Can I get a refund?", "Yes. Change your mind before week 1 ends and you get all $300 back."),
 ]
-written.append(page("founding", "Founding Cohort | Brycen Wood", "Invite only. Four weeks, one live call a week, a 30-minute install call first. Leave with one working system. $300 founding price, 10 seats.", "Founding cohort", founding_body, founding_faq, noindex=True))
+written.append(page("founding", "Founding Cohort | Brycen Wood", "Invite only. Four live calls and a 30-minute install call. Leave with an AI assistant that knows your business and one working system doing a real job for you. $300 founding price, 10 seats.", "Founding cohort", founding_body, founding_faq, noindex=True))
 
 # ---------- /community/ ----------
 community_body = '''<section class="page-hero">
