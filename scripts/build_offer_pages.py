@@ -271,8 +271,8 @@ founding_body = f'''<section class="page-hero">
   <div class="container-narrow reveal"><p style="text-align:center;opacity:0.8;margin-bottom:28px">You pick one. Most owners pick from these, because they are the ones you feel the next Monday.</p></div>
   <div class="pricing-grid">
     <div class="price-card reveal">
-      <div class="price-label">Morning brief</div>
-      <div class="price-period">Your day, on one page, before you start it</div>
+      <h3 style="font-size:26px;line-height:1.2;color:#fff;margin:0 0 8px;font-weight:700;letter-spacing:-0.01em">Morning brief</h3>
+      <p style="font-size:17px;color:#3dff9a;margin:0 0 4px">Your day, on one page, before you start it</p>
       <ul class="price-features">
         <li>What came in yesterday: calls, forms, emails</li>
         <li>Who is waiting on you, and for how long</li>
@@ -280,8 +280,8 @@ founding_body = f'''<section class="page-hero">
       </ul>
     </div>
     <div class="price-card featured reveal">
-      <div class="price-label">Follow-up drafter</div>
-      <div class="price-period">No inquiry goes unanswered again</div>
+      <h3 style="font-size:26px;line-height:1.2;color:#fff;margin:0 0 8px;font-weight:700;letter-spacing:-0.01em">Follow-up drafter</h3>
+      <p style="font-size:17px;color:#3dff9a;margin:0 0 4px">No inquiry goes unanswered again</p>
       <ul class="price-features">
         <li>Every unanswered message gets a reply drafted in your voice</li>
         <li>Uses your real prices and services</li>
@@ -289,8 +289,8 @@ founding_body = f'''<section class="page-hero">
       </ul>
     </div>
     <div class="price-card reveal">
-      <div class="price-label">Quote drafter</div>
-      <div class="price-period">Say the job, get the quote</div>
+      <h3 style="font-size:26px;line-height:1.2;color:#fff;margin:0 0 8px;font-weight:700;letter-spacing:-0.01em">Quote drafter</h3>
+      <p style="font-size:17px;color:#3dff9a;margin:0 0 4px">Say the job, get the quote</p>
       <ul class="price-features">
         <li>Built from your own price sheet</li>
         <li>Same format every time, in minutes not an evening</li>
@@ -298,8 +298,8 @@ founding_body = f'''<section class="page-hero">
       </ul>
     </div>
     <div class="price-card reveal">
-      <div class="price-label">Lead board</div>
-      <div class="price-period">Every lead in one place, none lost</div>
+      <h3 style="font-size:26px;line-height:1.2;color:#fff;margin:0 0 8px;font-weight:700;letter-spacing:-0.01em">Lead board</h3>
+      <p style="font-size:17px;color:#3dff9a;margin:0 0 4px">Every lead in one place, none lost</p>
       <ul class="price-features">
         <li>Your website form lands on a board automatically</li>
         <li>See who is new, who is quoted, who went quiet</li>
@@ -307,8 +307,8 @@ founding_body = f'''<section class="page-hero">
       </ul>
     </div>
     <div class="price-card reveal">
-      <div class="price-label">Website in a day</div>
-      <div class="price-period">A site that looks like you paid for it</div>
+      <h3 style="font-size:26px;line-height:1.2;color:#fff;margin:0 0 8px;font-weight:700;letter-spacing:-0.01em">Website in a day</h3>
+      <p style="font-size:17px;color:#3dff9a;margin:0 0 4px">A site that looks like you paid for it</p>
       <ul class="price-features">
         <li>Built by talking, live on your own domain</li>
         <li>Says clearly what you do and where</li>
@@ -316,8 +316,8 @@ founding_body = f'''<section class="page-hero">
       </ul>
     </div>
     <div class="price-card reveal">
-      <div class="price-label">Get found</div>
-      <div class="price-period">Show up when people ask Google or ChatGPT</div>
+      <h3 style="font-size:26px;line-height:1.2;color:#fff;margin:0 0 8px;font-weight:700;letter-spacing:-0.01em">Get found</h3>
+      <p style="font-size:17px;color:#3dff9a;margin:0 0 4px">Show up when people ask Google or ChatGPT</p>
       <ul class="price-features">
         <li>Google Business Profile filled out completely</li>
         <li>Listed where ChatGPT and other AI look</li>

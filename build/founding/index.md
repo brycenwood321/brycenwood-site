@@ -35,8 +35,11 @@ Founding cohort, invite only, 10 seats
 
  
  
- Morning brief
+ 
+### Morning brief
+
  Your day, on one page, before you start it
+
  
  - What came in yesterday: calls, forms, emails
  - Who is waiting on you, and for how long
@@ -44,8 +47,11 @@ Founding cohort, invite only, 10 seats
  
  
  
- Follow-up drafter
+ 
+### Follow-up drafter
+
  No inquiry goes unanswered again
+
  
  - Every unanswered message gets a reply drafted in your voice
  - Uses your real prices and services
@@ -53,8 +59,11 @@ Founding cohort, invite only, 10 seats
  
  
  
- Quote drafter
+ 
+### Quote drafter
+
  Say the job, get the quote
+
  
  - Built from your own price sheet
  - Same format every time, in minutes not an evening
@@ -62,8 +71,11 @@ Founding cohort, invite only, 10 seats
  
  
  
- Lead board
+ 
+### Lead board
+
  Every lead in one place, none lost
+
  
  - Your website form lands on a board automatically
  - See who is new, who is quoted, who went quiet
@@ -71,8 +83,11 @@ Founding cohort, invite only, 10 seats
  
  
  
- Website in a day
+ 
+### Website in a day
+
  A site that looks like you paid for it
+
  
  - Built by talking, live on your own domain
  - Says clearly what you do and where
@@ -80,8 +95,11 @@ Founding cohort, invite only, 10 seats
  
  
  
- Get found
+ 
+### Get found
+
  Show up when people ask Google or ChatGPT
+
  
  - Google Business Profile filled out completely
  - Listed where ChatGPT and other AI look
