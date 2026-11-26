@@ -772,7 +772,7 @@ HEAD_STYLE = """<style>
 .copy-btn:active{transform:scale(0.99)}
 .copy-btn.done{background:var(--lime-deep)}
 .mini-steps{display:grid;gap:10px;margin-top:20px}
-.mini-steps div{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:15px;color:var(--text-dim);line-height:1.6}
+.mini-steps>div{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:15px;color:var(--text-dim);line-height:1.6}
 .mini-steps span{font-family:var(--mono);color:var(--lime);font-weight:700}
 .tick-group{margin-top:32px}
 .tick-group h3{font-size:20px;font-weight:800;margin:0 0 8px}
